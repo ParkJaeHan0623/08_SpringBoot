@@ -1,0 +1,128 @@
+[INFO ] 24-10-14 15:36:11 [LoggerApplication:50] - Starting LoggerApplication using Java 17.0.2 with PID 1496 (C:\Users\user\Desktop\HOME\09_SpringBoot\02_Logger\build\classes\java\main started by user in C:\Users\user\Desktop\HOME\09_SpringBoot\02_Logger)
+[DEBUG] 24-10-14 15:36:11 [LoggerApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-14 15:36:11 [LoggerApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-14 15:36:13 [LoggerApplication:56] - Started LoggerApplication in 2.189 seconds (process running for 2.597)
+[INFO ] 24-10-14 15:36:17 [HomeController:31] - >>>> Proxy-Client-IP: null
+[INFO ] 24-10-14 15:36:17 [HomeController:35] - >>>> WL-Proxy-Client-IP: null
+[INFO ] 24-10-14 15:36:17 [HomeController:40] - >>>> HTTP_CLIENT_IP: null
+[INFO ] 24-10-14 15:36:17 [HomeController:44] - >>>> HTTP_X_FORWARDED_FOR: null
+[DEBUG] 24-10-14 15:36:17 [HomeController:50] - >>>> client IP: 0:0:0:0:0:0:0:1
+[DEBUG] 24-10-14 15:36:17 [HomeController:56] - >>>> User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+[DEBUG] 24-10-14 15:36:17 [HomeController:68] - browserFamily: Chrome
+[DEBUG] 24-10-14 15:36:17 [HomeController:69] - browserMajor: 129
+[DEBUG] 24-10-14 15:36:17 [HomeController:70] - browserMinor: 0
+[DEBUG] 24-10-14 15:36:17 [HomeController:76] - osFamily: Windows
+[DEBUG] 24-10-14 15:36:17 [HomeController:77] - osMajor: 10
+[DEBUG] 24-10-14 15:36:17 [HomeController:78] - osMinor: null
+[DEBUG] 24-10-14 15:36:17 [HomeController:82] - deviceFamily: Other
+[INFO ] 24-10-14 15:38:56 [LoggerApplication:50] - Starting LoggerApplication using Java 17.0.2 with PID 12576 (C:\Users\user\Desktop\HOME\09_SpringBoot\02_Logger\build\classes\java\main started by user in C:\Users\user\Desktop\HOME\09_SpringBoot\02_Logger)
+[DEBUG] 24-10-14 15:38:56 [LoggerApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-14 15:38:56 [LoggerApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-14 15:38:58 [LoggerApplication:56] - Started LoggerApplication in 2.439 seconds (process running for 3.158)
+[INFO ] 24-10-14 15:39:05 [HomeController:31] - >>>> Proxy-Client-IP: null
+[INFO ] 24-10-14 15:39:05 [HomeController:35] - >>>> WL-Proxy-Client-IP: null
+[INFO ] 24-10-14 15:39:05 [HomeController:40] - >>>> HTTP_CLIENT_IP: null
+[INFO ] 24-10-14 15:39:05 [HomeController:44] - >>>> HTTP_X_FORWARDED_FOR: null
+[DEBUG] 24-10-14 15:39:05 [HomeController:50] - >>>> client IP: 0:0:0:0:0:0:0:1
+[DEBUG] 24-10-14 15:39:05 [HomeController:56] - >>>> User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+[DEBUG] 24-10-14 15:39:05 [HomeController:68] - browserFamily: Chrome
+[DEBUG] 24-10-14 15:39:05 [HomeController:69] - browserMajor: 129
+[DEBUG] 24-10-14 15:39:05 [HomeController:70] - browserMinor: 0
+[DEBUG] 24-10-14 15:39:05 [HomeController:76] - osFamily: Windows
+[DEBUG] 24-10-14 15:39:05 [HomeController:77] - osMajor: 10
+[DEBUG] 24-10-14 15:39:05 [HomeController:78] - osMinor: null
+[DEBUG] 24-10-14 15:39:05 [HomeController:82] - deviceFamily: Other
+[INFO ] 24-10-14 15:39:53 [LoggerApplication:50] - Starting LoggerApplication using Java 17.0.2 with PID 12576 (C:\Users\user\Desktop\HOME\09_SpringBoot\02_Logger\build\classes\java\main started by user in C:\Users\user\Desktop\HOME\09_SpringBoot\02_Logger)
+[DEBUG] 24-10-14 15:39:53 [LoggerApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-14 15:39:53 [LoggerApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-14 15:39:54 [LoggerApplication:56] - Started LoggerApplication in 1.071 seconds (process running for 59.316)
+[INFO ] 24-10-14 15:40:57 [LoggerApplication:50] - Starting LoggerApplication using Java 17.0.2 with PID 16852 (C:\Users\user\Desktop\HOME\09_SpringBoot\02_Logger\build\classes\java\main started by user in C:\Users\user\Desktop\HOME\09_SpringBoot\02_Logger)
+[DEBUG] 24-10-14 15:40:57 [LoggerApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-14 15:40:57 [LoggerApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-14 15:41:00 [LoggerApplication:56] - Started LoggerApplication in 2.575 seconds (process running for 3.491)
+[INFO ] 24-10-14 15:41:06 [HomeController:31] - >>>> Proxy-Client-IP: null
+[INFO ] 24-10-14 15:41:06 [HomeController:35] - >>>> WL-Proxy-Client-IP: null
+[INFO ] 24-10-14 15:41:06 [HomeController:40] - >>>> HTTP_CLIENT_IP: null
+[INFO ] 24-10-14 15:41:06 [HomeController:44] - >>>> HTTP_X_FORWARDED_FOR: null
+[DEBUG] 24-10-14 15:41:06 [HomeController:50] - >>>> client IP: 0:0:0:0:0:0:0:1
+[DEBUG] 24-10-14 15:41:06 [HomeController:56] - >>>> User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+[DEBUG] 24-10-14 15:41:06 [HomeController:68] - browserFamily: Chrome
+[DEBUG] 24-10-14 15:41:06 [HomeController:69] - browserMajor: 129
+[DEBUG] 24-10-14 15:41:06 [HomeController:70] - browserMinor: 0
+[DEBUG] 24-10-14 15:41:06 [HomeController:76] - osFamily: Windows
+[DEBUG] 24-10-14 15:41:06 [HomeController:77] - osMajor: 10
+[DEBUG] 24-10-14 15:41:06 [HomeController:78] - osMinor: null
+[DEBUG] 24-10-14 15:41:06 [HomeController:82] - deviceFamily: Other
+[INFO ] 24-10-14 15:45:29 [LoggerApplication:50] - Starting LoggerApplication using Java 17.0.2 with PID 16852 (C:\Users\user\Desktop\HOME\09_SpringBoot\02_Logger\build\classes\java\main started by user in C:\Users\user\Desktop\HOME\09_SpringBoot\02_Logger)
+[DEBUG] 24-10-14 15:45:29 [LoggerApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-14 15:45:29 [LoggerApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-14 15:45:30 [LoggerApplication:56] - Started LoggerApplication in 1.091 seconds (process running for 273.615)
+[INFO ] 24-10-14 15:46:03 [HomeController:32] - >>>> Proxy-Client-IP: null
+[INFO ] 24-10-14 15:46:03 [HomeController:36] - >>>> WL-Proxy-Client-IP: null
+[INFO ] 24-10-14 15:46:03 [HomeController:41] - >>>> HTTP_CLIENT_IP: null
+[INFO ] 24-10-14 15:46:03 [HomeController:45] - >>>> HTTP_X_FORWARDED_FOR: null
+[DEBUG] 24-10-14 15:46:03 [HomeController:51] - >>>> client IP: 0:0:0:0:0:0:0:1
+[DEBUG] 24-10-14 15:46:03 [HomeController:56] - >>>> User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+[DEBUG] 24-10-14 15:46:04 [HomeController:68] - browserFamily: Chrome
+[DEBUG] 24-10-14 15:46:04 [HomeController:69] - browserMajor: 129
+[DEBUG] 24-10-14 15:46:04 [HomeController:70] - browserMinor: 0
+[DEBUG] 24-10-14 15:46:04 [HomeController:76] - osFamily: Windows
+[DEBUG] 24-10-14 15:46:04 [HomeController:77] - osMajor: 10
+[DEBUG] 24-10-14 15:46:04 [HomeController:78] - osMinor: null
+[DEBUG] 24-10-14 15:46:04 [HomeController:82] - deviceFamily: Other
+[INFO ] 24-10-14 15:46:04 [HomeController:32] - >>>> Proxy-Client-IP: null
+[INFO ] 24-10-14 15:46:04 [HomeController:36] - >>>> WL-Proxy-Client-IP: null
+[INFO ] 24-10-14 15:46:04 [HomeController:41] - >>>> HTTP_CLIENT_IP: null
+[INFO ] 24-10-14 15:46:04 [HomeController:45] - >>>> HTTP_X_FORWARDED_FOR: null
+[DEBUG] 24-10-14 15:46:04 [HomeController:51] - >>>> client IP: 0:0:0:0:0:0:0:1
+[DEBUG] 24-10-14 15:46:05 [HomeController:56] - >>>> User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+[DEBUG] 24-10-14 15:46:05 [HomeController:68] - browserFamily: Chrome
+[DEBUG] 24-10-14 15:46:05 [HomeController:69] - browserMajor: 129
+[DEBUG] 24-10-14 15:46:05 [HomeController:70] - browserMinor: 0
+[DEBUG] 24-10-14 15:46:05 [HomeController:76] - osFamily: Windows
+[DEBUG] 24-10-14 15:46:05 [HomeController:77] - osMajor: 10
+[DEBUG] 24-10-14 15:46:05 [HomeController:78] - osMinor: null
+[DEBUG] 24-10-14 15:46:05 [HomeController:82] - deviceFamily: Other
+[INFO ] 24-10-14 15:47:57 [LoggerApplication:50] - Starting LoggerApplication using Java 17.0.2 with PID 4748 (C:\Users\user\Desktop\HOME\09_SpringBoot\02_Logger\build\classes\java\main started by user in C:\Users\user\Desktop\HOME\09_SpringBoot\02_Logger)
+[DEBUG] 24-10-14 15:47:57 [LoggerApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-14 15:47:57 [LoggerApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-14 15:48:00 [LoggerApplication:56] - Started LoggerApplication in 2.729 seconds (process running for 3.342)
+[INFO ] 24-10-14 15:48:06 [HomeController:32] - >>>> Proxy-Client-IP: null
+[INFO ] 24-10-14 15:48:06 [HomeController:36] - >>>> WL-Proxy-Client-IP: null
+[INFO ] 24-10-14 15:48:06 [HomeController:41] - >>>> HTTP_CLIENT_IP: null
+[INFO ] 24-10-14 15:48:06 [HomeController:45] - >>>> HTTP_X_FORWARDED_FOR: null
+[DEBUG] 24-10-14 15:48:06 [HomeController:51] - >>>> client IP: 0:0:0:0:0:0:0:1
+[DEBUG] 24-10-14 15:48:06 [HomeController:56] - >>>> User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+[DEBUG] 24-10-14 15:48:06 [HomeController:68] - browserFamily: Chrome
+[DEBUG] 24-10-14 15:48:06 [HomeController:69] - browserMajor: 129
+[DEBUG] 24-10-14 15:48:06 [HomeController:70] - browserMinor: 0
+[DEBUG] 24-10-14 15:48:06 [HomeController:76] - osFamily: Windows
+[DEBUG] 24-10-14 15:48:06 [HomeController:77] - osMajor: 10
+[DEBUG] 24-10-14 15:48:06 [HomeController:78] - osMinor: null
+[DEBUG] 24-10-14 15:48:06 [HomeController:82] - deviceFamily: Other
+[INFO ] 24-10-14 15:49:07 [HomeController:32] - >>>> Proxy-Client-IP: null
+[INFO ] 24-10-14 15:49:07 [HomeController:36] - >>>> WL-Proxy-Client-IP: null
+[INFO ] 24-10-14 15:49:07 [HomeController:41] - >>>> HTTP_CLIENT_IP: null
+[INFO ] 24-10-14 15:49:07 [HomeController:45] - >>>> HTTP_X_FORWARDED_FOR: null
+[DEBUG] 24-10-14 15:49:07 [HomeController:51] - >>>> client IP: 192.168.20.77
+[DEBUG] 24-10-14 15:49:07 [HomeController:56] - >>>> User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+[DEBUG] 24-10-14 15:49:07 [HomeController:68] - browserFamily: Chrome
+[DEBUG] 24-10-14 15:49:07 [HomeController:69] - browserMajor: 129
+[DEBUG] 24-10-14 15:49:07 [HomeController:70] - browserMinor: 0
+[DEBUG] 24-10-14 15:49:07 [HomeController:76] - osFamily: Windows
+[DEBUG] 24-10-14 15:49:07 [HomeController:77] - osMajor: 10
+[DEBUG] 24-10-14 15:49:07 [HomeController:78] - osMinor: null
+[DEBUG] 24-10-14 15:49:07 [HomeController:82] - deviceFamily: Other
+[INFO ] 24-10-14 15:52:37 [HomeController:32] - >>>> Proxy-Client-IP: null
+[INFO ] 24-10-14 15:52:37 [HomeController:36] - >>>> WL-Proxy-Client-IP: null
+[INFO ] 24-10-14 15:52:37 [HomeController:41] - >>>> HTTP_CLIENT_IP: null
+[INFO ] 24-10-14 15:52:37 [HomeController:45] - >>>> HTTP_X_FORWARDED_FOR: null
+[DEBUG] 24-10-14 15:52:37 [HomeController:51] - >>>> client IP: 192.168.20.77
+[DEBUG] 24-10-14 15:52:37 [HomeController:56] - >>>> User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+[DEBUG] 24-10-14 15:52:37 [HomeController:68] - browserFamily: Chrome
+[DEBUG] 24-10-14 15:52:37 [HomeController:69] - browserMajor: 129
+[DEBUG] 24-10-14 15:52:37 [HomeController:70] - browserMinor: 0
+[DEBUG] 24-10-14 15:52:37 [HomeController:76] - osFamily: Windows
+[DEBUG] 24-10-14 15:52:37 [HomeController:77] - osMajor: 10
+[DEBUG] 24-10-14 15:52:37 [HomeController:78] - osMinor: null
+[DEBUG] 24-10-14 15:52:37 [HomeController:82] - deviceFamily: Other

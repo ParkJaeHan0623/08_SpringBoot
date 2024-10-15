@@ -1,0 +1,36 @@
+[INFO ] 24-10-14 18:05:44 [InterceptorApplication:50] - Starting InterceptorApplication using Java 17.0.2 with PID 17704 (C:\Users\user\Desktop\HOME\09_SpringBoot\03_Interceptor\bin\main started by user in C:\Users\user\Desktop\HOME\09_SpringBoot\03_Interceptor)
+[DEBUG] 24-10-14 18:05:44 [InterceptorApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-14 18:05:44 [InterceptorApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-14 18:05:46 [InterceptorApplication:56] - Started InterceptorApplication in 2.816 seconds (process running for 3.379)
+[INFO ] 24-10-14 18:10:33 [InterceptorApplication:50] - Starting InterceptorApplication using Java 17.0.2 with PID 3948 (C:\Users\user\Desktop\HOME\09_SpringBoot\03_Interceptor\bin\main started by user in C:\Users\user\Desktop\HOME\09_SpringBoot\03_Interceptor)
+[DEBUG] 24-10-14 18:10:33 [InterceptorApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-14 18:10:33 [InterceptorApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-14 18:10:35 [InterceptorApplication:56] - Started InterceptorApplication in 2.485 seconds (process running for 3.025)
+[INFO ] 24-10-14 18:16:53 [InterceptorApplication:50] - Starting InterceptorApplication using Java 17.0.2 with PID 6000 (C:\Users\user\Desktop\HOME\09_SpringBoot\03_Interceptor\bin\main started by user in C:\Users\user\Desktop\HOME\09_SpringBoot\03_Interceptor)
+[DEBUG] 24-10-14 18:16:53 [InterceptorApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-14 18:16:53 [InterceptorApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-14 18:16:55 [InterceptorApplication:56] - Started InterceptorApplication in 2.665 seconds (process running for 3.223)
+[INFO ] 24-10-14 18:16:57 [MyInterceptor:36] - ------------------new client connect ------------------
+[INFO ] 24-10-14 18:16:57 [MyInterceptor:52] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-14 18:16:57 [MyInterceptor:69] - [GET] http://localhost:8080/
+[INFO ] 24-10-14 18:16:57 [MyInterceptor:105] - - 실행시간 : 220 ms
+[INFO ] 24-10-14 18:17:03 [MyInterceptor:36] - ------------------new client connect ------------------
+[INFO ] 24-10-14 18:17:03 [MyInterceptor:52] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-14 18:17:03 [MyInterceptor:69] - [GET] http://localhost:8080/hi
+[INFO ] 24-10-14 18:17:03 [MyInterceptor:87] - - REFERER : time=5947, url=http://localhost:8080/hello
+[INFO ] 24-10-14 18:17:03 [MyInterceptor:105] - - 실행시간 : 75 ms
+[INFO ] 24-10-14 18:17:03 [MyInterceptor:36] - ------------------new client connect ------------------
+[INFO ] 24-10-14 18:17:04 [MyInterceptor:52] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-14 18:17:04 [MyInterceptor:69] - [GET] http://localhost:8080/bye
+[INFO ] 24-10-14 18:17:04 [MyInterceptor:87] - - REFERER : time=292, url=http://localhost:8080/hi
+[INFO ] 24-10-14 18:17:04 [MyInterceptor:105] - - 실행시간 : 49 ms
+[INFO ] 24-10-14 18:17:49 [MyInterceptor:36] - ------------------new client connect ------------------
+[INFO ] 24-10-14 18:17:49 [MyInterceptor:52] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-14 18:17:49 [MyInterceptor:69] - [GET] http://localhost:8080/bye
+[INFO ] 24-10-14 18:17:49 [MyInterceptor:87] - - REFERER : time=45348, url=http://localhost:8080/hi
+[INFO ] 24-10-14 18:17:49 [MyInterceptor:105] - - 실행시간 : 28 ms
+[INFO ] 24-10-14 18:17:49 [MyInterceptor:36] - ------------------new client connect ------------------
+[INFO ] 24-10-14 18:17:49 [MyInterceptor:52] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-14 18:17:49 [MyInterceptor:69] - [GET] http://localhost:8080/favicon.ico
+[INFO ] 24-10-14 18:17:49 [MyInterceptor:87] - - REFERER : time=84, url=http://localhost:8080/bye
+[INFO ] 24-10-14 18:17:49 [MyInterceptor:105] - - 실행시간 : 117 ms
