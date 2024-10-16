@@ -1,4 +1,4 @@
-package kr.parkjaehan.interceptor.interceptors;
+package kr.parkjaehan.params.interceptors;
 
 import java.util.Map;
 
@@ -9,7 +9,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
-import kr.parkjaehan.interceptor.helpers.UtilHelper;
+import kr.parkjaehan.params.helpers.UtilHelper;
 import lombok.extern.slf4j.Slf4j;
 import ua_parser.Client;
 import ua_parser.Parser;
