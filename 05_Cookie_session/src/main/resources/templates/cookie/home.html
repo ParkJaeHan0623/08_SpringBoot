@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello Spring</title>
+</head>
+<body>
+    <div th:replace = "~{fragments/header :: my-header}"></div>
+    <h2>Cookie</h2>
+
+    <form method="post" th:action = "@{/cookie/save}">
+        <select name="cookie_name">
+            <option value="name">name</option>
+            <option value="age">age</option>
+        </select>
+        <!-- 입력 시간 -->
+        <select name="cookie_time">
+            <option value="">None</option>
+            <option value="0">0</option>
+            <option value="5">5s</option>
+            <option value="10">10s</option>
+            <option value="30">30s</option>
+        </select>
+
+        <!-- 저장 값 -->
+        <input type="text" name="cookie_var" /> 
+        <button type="submit">Save Cookie</button>
+    </form>
+    
+    <div th:if = "${myCookieName != '' or myCookieAge > 0}">
+    <hr/>
+    <h3>쿠키에 저장된 값</h3>
+    <ul>
+        <li>myCookieName: <span th:text = "${myCookieName}"></span></li>
+        <li>myCookieAge: <span th:text = "${myCookieAge}"></span></li>
+    </ul>
+    </div>
+</body>
+</html>
