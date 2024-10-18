@@ -1,0 +1,801 @@
+[INFO ] 24-10-16 10:24:37 [CookieSessionApplication:50] - Starting CookieSessionApplication using Java 17.0.2 with PID 10688 (C:\Users\user\Desktop\HOME\08_SpringBoot\05_Cookie_session\build\classes\java\main started by user in C:\Users\user\Desktop\HOME\08_SpringBoot\05_Cookie_session)
+[DEBUG] 24-10-16 10:24:37 [CookieSessionApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-16 10:24:37 [CookieSessionApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-16 10:24:39 [CookieSessionApplication:56] - Started CookieSessionApplication in 2.51 seconds (process running for 3.105)
+[INFO ] 24-10-16 10:24:48 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 10:24:48 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 10:24:48 [MyInterceptor:70] - [GET] http://localhost:8080/
+[INFO ] 24-10-16 10:24:48 [MyInterceptor:106] - - 실행시간 : 198 ms
+[INFO ] 24-10-16 10:24:50 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 10:24:50 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 10:24:50 [MyInterceptor:70] - [GET] http://localhost:8080/cookie/home
+[INFO ] 24-10-16 10:24:50 [MyInterceptor:88] - - REFERER : time=1608, url=http://localhost:8080/
+[INFO ] 24-10-16 10:24:50 [MyInterceptor:106] - - 실행시간 : 60 ms
+[INFO ] 24-10-16 10:24:51 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 10:24:51 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 10:24:51 [MyInterceptor:70] - [GET] http://localhost:8080/cookie/cookie/popup
+[INFO ] 24-10-16 10:24:51 [MyInterceptor:88] - - REFERER : time=1022, url=http://localhost:8080/cookie/home
+[INFO ] 24-10-16 10:24:53 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 10:24:53 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 10:24:53 [MyInterceptor:70] - [GET] http://localhost:8080/session/home
+[INFO ] 24-10-16 10:24:53 [MyInterceptor:88] - - REFERER : time=3104, url=http://localhost:8080/cookie/home
+[INFO ] 24-10-16 10:24:53 [MyInterceptor:106] - - 실행시간 : 49 ms
+[INFO ] 24-10-16 10:24:54 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 10:24:54 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 10:24:54 [MyInterceptor:70] - [GET] http://localhost:8080/session/login
+[INFO ] 24-10-16 10:24:54 [MyInterceptor:88] - - REFERER : time=1072, url=http://localhost:8080/session/home
+[INFO ] 24-10-16 10:24:54 [MyInterceptor:106] - - 실행시간 : 32 ms
+[INFO ] 24-10-16 10:24:55 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 10:24:55 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 10:24:55 [MyInterceptor:70] - [GET] http://localhost:8080/session/home
+[INFO ] 24-10-16 10:24:55 [MyInterceptor:88] - - REFERER : time=917, url=http://localhost:8080/session/login
+[INFO ] 24-10-16 10:24:55 [MyInterceptor:106] - - 실행시간 : 21 ms
+[INFO ] 24-10-16 10:24:56 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 10:24:56 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 10:24:56 [MyInterceptor:70] - [GET] http://localhost:8080/session/cookie/popup
+[INFO ] 24-10-16 10:24:56 [MyInterceptor:88] - - REFERER : time=363, url=http://localhost:8080/session/home
+[INFO ] 24-10-16 10:26:08 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 10:26:08 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 10:26:08 [MyInterceptor:70] - [GET] http://localhost:8080/session/cookie/popup
+[INFO ] 24-10-16 10:26:08 [MyInterceptor:88] - - REFERER : time=73207, url=http://localhost:8080/session/home
+[INFO ] 24-10-16 10:27:34 [CookieSessionApplication:50] - Starting CookieSessionApplication using Java 17.0.2 with PID 10688 (C:\Users\user\Desktop\HOME\08_SpringBoot\05_Cookie_session\build\classes\java\main started by user in C:\Users\user\Desktop\HOME\08_SpringBoot\05_Cookie_session)
+[DEBUG] 24-10-16 10:27:34 [CookieSessionApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-16 10:27:34 [CookieSessionApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-16 10:27:35 [CookieSessionApplication:56] - Started CookieSessionApplication in 1.081 seconds (process running for 179.875)
+[INFO ] 24-10-16 10:29:15 [CookieSessionApplication:50] - Starting CookieSessionApplication using Java 17.0.2 with PID 10508 (C:\Users\user\Desktop\HOME\08_SpringBoot\05_Cookie_session\build\classes\java\main started by user in C:\Users\user\Desktop\HOME\08_SpringBoot\05_Cookie_session)
+[DEBUG] 24-10-16 10:29:15 [CookieSessionApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-16 10:29:15 [CookieSessionApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-16 10:29:17 [CookieSessionApplication:56] - Started CookieSessionApplication in 2.598 seconds (process running for 3.405)
+[INFO ] 24-10-16 10:29:20 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 10:29:20 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 10:29:20 [MyInterceptor:70] - [GET] http://localhost:8080/
+[INFO ] 24-10-16 10:29:20 [MyInterceptor:106] - - 실행시간 : 185 ms
+[INFO ] 24-10-16 10:29:21 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 10:29:21 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 10:29:21 [MyInterceptor:70] - [GET] http://localhost:8080/cookie/home
+[INFO ] 24-10-16 10:29:21 [MyInterceptor:88] - - REFERER : time=1081, url=http://localhost:8080/
+[INFO ] 24-10-16 10:29:21 [MyInterceptor:106] - - 실행시간 : 70 ms
+[INFO ] 24-10-16 10:29:22 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 10:29:22 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 10:29:22 [MyInterceptor:70] - [GET] http://localhost:8080/cookie/cookie/popup
+[INFO ] 24-10-16 10:29:22 [MyInterceptor:88] - - REFERER : time=603, url=http://localhost:8080/cookie/home
+[INFO ] 24-10-16 10:29:28 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 10:29:29 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 10:29:29 [MyInterceptor:70] - [GET] http://localhost:8080/session/home
+[INFO ] 24-10-16 10:29:29 [MyInterceptor:88] - - REFERER : time=7288, url=http://localhost:8080/cookie/home
+[INFO ] 24-10-16 10:29:29 [MyInterceptor:106] - - 실행시간 : 45 ms
+[INFO ] 24-10-16 10:29:29 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 10:29:29 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 10:29:29 [MyInterceptor:70] - [GET] http://localhost:8080/session/login
+[INFO ] 24-10-16 10:29:29 [MyInterceptor:88] - - REFERER : time=620, url=http://localhost:8080/session/home
+[INFO ] 24-10-16 10:29:29 [MyInterceptor:106] - - 실행시간 : 23 ms
+[INFO ] 24-10-16 10:29:33 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 10:29:33 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 10:29:33 [MyInterceptor:70] - [GET] http://localhost:8080/session/cookie/popup
+[INFO ] 24-10-16 10:29:33 [MyInterceptor:88] - - REFERER : time=3401, url=http://localhost:8080/session/login
+[INFO ] 24-10-16 10:30:10 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 10:30:10 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 10:30:10 [MyInterceptor:70] - [GET] http://localhost:8080/cookie/home
+[INFO ] 24-10-16 10:30:10 [MyInterceptor:88] - - REFERER : time=40518, url=http://localhost:8080/session/login
+[INFO ] 24-10-16 10:30:10 [MyInterceptor:106] - - 실행시간 : 18 ms
+[INFO ] 24-10-16 10:30:10 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 10:30:10 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 10:30:10 [MyInterceptor:70] - [GET] http://localhost:8080/session/home
+[INFO ] 24-10-16 10:30:10 [MyInterceptor:88] - - REFERER : time=454, url=http://localhost:8080/cookie/home
+[INFO ] 24-10-16 10:30:10 [MyInterceptor:106] - - 실행시간 : 21 ms
+[INFO ] 24-10-16 10:30:10 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 10:30:10 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 10:30:10 [MyInterceptor:70] - [GET] http://localhost:8080/session/login
+[INFO ] 24-10-16 10:30:10 [MyInterceptor:88] - - REFERER : time=294, url=http://localhost:8080/session/home
+[INFO ] 24-10-16 10:30:10 [MyInterceptor:106] - - 실행시간 : 17 ms
+[INFO ] 24-10-16 10:30:11 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 10:30:11 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 10:30:11 [MyInterceptor:70] - [GET] http://localhost:8080/session/cookie/popup
+[INFO ] 24-10-16 10:30:11 [MyInterceptor:88] - - REFERER : time=569, url=http://localhost:8080/session/login
+[INFO ] 24-10-16 10:31:06 [CookieSessionApplication:50] - Starting CookieSessionApplication using Java 17.0.2 with PID 10508 (C:\Users\user\Desktop\HOME\08_SpringBoot\05_Cookie_session\build\classes\java\main started by user in C:\Users\user\Desktop\HOME\08_SpringBoot\05_Cookie_session)
+[DEBUG] 24-10-16 10:31:06 [CookieSessionApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-16 10:31:06 [CookieSessionApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-16 10:31:07 [CookieSessionApplication:56] - Started CookieSessionApplication in 1.015 seconds (process running for 112.678)
+[INFO ] 24-10-16 10:31:14 [CookieSessionApplication:50] - Starting CookieSessionApplication using Java 17.0.2 with PID 15972 (C:\Users\user\Desktop\HOME\08_SpringBoot\05_Cookie_session\build\classes\java\main started by user in C:\Users\user\Desktop\HOME\08_SpringBoot\05_Cookie_session)
+[DEBUG] 24-10-16 10:31:14 [CookieSessionApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-16 10:31:14 [CookieSessionApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-16 10:31:18 [CookieSessionApplication:56] - Started CookieSessionApplication in 4.389 seconds (process running for 5.138)
+[INFO ] 24-10-16 10:32:36 [CookieSessionApplication:50] - Starting CookieSessionApplication using Java 17.0.2 with PID 10792 (C:\Users\user\Desktop\HOME\08_SpringBoot\05_Cookie_session\build\classes\java\main started by user in C:\Users\user\Desktop\HOME\08_SpringBoot\05_Cookie_session)
+[DEBUG] 24-10-16 10:32:36 [CookieSessionApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-16 10:32:36 [CookieSessionApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-16 10:32:39 [CookieSessionApplication:56] - Started CookieSessionApplication in 3.337 seconds (process running for 4.233)
+[INFO ] 24-10-16 10:32:44 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 10:32:44 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 10:32:44 [MyInterceptor:70] - [GET] http://localhost:8080/
+[INFO ] 24-10-16 10:32:44 [MyInterceptor:106] - - 실행시간 : 218 ms
+[INFO ] 24-10-16 10:32:45 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 10:32:45 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 10:32:45 [MyInterceptor:70] - [GET] http://localhost:8080/cookie/home
+[INFO ] 24-10-16 10:32:45 [MyInterceptor:88] - - REFERER : time=866, url=http://localhost:8080/
+[INFO ] 24-10-16 10:32:45 [MyInterceptor:106] - - 실행시간 : 60 ms
+[INFO ] 24-10-16 10:32:46 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 10:32:46 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 10:32:46 [MyInterceptor:70] - [GET] http://localhost:8080/cookie/popup
+[INFO ] 24-10-16 10:32:46 [MyInterceptor:88] - - REFERER : time=299, url=http://localhost:8080/cookie/home
+[INFO ] 24-10-16 10:32:46 [MyInterceptor:106] - - 실행시간 : 45 ms
+[INFO ] 24-10-16 10:32:46 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 10:32:46 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 10:32:46 [MyInterceptor:70] - [GET] http://localhost:8080/session/home
+[INFO ] 24-10-16 10:32:46 [MyInterceptor:88] - - REFERER : time=325, url=http://localhost:8080/cookie/popup
+[INFO ] 24-10-16 10:32:46 [MyInterceptor:106] - - 실행시간 : 34 ms
+[INFO ] 24-10-16 10:32:46 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 10:32:46 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 10:32:46 [MyInterceptor:70] - [GET] http://localhost:8080/session/login
+[INFO ] 24-10-16 10:32:46 [MyInterceptor:88] - - REFERER : time=264, url=http://localhost:8080/session/home
+[INFO ] 24-10-16 10:32:46 [MyInterceptor:106] - - 실행시간 : 34 ms
+[INFO ] 24-10-16 10:45:17 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 10:45:17 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 10:45:17 [MyInterceptor:70] - [GET] http://localhost:8080/cookie/home
+[INFO ] 24-10-16 10:45:17 [MyInterceptor:88] - - REFERER : time=750527, url=http://localhost:8080/session/login
+[INFO ] 24-10-16 10:45:17 [MyInterceptor:106] - - 실행시간 : 20 ms
+[INFO ] 24-10-16 10:45:17 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 10:45:17 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 10:45:17 [MyInterceptor:70] - [GET] http://localhost:8080/cookie/popup
+[INFO ] 24-10-16 10:45:17 [MyInterceptor:88] - - REFERER : time=338, url=http://localhost:8080/cookie/home
+[INFO ] 24-10-16 10:45:17 [MyInterceptor:106] - - 실행시간 : 21 ms
+[INFO ] 24-10-16 10:45:18 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 10:45:18 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 10:45:18 [MyInterceptor:70] - [GET] http://localhost:8080/session/home
+[INFO ] 24-10-16 10:45:18 [MyInterceptor:88] - - REFERER : time=414, url=http://localhost:8080/cookie/popup
+[INFO ] 24-10-16 10:45:18 [MyInterceptor:106] - - 실행시간 : 18 ms
+[INFO ] 24-10-16 10:45:18 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 10:45:18 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 10:45:18 [MyInterceptor:70] - [GET] http://localhost:8080/session/login
+[INFO ] 24-10-16 10:45:18 [MyInterceptor:88] - - REFERER : time=319, url=http://localhost:8080/session/home
+[INFO ] 24-10-16 10:45:18 [MyInterceptor:106] - - 실행시간 : 23 ms
+[INFO ] 24-10-16 10:48:33 [CookieSessionApplication:50] - Starting CookieSessionApplication using Java 17.0.2 with PID 30876 (C:\Users\user\Desktop\HOME\08_SpringBoot\05_Cookie_session\build\classes\java\main started by user in C:\Users\user\Desktop\HOME\08_SpringBoot\05_Cookie_session)
+[DEBUG] 24-10-16 10:48:33 [CookieSessionApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-16 10:48:33 [CookieSessionApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-16 10:48:35 [CookieSessionApplication:56] - Started CookieSessionApplication in 2.506 seconds (process running for 3.364)
+[INFO ] 24-10-16 10:48:49 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 10:48:49 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 10:48:49 [MyInterceptor:70] - [GET] http://localhost:8080/
+[INFO ] 24-10-16 10:48:49 [MyInterceptor:106] - - 실행시간 : 182 ms
+[INFO ] 24-10-16 10:48:50 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 10:48:50 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 10:48:50 [MyInterceptor:70] - [GET] http://localhost:8080/cookie/home
+[INFO ] 24-10-16 10:48:50 [MyInterceptor:88] - - REFERER : time=1105, url=http://localhost:8080/
+[INFO ] 24-10-16 10:48:50 [MyInterceptor:106] - - 실행시간 : 71 ms
+[INFO ] 24-10-16 10:48:51 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 10:48:51 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 10:48:51 [MyInterceptor:70] - [GET] http://localhost:8080/cookie/popup
+[INFO ] 24-10-16 10:48:51 [MyInterceptor:88] - - REFERER : time=288, url=http://localhost:8080/cookie/home
+[INFO ] 24-10-16 10:48:51 [MyInterceptor:106] - - 실행시간 : 43 ms
+[INFO ] 24-10-16 10:48:51 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 10:48:51 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 10:48:51 [MyInterceptor:70] - [GET] http://localhost:8080/session/home
+[INFO ] 24-10-16 10:48:51 [MyInterceptor:88] - - REFERER : time=293, url=http://localhost:8080/cookie/popup
+[INFO ] 24-10-16 10:48:51 [MyInterceptor:106] - - 실행시간 : 40 ms
+[INFO ] 24-10-16 10:48:51 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 10:48:51 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 10:48:51 [MyInterceptor:70] - [GET] http://localhost:8080/session/login
+[INFO ] 24-10-16 10:48:51 [MyInterceptor:88] - - REFERER : time=273, url=http://localhost:8080/session/home
+[INFO ] 24-10-16 10:48:51 [MyInterceptor:106] - - 실행시간 : 23 ms
+[INFO ] 24-10-16 10:50:28 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 10:50:28 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 10:50:28 [MyInterceptor:70] - [GET] http://localhost:8080/cookie/home
+[INFO ] 24-10-16 10:50:28 [MyInterceptor:88] - - REFERER : time=96537, url=http://localhost:8080/session/login
+[INFO ] 24-10-16 10:50:28 [MyInterceptor:106] - - 실행시간 : 20 ms
+[INFO ] 24-10-16 10:50:28 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 10:50:28 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 10:50:28 [MyInterceptor:70] - [GET] http://localhost:8080/cookie/popup
+[INFO ] 24-10-16 10:50:28 [MyInterceptor:88] - - REFERER : time=542, url=http://localhost:8080/cookie/home
+[INFO ] 24-10-16 10:50:28 [MyInterceptor:106] - - 실행시간 : 17 ms
+[INFO ] 24-10-16 10:50:29 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 10:50:29 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 10:50:29 [MyInterceptor:70] - [GET] http://localhost:8080/session/home
+[INFO ] 24-10-16 10:50:29 [MyInterceptor:88] - - REFERER : time=478, url=http://localhost:8080/cookie/popup
+[INFO ] 24-10-16 10:50:29 [MyInterceptor:106] - - 실행시간 : 18 ms
+[INFO ] 24-10-16 10:50:29 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 10:50:29 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 10:50:29 [MyInterceptor:70] - [GET] http://localhost:8080/session/login
+[INFO ] 24-10-16 10:50:29 [MyInterceptor:88] - - REFERER : time=439, url=http://localhost:8080/session/home
+[INFO ] 24-10-16 10:50:29 [MyInterceptor:106] - - 실행시간 : 16 ms
+[INFO ] 24-10-16 12:25:44 [CookieSessionApplication:50] - Starting CookieSessionApplication using Java 17.0.2 with PID 6976 (C:\Users\user\Desktop\HOME\08_SpringBoot\05_Cookie_session\build\classes\java\main started by user in C:\Users\user\Desktop\HOME\08_SpringBoot\05_Cookie_session)
+[DEBUG] 24-10-16 12:25:44 [CookieSessionApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-16 12:25:44 [CookieSessionApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-16 12:25:46 [CookieSessionApplication:56] - Started CookieSessionApplication in 2.53 seconds (process running for 3.412)
+[INFO ] 24-10-16 12:25:49 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 12:25:49 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 12:25:49 [MyInterceptor:70] - [GET] http://localhost:8080/
+[INFO ] 24-10-16 12:25:49 [MyInterceptor:106] - - 실행시간 : 195 ms
+[INFO ] 24-10-16 12:25:51 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 12:25:51 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 12:25:51 [MyInterceptor:70] - [GET] http://localhost:8080/cookie/home
+[INFO ] 24-10-16 12:25:51 [MyInterceptor:88] - - REFERER : time=1562, url=http://localhost:8080/
+[INFO ] 24-10-16 12:25:51 [MyInterceptor:106] - - 실행시간 : 70 ms
+[INFO ] 24-10-16 12:25:52 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 12:25:52 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 12:25:52 [MyInterceptor:70] - [GET] http://localhost:8080/cookie/popup
+[INFO ] 24-10-16 12:25:52 [MyInterceptor:88] - - REFERER : time=1251, url=http://localhost:8080/cookie/home
+[INFO ] 24-10-16 12:25:52 [MyInterceptor:106] - - 실행시간 : 42 ms
+[INFO ] 24-10-16 12:25:53 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 12:25:53 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 12:25:53 [MyInterceptor:70] - [GET] http://localhost:8080/session/home
+[INFO ] 24-10-16 12:25:53 [MyInterceptor:88] - - REFERER : time=535, url=http://localhost:8080/cookie/popup
+[INFO ] 24-10-16 12:25:53 [MyInterceptor:106] - - 실행시간 : 51 ms
+[INFO ] 24-10-16 12:25:53 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 12:25:53 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 12:25:53 [MyInterceptor:70] - [GET] http://localhost:8080/session/login
+[INFO ] 24-10-16 12:25:53 [MyInterceptor:88] - - REFERER : time=420, url=http://localhost:8080/session/home
+[INFO ] 24-10-16 12:25:53 [MyInterceptor:106] - - 실행시간 : 35 ms
+[INFO ] 24-10-16 12:25:54 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 12:25:54 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 12:25:54 [MyInterceptor:70] - [GET] http://localhost:8080/cookie/home
+[INFO ] 24-10-16 12:25:54 [MyInterceptor:88] - - REFERER : time=665, url=http://localhost:8080/session/login
+[INFO ] 24-10-16 12:25:54 [MyInterceptor:106] - - 실행시간 : 25 ms
+[INFO ] 24-10-16 12:26:02 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 12:26:02 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 12:26:02 [MyInterceptor:70] - [GET] http://localhost:8080/cookie/home
+[INFO ] 24-10-16 12:26:02 [MyInterceptor:88] - - REFERER : time=7796, url=http://localhost:8080/cookie/home
+[INFO ] 24-10-16 12:26:02 [MyInterceptor:106] - - 실행시간 : 24 ms
+[INFO ] 24-10-16 12:26:03 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 12:26:03 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 12:26:03 [MyInterceptor:70] - [GET] http://localhost:8080/cookie/popup
+[INFO ] 24-10-16 12:26:03 [MyInterceptor:88] - - REFERER : time=1341, url=http://localhost:8080/cookie/home
+[INFO ] 24-10-16 12:26:03 [MyInterceptor:106] - - 실행시간 : 19 ms
+[INFO ] 24-10-16 12:26:03 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 12:26:03 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 12:26:03 [MyInterceptor:70] - [GET] http://localhost:8080/session/home
+[INFO ] 24-10-16 12:26:03 [MyInterceptor:88] - - REFERER : time=395, url=http://localhost:8080/cookie/popup
+[INFO ] 24-10-16 12:26:03 [MyInterceptor:106] - - 실행시간 : 16 ms
+[INFO ] 24-10-16 12:26:05 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 12:26:05 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 12:26:05 [MyInterceptor:70] - [GET] http://localhost:8080/session/login
+[INFO ] 24-10-16 12:26:05 [MyInterceptor:88] - - REFERER : time=1830, url=http://localhost:8080/session/home
+[INFO ] 24-10-16 12:26:05 [MyInterceptor:106] - - 실행시간 : 19 ms
+[INFO ] 24-10-16 12:26:06 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 12:26:06 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 12:26:06 [MyInterceptor:70] - [GET] http://localhost:8080/session/home
+[INFO ] 24-10-16 12:26:06 [MyInterceptor:88] - - REFERER : time=498, url=http://localhost:8080/session/login
+[INFO ] 24-10-16 12:26:06 [MyInterceptor:106] - - 실행시간 : 16 ms
+[INFO ] 24-10-16 12:26:20 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 12:26:20 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 12:26:20 [MyInterceptor:70] - [POST] http://localhost:8080/cookie/save
+[INFO ] 24-10-16 12:26:20 [MyInterceptor:78] - [param] <-- cookie_name = name
+[INFO ] 24-10-16 12:26:20 [MyInterceptor:78] - [param] <-- cookie_time = 5
+[INFO ] 24-10-16 12:26:20 [MyInterceptor:78] - [param] <-- cookie_var = abcd
+[INFO ] 24-10-16 12:26:20 [MyInterceptor:88] - - REFERER : time=13905, url=http://localhost:8080/session/home
+[INFO ] 24-10-16 12:26:20 [MyInterceptor:106] - - 실행시간 : 31 ms
+[INFO ] 24-10-16 12:26:20 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 12:26:20 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 12:26:20 [MyInterceptor:70] - [GET] http://localhost:8080/cookie/home
+[INFO ] 24-10-16 12:26:20 [MyInterceptor:88] - - REFERER : time=10, url=http://localhost:8080/session/home
+[INFO ] 24-10-16 12:26:20 [MyInterceptor:106] - - 실행시간 : 16 ms
+[INFO ] 24-10-16 12:38:23 [CookieSessionApplication:50] - Starting CookieSessionApplication using Java 17.0.2 with PID 1364 (C:\Users\user\Desktop\HOME\08_SpringBoot\05_Cookie_session\build\classes\java\main started by user in C:\Users\user\Desktop\HOME\08_SpringBoot\05_Cookie_session)
+[DEBUG] 24-10-16 12:38:23 [CookieSessionApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-16 12:38:23 [CookieSessionApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-16 12:38:26 [CookieSessionApplication:56] - Started CookieSessionApplication in 2.689 seconds (process running for 3.401)
+[INFO ] 24-10-16 12:38:30 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 12:38:31 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 12:38:31 [MyInterceptor:70] - [GET] http://localhost:8080/
+[INFO ] 24-10-16 12:38:31 [MyInterceptor:106] - - 실행시간 : 230 ms
+[INFO ] 24-10-16 12:38:32 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 12:38:32 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 12:38:32 [MyInterceptor:70] - [GET] http://localhost:8080/cookie/home
+[INFO ] 24-10-16 12:38:32 [MyInterceptor:88] - - REFERER : time=1708, url=http://localhost:8080/
+[INFO ] 24-10-16 12:38:32 [MyInterceptor:106] - - 실행시간 : 81 ms
+[INFO ] 24-10-16 12:38:33 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 12:38:33 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 12:38:33 [MyInterceptor:70] - [GET] http://localhost:8080/cookie/popup
+[INFO ] 24-10-16 12:38:33 [MyInterceptor:88] - - REFERER : time=978, url=http://localhost:8080/cookie/home
+[INFO ] 24-10-16 12:38:33 [MyInterceptor:106] - - 실행시간 : 43 ms
+[INFO ] 24-10-16 12:38:34 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 12:38:34 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 12:38:34 [MyInterceptor:70] - [GET] http://localhost:8080/session/home
+[INFO ] 24-10-16 12:38:34 [MyInterceptor:88] - - REFERER : time=804, url=http://localhost:8080/cookie/popup
+[INFO ] 24-10-16 12:38:34 [MyInterceptor:106] - - 실행시간 : 31 ms
+[INFO ] 24-10-16 12:38:35 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 12:38:35 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 12:38:35 [MyInterceptor:70] - [GET] http://localhost:8080/session/login
+[INFO ] 24-10-16 12:38:35 [MyInterceptor:88] - - REFERER : time=785, url=http://localhost:8080/session/home
+[INFO ] 24-10-16 12:38:35 [MyInterceptor:106] - - 실행시간 : 26 ms
+[INFO ] 24-10-16 12:38:36 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 12:38:36 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 12:38:36 [MyInterceptor:70] - [GET] http://localhost:8080/session/home
+[INFO ] 24-10-16 12:38:36 [MyInterceptor:88] - - REFERER : time=814, url=http://localhost:8080/session/login
+[INFO ] 24-10-16 12:38:36 [MyInterceptor:106] - - 실행시간 : 20 ms
+[INFO ] 24-10-16 12:38:40 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 12:38:40 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 12:38:40 [MyInterceptor:70] - [POST] http://localhost:8080/cookie/save
+[INFO ] 24-10-16 12:38:40 [MyInterceptor:78] - [param] <-- cookie_name = name
+[INFO ] 24-10-16 12:38:40 [MyInterceptor:78] - [param] <-- cookie_time = 
+[INFO ] 24-10-16 12:38:40 [MyInterceptor:78] - [param] <-- cookie_var = abcd
+[INFO ] 24-10-16 12:38:40 [MyInterceptor:88] - - REFERER : time=3786, url=http://localhost:8080/session/home
+[INFO ] 24-10-16 12:38:40 [MyInterceptor:106] - - 실행시간 : 27 ms
+[INFO ] 24-10-16 12:38:40 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 12:38:40 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 12:38:40 [MyInterceptor:70] - [GET] http://localhost:8080/cookie/home
+[INFO ] 24-10-16 12:38:40 [MyInterceptor:88] - - REFERER : time=10, url=http://localhost:8080/session/home
+[INFO ] 24-10-16 12:38:40 [MyInterceptor:106] - - 실행시간 : 21 ms
+[INFO ] 24-10-16 12:38:42 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 12:38:42 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 12:38:42 [MyInterceptor:70] - [GET] http://localhost:8080/session/home
+[INFO ] 24-10-16 12:38:42 [MyInterceptor:88] - - REFERER : time=2318, url=http://localhost:8080/cookie/home
+[INFO ] 24-10-16 12:38:42 [MyInterceptor:106] - - 실행시간 : 18 ms
+[INFO ] 24-10-16 12:38:53 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 12:38:53 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 12:38:53 [MyInterceptor:70] - [POST] http://localhost:8080/cookie/save
+[INFO ] 24-10-16 12:38:53 [MyInterceptor:78] - [param] <-- cookie_name = age
+[INFO ] 24-10-16 12:38:53 [MyInterceptor:78] - [param] <-- cookie_time = 30
+[INFO ] 24-10-16 12:38:53 [MyInterceptor:78] - [param] <-- cookie_var = 123
+[INFO ] 24-10-16 12:38:53 [MyInterceptor:88] - - REFERER : time=11171, url=http://localhost:8080/session/home
+[INFO ] 24-10-16 12:38:53 [MyInterceptor:106] - - 실행시간 : 18 ms
+[INFO ] 24-10-16 12:38:53 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 12:38:53 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 12:38:53 [MyInterceptor:70] - [GET] http://localhost:8080/cookie/home
+[INFO ] 24-10-16 12:38:53 [MyInterceptor:88] - - REFERER : time=9, url=http://localhost:8080/session/home
+[INFO ] 24-10-16 12:38:53 [MyInterceptor:106] - - 실행시간 : 18 ms
+[INFO ] 24-10-16 12:38:56 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 12:38:56 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 12:38:56 [MyInterceptor:70] - [GET] http://localhost:8080/cookie/home
+[INFO ] 24-10-16 12:38:56 [MyInterceptor:88] - - REFERER : time=3102, url=http://localhost:8080/cookie/home
+[INFO ] 24-10-16 12:38:56 [MyInterceptor:106] - - 실행시간 : 17 ms
+[INFO ] 24-10-16 12:38:57 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 12:38:57 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 12:38:57 [MyInterceptor:70] - [GET] http://localhost:8080/cookie/popup
+[INFO ] 24-10-16 12:38:57 [MyInterceptor:88] - - REFERER : time=511, url=http://localhost:8080/cookie/home
+[INFO ] 24-10-16 12:38:57 [MyInterceptor:106] - - 실행시간 : 18 ms
+[INFO ] 24-10-16 12:38:58 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 12:38:58 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 12:38:58 [MyInterceptor:70] - [GET] http://localhost:8080/session/login
+[INFO ] 24-10-16 12:38:58 [MyInterceptor:88] - - REFERER : time=550, url=http://localhost:8080/cookie/popup
+[INFO ] 24-10-16 12:38:58 [MyInterceptor:106] - - 실행시간 : 18 ms
+[INFO ] 24-10-16 12:38:58 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 12:38:58 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 12:38:58 [MyInterceptor:70] - [GET] http://localhost:8080/cookie/home
+[INFO ] 24-10-16 12:38:58 [MyInterceptor:88] - - REFERER : time=682, url=http://localhost:8080/session/login
+[INFO ] 24-10-16 12:38:58 [MyInterceptor:106] - - 실행시간 : 19 ms
+[INFO ] 24-10-16 12:38:59 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 12:38:59 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 12:38:59 [MyInterceptor:70] - [GET] http://localhost:8080/session/home
+[INFO ] 24-10-16 12:38:59 [MyInterceptor:88] - - REFERER : time=865, url=http://localhost:8080/cookie/home
+[INFO ] 24-10-16 12:38:59 [MyInterceptor:106] - - 실행시간 : 15 ms
+[INFO ] 24-10-16 12:40:18 [CookieSessionApplication:50] - Starting CookieSessionApplication using Java 17.0.2 with PID 13240 (C:\Users\user\Desktop\HOME\08_SpringBoot\05_Cookie_session\build\classes\java\main started by user in C:\Users\user\Desktop\HOME\08_SpringBoot\05_Cookie_session)
+[DEBUG] 24-10-16 12:40:18 [CookieSessionApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-16 12:40:18 [CookieSessionApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-16 12:40:21 [CookieSessionApplication:56] - Started CookieSessionApplication in 2.782 seconds (process running for 3.423)
+[INFO ] 24-10-16 12:40:22 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 12:40:23 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 12:40:23 [MyInterceptor:70] - [GET] http://localhost:8080/
+[INFO ] 24-10-16 12:40:23 [MyInterceptor:106] - - 실행시간 : 176 ms
+[INFO ] 24-10-16 12:40:25 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 12:40:25 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 12:40:25 [MyInterceptor:70] - [GET] http://localhost:8080/session/home
+[INFO ] 24-10-16 12:40:25 [MyInterceptor:88] - - REFERER : time=2667, url=http://localhost:8080/
+[INFO ] 24-10-16 12:40:25 [MyInterceptor:106] - - 실행시간 : 69 ms
+[INFO ] 24-10-16 12:40:31 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 12:40:31 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 12:40:31 [MyInterceptor:70] - [POST] http://localhost:8080/cookie/save
+[INFO ] 24-10-16 12:40:31 [MyInterceptor:78] - [param] <-- cookie_name = name
+[INFO ] 24-10-16 12:40:31 [MyInterceptor:78] - [param] <-- cookie_time = 30
+[INFO ] 24-10-16 12:40:31 [MyInterceptor:78] - [param] <-- cookie_var = abcd
+[INFO ] 24-10-16 12:40:31 [MyInterceptor:88] - - REFERER : time=5535, url=http://localhost:8080/session/home
+[INFO ] 24-10-16 12:40:31 [MyInterceptor:106] - - 실행시간 : 71 ms
+[INFO ] 24-10-16 12:40:31 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 12:40:31 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 12:40:31 [MyInterceptor:70] - [GET] http://localhost:8080/cookie/home
+[INFO ] 24-10-16 12:40:31 [MyInterceptor:88] - - REFERER : time=12, url=http://localhost:8080/session/home
+[INFO ] 24-10-16 12:40:31 [MyInterceptor:106] - - 실행시간 : 51 ms
+[INFO ] 24-10-16 12:40:33 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 12:40:33 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 12:40:33 [MyInterceptor:70] - [GET] http://localhost:8080/session/home
+[INFO ] 24-10-16 12:40:33 [MyInterceptor:88] - - REFERER : time=1860, url=http://localhost:8080/cookie/home
+[INFO ] 24-10-16 12:40:33 [MyInterceptor:106] - - 실행시간 : 24 ms
+[INFO ] 24-10-16 12:40:35 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 12:40:35 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 12:40:35 [MyInterceptor:70] - [POST] http://localhost:8080/cookie/save
+[INFO ] 24-10-16 12:40:35 [MyInterceptor:78] - [param] <-- cookie_name = name
+[INFO ] 24-10-16 12:40:35 [MyInterceptor:78] - [param] <-- cookie_time = 0
+[INFO ] 24-10-16 12:40:35 [MyInterceptor:78] - [param] <-- cookie_var = 
+[INFO ] 24-10-16 12:40:35 [MyInterceptor:88] - - REFERER : time=2249, url=http://localhost:8080/session/home
+[INFO ] 24-10-16 12:40:35 [MyInterceptor:106] - - 실행시간 : 23 ms
+[INFO ] 24-10-16 12:40:35 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 12:40:35 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 12:40:35 [MyInterceptor:70] - [GET] http://localhost:8080/cookie/home
+[INFO ] 24-10-16 12:40:35 [MyInterceptor:88] - - REFERER : time=6, url=http://localhost:8080/session/home
+[INFO ] 24-10-16 12:40:35 [MyInterceptor:106] - - 실행시간 : 23 ms
+[INFO ] 24-10-16 12:45:38 [CookieSessionApplication:50] - Starting CookieSessionApplication using Java 17.0.2 with PID 24448 (C:\Users\user\Desktop\HOME\08_SpringBoot\05_Cookie_session\build\classes\java\main started by user in C:\Users\user\Desktop\HOME\08_SpringBoot\05_Cookie_session)
+[DEBUG] 24-10-16 12:45:38 [CookieSessionApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-16 12:45:38 [CookieSessionApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-16 12:45:40 [CookieSessionApplication:56] - Started CookieSessionApplication in 2.677 seconds (process running for 3.391)
+[INFO ] 24-10-16 12:45:42 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 12:45:42 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 12:45:42 [MyInterceptor:70] - [GET] http://localhost:8080/
+[INFO ] 24-10-16 12:45:42 [MyInterceptor:106] - - 실행시간 : 179 ms
+[INFO ] 24-10-16 12:45:44 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 12:45:44 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 12:45:44 [MyInterceptor:70] - [GET] http://localhost:8080/cookie/home
+[INFO ] 24-10-16 12:45:44 [MyInterceptor:88] - - REFERER : time=1709, url=http://localhost:8080/
+[INFO ] 24-10-16 12:45:44 [MyInterceptor:106] - - 실행시간 : 82 ms
+[INFO ] 24-10-16 12:45:45 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 12:45:45 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 12:45:45 [MyInterceptor:70] - [GET] http://localhost:8080/cookie/popup
+[INFO ] 24-10-16 12:45:45 [MyInterceptor:88] - - REFERER : time=743, url=http://localhost:8080/cookie/home
+[INFO ] 24-10-16 12:45:45 [MyInterceptor:106] - - 실행시간 : 32 ms
+[INFO ] 24-10-16 12:45:45 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 12:45:45 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 12:45:45 [MyInterceptor:70] - [GET] http://localhost:8080/session/home
+[INFO ] 24-10-16 12:45:45 [MyInterceptor:88] - - REFERER : time=500, url=http://localhost:8080/cookie/popup
+[INFO ] 24-10-16 12:45:45 [MyInterceptor:106] - - 실행시간 : 34 ms
+[INFO ] 24-10-16 12:45:55 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 12:45:55 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 12:45:55 [MyInterceptor:70] - [POST] http://localhost:8080/cookie/save
+[INFO ] 24-10-16 12:45:55 [MyInterceptor:78] - [param] <-- cookie_name = name
+[INFO ] 24-10-16 12:45:55 [MyInterceptor:78] - [param] <-- cookie_time = 30
+[INFO ] 24-10-16 12:45:55 [MyInterceptor:78] - [param] <-- cookie_var = abcd
+[INFO ] 24-10-16 12:45:55 [MyInterceptor:88] - - REFERER : time=10085, url=http://localhost:8080/session/home
+[INFO ] 24-10-16 12:45:55 [MyInterceptor:106] - - 실행시간 : 42 ms
+[INFO ] 24-10-16 12:45:55 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 12:45:55 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 12:45:55 [MyInterceptor:70] - [GET] http://localhost:8080/cookie/home
+[INFO ] 24-10-16 12:45:55 [MyInterceptor:88] - - REFERER : time=14, url=http://localhost:8080/session/home
+[INFO ] 24-10-16 12:45:55 [MyInterceptor:106] - - 실행시간 : 32 ms
+[INFO ] 24-10-16 12:45:57 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 12:45:57 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 12:45:57 [MyInterceptor:70] - [GET] http://localhost:8080/session/home
+[INFO ] 24-10-16 12:45:57 [MyInterceptor:88] - - REFERER : time=1364, url=http://localhost:8080/cookie/home
+[INFO ] 24-10-16 12:45:57 [MyInterceptor:106] - - 실행시간 : 20 ms
+[INFO ] 24-10-16 12:45:58 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 12:45:58 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 12:45:58 [MyInterceptor:70] - [POST] http://localhost:8080/cookie/save
+[INFO ] 24-10-16 12:45:58 [MyInterceptor:78] - [param] <-- cookie_name = name
+[INFO ] 24-10-16 12:45:58 [MyInterceptor:78] - [param] <-- cookie_time = 
+[INFO ] 24-10-16 12:45:58 [MyInterceptor:78] - [param] <-- cookie_var = 
+[INFO ] 24-10-16 12:45:58 [MyInterceptor:88] - - REFERER : time=1062, url=http://localhost:8080/session/home
+[INFO ] 24-10-16 12:45:58 [MyInterceptor:106] - - 실행시간 : 25 ms
+[INFO ] 24-10-16 12:45:58 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 12:45:58 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 12:45:58 [MyInterceptor:70] - [GET] http://localhost:8080/cookie/home
+[INFO ] 24-10-16 12:45:58 [MyInterceptor:88] - - REFERER : time=7, url=http://localhost:8080/session/home
+[INFO ] 24-10-16 12:45:58 [MyInterceptor:106] - - 실행시간 : 19 ms
+[INFO ] 24-10-16 12:45:59 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 12:45:59 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 12:45:59 [MyInterceptor:70] - [GET] http://localhost:8080/session/login
+[INFO ] 24-10-16 12:45:59 [MyInterceptor:88] - - REFERER : time=1103, url=http://localhost:8080/cookie/home
+[INFO ] 24-10-16 12:45:59 [MyInterceptor:106] - - 실행시간 : 22 ms
+[INFO ] 24-10-16 12:46:00 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 12:46:00 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 12:46:00 [MyInterceptor:70] - [GET] http://localhost:8080/session/home
+[INFO ] 24-10-16 12:46:00 [MyInterceptor:88] - - REFERER : time=535, url=http://localhost:8080/session/login
+[INFO ] 24-10-16 12:46:00 [MyInterceptor:106] - - 실행시간 : 18 ms
+[INFO ] 24-10-16 12:46:00 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 12:46:00 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 12:46:00 [MyInterceptor:70] - [GET] http://localhost:8080/cookie/popup
+[INFO ] 24-10-16 12:46:00 [MyInterceptor:88] - - REFERER : time=784, url=http://localhost:8080/session/home
+[INFO ] 24-10-16 12:46:00 [MyInterceptor:106] - - 실행시간 : 17 ms
+[INFO ] 24-10-16 12:46:01 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 12:46:01 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 12:46:01 [MyInterceptor:70] - [GET] http://localhost:8080/cookie/home
+[INFO ] 24-10-16 12:46:01 [MyInterceptor:88] - - REFERER : time=403, url=http://localhost:8080/cookie/popup
+[INFO ] 24-10-16 12:46:01 [MyInterceptor:106] - - 실행시간 : 17 ms
+[INFO ] 24-10-16 12:46:02 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 12:46:02 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 12:46:02 [MyInterceptor:70] - [GET] http://localhost:8080/cookie/popup
+[INFO ] 24-10-16 12:46:02 [MyInterceptor:88] - - REFERER : time=725, url=http://localhost:8080/cookie/home
+[INFO ] 24-10-16 12:46:02 [MyInterceptor:106] - - 실행시간 : 15 ms
+[INFO ] 24-10-16 12:46:02 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 12:46:02 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 12:46:02 [MyInterceptor:70] - [GET] http://localhost:8080/session/home
+[INFO ] 24-10-16 12:46:02 [MyInterceptor:88] - - REFERER : time=376, url=http://localhost:8080/cookie/popup
+[INFO ] 24-10-16 12:46:02 [MyInterceptor:106] - - 실행시간 : 18 ms
+[INFO ] 24-10-16 12:46:17 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 12:46:17 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 12:46:17 [MyInterceptor:70] - [POST] http://localhost:8080/cookie/save
+[INFO ] 24-10-16 12:46:17 [MyInterceptor:78] - [param] <-- cookie_name = name
+[INFO ] 24-10-16 12:46:17 [MyInterceptor:78] - [param] <-- cookie_time = 
+[INFO ] 24-10-16 12:46:17 [MyInterceptor:78] - [param] <-- cookie_var = abcd
+[INFO ] 24-10-16 12:46:17 [MyInterceptor:88] - - REFERER : time=14735, url=http://localhost:8080/session/home
+[INFO ] 24-10-16 12:46:17 [MyInterceptor:106] - - 실행시간 : 17 ms
+[INFO ] 24-10-16 12:46:17 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 12:46:17 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 12:46:17 [MyInterceptor:70] - [GET] http://localhost:8080/cookie/home
+[INFO ] 24-10-16 12:46:17 [MyInterceptor:88] - - REFERER : time=7, url=http://localhost:8080/session/home
+[INFO ] 24-10-16 12:46:17 [MyInterceptor:106] - - 실행시간 : 22 ms
+[INFO ] 24-10-16 12:46:31 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 12:46:31 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 12:46:31 [MyInterceptor:70] - [GET] http://localhost:8080/session/home
+[INFO ] 24-10-16 12:46:31 [MyInterceptor:88] - - REFERER : time=14194, url=http://localhost:8080/cookie/home
+[INFO ] 24-10-16 12:46:31 [MyInterceptor:106] - - 실행시간 : 15 ms
+[INFO ] 24-10-16 12:46:34 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 12:46:34 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 12:46:34 [MyInterceptor:70] - [POST] http://localhost:8080/cookie/save
+[INFO ] 24-10-16 12:46:34 [MyInterceptor:78] - [param] <-- cookie_name = name
+[INFO ] 24-10-16 12:46:34 [MyInterceptor:78] - [param] <-- cookie_time = 10
+[INFO ] 24-10-16 12:46:34 [MyInterceptor:78] - [param] <-- cookie_var = abcd
+[INFO ] 24-10-16 12:46:34 [MyInterceptor:88] - - REFERER : time=3343, url=http://localhost:8080/session/home
+[INFO ] 24-10-16 12:46:34 [MyInterceptor:106] - - 실행시간 : 22 ms
+[INFO ] 24-10-16 12:46:34 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 12:46:34 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 12:46:34 [MyInterceptor:70] - [GET] http://localhost:8080/cookie/home
+[INFO ] 24-10-16 12:46:34 [MyInterceptor:88] - - REFERER : time=9, url=http://localhost:8080/session/home
+[INFO ] 24-10-16 12:46:34 [MyInterceptor:106] - - 실행시간 : 16 ms
+[INFO ] 24-10-16 12:46:36 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 12:46:36 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 12:46:36 [MyInterceptor:70] - [GET] http://localhost:8080/cookie/home
+[INFO ] 24-10-16 12:46:36 [MyInterceptor:88] - - REFERER : time=2084, url=http://localhost:8080/cookie/home
+[INFO ] 24-10-16 12:46:36 [MyInterceptor:106] - - 실행시간 : 18 ms
+[INFO ] 24-10-16 12:46:46 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 12:46:46 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 12:46:46 [MyInterceptor:70] - [GET] http://localhost:8080/session/home
+[INFO ] 24-10-16 12:46:46 [MyInterceptor:88] - - REFERER : time=9517, url=http://localhost:8080/cookie/home
+[INFO ] 24-10-16 12:46:46 [MyInterceptor:106] - - 실행시간 : 17 ms
+[INFO ] 24-10-16 12:46:49 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 12:46:49 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 12:46:49 [MyInterceptor:70] - [GET] http://localhost:8080/cookie/home
+[INFO ] 24-10-16 12:46:49 [MyInterceptor:88] - - REFERER : time=3214, url=http://localhost:8080/session/home
+[INFO ] 24-10-16 12:46:49 [MyInterceptor:106] - - 실행시간 : 18 ms
+[INFO ] 24-10-16 12:48:53 [CookieSessionApplication:50] - Starting CookieSessionApplication using Java 17.0.2 with PID 5584 (C:\Users\user\Desktop\HOME\08_SpringBoot\05_Cookie_session\build\classes\java\main started by user in C:\Users\user\Desktop\HOME\08_SpringBoot\05_Cookie_session)
+[DEBUG] 24-10-16 12:48:53 [CookieSessionApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-16 12:48:53 [CookieSessionApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-16 12:48:55 [CookieSessionApplication:56] - Started CookieSessionApplication in 2.537 seconds (process running for 3.305)
+[INFO ] 24-10-16 12:48:58 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 12:48:58 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 12:48:58 [MyInterceptor:70] - [GET] http://localhost:8080/
+[INFO ] 24-10-16 12:48:58 [MyInterceptor:106] - - 실행시간 : 221 ms
+[INFO ] 24-10-16 12:49:00 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 12:49:00 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 12:49:00 [MyInterceptor:70] - [GET] http://localhost:8080/session/home
+[INFO ] 24-10-16 12:49:00 [MyInterceptor:88] - - REFERER : time=1646, url=http://localhost:8080/
+[INFO ] 24-10-16 12:49:00 [MyInterceptor:106] - - 실행시간 : 62 ms
+[INFO ] 24-10-16 12:49:00 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 12:49:00 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 12:49:00 [MyInterceptor:70] - [GET] http://localhost:8080/cookie/home
+[INFO ] 24-10-16 12:49:00 [MyInterceptor:88] - - REFERER : time=734, url=http://localhost:8080/session/home
+[INFO ] 24-10-16 12:49:00 [MyInterceptor:106] - - 실행시간 : 63 ms
+[INFO ] 24-10-16 12:49:06 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 12:49:06 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 12:49:06 [MyInterceptor:70] - [POST] http://localhost:8080/cookie/save
+[INFO ] 24-10-16 12:49:06 [MyInterceptor:78] - [param] <-- cookie_name = age
+[INFO ] 24-10-16 12:49:06 [MyInterceptor:78] - [param] <-- cookie_time = 10
+[INFO ] 24-10-16 12:49:06 [MyInterceptor:78] - [param] <-- cookie_var = 
+[INFO ] 24-10-16 12:49:06 [MyInterceptor:88] - - REFERER : time=5841, url=http://localhost:8080/cookie/home
+[INFO ] 24-10-16 12:49:06 [MyInterceptor:106] - - 실행시간 : 52 ms
+[INFO ] 24-10-16 12:49:06 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 12:49:06 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 12:49:06 [MyInterceptor:70] - [GET] http://localhost:8080/cookie/home
+[INFO ] 24-10-16 12:49:06 [MyInterceptor:88] - - REFERER : time=8, url=http://localhost:8080/cookie/home
+[INFO ] 24-10-16 12:49:06 [MyInterceptor:106] - - 실행시간 : 35 ms
+[INFO ] 24-10-16 12:49:16 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 12:49:16 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 12:49:16 [MyInterceptor:70] - [POST] http://localhost:8080/cookie/save
+[INFO ] 24-10-16 12:49:16 [MyInterceptor:78] - [param] <-- cookie_name = name
+[INFO ] 24-10-16 12:49:16 [MyInterceptor:78] - [param] <-- cookie_time = 30
+[INFO ] 24-10-16 12:49:16 [MyInterceptor:78] - [param] <-- cookie_var = abcd
+[INFO ] 24-10-16 12:49:16 [MyInterceptor:88] - - REFERER : time=9835, url=http://localhost:8080/cookie/home
+[INFO ] 24-10-16 12:49:16 [MyInterceptor:106] - - 실행시간 : 31 ms
+[INFO ] 24-10-16 12:49:16 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 12:49:16 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 12:49:16 [MyInterceptor:70] - [GET] http://localhost:8080/cookie/home
+[INFO ] 24-10-16 12:49:16 [MyInterceptor:88] - - REFERER : time=5, url=http://localhost:8080/cookie/home
+[INFO ] 24-10-16 12:49:16 [MyInterceptor:106] - - 실행시간 : 24 ms
+[INFO ] 24-10-16 12:49:30 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 12:49:30 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 12:49:30 [MyInterceptor:70] - [POST] http://localhost:8080/cookie/save
+[INFO ] 24-10-16 12:49:30 [MyInterceptor:78] - [param] <-- cookie_name = age
+[INFO ] 24-10-16 12:49:30 [MyInterceptor:78] - [param] <-- cookie_time = 30
+[INFO ] 24-10-16 12:49:30 [MyInterceptor:78] - [param] <-- cookie_var = 123
+[INFO ] 24-10-16 12:49:30 [MyInterceptor:88] - - REFERER : time=13238, url=http://localhost:8080/cookie/home
+[INFO ] 24-10-16 12:49:30 [MyInterceptor:106] - - 실행시간 : 26 ms
+[INFO ] 24-10-16 12:49:30 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 12:49:30 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 12:49:30 [MyInterceptor:70] - [GET] http://localhost:8080/cookie/home
+[INFO ] 24-10-16 12:49:30 [MyInterceptor:88] - - REFERER : time=5, url=http://localhost:8080/cookie/home
+[INFO ] 24-10-16 12:49:30 [MyInterceptor:106] - - 실행시간 : 21 ms
+[INFO ] 24-10-16 12:49:39 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 12:49:39 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 12:49:39 [MyInterceptor:70] - [POST] http://localhost:8080/cookie/save
+[INFO ] 24-10-16 12:49:39 [MyInterceptor:78] - [param] <-- cookie_name = age
+[INFO ] 24-10-16 12:49:39 [MyInterceptor:78] - [param] <-- cookie_time = 30
+[INFO ] 24-10-16 12:49:39 [MyInterceptor:78] - [param] <-- cookie_var = 
+[INFO ] 24-10-16 12:49:39 [MyInterceptor:88] - - REFERER : time=9083, url=http://localhost:8080/cookie/home
+[INFO ] 24-10-16 12:49:39 [MyInterceptor:106] - - 실행시간 : 20 ms
+[INFO ] 24-10-16 12:49:39 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 12:49:39 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 12:49:39 [MyInterceptor:70] - [GET] http://localhost:8080/cookie/home
+[INFO ] 24-10-16 12:49:39 [MyInterceptor:88] - - REFERER : time=8, url=http://localhost:8080/cookie/home
+[INFO ] 24-10-16 12:49:39 [MyInterceptor:106] - - 실행시간 : 17 ms
+[INFO ] 24-10-16 12:50:57 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 12:50:57 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 12:50:57 [MyInterceptor:70] - [POST] http://localhost:8080/cookie/save
+[INFO ] 24-10-16 12:50:57 [MyInterceptor:78] - [param] <-- cookie_name = name
+[INFO ] 24-10-16 12:50:57 [MyInterceptor:78] - [param] <-- cookie_time = 30
+[INFO ] 24-10-16 12:50:57 [MyInterceptor:78] - [param] <-- cookie_var = 
+[INFO ] 24-10-16 12:50:57 [MyInterceptor:88] - - REFERER : time=78602, url=http://localhost:8080/cookie/home
+[INFO ] 24-10-16 12:50:57 [MyInterceptor:106] - - 실행시간 : 22 ms
+[INFO ] 24-10-16 12:50:57 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 12:50:57 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 12:50:57 [MyInterceptor:70] - [GET] http://localhost:8080/cookie/home
+[INFO ] 24-10-16 12:50:57 [MyInterceptor:88] - - REFERER : time=8, url=http://localhost:8080/cookie/home
+[INFO ] 24-10-16 12:50:57 [MyInterceptor:106] - - 실행시간 : 22 ms
+[INFO ] 24-10-16 12:51:11 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 12:51:11 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 12:51:11 [MyInterceptor:70] - [POST] http://localhost:8080/cookie/save
+[INFO ] 24-10-16 12:51:11 [MyInterceptor:78] - [param] <-- cookie_name = name
+[INFO ] 24-10-16 12:51:11 [MyInterceptor:78] - [param] <-- cookie_time = 30
+[INFO ] 24-10-16 12:51:11 [MyInterceptor:78] - [param] <-- cookie_var = abcd
+[INFO ] 24-10-16 12:51:11 [MyInterceptor:88] - - REFERER : time=13479, url=http://localhost:8080/cookie/home
+[INFO ] 24-10-16 12:51:11 [MyInterceptor:106] - - 실행시간 : 24 ms
+[INFO ] 24-10-16 12:51:11 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 12:51:11 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 12:51:11 [MyInterceptor:70] - [GET] http://localhost:8080/cookie/home
+[INFO ] 24-10-16 12:51:11 [MyInterceptor:88] - - REFERER : time=6, url=http://localhost:8080/cookie/home
+[INFO ] 24-10-16 12:51:11 [MyInterceptor:106] - - 실행시간 : 24 ms
+[INFO ] 24-10-16 12:51:17 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 12:51:17 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 12:51:17 [MyInterceptor:70] - [POST] http://localhost:8080/cookie/save
+[INFO ] 24-10-16 12:51:17 [MyInterceptor:78] - [param] <-- cookie_name = age
+[INFO ] 24-10-16 12:51:17 [MyInterceptor:78] - [param] <-- cookie_time = 30
+[INFO ] 24-10-16 12:51:17 [MyInterceptor:78] - [param] <-- cookie_var = abcd
+[INFO ] 24-10-16 12:51:17 [MyInterceptor:88] - - REFERER : time=6389, url=http://localhost:8080/cookie/home
+[INFO ] 24-10-16 12:51:17 [MyInterceptor:106] - - 실행시간 : 20 ms
+[INFO ] 24-10-16 12:51:17 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 12:51:17 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 12:51:17 [MyInterceptor:70] - [GET] http://localhost:8080/cookie/home
+[INFO ] 24-10-16 12:51:17 [MyInterceptor:88] - - REFERER : time=4, url=http://localhost:8080/cookie/home
+[WARN ] 24-10-16 12:51:17 [DefaultHandlerExceptionResolver:247] - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; For input string: "abcd"]
+[INFO ] 24-10-16 15:43:55 [CookieSessionApplication:50] - Starting CookieSessionApplication using Java 17.0.2 with PID 18120 (C:\Users\user\Desktop\HOME\08_SpringBoot\05_Cookie_session\build\classes\java\main started by user in C:\Users\user\Desktop\HOME\08_SpringBoot\05_Cookie_session)
+[DEBUG] 24-10-16 15:43:55 [CookieSessionApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-16 15:43:55 [CookieSessionApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-16 15:43:57 [CookieSessionApplication:56] - Started CookieSessionApplication in 2.508 seconds (process running for 3.166)
+[INFO ] 24-10-16 15:44:01 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 15:44:01 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 15:44:01 [MyInterceptor:70] - [GET] http://localhost:8080/
+[INFO ] 24-10-16 15:44:01 [MyInterceptor:106] - - 실행시간 : 193 ms
+[INFO ] 24-10-16 15:44:05 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 15:44:05 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 15:44:05 [MyInterceptor:70] - [GET] http://localhost:8080/cookie/popup
+[INFO ] 24-10-16 15:44:05 [MyInterceptor:88] - - REFERER : time=3511, url=http://localhost:8080/
+[INFO ] 24-10-16 15:44:05 [MyInterceptor:106] - - 실행시간 : 67 ms
+[INFO ] 24-10-16 15:44:07 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 15:44:08 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 15:44:08 [MyInterceptor:70] - [POST] http://localhost:8080/cookie/popup_close
+[INFO ] 24-10-16 15:44:08 [MyInterceptor:88] - - REFERER : time=2807, url=http://localhost:8080/cookie/popup
+[INFO ] 24-10-16 15:44:08 [MyInterceptor:106] - - 실행시간 : 44 ms
+[INFO ] 24-10-16 15:44:08 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 15:44:08 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 15:44:08 [MyInterceptor:70] - [GET] http://localhost:8080/cookie/popup
+[INFO ] 24-10-16 15:44:08 [MyInterceptor:88] - - REFERER : time=14, url=http://localhost:8080/cookie/popup
+[INFO ] 24-10-16 15:44:08 [MyInterceptor:106] - - 실행시간 : 29 ms
+[INFO ] 24-10-16 15:44:10 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 15:44:10 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 15:44:10 [MyInterceptor:70] - [POST] http://localhost:8080/cookie/popup_close
+[INFO ] 24-10-16 15:44:10 [MyInterceptor:88] - - REFERER : time=2065, url=http://localhost:8080/cookie/popup
+[INFO ] 24-10-16 15:44:10 [MyInterceptor:106] - - 실행시간 : 38 ms
+[INFO ] 24-10-16 15:44:10 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 15:44:10 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 15:44:10 [MyInterceptor:70] - [GET] http://localhost:8080/cookie/popup
+[INFO ] 24-10-16 15:44:10 [MyInterceptor:88] - - REFERER : time=5, url=http://localhost:8080/cookie/popup
+[INFO ] 24-10-16 15:44:10 [MyInterceptor:106] - - 실행시간 : 23 ms
+[INFO ] 24-10-16 15:44:10 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 15:44:10 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 15:44:10 [MyInterceptor:70] - [POST] http://localhost:8080/cookie/popup_close
+[INFO ] 24-10-16 15:44:10 [MyInterceptor:88] - - REFERER : time=240, url=http://localhost:8080/cookie/popup
+[INFO ] 24-10-16 15:44:10 [MyInterceptor:106] - - 실행시간 : 26 ms
+[INFO ] 24-10-16 15:44:10 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 15:44:10 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 15:44:10 [MyInterceptor:70] - [GET] http://localhost:8080/cookie/popup
+[INFO ] 24-10-16 15:44:10 [MyInterceptor:88] - - REFERER : time=5, url=http://localhost:8080/cookie/popup
+[INFO ] 24-10-16 15:44:10 [MyInterceptor:106] - - 실행시간 : 23 ms
+[INFO ] 24-10-16 15:44:10 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 15:44:10 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 15:44:10 [MyInterceptor:70] - [POST] http://localhost:8080/cookie/popup_close
+[INFO ] 24-10-16 15:44:10 [MyInterceptor:88] - - REFERER : time=141, url=http://localhost:8080/cookie/popup
+[INFO ] 24-10-16 15:44:10 [MyInterceptor:106] - - 실행시간 : 22 ms
+[INFO ] 24-10-16 15:44:10 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 15:44:10 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 15:44:10 [MyInterceptor:70] - [GET] http://localhost:8080/cookie/popup
+[INFO ] 24-10-16 15:44:10 [MyInterceptor:88] - - REFERER : time=5, url=http://localhost:8080/cookie/popup
+[INFO ] 24-10-16 15:44:10 [MyInterceptor:106] - - 실행시간 : 22 ms
+[INFO ] 24-10-16 15:44:10 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 15:44:10 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 15:44:10 [MyInterceptor:70] - [POST] http://localhost:8080/cookie/popup_close
+[INFO ] 24-10-16 15:44:10 [MyInterceptor:88] - - REFERER : time=156, url=http://localhost:8080/cookie/popup
+[INFO ] 24-10-16 15:44:10 [MyInterceptor:106] - - 실행시간 : 17 ms
+[INFO ] 24-10-16 15:44:10 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 15:44:10 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 15:44:10 [MyInterceptor:70] - [GET] http://localhost:8080/cookie/popup
+[INFO ] 24-10-16 15:44:10 [MyInterceptor:88] - - REFERER : time=8, url=http://localhost:8080/cookie/popup
+[INFO ] 24-10-16 15:44:10 [MyInterceptor:106] - - 실행시간 : 16 ms
+[INFO ] 24-10-16 15:44:12 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 15:44:12 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 15:44:12 [MyInterceptor:70] - [POST] http://localhost:8080/cookie/popup_close
+[INFO ] 24-10-16 15:44:12 [MyInterceptor:88] - - REFERER : time=1144, url=http://localhost:8080/cookie/popup
+[INFO ] 24-10-16 15:44:12 [MyInterceptor:106] - - 실행시간 : 19 ms
+[INFO ] 24-10-16 15:44:12 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 15:44:12 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 15:44:12 [MyInterceptor:70] - [GET] http://localhost:8080/cookie/popup
+[INFO ] 24-10-16 15:44:12 [MyInterceptor:88] - - REFERER : time=6, url=http://localhost:8080/cookie/popup
+[INFO ] 24-10-16 15:44:12 [MyInterceptor:106] - - 실행시간 : 16 ms
+[INFO ] 24-10-16 15:44:13 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 15:44:13 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 15:44:13 [MyInterceptor:70] - [POST] http://localhost:8080/cookie/popup_close
+[INFO ] 24-10-16 15:44:13 [MyInterceptor:88] - - REFERER : time=933, url=http://localhost:8080/cookie/popup
+[INFO ] 24-10-16 15:44:13 [MyInterceptor:106] - - 실행시간 : 16 ms
+[INFO ] 24-10-16 15:44:13 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 15:44:13 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 15:44:13 [MyInterceptor:70] - [GET] http://localhost:8080/cookie/popup
+[INFO ] 24-10-16 15:44:13 [MyInterceptor:88] - - REFERER : time=6, url=http://localhost:8080/cookie/popup
+[INFO ] 24-10-16 15:44:13 [MyInterceptor:106] - - 실행시간 : 18 ms
+[INFO ] 24-10-16 15:47:31 [CookieSessionApplication:50] - Starting CookieSessionApplication using Java 17.0.2 with PID 25396 (C:\Users\user\Desktop\HOME\08_SpringBoot\05_Cookie_session\build\classes\java\main started by user in C:\Users\user\Desktop\HOME\08_SpringBoot\05_Cookie_session)
+[DEBUG] 24-10-16 15:47:31 [CookieSessionApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-16 15:47:31 [CookieSessionApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-16 15:47:33 [CookieSessionApplication:56] - Started CookieSessionApplication in 2.5 seconds (process running for 3.11)
+[INFO ] 24-10-16 15:47:38 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 15:47:38 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 15:47:38 [MyInterceptor:70] - [GET] http://localhost:8080/
+[INFO ] 24-10-16 15:47:38 [MyInterceptor:106] - - 실행시간 : 259 ms
+[INFO ] 24-10-16 15:47:39 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 15:47:39 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 15:47:39 [MyInterceptor:70] - [GET] http://localhost:8080/cookie/popup
+[INFO ] 24-10-16 15:47:39 [MyInterceptor:88] - - REFERER : time=1219, url=http://localhost:8080/
+[INFO ] 24-10-16 15:47:39 [MyInterceptor:106] - - 실행시간 : 93 ms
+[INFO ] 24-10-16 15:47:47 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 15:47:47 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 15:47:47 [MyInterceptor:70] - [POST] http://localhost:8080/cookie/popup_close
+[INFO ] 24-10-16 15:47:47 [MyInterceptor:88] - - REFERER : time=7580, url=http://localhost:8080/cookie/popup
+[INFO ] 24-10-16 15:47:47 [MyInterceptor:106] - - 실행시간 : 49 ms
+[INFO ] 24-10-16 15:47:47 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 15:47:47 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 15:47:47 [MyInterceptor:70] - [GET] http://localhost:8080/cookie/popup
+[INFO ] 24-10-16 15:47:47 [MyInterceptor:88] - - REFERER : time=12, url=http://localhost:8080/cookie/popup
+[INFO ] 24-10-16 15:47:47 [MyInterceptor:106] - - 실행시간 : 43 ms
+[INFO ] 24-10-16 15:47:47 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 15:47:47 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 15:47:47 [MyInterceptor:70] - [POST] http://localhost:8080/cookie/popup_close
+[INFO ] 24-10-16 15:47:47 [MyInterceptor:88] - - REFERER : time=208, url=http://localhost:8080/cookie/popup
+[INFO ] 24-10-16 15:47:47 [MyInterceptor:106] - - 실행시간 : 38 ms
+[INFO ] 24-10-16 15:47:47 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 15:47:47 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 15:47:47 [MyInterceptor:70] - [GET] http://localhost:8080/cookie/popup
+[INFO ] 24-10-16 15:47:47 [MyInterceptor:88] - - REFERER : time=5, url=http://localhost:8080/cookie/popup
+[INFO ] 24-10-16 15:47:47 [MyInterceptor:106] - - 실행시간 : 24 ms
+[INFO ] 24-10-16 15:49:14 [CookieSessionApplication:50] - Starting CookieSessionApplication using Java 17.0.2 with PID 25396 (C:\Users\user\Desktop\HOME\08_SpringBoot\05_Cookie_session\build\classes\java\main started by user in C:\Users\user\Desktop\HOME\08_SpringBoot\05_Cookie_session)
+[DEBUG] 24-10-16 15:49:14 [CookieSessionApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-16 15:49:14 [CookieSessionApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-16 15:49:15 [CookieSessionApplication:56] - Started CookieSessionApplication in 1.287 seconds (process running for 105.714)
+[INFO ] 24-10-16 15:49:15 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 15:49:15 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 15:49:15 [MyInterceptor:70] - [GET] http://localhost:8080/cookie/popup
+[INFO ] 24-10-16 15:49:15 [MyInterceptor:106] - - 실행시간 : 54 ms
+[INFO ] 24-10-16 15:49:18 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 15:49:18 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 15:49:18 [MyInterceptor:70] - [POST] http://localhost:8080/cookie/popup_close
+[INFO ] 24-10-16 15:49:18 [MyInterceptor:78] - [param] <-- no-open = Y
+[INFO ] 24-10-16 15:49:18 [MyInterceptor:88] - - REFERER : time=2334, url=http://localhost:8080/cookie/popup
+[INFO ] 24-10-16 15:49:18 [MyInterceptor:106] - - 실행시간 : 43 ms
+[INFO ] 24-10-16 15:49:18 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 15:49:18 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 15:49:18 [MyInterceptor:70] - [GET] http://localhost:8080/cookie/popup
+[INFO ] 24-10-16 15:49:18 [MyInterceptor:88] - - REFERER : time=18, url=http://localhost:8080/cookie/popup
+[INFO ] 24-10-16 15:49:18 [MyInterceptor:106] - - 실행시간 : 23 ms
+[INFO ] 24-10-16 15:49:19 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 15:49:19 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 15:49:19 [MyInterceptor:70] - [GET] http://localhost:8080/cookie/popup
+[INFO ] 24-10-16 15:49:19 [MyInterceptor:88] - - REFERER : time=1745, url=http://localhost:8080/cookie/popup
+[INFO ] 24-10-16 15:49:19 [MyInterceptor:106] - - 실행시간 : 33 ms
+[INFO ] 24-10-16 15:49:20 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 15:49:20 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 15:49:20 [MyInterceptor:70] - [GET] http://localhost:8080/cookie/popup
+[INFO ] 24-10-16 15:49:20 [MyInterceptor:88] - - REFERER : time=491, url=http://localhost:8080/cookie/popup
+[INFO ] 24-10-16 15:49:20 [MyInterceptor:106] - - 실행시간 : 20 ms
+[INFO ] 24-10-16 15:49:20 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 15:49:20 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 15:49:20 [MyInterceptor:70] - [GET] http://localhost:8080/cookie/popup
+[INFO ] 24-10-16 15:49:20 [MyInterceptor:88] - - REFERER : time=308, url=http://localhost:8080/cookie/popup
+[INFO ] 24-10-16 15:49:20 [MyInterceptor:106] - - 실행시간 : 27 ms
+[INFO ] 24-10-16 15:49:21 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 15:49:21 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 15:49:21 [MyInterceptor:70] - [GET] http://localhost:8080/cookie/popup
+[INFO ] 24-10-16 15:49:21 [MyInterceptor:88] - - REFERER : time=193, url=http://localhost:8080/cookie/popup
+[INFO ] 24-10-16 15:49:21 [MyInterceptor:106] - - 실행시간 : 28 ms
+[INFO ] 24-10-16 15:49:21 [MyInterceptor:37] - ------------------new client connect ------------------
+[INFO ] 24-10-16 15:49:21 [MyInterceptor:53] - [Client] 0:0:0:0:0:0:0:1 Other Windows 10 Chrome
+[INFO ] 24-10-16 15:49:21 [MyInterceptor:70] - [GET] http://localhost:8080/cookie/popup
+[INFO ] 24-10-16 15:49:21 [MyInterceptor:88] - - REFERER : time=896, url=http://localhost:8080/cookie/popup
+[INFO ] 24-10-16 15:49:21 [MyInterceptor:106] - - 실행시간 : 31 ms
