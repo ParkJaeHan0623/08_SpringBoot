@@ -27,7 +27,7 @@ public interface DepartmentMapper {
     // --> userGeneratedKeys = true : AUTO_INCREMENT가 적용된 테이블인 경우 사용
     // --> keyProperty = 파라미터로 전달되는 MODEL 객체에서 PK에 대응되는 멤버변수
     // --> keyColumn = 테이블에서 PK에 대응되는 컬럼명
-    @Options(useGeneratedKeys = true, keyProperty = "deptNo", keyColumn = "deptno")
+    @Options(useGeneratedKeys = true, keyProperty = "deptno", keyColumn = "deptno")
     public int insert(Department input);
 
     /**
@@ -35,7 +35,7 @@ public interface DepartmentMapper {
      * @param input - 수정할 학과 정보에 대한 모델 객체
      * @return 수정된 데이터 수
      */
-    @Update("UPDATE department SET dname = #{dname}, loc = #{loc} WHERE deptno = #{deptNo}")
+    @Update("UPDATE department SET dname = #{dname}, loc = #{loc} WHERE deptno = #{deptno}")
     public int update(Department input);
 
     /**
@@ -43,7 +43,7 @@ public interface DepartmentMapper {
      * @param input - 삭제할 학과 정보에 대한 모델 객체
      * @return 삭제된 데이터 수
      */
-    @Delete("DELETE FROM department WHERE deptno = #{deptNo}")
+    @Delete("DELETE FROM department WHERE deptno = #{deptno}")
     public int delete(Department input);
 
     /**
@@ -51,7 +51,7 @@ public interface DepartmentMapper {
      * @param input - 조회할 학과 정보에 대한 모델 객체
      * @return 조회된 데이터 정보
      */
-    @Select("SELECT deptno, dname, loc FROM department WHERE deptno = #{deptNo}")
+    @Select("SELECT deptno, dname, loc FROM department WHERE deptno = #{deptno}")
     // 조회 결과와 리턴할 MODEL 객체를 연결하기 위한 규칙 정의
     // --> property : MODEL 객체의 멤버변수명
     // --> column : SELECT문에 명시된 필드 이름(AS 옵션을 사용한 경우 별칭으로 명시)
@@ -60,7 +60,7 @@ public interface DepartmentMapper {
 
     /** DepartmentMapper.xml 파일에서 resultMap 부분 */
     @Results(id = "departmentMap",value = {
-        @Result(property = "deptNo", column = "deptno"),
+        @Result(property = "deptno", column = "deptno"),
         @Result(property = "dname", column = "dname"),
         @Result(property = "loc", column = "loc")
     })

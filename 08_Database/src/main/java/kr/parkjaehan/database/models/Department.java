@@ -8,7 +8,7 @@ import lombok.Data;
 
 @Data
 public class Department {
-    private int deptNo; // 테이블 필드이름과 다름에 주의
+    private int deptno; // 테이블 필드이름과 다름에 주의
     private String dname;
     private String loc;
 }

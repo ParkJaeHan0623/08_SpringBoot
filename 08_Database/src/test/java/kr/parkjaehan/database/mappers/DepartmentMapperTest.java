@@ -30,14 +30,14 @@ public class DepartmentMapperTest {
         log.debug("output = " + output);
 
         // 생성된 PK 값
-        log.debug("new deptno = " + input.getDeptNo());
+        log.debug("new deptno = " + input.getDeptno());
     }
 
     @Test
     @DisplayName("학과 수정 테스트")
     void updateDepartment() {
         Department input = new Department();
-        input.setDeptNo(102);
+        input.setDeptno(102);
         input.setDname("테스트학과");
         input.setLoc("테스트강의실");
 
@@ -50,7 +50,7 @@ public class DepartmentMapperTest {
     @DisplayName("학과 삭제 테스트")
     void deleteDepartment() {
         Department input = new Department();
-        input.setDeptNo(203);
+        input.setDeptno(203);
 
         int output = departmentMapper.delete(input);
 
@@ -61,7 +61,7 @@ public class DepartmentMapperTest {
     @DisplayName("학과 단일 조회 테스트")
     void selectDepartment() {
         Department input = new Department();
-        input.setDeptNo(102);
+        input.setDeptno(102);
 
         Department output = departmentMapper.selectItem(input);
 
