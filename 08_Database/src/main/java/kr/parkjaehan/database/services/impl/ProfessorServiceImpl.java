@@ -10,10 +10,10 @@ import kr.parkjaehan.database.mappers.ProfessorMapper;
 import kr.parkjaehan.database.mappers.StudentMapper;
 import kr.parkjaehan.database.models.Professor;
 import kr.parkjaehan.database.models.Student;
-import kr.parkjaehan.database.services.ProfessorSerivce;
+import kr.parkjaehan.database.services.ProfessorService;
 
 @Service
-public class ProfessorServiceImpl implements ProfessorSerivce{
+public class ProfessorServiceImpl implements ProfessorService{
 
     @Autowired
     private ProfessorMapper professorMapper;

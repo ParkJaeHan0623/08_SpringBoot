@@ -4,7 +4,7 @@ import kr.parkjaehan.database.exceptions.ServiceNoResultException;
 import kr.parkjaehan.database.models.Professor;
 import java.util.List;
 
-public interface ProfessorSerivce {
+public interface ProfessorService {
     /**
      * 교수 정보를 새로 저장하고 저장한 정보를 조회하여 리턴한다
      * @param input - 저장할 정보를 담고있는 Beans

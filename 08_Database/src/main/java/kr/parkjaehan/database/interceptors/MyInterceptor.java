@@ -10,7 +10,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
-import kr.parkjaehan.database.helpers.UtilHelper;
+import kr.parkjaehan.database.helpers.WebHelper;
 import lombok.extern.slf4j.Slf4j;
 import ua_parser.Client;
 import ua_parser.Parser;
@@ -27,7 +27,7 @@ public class MyInterceptor implements HandlerInterceptor {
 
     // UtilHelper 객체를 자동으로 주입받는다
     @Autowired
-    private UtilHelper utilHelper;
+    private WebHelper webHelper;
 
     /**
      * Controller 실행 전에 수행되는 메서드
@@ -50,8 +50,8 @@ public class MyInterceptor implements HandlerInterceptor {
 
          String fmt = "[Client] %s %s %s %s %s";
 
-        //  String ipAddr = UtilHelper.getInstance().getClientIp(request);
-         String ipAddr = utilHelper.getClientIp(request); // 객체로 주입받아 사용 (클래스 X)
+        //  String ipAddr = webHelper.getInstance().getClientIp(request);
+         String ipAddr = webHelper.getClientIp(); // 객체로 주입받아 사용 (클래스 X)
          String osVersion = c.os.major + (c.os.minor != null ? "." + c.os.minor : "");
          String uaVersion = c.userAgent.major + (c.userAgent.minor != null ? "." + c.userAgent.minor : "");
          String clientInfo = String.format(fmt, ipAddr, c.device.family,c.os.family,osVersion, c.userAgent.family, uaVersion);
