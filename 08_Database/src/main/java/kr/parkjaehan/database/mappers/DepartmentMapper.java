@@ -71,12 +71,17 @@ public interface DepartmentMapper {
      * @param input - 조회할 학과 정보에 대한 모델 객체
      * @return 조회된 데이터 리스트
      */
-    @Select("SELECT deptno, dname, loc FROM department " + 
-            "ORDER BY deptno DESC") // + 로 띄워쓰기를 할 경우 첫번째 문자열의 끝에 공백을 추가해야 한다.
+    @Select("<script>" + 
+            "SELECT deptno, dname, loc FROM department " + 
+            "<where>" +
+            "<if test='dname != null'>dname LIKE concat('%', #{dname}, '%')</if>" +
+            "<if test='loc != null'>OR loc LIKE concat('%', #{loc}, '%')</if>" +
+            "</where>" +
+            "ORDER BY deptno DESC" +
+            "</script>") // + 로 띄워쓰기를 할 경우 첫번째 문자열의 끝에 공백을 추가해야 한다.
     // 조회 결과와 MODEL의 맵핑이 이전 규칙과 동일한 경우 id 값으로 이전 규칙을 재사용
+    
     @ResultMap("departmentMap")
     public List<Department> selectList(Department input);
-    
-
     
 }

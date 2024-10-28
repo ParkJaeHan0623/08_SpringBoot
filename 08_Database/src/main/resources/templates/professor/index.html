@@ -11,6 +11,18 @@
 
     <h2>교수 관리</h2>
     <hr />
+    <div class = "button-container search-field">
+        <!-- 검색 폼 -->
+        <!-- 1) 검색어는 GET 방식으로 전송-->
+        <!-- 2) 검색 결과 페이지가 별도로 없는 경우 action은 자기 스스로를 지정 -->
+        <!-- 3) submit은 컨트롤러에게 검색어를 전송한다.-->
+        <!-- 4) 컨트롤러는 전송받은 검색어를 다시 View에게 전달하여 자동완성 시켜야 한다. -->
+        <form method = "get" th:action="@{/professor}">
+            <input type = "search" name="keyword" placeholder="교수명 검색" th:value="${keyword}" />
+            <button type = "submit" class ="mybutton gray">검색</button>
+        </form>
+        <a class ="mybutton blue" th:href="@{/professor/add}">새 교직원 등록</a>
+    </div>
     <table class="mytable">
         <thead>
             <tr>
@@ -37,8 +49,8 @@
                 <td th:text="${professor.comm}"></td>
                 <td th:text="${professor.deptno}"></td>
                 <td>
-                    <a href="#">수정</a>
-                    <a href="#">삭제</a>
+                    <a th:href="@{/professor/edit/{profno}(profno=${professor.profno})}">수정</a>
+                    <a th:href="@{/professor/delete/{profno}(profno=${professor.profno})}">삭제</a>
                 </td>
             </tr>
         </tbody>

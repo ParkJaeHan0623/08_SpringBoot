@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Professor</title>
+    <link rel = "stylesheet" th:href="@{/assets/css/common.css}" />
+</head>
+<body>
+    <div th:replace="~{fragments/header :: my-header}"></div>
+    
+    <h2>교수 수정</h2>
+    <hr />
+    <form method="POST" th:action = "@{/professor/edit_ok/{profno}(profno = ${professor.profno})}">
+        <table class ="mytable">
+            <colgroup>
+                <col width="150" />
+                <col />
+            </colgroup>
+            <tbody>
+                <tr>
+                    <th>교수 이름</th>
+                    <td class = "text-left field">
+                        <input type="text" name ="name" th:value="${professor.name}" />
+                    </td>
+                </tr>
+                <tr>
+                    <th>userid</th>
+                    <td class = "text-left field">
+                        <input type="text" name ="userid" th:value="${professor.userid}" />
+                    </td>
+                </tr>
+                <tr>
+                    <th>position</th>
+                    <td class = "text-left field">
+                        <input type="text" name ="position" th:value="${professor.position}" />
+                    </td>
+                </tr>
+                <tr>
+                    <th>sal</th>
+                    <td class = "text-left field">
+                        <input type="number" name ="sal" th:value="${professor.sal}" />
+                    </td>
+                </tr>
+                <tr>
+                    <th>hiredate</th>
+                    <td class = "text-left field">
+                        <input type="date" name ="hiredate" th:value="${professor.hiredate}" />
+                    </td>
+                </tr>
+                <tr>
+                    <th>comm</th>
+                    <td class = "text-left field">
+                        <input type="number" name ="comm" th:value="${professor.comm}" />
+                    </td>
+                </tr>
+                <tr>
+                    <th>deptno</th>
+                    <td class = "text-left field">
+                        <input type="number" name ="deptno" th:value="${professor.deptno}" />
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class = "button-container">
+            <button type="submit" class ="mybutton green">등록</button>
+            <a class ="mybutton red" th:href="@{/professor}">취소</a>
+        </div>
+    </form>
+</body>
+</html>

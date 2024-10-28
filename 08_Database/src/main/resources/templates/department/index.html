@@ -11,6 +11,18 @@
 
     <h2>학과 관리</h2>
     <hr />
+    <div class="button-container search-field" >
+        <!-- 검색 폼-->
+        <!-- 1) 검색어는 GET 방식으로 전송-->
+        <!-- 2) 검색결과 페이지가 별도로 없는 경우 action은 자기 스스로를 지정-->
+        <!-- 3) submmit은 컨트롤러에게 검색어를 전송한다-->
+        <!-- 4) 컨트롤러는 전송받은 검색어를 다시 View에게 전달하여 자동완성 시켜야 한다-->
+        <form method="get" th:action="@{/department}">
+            <input type="search" name="keyword" placeholder="학과명 or 위치검색" th:value="${keyword}" />
+            <button type="submit" class="mybutton gray">검색</button>
+        </form>
+        <a class="mybutton blue" th:href="@{/department/add}">새 학과 등록</a>
+    </div>
     <table class="mytable">
         <thead>
             <tr>
@@ -40,8 +52,8 @@
                     th:text="${department.dname}"></a></td>
                 <td th:text="${department.loc}"></td>
                 <td>
-                    <a href="#">수정</a>
-                    <a href="#">삭제</a>
+                    <a th:href="@{/department/edit/{deptno}(deptno=${department.deptno})}">수정</a>
+                    <a th:href="@{/department/delete/{deptno}(deptno=${department.deptno})}">삭제</a>
                 </td>
             </tr>
         </tbody>
