@@ -1,0 +1,10 @@
+Events **패키지 전부 맞춰서 넣어놔야함
+my~~
+패키지 이름 맞추기
+esc 눌러서 커서 하나로 맞추기
+
+
+1) model -> Event.java
+2) Mapper -> EventMapper.java
+3) Service -> EventService.java
+4) 구현체 -> EventServiceImpl.java

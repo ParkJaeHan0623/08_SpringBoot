@@ -1,0 +1,3 @@
+SELECT CONCAT('private ', if(DATA_TYPE = 'int', 'int ', 'String '), LOWER(COLUMN_NAME), ';', if(COLUMN_COMMENT='', '', concat(' \t // ', COLUMN_COMMENT))) AS `value`
+FROM information_schema.columns
+WHERE table_schema = 'DB이름' AND table_name = '테이블이름';
