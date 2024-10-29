@@ -59,4 +59,12 @@ public interface DepartmentService {
      * @throws MyBatisException SQL 처리에 실패한 경우
      */
     public List<Department> getList(Department input) throws ServiceNoResultException, Exception;
+
+    /**
+     * 학과 목록에 대한 카운트 결과를 반환한다
+     * @param input - 조회할 학과의 학과 번호를 담고 있는 Beans
+     * @return Department - 조회된 데이터
+     * @throws Exception - SQL 처리에 실패한 경우
+     */
+    public int getCount(Department input) throws Exception;
 }

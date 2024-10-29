@@ -15,4 +15,6 @@ public interface StudentService {
     public Student getItem(Student input) throws ServiceNoResultException, Exception;
 
     public List<Student> getList(Student input) throws ServiceNoResultException, Exception;
+
+    public int getCount(Student input) throws Exception;
 }

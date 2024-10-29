@@ -58,5 +58,26 @@
             </tr>
         </tbody>
     </table>
+
+    <!-- 페이지 번호 -->
+     <ul class="pagination">
+        <!-- 이전 페이지 그룹 이동 버튼 -->
+        <li th:if="${pagination.prevPage > 0}">
+            <a th:href="@{/department(keyword=${keyword}, page=${pagination.prevPage})}">&laquo;</a> <!-- 검색 결과를 유지하기 위해서는 keyword를 달고 다녀야함-->
+        </li>
+        <li th:unless="${pagination.prevPage > 0}"><a>&laquo;</a></li>
+
+        <!-- 페이지 번호 링크 -->
+         <li th:each="i : ${#numbers.sequence(pagination.startPage, pagination.endPage)}"> <!-- #numbers.sequence : 타임리프가 제공하는 내장 객체 -->
+            <a th:if="${i == pagination.nowPage}" class="active" th:text="${i}"></a>
+            <a th:unless="${i == pagination.nowPage}" th:text="${i}"
+                th:href="@{/department(keyword=${keyword}, page=${i})}"></a>
+         </li>
+         <!-- 다음 페이지 그룹 이동 버튼 -->
+          <li th:if="${pagination.nextPage > 0}">
+            <a th:href="@{/department(keyword=${keyword}, page=${pagination.nextPage})}">&raquo;</a>
+          </li>
+         <li th:unless="${pagination.nextPage > 0}"><a>&raquo;</a></li>
+     </ul>
 </body>
 </html>

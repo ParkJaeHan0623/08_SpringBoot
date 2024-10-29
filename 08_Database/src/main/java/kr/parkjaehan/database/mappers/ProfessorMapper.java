@@ -39,8 +39,9 @@ public interface ProfessorMapper {
 
     @Select("SELECT " + 
             "profno, name, userid, position, sal, " +
-            "DATE_FORMAT(hiredate, '%Y-%m-%d') AS hiredate, comm, deptno " +
+            "DATE_FORMAT(hiredate, '%Y-%m-%d') AS hiredate, comm, p.deptno as deptno, dname " +
             "FROM professor p " +
+            "INNER JOIN department d ON p.deptno = d.deptno " +
             "WHERE profno = #{profno}")
     @Results(id = "professorMap", value = {
             @Result(property = "profno", column = "profno"),
@@ -50,13 +51,36 @@ public interface ProfessorMapper {
             @Result(property = "sal", column = "sal"),
             @Result(property = "hiredate", column = "hiredate"),
             @Result(property = "comm", column = "comm"),
-            @Result(property = "deptno", column = "deptno")})
+            @Result(property = "deptno", column = "deptno"),
+            @Result(property = "dname", column = "dname")})
     Professor selectItem(Professor input);
 
-    @Select("SELECT " + 
-            "profno, name, userid, position, sal, " +
-            "DATE_FORMAT(hiredate, '%Y-%m-%d') AS hiredate, comm, deptno " +
-            "FROM professor p")
-    @ResultMap("professorMap")
+    /**
+     * 다중행 조회를 위한 메서드 정의
+     * @param input - 조회할 학과 정보에 대한 모델 객체
+     * @return 조회된 데이터 리스트
+     */
+    @Select("<script>" + 
+        "SELECT profno, name, userid, position, sal, hiredate, comm, p.deptno as deptno, dname " +
+        "FROM professor p " + 
+        "INNER JOIN department d ON p.deptno = d.deptno " +
+        "<where>" +
+        "<if test='name != null'>name LIKE concat('%', #{name}, '%')</if>" +
+        "<if test='userid != null'> OR userid LIKE concat('%', #{userid}, '%')</if>" +
+        "</where>" +
+        "ORDER BY profno DESC " +
+        "<if test='listCount > 0'>LIMIT #{offset}, #{listCount}</if>" +
+        "</script>")
+        @ResultMap("professorMap")
     List<Professor> selectList(Professor input);
+
+    @Select("<script>" + 
+        "SELECT COUNT(*) AS cnt FROM professor p " + 
+        "INNER JOIN department d ON p.deptno = d.deptno " +
+        "<where>" +
+        "<if test='name != null'>name LIKE concat('%', #{name}, '%')</if>" +
+        "<if test='userid != null'> OR userid LIKE concat('%', #{userid}, '%')</if>" +
+        "</where>" +
+        "</script>")
+        public int selectCount(Professor input);
 }

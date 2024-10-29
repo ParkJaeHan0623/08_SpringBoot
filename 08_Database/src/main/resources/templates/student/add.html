@@ -19,65 +19,88 @@
             </colgroup>
             <tbody>
                 <tr>
-                    <th>name</th>
+                    <th>이름</th>
                     <td class = "text-left field">
                         <input type="text" name ="name" />
                     </td>
                 </tr>
                 <tr>
-                    <th>userid</th>
+                    <th>아이디</th>
                     <td class = "text-left field">
                         <input type="text" name ="userid" />
                     </td>
                 </tr>
                 <tr>
-                    <th>grade</th>
+                    <th>학년</th>
                     <td class = "text-left field">
                         <input type="number" name ="grade" />
                     </td>
                 </tr>
                 <tr>
-                    <th>idnum</th>
+                    <th>주민번호</th>
                     <td class = "text-left field">
                         <input type="text" name ="idnum" />
                     </td>
                 </tr>
                 <tr>
-                    <th>birthdate</th>
+                    <th>생년월일</th>
                     <td class = "text-left field">
                         <input type="date" name ="birthdate" />
                     </td>
                 </tr>
                 <tr>
-                    <th>tel</th>
+                    <th>전화번호</th>
                     <td class = "text-left field">
                         <input type="text" name ="tel" />
                     </td>
                 </tr>
                 <tr>
-                    <th>height</th>
+                    <th>키</th>
                     <td class = "text-left field">
                         <input type="number" name ="height" />
                     </td>
                 </tr>
                 <tr>
-                    <th>weight</th>
+                    <th>몸무게</th>
                     <td class = "text-left field">
                         <input type="number" name ="weight" />
                     </td>
                 </tr>
                 <tr>
-                    <th>deptno</th>
+                    <th>소속 학과</th>
                     <td class = "text-left field">
-                        <input type="number" name ="deptno" />
+                        <select name="deptno">
+                            <option value="">학과 선택</option>
+                            <option th:each="dept : ${departments}" th:value="${dept.deptno}" th:text="${dept.dname}"></option>
+                        </select>
                     </td>
                 </tr>
                 <tr>
-                    <th>profno</th>
+                    <th>담당 교수</th>
                     <td class = "text-left field">
-                        <input type="number" name ="profno" />
+                        <select name="profno">
+                            <option value="">교수 선택</option>
+                            <option th:each="prof : ${professors}" th:value="${prof.profno}" th:text="${prof.name}"></option>
+                        </select>
                     </td>
                 </tr>
+                <!-- <tr>
+                    <th>학과명</th>
+                    <td class = "text-left field">
+                        <select name="dname">
+                            <option value="">학과 선택</option>
+                            <option th:each="dept : ${departments}" th:value="${dept.deptno}" th:text="${dept.dname}"></option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th>교수명</th>
+                    <td class = "text-left field">
+                        <select name="pname">
+                            <option value="">교수 선택</option>
+                            <option th:each="prof : ${professors}" th:value="${prof.profno}" th:text="${prof.name}"></option>
+                        </select>
+                    </td> -->
             </tbody>
         </table>
         <div class = "button-container">

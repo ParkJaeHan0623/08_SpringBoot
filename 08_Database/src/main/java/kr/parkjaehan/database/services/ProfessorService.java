@@ -49,4 +49,13 @@ public interface ProfessorService {
      * @throws MyBatisException SQL 처리에 실패한 경우
      */
     public List<Professor> getList(Professor input) throws ServiceNoResultException, Exception;
+
+    /**
+     * 교수 목록에 대한 카운트 결과를 반환한다
+     * @param input
+     * @return
+     * @throws ServiceNoResultException
+     * @throws Exception
+     */
+    public int getCount(Professor input) throws Exception;
 }

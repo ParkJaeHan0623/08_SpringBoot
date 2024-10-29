@@ -1,6 +1,8 @@
 package kr.parkjaehan.database.models;
 
 import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
 @Data
 public class Student {
@@ -15,4 +17,15 @@ public class Student {
     private int weight;
     private int deptno;
     private Integer profno;
+    private String dname;
+    private String pname;
+
+
+    @Getter
+    @Setter
+    private static int listCount = 0;
+
+    @Getter
+    @Setter
+    private static int offset = 0;
 }

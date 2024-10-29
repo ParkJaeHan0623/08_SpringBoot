@@ -11,8 +11,15 @@
 
     <h2>학생 관리</h2>
     <hr />
-    <div class = "button-container">
-        <a class ="mybutton blue" th:href="@{/student/add}">새 학생 등록</a>
+    <div class="button-container search-field">
+        <form method="get" th:action="@{/student}">
+            <input type="search"
+            name="keyword"
+            placeholder="이름 OR 아이디 검색"
+            th:value="${keyword}" />
+        <button type="submit" class="mybutton gray">검색</button>
+      </form>
+      <a class="mybutton blue" th:href="@{/student/add}">새 학생 등록</a>
     </div>
     <table class="mytable">
         <thead>
@@ -28,6 +35,8 @@
                 <th>몸무게</th>
                 <th>학과번호</th>
                 <th>교수번호</th>
+                <th>학과명</th>
+                <th>교수명</th>
                 <th>-</th>
             </tr>
         </thead>
@@ -36,7 +45,6 @@
                 <td th:text="${student.studno}"></td>
                 <td><a th:href="@{student/detail/{studno}(studno=${student.studno})}" 
                     th:text="${student.name}"></a></td>
-                <td th:text="${student.name}"></td>
                 <td th:text="${student.userid}"></td>
                 <td th:text="${student.grade}"></td>
                 <td th:text="${student.idnum}"></td>
@@ -46,6 +54,8 @@
                 <td th:text="${student.weight}"></td>
                 <td th:text="${student.deptno}"></td>
                 <td th:text="${student.profno}"></td>
+                <td th:text="${student.dname}"></td>
+                <td th:text="${student.pname}"></td>
                 <td>
                     <a th:href="@{/student/edit/{studno}(studno=${student.studno})}">수정</a>
                     <a th:href="@{/student/delete/{studno}(studno=${student.studno})}">삭제</a>
@@ -53,5 +63,39 @@
             </tr>
         </tbody>
     </table>
+
+     <!-- 페이지 번호 -->
+     <ul class="pagination">
+        <!-- 이전 페이지 그룹 이동 버튼 -->
+        <li th:if="${pagination.prevPage > 0}">
+          <a
+            th:href="@{/student(keyword=${keyword}, page=${pagination.prevPage})}"
+            >&laquo;</a
+          >
+          <!-- 검색 결과를 유지하기 위해서는 keyword를 달고 다녀야함-->
+        </li>
+        <li th:unless="${pagination.prevPage > 0}"><a>&laquo;</a></li>
+  
+        <!-- 페이지 번호 링크 -->
+        <li
+          th:each="i : ${#numbers.sequence(pagination.startPage, pagination.endPage)}"
+        >
+          <!-- #numbers.sequence : 타임리프가 제공하는 내장 객체 -->
+          <a th:if="${i == pagination.nowPage}" class="active" th:text="${i}"></a>
+          <a
+            th:unless="${i == pagination.nowPage}"
+            th:text="${i}"
+            th:href="@{/student(keyword=${keyword}, page=${i})}"
+          ></a>
+        </li>
+        <!-- 다음 페이지 그룹 이동 버튼 -->
+        <li th:if="${pagination.nextPage > 0}">
+          <a
+            th:href="@{/student(keyword=${keyword}, page=${pagination.nextPage})}"
+            >&raquo;</a
+          >
+        </li>
+        <li th:unless="${pagination.nextPage > 0}"><a>&raquo;</a></li>
+      </ul>
 </body>
 </html>

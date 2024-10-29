@@ -11,7 +11,9 @@ import kr.parkjaehan.database.mappers.StudentMapper;
 import kr.parkjaehan.database.models.Professor;
 import kr.parkjaehan.database.models.Student;
 import kr.parkjaehan.database.services.ProfessorService;
+import lombok.extern.slf4j.Slf4j;
 
+@Slf4j
 @Service
 public class ProfessorServiceImpl implements ProfessorService{
 
@@ -72,6 +74,20 @@ public class ProfessorServiceImpl implements ProfessorService{
     @Override
     public List<Professor> getList(Professor input) throws ServiceNoResultException, Exception {
         return professorMapper.selectList(input);
+    }
+
+    @Override
+    public int getCount(Professor input) throws Exception {
+        int output = 0;
+        try {
+            output = professorMapper.selectCount(input);
+        } catch (Exception e) {
+            log.error("데이터 집계에 실패했습니다." + e);
+            throw e;
+        }
+        
+
+        return output;
     }
     
 }

@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 
 import kr.parkjaehan.database.exceptions.ServiceNoResultException;
+import kr.parkjaehan.database.helpers.Pagination;
 import kr.parkjaehan.database.helpers.WebHelper;
 import kr.parkjaehan.database.models.Department;
 import kr.parkjaehan.database.services.DepartmentService;
@@ -36,27 +37,47 @@ public class DepartmentController {
     @GetMapping({"/", "/department"}) // 여러개의 주소를 받을 수 있음 - 확인 필요!!!!!!!!!!!
     public String index(Model model,
         // 검색어 파라미터 (페이지가 처음 열릴 때는 값 없음. 필수가 아님(required = false))
-        @RequestParam(value = "keyword", required = false) String keyword){ // response 일단 제외
-            
+        @RequestParam(value = "keyword", required = false) String keyword,
+        //페이지 구현에서 사용할 현재 페이지 번호
+        @RequestParam(value = "page", defaultValue = "1") int nowPage) { 
+        /**
+         * listCount, pageCount는 그때 그때 잡아주면 됨
+         * static 변수는 객체로 접근
+         */
+        int totalCount = 0; // 전체 게시글 수
+        int listCount = 10; // 한 페이지당 표시할 목록 수
+        int pageCount = 5; // 한 그룹당 표시할 페이지 번호 수
+        
+        // 페이지 번호를 계산한 결과가 저장될 객체
+        Pagination pagination = null;
+
         // 조회 조건에 사용할 객체
         Department input = new Department();
         input.setDname(keyword);    
         input.setLoc(keyword);
         
-        List<Department> departments = null;
-
+        List<Department> output = null;
+        
         try {
-            departments = departmentService.getList(input); // 원래는 그냥 검색어를 보이기 위해서 null 이였으나, 이제 검색어가 들어올 수도 있기 때문에, 그걸 넣어줌.
-        } catch (ServiceNoResultException e) {
-            webHelper.serverError(e);
-            return null;
+            totalCount = departmentService.getCount(input);
+            //페이지 번호 계산 --> 계산 결과를 로그로 출력
+            pagination = new Pagination(nowPage, totalCount, listCount, pageCount);
+
+            // SQL의 LIMIT 절에서 사용될 값을 Beans의 static 변수에 저장
+            Department.setOffset(pagination.getOffset());
+            Department.setListCount(pagination.getListCount());
+
+            output = departmentService.getList(input);
         } catch (Exception e) {
             webHelper.serverError(e);
-            return null;
         }
 
-        model.addAttribute("departments", departments);
+        
+
+        model.addAttribute("departments", output);
         model.addAttribute("keyword", keyword);
+        model.addAttribute("pagination", pagination);
+
         return "/department/index"; 
     } 
 

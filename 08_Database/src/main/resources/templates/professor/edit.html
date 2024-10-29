@@ -25,39 +25,57 @@
                     </td>
                 </tr>
                 <tr>
-                    <th>userid</th>
+                    <th>아이디</th>
                     <td class = "text-left field">
                         <input type="text" name ="userid" th:value="${professor.userid}" />
                     </td>
                 </tr>
                 <tr>
-                    <th>position</th>
+                    <th>직급</th>
                     <td class = "text-left field">
-                        <input type="text" name ="position" th:value="${professor.position}" />
+                        <label>
+                            <input type="radio" name ="position" value="교수" th:checked="${professor.position == '교수'}"/>
+                            교수
+                        </label>
+                        <label>
+                            <input type="radio" name ="position" value="부교수" th:checked="${professor.position == '부교수'}"/>
+                            부교수
+                        </label>
+                        <label>
+                            <input type="radio" name ="position" value="조교수" th:checked="${professor.position == '조교수'}"/>
+                            조교수
+                        </label>
+                        <label>
+                            <input type="radio" name ="position" value="조교" th:checked="${professor.position == '조교'}"/>
+                            조교
+                        </label>
                     </td>
                 </tr>
                 <tr>
-                    <th>sal</th>
+                    <th>급여</th>
                     <td class = "text-left field">
                         <input type="number" name ="sal" th:value="${professor.sal}" />
                     </td>
                 </tr>
                 <tr>
-                    <th>hiredate</th>
+                    <th>고용일자</th>
                     <td class = "text-left field">
                         <input type="date" name ="hiredate" th:value="${professor.hiredate}" />
                     </td>
                 </tr>
                 <tr>
-                    <th>comm</th>
+                    <th>커미션</th>
                     <td class = "text-left field">
                         <input type="number" name ="comm" th:value="${professor.comm}" />
                     </td>
                 </tr>
                 <tr>
-                    <th>deptno</th>
+                    <th>소속 학과</th>
                     <td class = "text-left field">
-                        <input type="number" name ="deptno" th:value="${professor.deptno}" />
+                        <!-- <input type="number" name ="deptno" th:value="${professor.deptno}" /> -->
+                        <select name="deptno">
+                            <option th:each="dept : ${departments}" th:value="${dept.deptno}" th:selected="${dept.deptno == professor.deptno}" 
+                            th:text="${dept.dname}"></option>
                     </td>
                 </tr>
             </tbody>

@@ -34,8 +34,8 @@
                 <td class="text-left" th:text="${professor.position}"></td>
             </tr>
             <tr>
-                <th>봉급</th>
-                <td class="text-left" th:text="${professor.sal}"></td>
+                <th>급여</th>
+                <td class="text-left" th:text="${#numbers.formatInteger(professor.sal, 1, 'COMMA')}"></td>
             </tr>
             <tr>
                 <th>고용일자</th>
@@ -43,11 +43,11 @@
             </tr>
             <tr>
                 <th>커미션</th>
-                <td class="text-left" th:text="${professor.comm}"></td>
+                <td class="text-left" th:text="${#numbers.formatInteger(professor.comm, 1, 'COMMA')}"></td>
             </tr>
             <tr>
                 <th>학과 번호</th>
-                <td class="text-left" th:text="${professor.deptno}"></td>
+                <td class="text-left " th:text="${professor.deptno}"></td>
             </tr>
 
         </tbody>

@@ -9,7 +9,9 @@ import kr.parkjaehan.database.exceptions.ServiceNoResultException;
 import kr.parkjaehan.database.mappers.StudentMapper;
 import kr.parkjaehan.database.models.Student;
 import kr.parkjaehan.database.services.StudentService;
+import lombok.extern.slf4j.Slf4j;
 
+@Slf4j
 @Service
 public class StudentServiceImpl implements StudentService{
 
@@ -63,6 +65,19 @@ public class StudentServiceImpl implements StudentService{
     @Override
     public List<Student> getList(Student input) throws ServiceNoResultException, Exception {
         return studentMapper.selectList(input);
+    }
+
+    @Override
+    public int getCount(Student input) throws Exception {
+        int output = 0;
+        try {
+            output = studentMapper.selectCount(input);
+        } catch (Exception e) {
+            log.error("데이터 집계에 실패했습니다." + e);
+            throw e;
+        }
+        
+        return output;
     }
     
 }

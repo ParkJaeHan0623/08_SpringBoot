@@ -25,39 +25,58 @@
                     </td>
                 </tr>
                 <tr>
-                    <th>userid</th>
+                    <th>아이디</th>
                     <td class = "text-left field">
                         <input type="text" name ="userid" />
                     </td>
                 </tr>
                 <tr>
-                    <th>position</th>
+                    <th>직급</th>
                     <td class = "text-left field">
-                        <input type="text" name ="position" />
+                        <label>
+                            <input type="radio" name ="position" value="교수" />
+                            교수
+                        </label>
+                        <label>
+                            <input type="radio" name ="position" value="부교수" />
+                            부교수
+                        </label>
+                        <label>
+                            <input type="radio" name ="position" value="조교수" />
+                            조교수
+                        </label>
+                        <label>
+                            <input type="radio" name ="position" value="조교" />
+                            조교
+                        </label>
                     </td>
                 </tr>
                 <tr>
-                    <th>sal</th>
+                    <th>급여</th>
                     <td class = "text-left field">
-                        <input type="number" name ="sal" />
+                        <input type="number" name ="sal" step="1" min="0" />
                     </td>
                 </tr>
                 <tr>
-                    <th>hiredate</th>
+                    <th>고용일자</th>
                     <td class = "text-left field">
                         <input type="date" name ="hiredate" />
                     </td>
                 </tr>
                 <tr>
-                    <th>comm</th>
+                    <th>커미션</th>
                     <td class = "text-left field">
                         <input type="number" name ="comm" />
                     </td>
                 </tr>
                 <tr>
-                    <th>deptno</th>
+                    <th>소속 학과</th>
                     <td class = "text-left field">
-                        <input type="number" name ="deptno" />
+                        <!-- <input type="number" name ="deptno" /> -->
+                        <select name="deptno">
+                            <option value="">학과 선택</option>
+                            <option th:each="dept : ${departments}" th:value="${dept.deptno}" th:text="${dept.dname}"></option>
+                        </select>
                     </td>
                 </tr>
             </tbody>
