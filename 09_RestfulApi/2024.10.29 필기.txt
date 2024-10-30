@@ -1,0 +1,13 @@
+response.setStatus(); 
+	에러 발생하지 않으면 명시하지 않아도 되지만 기왕이면 적어주면 좋다
+	중요! 기본설정 200
+	명시해야 페이지 오류인지 확인이 가능함 -> catch문으로 오류 파악가능
+
+1. SimpleRestfulController
+	/simple_department		GET
+	/simple_department_list		GET
+	/sendmail				POST
+2. MailSendController			View
+	/Mail
+3. Mail.html
+	

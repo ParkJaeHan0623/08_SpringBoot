@@ -1,292 +1,178 @@
-[INFO ] 24-10-29 14:30:06 [RestfulapiApplication:50] - Starting RestfulapiApplication using Java 17.0.2 with PID 15240 (C:\Users\user\Desktop\HOME\08_SpringBoot\09_RestfulApi\build\classes\java\main started by user in C:\Users\user\Desktop\HOME\08_SpringBoot\09_RestfulApi)
-[DEBUG] 24-10-29 14:30:06 [RestfulapiApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
-[INFO ] 24-10-29 14:30:06 [RestfulapiApplication:654] - No active profile set, falling back to 1 default profile: "default"
-[DEBUG] 24-10-29 14:30:08 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
-[WARN ] 24-10-29 14:30:08 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.parkjaehan.restfulapi]' package. Please check your configuration.
-[INFO ] 24-10-29 14:30:10 [RestfulapiApplication:56] - Started RestfulapiApplication in 4.697 seconds (process running for 5.266)
-[INFO ] 24-10-29 14:30:34 [RestfulapiApplication:50] - Starting RestfulapiApplication using Java 17.0.2 with PID 24848 (C:\Users\user\Desktop\HOME\08_SpringBoot\09_RestfulApi\build\classes\java\main started by user in C:\Users\user\Desktop\HOME\08_SpringBoot\09_RestfulApi)
-[DEBUG] 24-10-29 14:30:34 [RestfulapiApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
-[INFO ] 24-10-29 14:30:34 [RestfulapiApplication:654] - No active profile set, falling back to 1 default profile: "default"
-[DEBUG] 24-10-29 14:30:35 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
-[WARN ] 24-10-29 14:30:35 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.parkjaehan.restfulapi]' package. Please check your configuration.
-[WARN ] 24-10-29 14:30:37 [OptionalLiveReloadServer:62] - Unable to start LiveReload server
-[WARN ] 24-10-29 14:30:37 [AnnotationConfigServletWebServerApplicationContext:633] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
-[ERROR] 24-10-29 14:30:37 [LoggingFailureAnalysisReporter:40] - 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Web server failed to start. Port 8080 was already in use.
-
-Action:
-
-Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
-
-[INFO ] 24-10-29 14:39:27 [RestfulapiApplication:50] - Starting RestfulapiApplication using Java 17.0.2 with PID 30364 (C:\Users\user\Desktop\HOME\08_SpringBoot\09_RestfulApi\build\classes\java\main started by user in C:\Users\user\Desktop\HOME\08_SpringBoot\09_RestfulApi)
-[DEBUG] 24-10-29 14:39:27 [RestfulapiApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
-[INFO ] 24-10-29 14:39:27 [RestfulapiApplication:654] - No active profile set, falling back to 1 default profile: "default"
-[DEBUG] 24-10-29 14:39:28 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
-[WARN ] 24-10-29 14:39:28 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.parkjaehan.restfulapi]' package. Please check your configuration.
-[INFO ] 24-10-29 14:39:29 [RestfulapiApplication:56] - Started RestfulapiApplication in 3.108 seconds (process running for 3.83)
-[INFO ] 24-10-29 14:40:18 [RestfulapiApplication:50] - Starting RestfulapiApplication using Java 17.0.2 with PID 17836 (C:\Users\user\Desktop\HOME\08_SpringBoot\09_RestfulApi\build\classes\java\main started by user in C:\Users\user\Desktop\HOME\08_SpringBoot\09_RestfulApi)
-[DEBUG] 24-10-29 14:40:18 [RestfulapiApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
-[INFO ] 24-10-29 14:40:18 [RestfulapiApplication:654] - No active profile set, falling back to 1 default profile: "default"
-[DEBUG] 24-10-29 14:40:19 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
-[WARN ] 24-10-29 14:40:19 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.parkjaehan.restfulapi]' package. Please check your configuration.
-[INFO ] 24-10-29 14:40:20 [RestfulapiApplication:56] - Started RestfulapiApplication in 3.14 seconds (process running for 3.905)
-[DEBUG] 24-10-29 14:41:32 [SimpleRestfulController:130] - --------------------------------------------------------
-[DEBUG] 24-10-29 14:41:32 [SimpleRestfulController:131] - SenderName: 나다
-[DEBUG] 24-10-29 14:41:32 [SimpleRestfulController:132] - SenderEmail: mitshowme@gmail.com
-[DEBUG] 24-10-29 14:41:32 [SimpleRestfulController:133] - ReceiverName: 너다
-[DEBUG] 24-10-29 14:41:32 [SimpleRestfulController:134] - ReceiverEmail: mitshowme@naver.com
-[DEBUG] 24-10-29 14:41:32 [SimpleRestfulController:135] - Subject: 안녕
-[DEBUG] 24-10-29 14:41:32 [SimpleRestfulController:136] - Content: hi
-[DEBUG] 24-10-29 14:41:32 [SimpleRestfulController:137] - --------------------------------------------------------
-[INFO ] 24-10-29 14:44:48 [RestfulapiApplication:50] - Starting RestfulapiApplication using Java 17.0.2 with PID 19628 (C:\Users\user\Desktop\HOME\08_SpringBoot\09_RestfulApi\build\classes\java\main started by user in C:\Users\user\Desktop\HOME\08_SpringBoot\09_RestfulApi)
-[DEBUG] 24-10-29 14:44:48 [RestfulapiApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
-[INFO ] 24-10-29 14:44:48 [RestfulapiApplication:654] - No active profile set, falling back to 1 default profile: "default"
-[DEBUG] 24-10-29 14:44:49 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
-[WARN ] 24-10-29 14:44:49 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.parkjaehan.restfulapi]' package. Please check your configuration.
-[INFO ] 24-10-29 14:44:50 [RestfulapiApplication:56] - Started RestfulapiApplication in 2.809 seconds (process running for 3.408)
-[INFO ] 24-10-29 14:46:37 [RestfulapiApplication:50] - Starting RestfulapiApplication using Java 17.0.2 with PID 23440 (C:\Users\user\Desktop\HOME\08_SpringBoot\09_RestfulApi\build\classes\java\main started by user in C:\Users\user\Desktop\HOME\08_SpringBoot\09_RestfulApi)
-[DEBUG] 24-10-29 14:46:37 [RestfulapiApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
-[INFO ] 24-10-29 14:46:37 [RestfulapiApplication:654] - No active profile set, falling back to 1 default profile: "default"
-[DEBUG] 24-10-29 14:46:38 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
-[WARN ] 24-10-29 14:46:38 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.parkjaehan.restfulapi]' package. Please check your configuration.
-[INFO ] 24-10-29 14:46:40 [RestfulapiApplication:56] - Started RestfulapiApplication in 2.81 seconds (process running for 3.498)
-[DEBUG] 24-10-29 14:47:14 [SimpleRestfulController:130] - --------------------------------------------------------
-[DEBUG] 24-10-29 14:47:14 [SimpleRestfulController:131] - SenderName: 나다
-[DEBUG] 24-10-29 14:47:14 [SimpleRestfulController:132] - SenderEmail: 
-[DEBUG] 24-10-29 14:47:14 [SimpleRestfulController:133] - ReceiverName: 너다
-[DEBUG] 24-10-29 14:47:14 [SimpleRestfulController:134] - ReceiverEmail: 
-[DEBUG] 24-10-29 14:47:14 [SimpleRestfulController:135] - Subject: 
-[DEBUG] 24-10-29 14:47:14 [SimpleRestfulController:136] - Content: hi
-[DEBUG] 24-10-29 14:47:14 [SimpleRestfulController:137] - --------------------------------------------------------
-[ERROR] 24-10-29 14:47:16 [[dispatcherServlet]:175] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.mail.MailSendException: Failed messages: jakarta.mail.internet.AddressException: Empty address in string ``''; message exceptions (1) are:
-Failed message 1: jakarta.mail.internet.AddressException: Empty address in string ``''] with root cause
-org.springframework.mail.MailSendException: Failed messages: jakarta.mail.internet.AddressException: Empty address in string ``''
-	at org.springframework.mail.javamail.JavaMailSenderImpl.doSend(JavaMailSenderImpl.java:453)
-	at org.springframework.mail.javamail.JavaMailSenderImpl.send(JavaMailSenderImpl.java:350)
-	at org.springframework.mail.javamail.JavaMailSender.send(JavaMailSender.java:101)
-	at kr.parkjaehan.restfulapi.controllers.SimpleRestfulController.sendMail(SimpleRestfulController.java:164)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
-	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:113)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-[DEBUG] 24-10-29 14:47:23 [SimpleRestfulController:130] - --------------------------------------------------------
-[DEBUG] 24-10-29 14:47:23 [SimpleRestfulController:131] - SenderName: 나다
-[DEBUG] 24-10-29 14:47:23 [SimpleRestfulController:132] - SenderEmail: mitshowme@gmail.com
-[DEBUG] 24-10-29 14:47:23 [SimpleRestfulController:133] - ReceiverName: 너다
-[DEBUG] 24-10-29 14:47:23 [SimpleRestfulController:134] - ReceiverEmail: 
-[DEBUG] 24-10-29 14:47:23 [SimpleRestfulController:135] - Subject: 안녕
-[DEBUG] 24-10-29 14:47:23 [SimpleRestfulController:136] - Content: hi
-[DEBUG] 24-10-29 14:47:23 [SimpleRestfulController:137] - --------------------------------------------------------
-[ERROR] 24-10-29 14:47:25 [[dispatcherServlet]:175] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.mail.MailSendException: Failed messages: jakarta.mail.internet.AddressException: Empty address in string ``''; message exceptions (1) are:
-Failed message 1: jakarta.mail.internet.AddressException: Empty address in string ``''] with root cause
-org.springframework.mail.MailSendException: Failed messages: jakarta.mail.internet.AddressException: Empty address in string ``''
-	at org.springframework.mail.javamail.JavaMailSenderImpl.doSend(JavaMailSenderImpl.java:453)
-	at org.springframework.mail.javamail.JavaMailSenderImpl.send(JavaMailSenderImpl.java:350)
-	at org.springframework.mail.javamail.JavaMailSender.send(JavaMailSender.java:101)
-	at kr.parkjaehan.restfulapi.controllers.SimpleRestfulController.sendMail(SimpleRestfulController.java:164)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
-	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:113)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-[DEBUG] 24-10-29 14:47:30 [SimpleRestfulController:130] - --------------------------------------------------------
-[DEBUG] 24-10-29 14:47:30 [SimpleRestfulController:131] - SenderName: 나다
-[DEBUG] 24-10-29 14:47:30 [SimpleRestfulController:132] - SenderEmail: mitshowme@gmail.com
-[DEBUG] 24-10-29 14:47:30 [SimpleRestfulController:133] - ReceiverName: 너다
-[DEBUG] 24-10-29 14:47:30 [SimpleRestfulController:134] - ReceiverEmail: mitshowme@naver.com
-[DEBUG] 24-10-29 14:47:30 [SimpleRestfulController:135] - Subject: 안녕
-[DEBUG] 24-10-29 14:47:30 [SimpleRestfulController:136] - Content: hi
-[DEBUG] 24-10-29 14:47:30 [SimpleRestfulController:137] - --------------------------------------------------------
-[DEBUG] 24-10-29 14:48:18 [SimpleRestfulController:130] - --------------------------------------------------------
-[DEBUG] 24-10-29 14:48:18 [SimpleRestfulController:131] - SenderName: 나다
-[DEBUG] 24-10-29 14:48:18 [SimpleRestfulController:132] - SenderEmail: mitshowme@gmail.com
-[DEBUG] 24-10-29 14:48:18 [SimpleRestfulController:133] - ReceiverName: 너다
-[DEBUG] 24-10-29 14:48:18 [SimpleRestfulController:134] - ReceiverEmail: mitshowme@naver.com
-[DEBUG] 24-10-29 14:48:18 [SimpleRestfulController:135] - Subject: 안녕
-[DEBUG] 24-10-29 14:48:18 [SimpleRestfulController:136] - Content: hi
-[DEBUG] 24-10-29 14:48:18 [SimpleRestfulController:137] - --------------------------------------------------------
-[INFO ] 24-10-29 14:49:47 [RestfulapiApplication:50] - Starting RestfulapiApplication using Java 17.0.2 with PID 6500 (C:\Users\user\Desktop\HOME\08_SpringBoot\09_RestfulApi\build\classes\java\main started by user in C:\Users\user\Desktop\HOME\08_SpringBoot\09_RestfulApi)
-[DEBUG] 24-10-29 14:49:47 [RestfulapiApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
-[INFO ] 24-10-29 14:49:47 [RestfulapiApplication:654] - No active profile set, falling back to 1 default profile: "default"
-[DEBUG] 24-10-29 14:49:48 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
-[WARN ] 24-10-29 14:49:48 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.parkjaehan.restfulapi]' package. Please check your configuration.
-[INFO ] 24-10-29 14:49:50 [RestfulapiApplication:56] - Started RestfulapiApplication in 2.95 seconds (process running for 3.745)
-[DEBUG] 24-10-29 14:50:05 [SimpleRestfulController:130] - --------------------------------------------------------
-[DEBUG] 24-10-29 14:50:05 [SimpleRestfulController:131] - SenderName: 나다
-[DEBUG] 24-10-29 14:50:05 [SimpleRestfulController:132] - SenderEmail: mitshowme@gmail.com
-[DEBUG] 24-10-29 14:50:05 [SimpleRestfulController:133] - ReceiverName: 너다
-[DEBUG] 24-10-29 14:50:05 [SimpleRestfulController:134] - ReceiverEmail: mitshowme@naver.com
-[DEBUG] 24-10-29 14:50:05 [SimpleRestfulController:135] - Subject: 안녕
-[DEBUG] 24-10-29 14:50:05 [SimpleRestfulController:136] - Content: ii
-[DEBUG] 24-10-29 14:50:05 [SimpleRestfulController:137] - --------------------------------------------------------
-[INFO ] 24-10-29 14:51:08 [RestfulapiApplication:50] - Starting RestfulapiApplication using Java 17.0.2 with PID 21672 (C:\Users\user\Desktop\HOME\08_SpringBoot\09_RestfulApi\build\classes\java\main started by user in C:\Users\user\Desktop\HOME\08_SpringBoot\09_RestfulApi)
-[DEBUG] 24-10-29 14:51:08 [RestfulapiApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
-[INFO ] 24-10-29 14:51:08 [RestfulapiApplication:654] - No active profile set, falling back to 1 default profile: "default"
-[DEBUG] 24-10-29 14:51:09 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
-[WARN ] 24-10-29 14:51:09 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.parkjaehan.restfulapi]' package. Please check your configuration.
-[INFO ] 24-10-29 14:51:11 [RestfulapiApplication:56] - Started RestfulapiApplication in 3.007 seconds (process running for 3.679)
-[INFO ] 24-10-29 14:59:44 [RestfulapiApplication:50] - Starting RestfulapiApplication using Java 17.0.2 with PID 29756 (C:\Users\user\Desktop\HOME\08_SpringBoot\09_RestfulApi\build\classes\java\main started by user in C:\Users\user\Desktop\HOME\08_SpringBoot\09_RestfulApi)
-[DEBUG] 24-10-29 14:59:44 [RestfulapiApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
-[INFO ] 24-10-29 14:59:44 [RestfulapiApplication:654] - No active profile set, falling back to 1 default profile: "default"
-[DEBUG] 24-10-29 14:59:45 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
-[WARN ] 24-10-29 14:59:45 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.parkjaehan.restfulapi]' package. Please check your configuration.
-[INFO ] 24-10-29 14:59:46 [RestfulapiApplication:56] - Started RestfulapiApplication in 2.909 seconds (process running for 3.635)
-[WARN ] 24-10-29 14:59:51 [DefaultHandlerExceptionResolver:247] - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'x' for method parameter type int is not present]
-[INFO ] 24-10-29 15:00:38 [RestfulapiApplication:50] - Starting RestfulapiApplication using Java 17.0.2 with PID 9232 (C:\Users\user\Desktop\HOME\08_SpringBoot\09_RestfulApi\build\classes\java\main started by user in C:\Users\user\Desktop\HOME\08_SpringBoot\09_RestfulApi)
-[DEBUG] 24-10-29 15:00:38 [RestfulapiApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
-[INFO ] 24-10-29 15:00:38 [RestfulapiApplication:654] - No active profile set, falling back to 1 default profile: "default"
-[DEBUG] 24-10-29 15:00:39 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
-[WARN ] 24-10-29 15:00:39 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.parkjaehan.restfulapi]' package. Please check your configuration.
-[INFO ] 24-10-29 15:00:40 [RestfulapiApplication:56] - Started RestfulapiApplication in 2.812 seconds (process running for 3.544)
-[INFO ] 24-10-29 15:02:24 [RestfulapiApplication:50] - Starting RestfulapiApplication using Java 17.0.2 with PID 16336 (C:\Users\user\Desktop\HOME\08_SpringBoot\09_RestfulApi\build\classes\java\main started by user in C:\Users\user\Desktop\HOME\08_SpringBoot\09_RestfulApi)
-[DEBUG] 24-10-29 15:02:24 [RestfulapiApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
-[INFO ] 24-10-29 15:02:24 [RestfulapiApplication:654] - No active profile set, falling back to 1 default profile: "default"
-[DEBUG] 24-10-29 15:02:25 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
-[WARN ] 24-10-29 15:02:25 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.parkjaehan.restfulapi]' package. Please check your configuration.
-[INFO ] 24-10-29 15:02:26 [RestfulapiApplication:56] - Started RestfulapiApplication in 2.86 seconds (process running for 3.425)
-[INFO ] 24-10-29 15:07:21 [RestfulapiApplication:50] - Starting RestfulapiApplication using Java 17.0.2 with PID 24436 (C:\Users\user\Desktop\HOME\08_SpringBoot\09_RestfulApi\build\classes\java\main started by user in C:\Users\user\Desktop\HOME\08_SpringBoot\09_RestfulApi)
-[DEBUG] 24-10-29 15:07:21 [RestfulapiApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
-[INFO ] 24-10-29 15:07:21 [RestfulapiApplication:654] - No active profile set, falling back to 1 default profile: "default"
-[DEBUG] 24-10-29 15:07:22 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
-[WARN ] 24-10-29 15:07:22 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.parkjaehan.restfulapi]' package. Please check your configuration.
-[INFO ] 24-10-29 15:07:24 [RestfulapiApplication:56] - Started RestfulapiApplication in 3.059 seconds (process running for 3.786)
-[INFO ] 24-10-29 15:19:13 [RestfulapiApplication:50] - Starting RestfulapiApplication using Java 17.0.2 with PID 23200 (C:\Users\user\Desktop\HOME\08_SpringBoot\09_RestfulApi\build\classes\java\main started by user in C:\Users\user\Desktop\HOME\08_SpringBoot\09_RestfulApi)
-[DEBUG] 24-10-29 15:19:13 [RestfulapiApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
-[INFO ] 24-10-29 15:19:13 [RestfulapiApplication:654] - No active profile set, falling back to 1 default profile: "default"
-[DEBUG] 24-10-29 15:19:14 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
-[WARN ] 24-10-29 15:19:14 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.parkjaehan.restfulapi]' package. Please check your configuration.
-[INFO ] 24-10-29 15:19:15 [RestfulapiApplication:56] - Started RestfulapiApplication in 2.872 seconds (process running for 3.591)
-[WARN ] 24-10-29 15:22:40 [DefaultHandlerExceptionResolver:247] - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'x' for method parameter type int is not present]
-[WARN ] 24-10-29 15:26:38 [DefaultHandlerExceptionResolver:247] - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported]
-[DEBUG] 24-10-29 15:27:36 [SimpleRestfulController:128] - --------------------------------------------------------
-[DEBUG] 24-10-29 15:27:36 [SimpleRestfulController:129] - SenderName: 나다
-[DEBUG] 24-10-29 15:27:36 [SimpleRestfulController:130] - SenderEmail: mitshowme@gmail.com
-[DEBUG] 24-10-29 15:27:36 [SimpleRestfulController:131] - ReceiverName: 너다
-[DEBUG] 24-10-29 15:27:36 [SimpleRestfulController:132] - ReceiverEmail: mitshowme@naver.com
-[DEBUG] 24-10-29 15:27:36 [SimpleRestfulController:133] - Subject: 안녕
-[DEBUG] 24-10-29 15:27:36 [SimpleRestfulController:134] - Content: <p>ddd</p>
-[DEBUG] 24-10-29 15:27:36 [SimpleRestfulController:135] - --------------------------------------------------------
-[INFO ] 24-10-29 15:32:09 [RestfulapiApplication:50] - Starting RestfulapiApplication using Java 17.0.2 with PID 26440 (C:\Users\user\Desktop\HOME\08_SpringBoot\09_RestfulApi\build\classes\java\main started by user in C:\Users\user\Desktop\HOME\08_SpringBoot\09_RestfulApi)
-[DEBUG] 24-10-29 15:32:09 [RestfulapiApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
-[INFO ] 24-10-29 15:32:09 [RestfulapiApplication:654] - No active profile set, falling back to 1 default profile: "default"
-[DEBUG] 24-10-29 15:32:11 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
-[WARN ] 24-10-29 15:32:11 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.parkjaehan.restfulapi]' package. Please check your configuration.
-[INFO ] 24-10-29 15:32:12 [RestfulapiApplication:56] - Started RestfulapiApplication in 2.992 seconds (process running for 3.568)
-[INFO ] 24-10-29 15:35:10 [RestfulapiApplication:50] - Starting RestfulapiApplication using Java 17.0.2 with PID 23164 (C:\Users\user\Desktop\HOME\08_SpringBoot\09_RestfulApi\build\classes\java\main started by user in C:\Users\user\Desktop\HOME\08_SpringBoot\09_RestfulApi)
-[DEBUG] 24-10-29 15:35:10 [RestfulapiApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
-[INFO ] 24-10-29 15:35:10 [RestfulapiApplication:654] - No active profile set, falling back to 1 default profile: "default"
-[DEBUG] 24-10-29 15:35:11 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
-[WARN ] 24-10-29 15:35:11 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.parkjaehan.restfulapi]' package. Please check your configuration.
-[INFO ] 24-10-29 15:35:12 [RestfulapiApplication:56] - Started RestfulapiApplication in 2.854 seconds (process running for 3.357)
-[INFO ] 24-10-29 15:39:30 [RestfulapiApplication:50] - Starting RestfulapiApplication using Java 17.0.2 with PID 33628 (C:\Users\user\Desktop\HOME\08_SpringBoot\09_RestfulApi\build\classes\java\main started by user in C:\Users\user\Desktop\HOME\08_SpringBoot\09_RestfulApi)
-[DEBUG] 24-10-29 15:39:30 [RestfulapiApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
-[INFO ] 24-10-29 15:39:30 [RestfulapiApplication:654] - No active profile set, falling back to 1 default profile: "default"
-[DEBUG] 24-10-29 15:39:31 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
-[WARN ] 24-10-29 15:39:31 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.parkjaehan.restfulapi]' package. Please check your configuration.
-[INFO ] 24-10-29 15:39:33 [RestfulapiApplication:56] - Started RestfulapiApplication in 2.797 seconds (process running for 3.258)
+[INFO ] 24-10-30 12:52:42 [RestfulapiApplication:50] - Starting RestfulapiApplication using Java 17.0.2 with PID 25800 (C:\Users\user\Desktop\HOME\08_SpringBoot\09_RestfulApi\build\classes\java\main started by user in C:\Users\user\Desktop\HOME\08_SpringBoot\09_RestfulApi)
+[DEBUG] 24-10-30 12:52:42 [RestfulapiApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-10-30 12:52:42 [RestfulapiApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-10-30 12:52:43 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[WARN ] 24-10-30 12:52:43 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.parkjaehan.restfulapi]' package. Please check your configuration.
+[INFO ] 24-10-30 12:52:45 [RestfulapiApplication:56] - Started RestfulapiApplication in 2.965 seconds (process running for 3.635)
+[WARN ] 24-10-30 12:54:49 [DefaultHandlerExceptionResolver:247] - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Method parameter 'x': Failed to convert value of type 'java.lang.String' to required type 'int'; For input string: ""]
+[WARN ] 24-10-30 12:55:00 [DefaultHandlerExceptionResolver:247] - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'x' for method parameter type int is not present]
+[WARN ] 24-10-30 12:55:06 [DefaultHandlerExceptionResolver:247] - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'x' for method parameter type int is not present]
+[WARN ] 24-10-30 12:55:09 [DefaultHandlerExceptionResolver:247] - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'x' for method parameter type int is not present]
+[WARN ] 24-10-30 12:55:13 [DefaultHandlerExceptionResolver:247] - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'x' for method parameter type int is not present]
+[INFO ] 24-10-30 14:34:52 [RestfulapiApplication:50] - Starting RestfulapiApplication using Java 17.0.2 with PID 27940 (C:\Users\user\Desktop\HOME\08_SpringBoot\09_RestfulApi\build\classes\java\main started by user in C:\Users\user\Desktop\HOME\08_SpringBoot\09_RestfulApi)
+[DEBUG] 24-10-30 14:34:52 [RestfulapiApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-10-30 14:34:52 [RestfulapiApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-10-30 14:34:53 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[WARN ] 24-10-30 14:34:53 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.parkjaehan.restfulapi]' package. Please check your configuration.
+[INFO ] 24-10-30 14:34:54 [RestfulapiApplication:56] - Started RestfulapiApplication in 3.383 seconds (process running for 4.267)
+[INFO ] 24-10-30 14:35:41 [RestfulapiApplication:50] - Starting RestfulapiApplication using Java 17.0.2 with PID 15724 (C:\Users\user\Desktop\HOME\08_SpringBoot\09_RestfulApi\build\classes\java\main started by user in C:\Users\user\Desktop\HOME\08_SpringBoot\09_RestfulApi)
+[DEBUG] 24-10-30 14:35:41 [RestfulapiApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-10-30 14:35:41 [RestfulapiApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-10-30 14:35:42 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[WARN ] 24-10-30 14:35:42 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.parkjaehan.restfulapi]' package. Please check your configuration.
+[INFO ] 24-10-30 14:35:44 [RestfulapiApplication:56] - Started RestfulapiApplication in 2.986 seconds (process running for 3.595)
+[INFO ] 24-10-30 14:36:43 [RestfulapiApplication:50] - Starting RestfulapiApplication using Java 17.0.2 with PID 22428 (C:\Users\user\Desktop\HOME\08_SpringBoot\09_RestfulApi\build\classes\java\main started by user in C:\Users\user\Desktop\HOME\08_SpringBoot\09_RestfulApi)
+[DEBUG] 24-10-30 14:36:43 [RestfulapiApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-10-30 14:36:43 [RestfulapiApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-10-30 14:36:44 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[WARN ] 24-10-30 14:36:44 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.parkjaehan.restfulapi]' package. Please check your configuration.
+[INFO ] 24-10-30 14:36:46 [RestfulapiApplication:56] - Started RestfulapiApplication in 2.991 seconds (process running for 3.539)
+[INFO ] 24-10-30 14:38:04 [RestfulapiApplication:50] - Starting RestfulapiApplication using Java 17.0.2 with PID 15248 (C:\Users\user\Desktop\HOME\08_SpringBoot\09_RestfulApi\build\classes\java\main started by user in C:\Users\user\Desktop\HOME\08_SpringBoot\09_RestfulApi)
+[DEBUG] 24-10-30 14:38:04 [RestfulapiApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-10-30 14:38:04 [RestfulapiApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-10-30 14:38:05 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[WARN ] 24-10-30 14:38:05 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.parkjaehan.restfulapi]' package. Please check your configuration.
+[INFO ] 24-10-30 14:38:06 [RestfulapiApplication:56] - Started RestfulapiApplication in 2.847 seconds (process running for 3.531)
+[INFO ] 24-10-30 14:41:02 [RestfulapiApplication:50] - Starting RestfulapiApplication using Java 17.0.2 with PID 30684 (C:\Users\user\Desktop\HOME\08_SpringBoot\09_RestfulApi\build\classes\java\main started by user in C:\Users\user\Desktop\HOME\08_SpringBoot\09_RestfulApi)
+[DEBUG] 24-10-30 14:41:02 [RestfulapiApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-10-30 14:41:02 [RestfulapiApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-10-30 14:41:03 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[WARN ] 24-10-30 14:41:03 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.parkjaehan.restfulapi]' package. Please check your configuration.
+[INFO ] 24-10-30 14:41:05 [RestfulapiApplication:56] - Started RestfulapiApplication in 2.991 seconds (process running for 3.675)
+[INFO ] 24-10-30 14:41:22 [RestfulapiApplication:50] - Starting RestfulapiApplication using Java 17.0.2 with PID 27940 (C:\Users\user\Desktop\HOME\08_SpringBoot\09_RestfulApi\build\classes\java\main started by user in C:\Users\user\Desktop\HOME\08_SpringBoot\09_RestfulApi)
+[DEBUG] 24-10-30 14:41:22 [RestfulapiApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-10-30 14:41:22 [RestfulapiApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-10-30 14:41:23 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[WARN ] 24-10-30 14:41:23 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.parkjaehan.restfulapi]' package. Please check your configuration.
+[INFO ] 24-10-30 14:41:24 [RestfulapiApplication:56] - Started RestfulapiApplication in 2.962 seconds (process running for 3.487)
+[INFO ] 24-10-30 14:43:50 [RestfulapiApplication:50] - Starting RestfulapiApplication using Java 17.0.2 with PID 1852 (C:\Users\user\Desktop\HOME\08_SpringBoot\09_RestfulApi\build\classes\java\main started by user in C:\Users\user\Desktop\HOME\08_SpringBoot\09_RestfulApi)
+[DEBUG] 24-10-30 14:43:50 [RestfulapiApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-10-30 14:43:50 [RestfulapiApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-10-30 14:43:51 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[WARN ] 24-10-30 14:43:51 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.parkjaehan.restfulapi]' package. Please check your configuration.
+[INFO ] 24-10-30 14:43:52 [RestfulapiApplication:56] - Started RestfulapiApplication in 2.77 seconds (process running for 3.241)
+[WARN ] 24-10-30 14:44:04 [DefaultHandlerExceptionResolver:247] - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported]
+[INFO ] 24-10-30 14:46:59 [RestfulapiApplication:50] - Starting RestfulapiApplication using Java 17.0.2 with PID 28796 (C:\Users\user\Desktop\HOME\08_SpringBoot\09_RestfulApi\build\classes\java\main started by user in C:\Users\user\Desktop\HOME\08_SpringBoot\09_RestfulApi)
+[DEBUG] 24-10-30 14:46:59 [RestfulapiApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-10-30 14:46:59 [RestfulapiApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-10-30 14:47:00 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[WARN ] 24-10-30 14:47:00 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.parkjaehan.restfulapi]' package. Please check your configuration.
+[INFO ] 24-10-30 14:47:02 [RestfulapiApplication:56] - Started RestfulapiApplication in 3.086 seconds (process running for 3.641)
+[WARN ] 24-10-30 14:47:09 [DefaultHandlerExceptionResolver:247] - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported]
+[INFO ] 24-10-30 14:48:50 [RestfulapiApplication:50] - Starting RestfulapiApplication using Java 17.0.2 with PID 24380 (C:\Users\user\Desktop\HOME\08_SpringBoot\09_RestfulApi\build\classes\java\main started by user in C:\Users\user\Desktop\HOME\08_SpringBoot\09_RestfulApi)
+[DEBUG] 24-10-30 14:48:50 [RestfulapiApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-10-30 14:48:50 [RestfulapiApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-10-30 14:48:51 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[WARN ] 24-10-30 14:48:51 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.parkjaehan.restfulapi]' package. Please check your configuration.
+[INFO ] 24-10-30 14:48:53 [RestfulapiApplication:56] - Started RestfulapiApplication in 3.03 seconds (process running for 3.492)
+[INFO ] 24-10-30 14:49:10 [RestfulapiApplication:50] - Starting RestfulapiApplication using Java 17.0.2 with PID 30468 (C:\Users\user\Desktop\HOME\08_SpringBoot\09_RestfulApi\build\classes\java\main started by user in C:\Users\user\Desktop\HOME\08_SpringBoot\09_RestfulApi)
+[DEBUG] 24-10-30 14:49:10 [RestfulapiApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-10-30 14:49:10 [RestfulapiApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-10-30 14:49:11 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[WARN ] 24-10-30 14:49:11 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.parkjaehan.restfulapi]' package. Please check your configuration.
+[INFO ] 24-10-30 14:49:12 [RestfulapiApplication:56] - Started RestfulapiApplication in 2.943 seconds (process running for 3.41)
+[WARN ] 24-10-30 14:49:39 [DefaultHandlerExceptionResolver:247] - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported]
+[INFO ] 24-10-30 14:53:26 [RestfulapiApplication:50] - Starting RestfulapiApplication using Java 17.0.2 with PID 20360 (C:\Users\user\Desktop\HOME\08_SpringBoot\09_RestfulApi\build\classes\java\main started by user in C:\Users\user\Desktop\HOME\08_SpringBoot\09_RestfulApi)
+[DEBUG] 24-10-30 14:53:26 [RestfulapiApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-10-30 14:53:26 [RestfulapiApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-10-30 14:53:27 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[WARN ] 24-10-30 14:53:27 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.parkjaehan.restfulapi]' package. Please check your configuration.
+[INFO ] 24-10-30 14:53:28 [RestfulapiApplication:56] - Started RestfulapiApplication in 2.901 seconds (process running for 3.336)
+[WARN ] 24-10-30 14:53:40 [DefaultHandlerExceptionResolver:247] - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'num1' for method parameter type int is not present]
+[INFO ] 24-10-30 14:57:14 [RestfulapiApplication:50] - Starting RestfulapiApplication using Java 17.0.2 with PID 10772 (C:\Users\user\Desktop\HOME\08_SpringBoot\09_RestfulApi\build\classes\java\main started by user in C:\Users\user\Desktop\HOME\08_SpringBoot\09_RestfulApi)
+[DEBUG] 24-10-30 14:57:14 [RestfulapiApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-10-30 14:57:14 [RestfulapiApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-10-30 14:57:15 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[WARN ] 24-10-30 14:57:15 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.parkjaehan.restfulapi]' package. Please check your configuration.
+[INFO ] 24-10-30 14:57:16 [RestfulapiApplication:56] - Started RestfulapiApplication in 2.996 seconds (process running for 3.603)
+[INFO ] 24-10-30 14:58:37 [RestfulapiApplication:50] - Starting RestfulapiApplication using Java 17.0.2 with PID 16564 (C:\Users\user\Desktop\HOME\08_SpringBoot\09_RestfulApi\build\classes\java\main started by user in C:\Users\user\Desktop\HOME\08_SpringBoot\09_RestfulApi)
+[DEBUG] 24-10-30 14:58:37 [RestfulapiApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-10-30 14:58:37 [RestfulapiApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-10-30 14:58:38 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[WARN ] 24-10-30 14:58:38 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.parkjaehan.restfulapi]' package. Please check your configuration.
+[INFO ] 24-10-30 14:58:40 [RestfulapiApplication:56] - Started RestfulapiApplication in 2.863 seconds (process running for 3.354)
+[INFO ] 24-10-30 14:59:09 [RestfulapiApplication:50] - Starting RestfulapiApplication using Java 17.0.2 with PID 32560 (C:\Users\user\Desktop\HOME\08_SpringBoot\09_RestfulApi\build\classes\java\main started by user in C:\Users\user\Desktop\HOME\08_SpringBoot\09_RestfulApi)
+[DEBUG] 24-10-30 14:59:09 [RestfulapiApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-10-30 14:59:09 [RestfulapiApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-10-30 14:59:10 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[WARN ] 24-10-30 14:59:10 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.parkjaehan.restfulapi]' package. Please check your configuration.
+[INFO ] 24-10-30 14:59:11 [RestfulapiApplication:56] - Started RestfulapiApplication in 3.043 seconds (process running for 3.492)
+[INFO ] 24-10-30 14:59:24 [RestfulapiApplication:50] - Starting RestfulapiApplication using Java 17.0.2 with PID 11248 (C:\Users\user\Desktop\HOME\08_SpringBoot\09_RestfulApi\build\classes\java\main started by user in C:\Users\user\Desktop\HOME\08_SpringBoot\09_RestfulApi)
+[DEBUG] 24-10-30 14:59:24 [RestfulapiApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-10-30 14:59:24 [RestfulapiApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-10-30 14:59:25 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[WARN ] 24-10-30 14:59:25 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.parkjaehan.restfulapi]' package. Please check your configuration.
+[INFO ] 24-10-30 14:59:27 [RestfulapiApplication:56] - Started RestfulapiApplication in 3.111 seconds (process running for 3.636)
+[WARN ] 24-10-30 14:59:33 [DefaultHandlerExceptionResolver:247] - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported]
+[INFO ] 24-10-30 15:00:18 [RestfulapiApplication:50] - Starting RestfulapiApplication using Java 17.0.2 with PID 30332 (C:\Users\user\Desktop\HOME\08_SpringBoot\09_RestfulApi\build\classes\java\main started by user in C:\Users\user\Desktop\HOME\08_SpringBoot\09_RestfulApi)
+[DEBUG] 24-10-30 15:00:18 [RestfulapiApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-10-30 15:00:18 [RestfulapiApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-10-30 15:00:19 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[WARN ] 24-10-30 15:00:19 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.parkjaehan.restfulapi]' package. Please check your configuration.
+[INFO ] 24-10-30 15:00:20 [RestfulapiApplication:56] - Started RestfulapiApplication in 2.84 seconds (process running for 3.333)
+[INFO ] 24-10-30 15:03:56 [RestfulapiApplication:50] - Starting RestfulapiApplication using Java 17.0.2 with PID 28760 (C:\Users\user\Desktop\HOME\08_SpringBoot\09_RestfulApi\build\classes\java\main started by user in C:\Users\user\Desktop\HOME\08_SpringBoot\09_RestfulApi)
+[DEBUG] 24-10-30 15:03:56 [RestfulapiApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-10-30 15:03:56 [RestfulapiApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-10-30 15:03:57 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[WARN ] 24-10-30 15:03:57 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.parkjaehan.restfulapi]' package. Please check your configuration.
+[INFO ] 24-10-30 15:03:58 [RestfulapiApplication:56] - Started RestfulapiApplication in 3.18 seconds (process running for 3.661)
+[INFO ] 24-10-30 15:14:32 [RestfulapiApplication:50] - Starting RestfulapiApplication using Java 17.0.2 with PID 3452 (C:\Users\user\Desktop\HOME\08_SpringBoot\09_RestfulApi\build\classes\java\main started by user in C:\Users\user\Desktop\HOME\08_SpringBoot\09_RestfulApi)
+[DEBUG] 24-10-30 15:14:32 [RestfulapiApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-10-30 15:14:32 [RestfulapiApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-10-30 15:14:33 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[WARN ] 24-10-30 15:14:33 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.parkjaehan.restfulapi]' package. Please check your configuration.
+[INFO ] 24-10-30 15:14:34 [RestfulapiApplication:56] - Started RestfulapiApplication in 2.702 seconds (process running for 3.139)
+[INFO ] 24-10-30 15:17:04 [RestfulapiApplication:50] - Starting RestfulapiApplication using Java 17.0.2 with PID 12156 (C:\Users\user\Desktop\HOME\08_SpringBoot\09_RestfulApi\build\classes\java\main started by user in C:\Users\user\Desktop\HOME\08_SpringBoot\09_RestfulApi)
+[DEBUG] 24-10-30 15:17:04 [RestfulapiApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-10-30 15:17:04 [RestfulapiApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-10-30 15:17:05 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[WARN ] 24-10-30 15:17:05 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.parkjaehan.restfulapi]' package. Please check your configuration.
+[INFO ] 24-10-30 15:17:06 [RestfulapiApplication:56] - Started RestfulapiApplication in 2.862 seconds (process running for 3.308)
+[INFO ] 24-10-30 15:23:22 [RestfulapiApplication:50] - Starting RestfulapiApplication using Java 17.0.2 with PID 17720 (C:\Users\user\Desktop\HOME\08_SpringBoot\09_RestfulApi\build\classes\java\main started by user in C:\Users\user\Desktop\HOME\08_SpringBoot\09_RestfulApi)
+[DEBUG] 24-10-30 15:23:22 [RestfulapiApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-10-30 15:23:22 [RestfulapiApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-10-30 15:23:23 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[WARN ] 24-10-30 15:23:23 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.parkjaehan.restfulapi]' package. Please check your configuration.
+[INFO ] 24-10-30 15:23:25 [RestfulapiApplication:56] - Started RestfulapiApplication in 3.103 seconds (process running for 3.528)
+[INFO ] 24-10-30 15:30:47 [RestfulapiApplication:50] - Starting RestfulapiApplication using Java 17.0.2 with PID 28324 (C:\Users\user\Desktop\HOME\08_SpringBoot\09_RestfulApi\build\classes\java\main started by user in C:\Users\user\Desktop\HOME\08_SpringBoot\09_RestfulApi)
+[DEBUG] 24-10-30 15:30:47 [RestfulapiApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-10-30 15:30:47 [RestfulapiApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-10-30 15:30:48 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[WARN ] 24-10-30 15:30:48 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.parkjaehan.restfulapi]' package. Please check your configuration.
+[INFO ] 24-10-30 15:30:49 [RestfulapiApplication:56] - Started RestfulapiApplication in 2.847 seconds (process running for 3.396)
+[INFO ] 24-10-30 15:32:00 [RestfulapiApplication:50] - Starting RestfulapiApplication using Java 17.0.2 with PID 9772 (C:\Users\user\Desktop\HOME\08_SpringBoot\09_RestfulApi\build\classes\java\main started by user in C:\Users\user\Desktop\HOME\08_SpringBoot\09_RestfulApi)
+[DEBUG] 24-10-30 15:32:00 [RestfulapiApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-10-30 15:32:00 [RestfulapiApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-10-30 15:32:01 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[WARN ] 24-10-30 15:32:01 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.parkjaehan.restfulapi]' package. Please check your configuration.
+[INFO ] 24-10-30 15:32:02 [RestfulapiApplication:56] - Started RestfulapiApplication in 2.733 seconds (process running for 3.232)
+[INFO ] 24-10-30 15:40:58 [RestfulapiApplication:50] - Starting RestfulapiApplication using Java 17.0.2 with PID 24380 (C:\Users\user\Desktop\HOME\08_SpringBoot\09_RestfulApi\build\classes\java\main started by user in C:\Users\user\Desktop\HOME\08_SpringBoot\09_RestfulApi)
+[DEBUG] 24-10-30 15:40:58 [RestfulapiApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-10-30 15:40:58 [RestfulapiApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-10-30 15:40:59 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[WARN ] 24-10-30 15:40:59 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.parkjaehan.restfulapi]' package. Please check your configuration.
+[INFO ] 24-10-30 15:41:01 [RestfulapiApplication:56] - Started RestfulapiApplication in 2.979 seconds (process running for 3.593)
+[INFO ] 24-10-30 15:41:52 [RestfulapiApplication:50] - Starting RestfulapiApplication using Java 17.0.2 with PID 11860 (C:\Users\user\Desktop\HOME\08_SpringBoot\09_RestfulApi\build\classes\java\main started by user in C:\Users\user\Desktop\HOME\08_SpringBoot\09_RestfulApi)
+[DEBUG] 24-10-30 15:41:52 [RestfulapiApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-10-30 15:41:52 [RestfulapiApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-10-30 15:41:53 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[WARN ] 24-10-30 15:41:53 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.parkjaehan.restfulapi]' package. Please check your configuration.
+[INFO ] 24-10-30 15:41:54 [RestfulapiApplication:56] - Started RestfulapiApplication in 2.947 seconds (process running for 3.413)
+[INFO ] 24-10-30 15:50:49 [RestfulapiApplication:50] - Starting RestfulapiApplication using Java 17.0.2 with PID 18916 (C:\Users\user\Desktop\HOME\08_SpringBoot\09_RestfulApi\build\classes\java\main started by user in C:\Users\user\Desktop\HOME\08_SpringBoot\09_RestfulApi)
+[DEBUG] 24-10-30 15:50:49 [RestfulapiApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-10-30 15:50:49 [RestfulapiApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-10-30 15:50:50 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[WARN ] 24-10-30 15:50:50 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.parkjaehan.restfulapi]' package. Please check your configuration.
+[INFO ] 24-10-30 15:50:52 [RestfulapiApplication:56] - Started RestfulapiApplication in 2.847 seconds (process running for 3.287)
+[INFO ] 24-10-30 15:53:01 [RestfulapiApplication:50] - Starting RestfulapiApplication using Java 17.0.2 with PID 25664 (C:\Users\user\Desktop\HOME\08_SpringBoot\09_RestfulApi\build\classes\java\main started by user in C:\Users\user\Desktop\HOME\08_SpringBoot\09_RestfulApi)
+[DEBUG] 24-10-30 15:53:01 [RestfulapiApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-10-30 15:53:01 [RestfulapiApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-10-30 15:53:02 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[WARN ] 24-10-30 15:53:02 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.parkjaehan.restfulapi]' package. Please check your configuration.
+[INFO ] 24-10-30 15:53:04 [RestfulapiApplication:56] - Started RestfulapiApplication in 2.952 seconds (process running for 3.432)
+[INFO ] 24-10-30 15:53:20 [RestfulapiApplication:50] - Starting RestfulapiApplication using Java 17.0.2 with PID 26240 (C:\Users\user\Desktop\HOME\08_SpringBoot\09_RestfulApi\build\classes\java\main started by user in C:\Users\user\Desktop\HOME\08_SpringBoot\09_RestfulApi)
+[DEBUG] 24-10-30 15:53:20 [RestfulapiApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-10-30 15:53:20 [RestfulapiApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-10-30 15:53:21 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[WARN ] 24-10-30 15:53:21 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.parkjaehan.restfulapi]' package. Please check your configuration.
+[INFO ] 24-10-30 15:53:22 [RestfulapiApplication:56] - Started RestfulapiApplication in 2.869 seconds (process running for 3.326)

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>AJAX 계산기</h2>
+
+    <form id="calcform" action="/my_clac">
+        <div>
+            <label for="x">숫자1: </label>
+            <input type="number" name="x" id="x" placeholder="숫자1">
+        </div>
+        <div>
+            <label for="y">숫자2: </label>
+            <input type="number" name="y" id="y" placeholder="숫자2">
+        </div>
+        <div>
+            <label for="operator">연산자: </label>
+            <select name="operator" id="operator">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
+            </select>
+        </div>
+        <hr />
+        <input type="submit" value="계산하기"></input>
+    </form>
+
+    <ul id="result"></ul>
+
+    <!-- Calc.js 파일을 불러오기 -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="/assets/js/Calc.js"></script>
+</body>
+</html>

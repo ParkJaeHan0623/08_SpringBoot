@@ -9,7 +9,6 @@ import java.util.Map;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.MimeMessageHelper;
-import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -20,7 +19,6 @@ import jakarta.servlet.http.HttpServletResponse;
 import kr.parkjaehan.restfulapi.models.Department;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 @Slf4j
@@ -166,73 +164,6 @@ public class SimpleRestfulController {
         // 4) 결과 표시
         output.put("message", "메일이 발송되었습니다.");
         return output;
-    }
-
-    @GetMapping("/my_clac")
-    public Map<String, Object> getCalc(
-            HttpServletResponse response,
-            @RequestParam("x") int x,
-            @RequestParam("y") int y) {
-
-        Map<String, Object> result = new LinkedHashMap<String, Object>(); // 순서를 유지하는 Map 객체
-
-        result.put("x", x);
-        result.put("y", y);
-        result.put("result", x + y);
-
-        return result;
-    }
-
-    @PostMapping("/my_clac")
-    public Map<String, Object> postClac(
-            HttpServletResponse response,
-            @RequestParam("x") int x,
-            @RequestParam("y") int y) {
-
-        Map<String, Object> result = new LinkedHashMap<String, Object>(); // 순서를 유지하는 Map 객체
-
-        result.put("x", x);
-        result.put("y", y);
-        result.put("result", x - y);
-
-        return result;
-    }
-
-    @PutMapping("/my_clac")
-    public Map<String, Object> putCalc(
-            HttpServletResponse response,
-            @RequestParam("x") int x,
-            @RequestParam("y") int y) {
-
-        Map<String, Object> result = new LinkedHashMap<>(); // 순서를 유지하는 Map 객체
-
-        result.put("x", x);
-        result.put("y", y);
-        result.put("result", x * y); // 곱셈 수행
-
-        return result;
-    }
-
-    @DeleteMapping("/my_clac")
-    public Map<String, Object> deleteCalc(
-            HttpServletResponse response,
-            @RequestParam("x") int x,
-            @RequestParam("y") int y) {
-
-        Map<String, Object> result = new LinkedHashMap<>(); // 순서를 유지하는 Map 객체
-
-        if (y == 0) {
-            result.put("x", x);
-            result.put("y", y);
-            result.put("error", "나눌 수 없습니다");
-            response.setStatus(HttpServletResponse.SC_BAD_REQUEST); // 400 상태 코드 설정
-        } else {
-            result.put("x", x);
-            result.put("y", y);
-            result.put("result", x / y); // 나눗셈 수행
-        }
-
-        return result;
     }
 
 }
