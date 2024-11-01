@@ -1,0 +1,1168 @@
+[INFO ] 24-11-01 12:22:43 [CrudApplication:50] - Starting CrudApplication using Java 17.0.2 with PID 11636 (C:\Users\user\Desktop\HOME\08_SpringBoot\10_CRUD\build\classes\java\main started by user in C:\Users\user\Desktop\HOME\08_SpringBoot\10_CRUD)
+[DEBUG] 24-11-01 12:22:43 [CrudApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-11-01 12:22:43 [CrudApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-11-01 12:22:44 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[INFO ] 24-11-01 12:22:45 [CrudApplication:56] - Started CrudApplication in 3.014 seconds (process running for 3.434)
+[INFO ] 24-11-01 12:28:08 [CrudApplication:50] - Starting CrudApplication using Java 17.0.2 with PID 2168 (C:\Users\user\Desktop\HOME\08_SpringBoot\10_CRUD\build\classes\java\main started by user in C:\Users\user\Desktop\HOME\08_SpringBoot\10_CRUD)
+[DEBUG] 24-11-01 12:28:08 [CrudApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-11-01 12:28:08 [CrudApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-11-01 12:28:09 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[INFO ] 24-11-01 12:28:11 [CrudApplication:56] - Started CrudApplication in 3.133 seconds (process running for 3.604)
+[INFO ] 24-11-01 12:31:54 [CrudApplication:50] - Starting CrudApplication using Java 17.0.2 with PID 24876 (C:\Users\user\Desktop\HOME\08_SpringBoot\10_CRUD\build\classes\java\main started by user in C:\Users\user\Desktop\HOME\08_SpringBoot\10_CRUD)
+[DEBUG] 24-11-01 12:31:54 [CrudApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-11-01 12:31:54 [CrudApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-11-01 12:31:55 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[INFO ] 24-11-01 12:31:57 [CrudApplication:56] - Started CrudApplication in 3.22 seconds (process running for 3.676)
+[INFO ] 24-11-01 12:33:37 [CrudApplication:50] - Starting CrudApplication using Java 17.0.2 with PID 25860 (C:\Users\user\Desktop\HOME\08_SpringBoot\10_CRUD\build\classes\java\main started by user in C:\Users\user\Desktop\HOME\08_SpringBoot\10_CRUD)
+[DEBUG] 24-11-01 12:33:37 [CrudApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-11-01 12:33:37 [CrudApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-11-01 12:33:38 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[INFO ] 24-11-01 12:33:40 [CrudApplication:56] - Started CrudApplication in 3.163 seconds (process running for 3.603)
+[DEBUG] 24-11-01 12:34:58 [selectCount:135] - ==>  Preparing: SELECT COUNT(*) FROM department
+[DEBUG] 24-11-01 12:34:58 [selectCount:135] - ==> Parameters: 
+[INFO ] 24-11-01 12:34:58 [sqlonly:228] - SELECT COUNT(*) FROM department
+
+[INFO ] 24-11-01 12:34:58 [resultsettable:610] - 
+|---------|
+|count(*) |
+|---------|
+|14       |
+|---------|
+
+[DEBUG] 24-11-01 12:34:58 [selectCount:135] - <==      Total: 1
+[DEBUG] 24-11-01 12:34:59 [Pagination:78] - Pagination(nowPage=1, totalCount=14, listCount=10, groupCount=5, totalPage=2, startPage=1, endPage=2, prevPage=0, nextPage=0, offset=0)
+[DEBUG] 24-11-01 12:34:59 [selectList:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department ORDER BY deptno DESC LIMIT ?, ?
+[DEBUG] 24-11-01 12:34:59 [selectList:135] - ==> Parameters: 0(Integer), 10(Integer)
+[INFO ] 24-11-01 12:34:59 [sqlonly:228] - SELECT deptno, dname, loc FROM department   ORDER BY deptno DESC LIMIT 0, 10
+
+[INFO ] 24-11-01 12:34:59 [resultsettable:610] - 
+|-------|--------|-------|
+|deptno |dname   |loc    |
+|-------|--------|-------|
+|215    |테스트학과   |테스트강의실 |
+|214    |테스트학과   |테스트강의실 |
+|213    |테스트학과   |테스트강의실 |
+|212    |테스트학과   |테스트강의실 |
+|211    |테스트학과   |테스트강의실 |
+|210    |테스트학과   |테스트강의실 |
+|209    |테스트학과   |테스트강의실 |
+|208    |메가스터디   |강남     |
+|206    |오징어심리학과 |내마음속   |
+|205    |목탁디자인학과 |개불     |
+|-------|--------|-------|
+
+[DEBUG] 24-11-01 12:34:59 [selectList:135] - <==      Total: 10
+[INFO ] 24-11-01 12:40:04 [CrudApplication:50] - Starting CrudApplication using Java 17.0.2 with PID 1656 (C:\Users\user\Desktop\HOME\08_SpringBoot\10_CRUD\build\classes\java\main started by user in C:\Users\user\Desktop\HOME\08_SpringBoot\10_CRUD)
+[DEBUG] 24-11-01 12:40:04 [CrudApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-11-01 12:40:04 [CrudApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-11-01 12:40:06 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[INFO ] 24-11-01 12:40:07 [CrudApplication:56] - Started CrudApplication in 3.089 seconds (process running for 3.556)
+[DEBUG] 24-11-01 12:40:56 [selectCount:135] - ==>  Preparing: SELECT COUNT(*) FROM department
+[DEBUG] 24-11-01 12:40:56 [selectCount:135] - ==> Parameters: 
+[INFO ] 24-11-01 12:40:56 [sqlonly:228] - SELECT COUNT(*) FROM department
+
+[INFO ] 24-11-01 12:40:56 [resultsettable:610] - 
+|---------|
+|count(*) |
+|---------|
+|14       |
+|---------|
+
+[DEBUG] 24-11-01 12:40:56 [selectCount:135] - <==      Total: 1
+[DEBUG] 24-11-01 12:40:56 [Pagination:78] - Pagination(nowPage=1, totalCount=14, listCount=10, groupCount=5, totalPage=2, startPage=1, endPage=2, prevPage=0, nextPage=0, offset=0)
+[DEBUG] 24-11-01 12:40:56 [selectList:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department ORDER BY deptno DESC LIMIT ?, ?
+[DEBUG] 24-11-01 12:40:56 [selectList:135] - ==> Parameters: 0(Integer), 10(Integer)
+[INFO ] 24-11-01 12:40:56 [sqlonly:228] - SELECT deptno, dname, loc FROM department   ORDER BY deptno DESC LIMIT 0, 10
+
+[INFO ] 24-11-01 12:40:56 [resultsettable:610] - 
+|-------|--------|-------|
+|deptno |dname   |loc    |
+|-------|--------|-------|
+|215    |테스트학과   |테스트강의실 |
+|214    |테스트학과   |테스트강의실 |
+|213    |테스트학과   |테스트강의실 |
+|212    |테스트학과   |테스트강의실 |
+|211    |테스트학과   |테스트강의실 |
+|210    |테스트학과   |테스트강의실 |
+|209    |테스트학과   |테스트강의실 |
+|208    |메가스터디   |강남     |
+|206    |오징어심리학과 |내마음속   |
+|205    |목탁디자인학과 |개불     |
+|-------|--------|-------|
+
+[DEBUG] 24-11-01 12:40:56 [selectList:135] - <==      Total: 10
+[INFO ] 24-11-01 12:42:37 [CrudApplication:50] - Starting CrudApplication using Java 17.0.2 with PID 15000 (C:\Users\user\Desktop\HOME\08_SpringBoot\10_CRUD\build\classes\java\main started by user in C:\Users\user\Desktop\HOME\08_SpringBoot\10_CRUD)
+[DEBUG] 24-11-01 12:42:37 [CrudApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-11-01 12:42:37 [CrudApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-11-01 12:42:38 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[INFO ] 24-11-01 12:42:40 [CrudApplication:56] - Started CrudApplication in 3.361 seconds (process running for 3.877)
+[DEBUG] 24-11-01 12:42:47 [selectItem:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department WHERE deptno = ?
+[DEBUG] 24-11-01 12:42:47 [selectItem:135] - ==> Parameters: 101(Integer)
+[INFO ] 24-11-01 12:42:47 [sqlonly:228] - SELECT deptno, dname, loc FROM department WHERE deptno = 101
+
+[INFO ] 24-11-01 12:42:47 [resultsettable:610] - 
+|-------|-------|----|
+|deptno |dname  |loc |
+|-------|-------|----|
+|101    |컴퓨터공학과 |1호관 |
+|-------|-------|----|
+
+[DEBUG] 24-11-01 12:42:47 [selectItem:135] - <==      Total: 1
+[DEBUG] 24-11-01 12:43:13 [selectCount:135] - ==>  Preparing: SELECT COUNT(*) FROM department
+[DEBUG] 24-11-01 12:43:13 [selectCount:135] - ==> Parameters: 
+[INFO ] 24-11-01 12:43:13 [sqlonly:228] - SELECT COUNT(*) FROM department
+
+[INFO ] 24-11-01 12:43:13 [resultsettable:610] - 
+|---------|
+|count(*) |
+|---------|
+|14       |
+|---------|
+
+[DEBUG] 24-11-01 12:43:13 [selectCount:135] - <==      Total: 1
+[DEBUG] 24-11-01 12:43:13 [Pagination:78] - Pagination(nowPage=1, totalCount=14, listCount=10, groupCount=5, totalPage=2, startPage=1, endPage=2, prevPage=0, nextPage=0, offset=0)
+[DEBUG] 24-11-01 12:43:13 [selectList:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department ORDER BY deptno DESC LIMIT ?, ?
+[DEBUG] 24-11-01 12:43:13 [selectList:135] - ==> Parameters: 0(Integer), 10(Integer)
+[INFO ] 24-11-01 12:43:13 [sqlonly:228] - SELECT deptno, dname, loc FROM department   ORDER BY deptno DESC LIMIT 0, 10
+
+[INFO ] 24-11-01 12:43:13 [resultsettable:610] - 
+|-------|--------|-------|
+|deptno |dname   |loc    |
+|-------|--------|-------|
+|215    |테스트학과   |테스트강의실 |
+|214    |테스트학과   |테스트강의실 |
+|213    |테스트학과   |테스트강의실 |
+|212    |테스트학과   |테스트강의실 |
+|211    |테스트학과   |테스트강의실 |
+|210    |테스트학과   |테스트강의실 |
+|209    |테스트학과   |테스트강의실 |
+|208    |메가스터디   |강남     |
+|206    |오징어심리학과 |내마음속   |
+|205    |목탁디자인학과 |개불     |
+|-------|--------|-------|
+
+[DEBUG] 24-11-01 12:43:13 [selectList:135] - <==      Total: 10
+[DEBUG] 24-11-01 12:43:14 [selectCount:135] - ==>  Preparing: SELECT COUNT(*) FROM department
+[DEBUG] 24-11-01 12:43:14 [selectCount:135] - ==> Parameters: 
+[INFO ] 24-11-01 12:43:14 [sqlonly:228] - SELECT COUNT(*) FROM department
+
+[INFO ] 24-11-01 12:43:14 [resultsettable:610] - 
+|---------|
+|count(*) |
+|---------|
+|14       |
+|---------|
+
+[DEBUG] 24-11-01 12:43:14 [selectCount:135] - <==      Total: 1
+[DEBUG] 24-11-01 12:43:14 [Pagination:78] - Pagination(nowPage=2, totalCount=14, listCount=10, groupCount=5, totalPage=2, startPage=1, endPage=2, prevPage=0, nextPage=0, offset=10)
+[DEBUG] 24-11-01 12:43:14 [selectList:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department ORDER BY deptno DESC LIMIT ?, ?
+[DEBUG] 24-11-01 12:43:14 [selectList:135] - ==> Parameters: 10(Integer), 10(Integer)
+[INFO ] 24-11-01 12:43:14 [sqlonly:228] - SELECT deptno, dname, loc FROM department   ORDER BY deptno DESC LIMIT 10, 10
+
+[INFO ] 24-11-01 12:43:14 [resultsettable:610] - 
+|-------|-------|-------|
+|deptno |dname  |loc    |
+|-------|-------|-------|
+|202    |기계공학과  |4호관    |
+|201    |전자공학과  |3호관    |
+|102    |테스트학과  |테스트강의실 |
+|101    |컴퓨터공학과 |1호관    |
+|-------|-------|-------|
+
+[DEBUG] 24-11-01 12:43:14 [selectList:135] - <==      Total: 4
+[DEBUG] 24-11-01 12:43:21 [selectItem:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department WHERE deptno = ?
+[DEBUG] 24-11-01 12:43:21 [selectItem:135] - ==> Parameters: 101(Integer)
+[INFO ] 24-11-01 12:43:21 [sqlonly:228] - SELECT deptno, dname, loc FROM department WHERE deptno = 101
+
+[INFO ] 24-11-01 12:43:21 [resultsettable:610] - 
+|-------|-------|----|
+|deptno |dname  |loc |
+|-------|-------|----|
+|101    |컴퓨터공학과 |1호관 |
+|-------|-------|----|
+
+[DEBUG] 24-11-01 12:43:21 [selectItem:135] - <==      Total: 1
+[DEBUG] 24-11-01 12:43:21 [selectItem:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department WHERE deptno = ?
+[DEBUG] 24-11-01 12:43:21 [selectItem:135] - ==> Parameters: 102(Integer)
+[INFO ] 24-11-01 12:43:21 [sqlonly:228] - SELECT deptno, dname, loc FROM department WHERE deptno = 102
+
+[INFO ] 24-11-01 12:43:21 [resultsettable:610] - 
+|-------|------|-------|
+|deptno |dname |loc    |
+|-------|------|-------|
+|102    |테스트학과 |테스트강의실 |
+|-------|------|-------|
+
+[DEBUG] 24-11-01 12:43:21 [selectItem:135] - <==      Total: 1
+[DEBUG] 24-11-01 12:43:22 [selectItem:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department WHERE deptno = ?
+[DEBUG] 24-11-01 12:43:22 [selectItem:135] - ==> Parameters: 201(Integer)
+[INFO ] 24-11-01 12:43:22 [sqlonly:228] - SELECT deptno, dname, loc FROM department WHERE deptno = 201
+
+[INFO ] 24-11-01 12:43:22 [resultsettable:610] - 
+|-------|------|----|
+|deptno |dname |loc |
+|-------|------|----|
+|201    |전자공학과 |3호관 |
+|-------|------|----|
+
+[DEBUG] 24-11-01 12:43:22 [selectItem:135] - <==      Total: 1
+[DEBUG] 24-11-01 12:43:22 [selectItem:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department WHERE deptno = ?
+[DEBUG] 24-11-01 12:43:22 [selectItem:135] - ==> Parameters: 202(Integer)
+[INFO ] 24-11-01 12:43:22 [sqlonly:228] - SELECT deptno, dname, loc FROM department WHERE deptno = 202
+
+[INFO ] 24-11-01 12:43:22 [resultsettable:610] - 
+|-------|------|----|
+|deptno |dname |loc |
+|-------|------|----|
+|202    |기계공학과 |4호관 |
+|-------|------|----|
+
+[DEBUG] 24-11-01 12:43:22 [selectItem:135] - <==      Total: 1
+[INFO ] 24-11-01 12:46:21 [CrudApplication:50] - Starting CrudApplication using Java 17.0.2 with PID 1064 (C:\Users\user\Desktop\HOME\08_SpringBoot\10_CRUD\build\classes\java\main started by user in C:\Users\user\Desktop\HOME\08_SpringBoot\10_CRUD)
+[DEBUG] 24-11-01 12:46:21 [CrudApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-11-01 12:46:21 [CrudApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-11-01 12:46:22 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[INFO ] 24-11-01 12:46:24 [CrudApplication:56] - Started CrudApplication in 2.951 seconds (process running for 3.626)
+[DEBUG] 24-11-01 12:46:38 [selectCount:135] - ==>  Preparing: SELECT COUNT(*) FROM department
+[DEBUG] 24-11-01 12:46:38 [selectCount:135] - ==> Parameters: 
+[INFO ] 24-11-01 12:46:38 [sqlonly:228] - SELECT COUNT(*) FROM department
+
+[INFO ] 24-11-01 12:46:38 [resultsettable:610] - 
+|---------|
+|count(*) |
+|---------|
+|14       |
+|---------|
+
+[DEBUG] 24-11-01 12:46:38 [selectCount:135] - <==      Total: 1
+[DEBUG] 24-11-01 12:46:38 [Pagination:78] - Pagination(nowPage=1, totalCount=14, listCount=10, groupCount=5, totalPage=2, startPage=1, endPage=2, prevPage=0, nextPage=0, offset=0)
+[DEBUG] 24-11-01 12:46:38 [selectList:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department ORDER BY deptno DESC LIMIT ?, ?
+[DEBUG] 24-11-01 12:46:38 [selectList:135] - ==> Parameters: 0(Integer), 10(Integer)
+[INFO ] 24-11-01 12:46:38 [sqlonly:228] - SELECT deptno, dname, loc FROM department   ORDER BY deptno DESC LIMIT 0, 10
+
+[INFO ] 24-11-01 12:46:38 [resultsettable:610] - 
+|-------|--------|-------|
+|deptno |dname   |loc    |
+|-------|--------|-------|
+|215    |테스트학과   |테스트강의실 |
+|214    |테스트학과   |테스트강의실 |
+|213    |테스트학과   |테스트강의실 |
+|212    |테스트학과   |테스트강의실 |
+|211    |테스트학과   |테스트강의실 |
+|210    |테스트학과   |테스트강의실 |
+|209    |테스트학과   |테스트강의실 |
+|208    |메가스터디   |강남     |
+|206    |오징어심리학과 |내마음속   |
+|205    |목탁디자인학과 |개불     |
+|-------|--------|-------|
+
+[DEBUG] 24-11-01 12:46:38 [selectList:135] - <==      Total: 10
+[DEBUG] 24-11-01 12:47:00 [selectCount:135] - ==>  Preparing: SELECT COUNT(*) FROM department
+[DEBUG] 24-11-01 12:47:00 [selectCount:135] - ==> Parameters: 
+[INFO ] 24-11-01 12:47:00 [sqlonly:228] - SELECT COUNT(*) FROM department
+
+[INFO ] 24-11-01 12:47:00 [resultsettable:610] - 
+|---------|
+|count(*) |
+|---------|
+|14       |
+|---------|
+
+[DEBUG] 24-11-01 12:47:00 [selectCount:135] - <==      Total: 1
+[DEBUG] 24-11-01 12:47:00 [Pagination:78] - Pagination(nowPage=1, totalCount=14, listCount=10, groupCount=5, totalPage=2, startPage=1, endPage=2, prevPage=0, nextPage=0, offset=0)
+[DEBUG] 24-11-01 12:47:00 [selectList:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department ORDER BY deptno DESC LIMIT ?, ?
+[DEBUG] 24-11-01 12:47:00 [selectList:135] - ==> Parameters: 0(Integer), 10(Integer)
+[INFO ] 24-11-01 12:47:00 [sqlonly:228] - SELECT deptno, dname, loc FROM department   ORDER BY deptno DESC LIMIT 0, 10
+
+[INFO ] 24-11-01 12:47:00 [resultsettable:610] - 
+|-------|--------|-------|
+|deptno |dname   |loc    |
+|-------|--------|-------|
+|215    |테스트학과   |테스트강의실 |
+|214    |테스트학과   |테스트강의실 |
+|213    |테스트학과   |테스트강의실 |
+|212    |테스트학과   |테스트강의실 |
+|211    |테스트학과   |테스트강의실 |
+|210    |테스트학과   |테스트강의실 |
+|209    |테스트학과   |테스트강의실 |
+|208    |메가스터디   |강남     |
+|206    |오징어심리학과 |내마음속   |
+|205    |목탁디자인학과 |개불     |
+|-------|--------|-------|
+
+[DEBUG] 24-11-01 12:47:00 [selectList:135] - <==      Total: 10
+[INFO ] 24-11-01 12:47:50 [CrudApplication:50] - Starting CrudApplication using Java 17.0.2 with PID 13432 (C:\Users\user\Desktop\HOME\08_SpringBoot\10_CRUD\build\classes\java\main started by user in C:\Users\user\Desktop\HOME\08_SpringBoot\10_CRUD)
+[DEBUG] 24-11-01 12:47:50 [CrudApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-11-01 12:47:50 [CrudApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-11-01 12:47:51 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[INFO ] 24-11-01 12:47:52 [CrudApplication:56] - Started CrudApplication in 3.001 seconds (process running for 3.91)
+[DEBUG] 24-11-01 12:47:59 [selectCount:135] - ==>  Preparing: SELECT COUNT(*) FROM department
+[DEBUG] 24-11-01 12:47:59 [selectCount:135] - ==> Parameters: 
+[INFO ] 24-11-01 12:47:59 [sqlonly:228] - SELECT COUNT(*) FROM department
+
+[INFO ] 24-11-01 12:47:59 [resultsettable:610] - 
+|---------|
+|count(*) |
+|---------|
+|14       |
+|---------|
+
+[DEBUG] 24-11-01 12:47:59 [selectCount:135] - <==      Total: 1
+[DEBUG] 24-11-01 12:47:59 [Pagination:78] - Pagination(nowPage=1, totalCount=14, listCount=10, groupCount=5, totalPage=2, startPage=1, endPage=2, prevPage=0, nextPage=0, offset=0)
+[DEBUG] 24-11-01 12:47:59 [selectList:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department ORDER BY deptno DESC LIMIT ?, ?
+[DEBUG] 24-11-01 12:47:59 [selectList:135] - ==> Parameters: 0(Integer), 10(Integer)
+[INFO ] 24-11-01 12:47:59 [sqlonly:228] - SELECT deptno, dname, loc FROM department   ORDER BY deptno DESC LIMIT 0, 10
+
+[INFO ] 24-11-01 12:47:59 [resultsettable:610] - 
+|-------|--------|-------|
+|deptno |dname   |loc    |
+|-------|--------|-------|
+|215    |테스트학과   |테스트강의실 |
+|214    |테스트학과   |테스트강의실 |
+|213    |테스트학과   |테스트강의실 |
+|212    |테스트학과   |테스트강의실 |
+|211    |테스트학과   |테스트강의실 |
+|210    |테스트학과   |테스트강의실 |
+|209    |테스트학과   |테스트강의실 |
+|208    |메가스터디   |강남     |
+|206    |오징어심리학과 |내마음속   |
+|205    |목탁디자인학과 |개불     |
+|-------|--------|-------|
+
+[DEBUG] 24-11-01 12:47:59 [selectList:135] - <==      Total: 10
+[DEBUG] 24-11-01 12:48:32 [selectItem:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department WHERE deptno = ?
+[DEBUG] 24-11-01 12:48:32 [selectItem:135] - ==> Parameters: 214(Integer)
+[INFO ] 24-11-01 12:48:32 [sqlonly:228] - SELECT deptno, dname, loc FROM department WHERE deptno = 214
+
+[INFO ] 24-11-01 12:48:32 [resultsettable:610] - 
+|-------|------|-------|
+|deptno |dname |loc    |
+|-------|------|-------|
+|214    |테스트학과 |테스트강의실 |
+|-------|------|-------|
+
+[DEBUG] 24-11-01 12:48:32 [selectItem:135] - <==      Total: 1
+[DEBUG] 24-11-01 12:48:34 [selectCount:135] - ==>  Preparing: SELECT COUNT(*) FROM department
+[DEBUG] 24-11-01 12:48:34 [selectCount:135] - ==> Parameters: 
+[INFO ] 24-11-01 12:48:34 [sqlonly:228] - SELECT COUNT(*) FROM department
+
+[INFO ] 24-11-01 12:48:34 [resultsettable:610] - 
+|---------|
+|count(*) |
+|---------|
+|14       |
+|---------|
+
+[DEBUG] 24-11-01 12:48:34 [selectCount:135] - <==      Total: 1
+[DEBUG] 24-11-01 12:48:34 [Pagination:78] - Pagination(nowPage=1, totalCount=14, listCount=10, groupCount=5, totalPage=2, startPage=1, endPage=2, prevPage=0, nextPage=0, offset=0)
+[DEBUG] 24-11-01 12:48:34 [selectList:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department ORDER BY deptno DESC LIMIT ?, ?
+[DEBUG] 24-11-01 12:48:34 [selectList:135] - ==> Parameters: 0(Integer), 10(Integer)
+[INFO ] 24-11-01 12:48:34 [sqlonly:228] - SELECT deptno, dname, loc FROM department   ORDER BY deptno DESC LIMIT 0, 10
+
+[INFO ] 24-11-01 12:48:34 [resultsettable:610] - 
+|-------|--------|-------|
+|deptno |dname   |loc    |
+|-------|--------|-------|
+|215    |테스트학과   |테스트강의실 |
+|214    |테스트학과   |테스트강의실 |
+|213    |테스트학과   |테스트강의실 |
+|212    |테스트학과   |테스트강의실 |
+|211    |테스트학과   |테스트강의실 |
+|210    |테스트학과   |테스트강의실 |
+|209    |테스트학과   |테스트강의실 |
+|208    |메가스터디   |강남     |
+|206    |오징어심리학과 |내마음속   |
+|205    |목탁디자인학과 |개불     |
+|-------|--------|-------|
+
+[DEBUG] 24-11-01 12:48:34 [selectList:135] - <==      Total: 10
+[DEBUG] 24-11-01 12:48:35 [selectItem:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department WHERE deptno = ?
+[DEBUG] 24-11-01 12:48:35 [selectItem:135] - ==> Parameters: 214(Integer)
+[INFO ] 24-11-01 12:48:35 [sqlonly:228] - SELECT deptno, dname, loc FROM department WHERE deptno = 214
+
+[INFO ] 24-11-01 12:48:35 [resultsettable:610] - 
+|-------|------|-------|
+|deptno |dname |loc    |
+|-------|------|-------|
+|214    |테스트학과 |테스트강의실 |
+|-------|------|-------|
+
+[DEBUG] 24-11-01 12:48:35 [selectItem:135] - <==      Total: 1
+[DEBUG] 24-11-01 12:48:44 [selectCount:135] - ==>  Preparing: SELECT COUNT(*) FROM department
+[DEBUG] 24-11-01 12:48:44 [selectCount:135] - ==> Parameters: 
+[INFO ] 24-11-01 12:48:44 [sqlonly:228] - SELECT COUNT(*) FROM department
+
+[INFO ] 24-11-01 12:48:44 [resultsettable:610] - 
+|---------|
+|count(*) |
+|---------|
+|14       |
+|---------|
+
+[DEBUG] 24-11-01 12:48:44 [selectCount:135] - <==      Total: 1
+[DEBUG] 24-11-01 12:48:44 [Pagination:78] - Pagination(nowPage=1, totalCount=14, listCount=10, groupCount=5, totalPage=2, startPage=1, endPage=2, prevPage=0, nextPage=0, offset=0)
+[DEBUG] 24-11-01 12:48:44 [selectList:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department ORDER BY deptno DESC LIMIT ?, ?
+[DEBUG] 24-11-01 12:48:44 [selectList:135] - ==> Parameters: 0(Integer), 10(Integer)
+[INFO ] 24-11-01 12:48:44 [sqlonly:228] - SELECT deptno, dname, loc FROM department   ORDER BY deptno DESC LIMIT 0, 10
+
+[INFO ] 24-11-01 12:48:44 [resultsettable:610] - 
+|-------|--------|-------|
+|deptno |dname   |loc    |
+|-------|--------|-------|
+|215    |테스트학과   |테스트강의실 |
+|214    |테스트학과   |테스트강의실 |
+|213    |테스트학과   |테스트강의실 |
+|212    |테스트학과   |테스트강의실 |
+|211    |테스트학과   |테스트강의실 |
+|210    |테스트학과   |테스트강의실 |
+|209    |테스트학과   |테스트강의실 |
+|208    |메가스터디   |강남     |
+|206    |오징어심리학과 |내마음속   |
+|205    |목탁디자인학과 |개불     |
+|-------|--------|-------|
+
+[DEBUG] 24-11-01 12:48:44 [selectList:135] - <==      Total: 10
+[DEBUG] 24-11-01 12:48:46 [selectItem:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department WHERE deptno = ?
+[DEBUG] 24-11-01 12:48:46 [selectItem:135] - ==> Parameters: 213(Integer)
+[INFO ] 24-11-01 12:48:46 [sqlonly:228] - SELECT deptno, dname, loc FROM department WHERE deptno = 213
+
+[INFO ] 24-11-01 12:48:46 [resultsettable:610] - 
+|-------|------|-------|
+|deptno |dname |loc    |
+|-------|------|-------|
+|213    |테스트학과 |테스트강의실 |
+|-------|------|-------|
+
+[DEBUG] 24-11-01 12:48:46 [selectItem:135] - <==      Total: 1
+[DEBUG] 24-11-01 12:48:47 [selectCount:135] - ==>  Preparing: SELECT COUNT(*) FROM department
+[DEBUG] 24-11-01 12:48:47 [selectCount:135] - ==> Parameters: 
+[INFO ] 24-11-01 12:48:47 [sqlonly:228] - SELECT COUNT(*) FROM department
+
+[INFO ] 24-11-01 12:48:47 [resultsettable:610] - 
+|---------|
+|count(*) |
+|---------|
+|14       |
+|---------|
+
+[DEBUG] 24-11-01 12:48:47 [selectCount:135] - <==      Total: 1
+[DEBUG] 24-11-01 12:48:47 [Pagination:78] - Pagination(nowPage=1, totalCount=14, listCount=10, groupCount=5, totalPage=2, startPage=1, endPage=2, prevPage=0, nextPage=0, offset=0)
+[DEBUG] 24-11-01 12:48:47 [selectList:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department ORDER BY deptno DESC LIMIT ?, ?
+[DEBUG] 24-11-01 12:48:47 [selectList:135] - ==> Parameters: 0(Integer), 10(Integer)
+[INFO ] 24-11-01 12:48:47 [sqlonly:228] - SELECT deptno, dname, loc FROM department   ORDER BY deptno DESC LIMIT 0, 10
+
+[INFO ] 24-11-01 12:48:47 [resultsettable:610] - 
+|-------|--------|-------|
+|deptno |dname   |loc    |
+|-------|--------|-------|
+|215    |테스트학과   |테스트강의실 |
+|214    |테스트학과   |테스트강의실 |
+|213    |테스트학과   |테스트강의실 |
+|212    |테스트학과   |테스트강의실 |
+|211    |테스트학과   |테스트강의실 |
+|210    |테스트학과   |테스트강의실 |
+|209    |테스트학과   |테스트강의실 |
+|208    |메가스터디   |강남     |
+|206    |오징어심리학과 |내마음속   |
+|205    |목탁디자인학과 |개불     |
+|-------|--------|-------|
+
+[DEBUG] 24-11-01 12:48:47 [selectList:135] - <==      Total: 10
+[DEBUG] 24-11-01 12:50:41 [selectItem:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department WHERE deptno = ?
+[DEBUG] 24-11-01 12:50:41 [selectItem:135] - ==> Parameters: 101(Integer)
+[INFO ] 24-11-01 12:50:41 [sqlonly:228] - SELECT deptno, dname, loc FROM department WHERE deptno = 101
+
+[INFO ] 24-11-01 12:50:41 [resultsettable:610] - 
+|-------|-------|----|
+|deptno |dname  |loc |
+|-------|-------|----|
+|101    |컴퓨터공학과 |1호관 |
+|-------|-------|----|
+
+[DEBUG] 24-11-01 12:50:41 [selectItem:135] - <==      Total: 1
+[DEBUG] 24-11-01 12:50:47 [selectCount:135] - ==>  Preparing: SELECT COUNT(*) FROM department
+[DEBUG] 24-11-01 12:50:47 [selectCount:135] - ==> Parameters: 
+[INFO ] 24-11-01 12:50:47 [sqlonly:228] - SELECT COUNT(*) FROM department
+
+[INFO ] 24-11-01 12:50:47 [resultsettable:610] - 
+|---------|
+|count(*) |
+|---------|
+|14       |
+|---------|
+
+[DEBUG] 24-11-01 12:50:47 [selectCount:135] - <==      Total: 1
+[DEBUG] 24-11-01 12:50:47 [Pagination:78] - Pagination(nowPage=1, totalCount=14, listCount=10, groupCount=5, totalPage=2, startPage=1, endPage=2, prevPage=0, nextPage=0, offset=0)
+[DEBUG] 24-11-01 12:50:47 [selectList:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department ORDER BY deptno DESC LIMIT ?, ?
+[DEBUG] 24-11-01 12:50:47 [selectList:135] - ==> Parameters: 0(Integer), 10(Integer)
+[INFO ] 24-11-01 12:50:47 [sqlonly:228] - SELECT deptno, dname, loc FROM department   ORDER BY deptno DESC LIMIT 0, 10
+
+[INFO ] 24-11-01 12:50:47 [resultsettable:610] - 
+|-------|--------|-------|
+|deptno |dname   |loc    |
+|-------|--------|-------|
+|215    |테스트학과   |테스트강의실 |
+|214    |테스트학과   |테스트강의실 |
+|213    |테스트학과   |테스트강의실 |
+|212    |테스트학과   |테스트강의실 |
+|211    |테스트학과   |테스트강의실 |
+|210    |테스트학과   |테스트강의실 |
+|209    |테스트학과   |테스트강의실 |
+|208    |메가스터디   |강남     |
+|206    |오징어심리학과 |내마음속   |
+|205    |목탁디자인학과 |개불     |
+|-------|--------|-------|
+
+[DEBUG] 24-11-01 12:50:47 [selectList:135] - <==      Total: 10
+[DEBUG] 24-11-01 12:50:49 [selectItem:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department WHERE deptno = ?
+[DEBUG] 24-11-01 12:50:49 [selectItem:135] - ==> Parameters: 214(Integer)
+[INFO ] 24-11-01 12:50:49 [sqlonly:228] - SELECT deptno, dname, loc FROM department WHERE deptno = 214
+
+[INFO ] 24-11-01 12:50:49 [resultsettable:610] - 
+|-------|------|-------|
+|deptno |dname |loc    |
+|-------|------|-------|
+|214    |테스트학과 |테스트강의실 |
+|-------|------|-------|
+
+[DEBUG] 24-11-01 12:50:49 [selectItem:135] - <==      Total: 1
+[DEBUG] 24-11-01 12:50:54 [selectItem:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department WHERE deptno = ?
+[DEBUG] 24-11-01 12:50:54 [selectItem:135] - ==> Parameters: 208(Integer)
+[INFO ] 24-11-01 12:50:54 [sqlonly:228] - SELECT deptno, dname, loc FROM department WHERE deptno = 208
+
+[INFO ] 24-11-01 12:50:54 [resultsettable:610] - 
+|-------|------|----|
+|deptno |dname |loc |
+|-------|------|----|
+|208    |메가스터디 |강남  |
+|-------|------|----|
+
+[DEBUG] 24-11-01 12:50:54 [selectItem:135] - <==      Total: 1
+[INFO ] 24-11-01 12:51:35 [CrudApplication:50] - Starting CrudApplication using Java 17.0.2 with PID 23624 (C:\Users\user\Desktop\HOME\08_SpringBoot\10_CRUD\build\classes\java\main started by user in C:\Users\user\Desktop\HOME\08_SpringBoot\10_CRUD)
+[DEBUG] 24-11-01 12:51:35 [CrudApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-11-01 12:51:35 [CrudApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-11-01 12:51:36 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[INFO ] 24-11-01 12:51:38 [CrudApplication:56] - Started CrudApplication in 2.91 seconds (process running for 3.567)
+[DEBUG] 24-11-01 12:51:52 [selectCount:135] - ==>  Preparing: SELECT COUNT(*) FROM department
+[DEBUG] 24-11-01 12:51:52 [selectCount:135] - ==> Parameters: 
+[INFO ] 24-11-01 12:51:52 [sqlonly:228] - SELECT COUNT(*) FROM department
+
+[INFO ] 24-11-01 12:51:52 [resultsettable:610] - 
+|---------|
+|count(*) |
+|---------|
+|14       |
+|---------|
+
+[DEBUG] 24-11-01 12:51:52 [selectCount:135] - <==      Total: 1
+[DEBUG] 24-11-01 12:51:52 [Pagination:78] - Pagination(nowPage=1, totalCount=14, listCount=10, groupCount=5, totalPage=2, startPage=1, endPage=2, prevPage=0, nextPage=0, offset=0)
+[DEBUG] 24-11-01 12:51:52 [selectList:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department ORDER BY deptno DESC LIMIT ?, ?
+[DEBUG] 24-11-01 12:51:52 [selectList:135] - ==> Parameters: 0(Integer), 10(Integer)
+[INFO ] 24-11-01 12:51:52 [sqlonly:228] - SELECT deptno, dname, loc FROM department   ORDER BY deptno DESC LIMIT 0, 10
+
+[INFO ] 24-11-01 12:51:52 [resultsettable:610] - 
+|-------|--------|-------|
+|deptno |dname   |loc    |
+|-------|--------|-------|
+|215    |테스트학과   |테스트강의실 |
+|214    |테스트학과   |테스트강의실 |
+|213    |테스트학과   |테스트강의실 |
+|212    |테스트학과   |테스트강의실 |
+|211    |테스트학과   |테스트강의실 |
+|210    |테스트학과   |테스트강의실 |
+|209    |테스트학과   |테스트강의실 |
+|208    |메가스터디   |강남     |
+|206    |오징어심리학과 |내마음속   |
+|205    |목탁디자인학과 |개불     |
+|-------|--------|-------|
+
+[DEBUG] 24-11-01 12:51:52 [selectList:135] - <==      Total: 10
+[DEBUG] 24-11-01 12:51:54 [selectItem:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department WHERE deptno = ?
+[DEBUG] 24-11-01 12:51:54 [selectItem:135] - ==> Parameters: 214(Integer)
+[INFO ] 24-11-01 12:51:54 [sqlonly:228] - SELECT deptno, dname, loc FROM department WHERE deptno = 214
+
+[INFO ] 24-11-01 12:51:54 [resultsettable:610] - 
+|-------|------|-------|
+|deptno |dname |loc    |
+|-------|------|-------|
+|214    |테스트학과 |테스트강의실 |
+|-------|------|-------|
+
+[DEBUG] 24-11-01 12:51:54 [selectItem:135] - <==      Total: 1
+[INFO ] 24-11-01 14:41:07 [CrudApplication:50] - Starting CrudApplication using Java 17.0.2 with PID 7580 (C:\Users\user\Desktop\HOME\08_SpringBoot\10_CRUD\build\classes\java\main started by user in C:\Users\user\Desktop\HOME\08_SpringBoot\10_CRUD)
+[DEBUG] 24-11-01 14:41:07 [CrudApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-11-01 14:41:07 [CrudApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-11-01 14:41:08 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[INFO ] 24-11-01 14:41:10 [CrudApplication:56] - Started CrudApplication in 3.38 seconds (process running for 6.364)
+[DEBUG] 24-11-01 14:41:14 [selectCount:135] - ==>  Preparing: SELECT COUNT(*) FROM department
+[DEBUG] 24-11-01 14:41:14 [selectCount:135] - ==> Parameters: 
+[INFO ] 24-11-01 14:41:14 [sqlonly:228] - SELECT COUNT(*) FROM department
+
+[INFO ] 24-11-01 14:41:14 [resultsettable:610] - 
+|---------|
+|count(*) |
+|---------|
+|14       |
+|---------|
+
+[DEBUG] 24-11-01 14:41:14 [selectCount:135] - <==      Total: 1
+[DEBUG] 24-11-01 14:41:14 [Pagination:78] - Pagination(nowPage=1, totalCount=14, listCount=10, groupCount=5, totalPage=2, startPage=1, endPage=2, prevPage=0, nextPage=0, offset=0)
+[DEBUG] 24-11-01 14:41:14 [selectList:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department ORDER BY deptno DESC LIMIT ?, ?
+[DEBUG] 24-11-01 14:41:14 [selectList:135] - ==> Parameters: 0(Integer), 10(Integer)
+[INFO ] 24-11-01 14:41:14 [sqlonly:228] - SELECT deptno, dname, loc FROM department   ORDER BY deptno DESC LIMIT 0, 10
+
+[INFO ] 24-11-01 14:41:14 [resultsettable:610] - 
+|-------|--------|-------|
+|deptno |dname   |loc    |
+|-------|--------|-------|
+|215    |테스트학과   |테스트강의실 |
+|214    |테스트학과   |테스트강의실 |
+|213    |테스트학과   |테스트강의실 |
+|212    |테스트학과   |테스트강의실 |
+|211    |테스트학과   |테스트강의실 |
+|210    |테스트학과   |테스트강의실 |
+|209    |테스트학과   |테스트강의실 |
+|208    |메가스터디   |강남     |
+|206    |오징어심리학과 |내마음속   |
+|205    |목탁디자인학과 |개불     |
+|-------|--------|-------|
+
+[DEBUG] 24-11-01 14:41:14 [selectList:135] - <==      Total: 10
+[DEBUG] 24-11-01 14:41:20 [insert:135] - ==>  Preparing: INSERT INTO department (dname,loc) VALUES (?, ?)
+[DEBUG] 24-11-01 14:41:20 [insert:135] - ==> Parameters: 안녕하세요(String), 123(String)
+[INFO ] 24-11-01 14:41:20 [sqlonly:228] - INSERT INTO department (dname,loc) VALUES ('안녕하세요', '123')
+
+[DEBUG] 24-11-01 14:41:20 [insert:135] - <==    Updates: 1
+[INFO ] 24-11-01 14:41:20 [resultsettable:610] - 
+|--------------|
+|generated_key |
+|--------------|
+|218           |
+|--------------|
+
+[DEBUG] 24-11-01 14:41:20 [selectItem:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department WHERE deptno = ?
+[DEBUG] 24-11-01 14:41:20 [selectItem:135] - ==> Parameters: 218(Integer)
+[INFO ] 24-11-01 14:41:20 [sqlonly:228] - SELECT deptno, dname, loc FROM department WHERE deptno = 218
+
+[INFO ] 24-11-01 14:41:20 [resultsettable:610] - 
+|-------|------|----|
+|deptno |dname |loc |
+|-------|------|----|
+|218    |안녕하세요 |123 |
+|-------|------|----|
+
+[DEBUG] 24-11-01 14:41:20 [selectItem:135] - <==      Total: 1
+[DEBUG] 24-11-01 14:41:20 [selectItem:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department WHERE deptno = ?
+[DEBUG] 24-11-01 14:41:20 [selectItem:135] - ==> Parameters: 218(Integer)
+[INFO ] 24-11-01 14:41:20 [sqlonly:228] - SELECT deptno, dname, loc FROM department WHERE deptno = 218
+
+[INFO ] 24-11-01 14:41:20 [resultsettable:610] - 
+|-------|------|----|
+|deptno |dname |loc |
+|-------|------|----|
+|218    |안녕하세요 |123 |
+|-------|------|----|
+
+[DEBUG] 24-11-01 14:41:20 [selectItem:135] - <==      Total: 1
+[DEBUG] 24-11-01 14:41:22 [selectCount:135] - ==>  Preparing: SELECT COUNT(*) FROM department
+[DEBUG] 24-11-01 14:41:22 [selectCount:135] - ==> Parameters: 
+[INFO ] 24-11-01 14:41:22 [sqlonly:228] - SELECT COUNT(*) FROM department
+
+[INFO ] 24-11-01 14:41:22 [resultsettable:610] - 
+|---------|
+|count(*) |
+|---------|
+|15       |
+|---------|
+
+[DEBUG] 24-11-01 14:41:22 [selectCount:135] - <==      Total: 1
+[DEBUG] 24-11-01 14:41:22 [Pagination:78] - Pagination(nowPage=1, totalCount=15, listCount=10, groupCount=5, totalPage=2, startPage=1, endPage=2, prevPage=0, nextPage=0, offset=0)
+[DEBUG] 24-11-01 14:41:22 [selectList:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department ORDER BY deptno DESC LIMIT ?, ?
+[DEBUG] 24-11-01 14:41:22 [selectList:135] - ==> Parameters: 0(Integer), 10(Integer)
+[INFO ] 24-11-01 14:41:22 [sqlonly:228] - SELECT deptno, dname, loc FROM department   ORDER BY deptno DESC LIMIT 0, 10
+
+[INFO ] 24-11-01 14:41:22 [resultsettable:610] - 
+|-------|--------|-------|
+|deptno |dname   |loc    |
+|-------|--------|-------|
+|218    |안녕하세요   |123    |
+|215    |테스트학과   |테스트강의실 |
+|214    |테스트학과   |테스트강의실 |
+|213    |테스트학과   |테스트강의실 |
+|212    |테스트학과   |테스트강의실 |
+|211    |테스트학과   |테스트강의실 |
+|210    |테스트학과   |테스트강의실 |
+|209    |테스트학과   |테스트강의실 |
+|208    |메가스터디   |강남     |
+|206    |오징어심리학과 |내마음속   |
+|-------|--------|-------|
+
+[DEBUG] 24-11-01 14:41:22 [selectList:135] - <==      Total: 10
+[DEBUG] 24-11-01 14:41:27 [deleteByDeptno:135] - ==>  Preparing: DELETE FROM student WHERE deptno = ?
+[DEBUG] 24-11-01 14:41:27 [deleteByDeptno:135] - ==> Parameters: 218(Integer)
+[INFO ] 24-11-01 14:41:27 [sqlonly:228] - DELETE FROM student WHERE deptno = 218
+
+[DEBUG] 24-11-01 14:41:27 [deleteByDeptno:135] - <==    Updates: 0
+[DEBUG] 24-11-01 14:41:27 [deleteByDeptno:135] - ==>  Preparing: DELETE FROM professor WHERE deptno = ?
+[DEBUG] 24-11-01 14:41:27 [deleteByDeptno:135] - ==> Parameters: 218(Integer)
+[INFO ] 24-11-01 14:41:27 [sqlonly:228] - DELETE FROM professor WHERE deptno = 218
+
+[DEBUG] 24-11-01 14:41:27 [deleteByDeptno:135] - <==    Updates: 0
+[DEBUG] 24-11-01 14:41:27 [delete:135] - ==>  Preparing: DELETE FROM department WHERE deptno = ?
+[DEBUG] 24-11-01 14:41:27 [delete:135] - ==> Parameters: 218(Integer)
+[INFO ] 24-11-01 14:41:27 [sqlonly:228] - DELETE FROM department WHERE deptno = 218
+
+[DEBUG] 24-11-01 14:41:27 [delete:135] - <==    Updates: 1
+[INFO ] 24-11-01 16:24:48 [CrudApplication:50] - Starting CrudApplication using Java 17.0.2 with PID 17568 (C:\Users\user\Desktop\HOME\08_SpringBoot\10_CRUD\build\classes\java\main started by user in C:\Users\user\Desktop\HOME\08_SpringBoot\10_CRUD)
+[DEBUG] 24-11-01 16:24:48 [CrudApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-11-01 16:24:48 [CrudApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-11-01 16:24:49 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[INFO ] 24-11-01 16:24:50 [CrudApplication:56] - Started CrudApplication in 3.119 seconds (process running for 5.555)
+[DEBUG] 24-11-01 16:24:56 [selectCount:135] - ==>  Preparing: SELECT COUNT(*) FROM department
+[DEBUG] 24-11-01 16:24:56 [selectCount:135] - ==> Parameters: 
+[INFO ] 24-11-01 16:24:56 [sqlonly:228] - SELECT COUNT(*) FROM department
+
+[INFO ] 24-11-01 16:24:56 [resultsettable:610] - 
+|---------|
+|count(*) |
+|---------|
+|14       |
+|---------|
+
+[DEBUG] 24-11-01 16:24:56 [selectCount:135] - <==      Total: 1
+[DEBUG] 24-11-01 16:24:56 [Pagination:78] - Pagination(nowPage=1, totalCount=14, listCount=10, groupCount=5, totalPage=2, startPage=1, endPage=2, prevPage=0, nextPage=0, offset=0)
+[DEBUG] 24-11-01 16:24:57 [selectList:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department ORDER BY deptno DESC LIMIT ?, ?
+[DEBUG] 24-11-01 16:24:57 [selectList:135] - ==> Parameters: 0(Integer), 10(Integer)
+[INFO ] 24-11-01 16:24:57 [sqlonly:228] - SELECT deptno, dname, loc FROM department   ORDER BY deptno DESC LIMIT 0, 10
+
+[INFO ] 24-11-01 16:24:57 [resultsettable:610] - 
+|-------|--------|-------|
+|deptno |dname   |loc    |
+|-------|--------|-------|
+|215    |테스트학과   |테스트강의실 |
+|214    |테스트학과   |테스트강의실 |
+|213    |테스트학과   |테스트강의실 |
+|212    |테스트학과   |테스트강의실 |
+|211    |테스트학과   |테스트강의실 |
+|210    |테스트학과   |테스트강의실 |
+|209    |테스트학과   |테스트강의실 |
+|208    |메가스터디   |강남     |
+|206    |오징어심리학과 |내마음속   |
+|205    |목탁디자인학과 |개불     |
+|-------|--------|-------|
+
+[DEBUG] 24-11-01 16:24:57 [selectList:135] - <==      Total: 10
+[DEBUG] 24-11-01 16:25:10 [insert:135] - ==>  Preparing: INSERT INTO department (dname,loc) VALUES (?, ?)
+[DEBUG] 24-11-01 16:25:10 [insert:135] - ==> Parameters: 안녕하세요(String), 반갑습니다(String)
+[INFO ] 24-11-01 16:25:10 [sqlonly:228] - INSERT INTO department (dname,loc) VALUES ('안녕하세요', '반갑습니다')
+
+[DEBUG] 24-11-01 16:25:10 [insert:135] - <==    Updates: 1
+[INFO ] 24-11-01 16:25:10 [resultsettable:610] - 
+|--------------|
+|generated_key |
+|--------------|
+|219           |
+|--------------|
+
+[DEBUG] 24-11-01 16:25:10 [selectItem:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department WHERE deptno = ?
+[DEBUG] 24-11-01 16:25:10 [selectItem:135] - ==> Parameters: 219(Integer)
+[INFO ] 24-11-01 16:25:10 [sqlonly:228] - SELECT deptno, dname, loc FROM department WHERE deptno = 219
+
+[INFO ] 24-11-01 16:25:10 [resultsettable:610] - 
+|-------|------|------|
+|deptno |dname |loc   |
+|-------|------|------|
+|219    |안녕하세요 |반갑습니다 |
+|-------|------|------|
+
+[DEBUG] 24-11-01 16:25:10 [selectItem:135] - <==      Total: 1
+[DEBUG] 24-11-01 16:25:10 [selectItem:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department WHERE deptno = ?
+[DEBUG] 24-11-01 16:25:10 [selectItem:135] - ==> Parameters: 219(Integer)
+[INFO ] 24-11-01 16:25:10 [sqlonly:228] - SELECT deptno, dname, loc FROM department WHERE deptno = 219
+
+[INFO ] 24-11-01 16:25:10 [resultsettable:610] - 
+|-------|------|------|
+|deptno |dname |loc   |
+|-------|------|------|
+|219    |안녕하세요 |반갑습니다 |
+|-------|------|------|
+
+[DEBUG] 24-11-01 16:25:10 [selectItem:135] - <==      Total: 1
+[DEBUG] 24-11-01 16:25:11 [selectCount:135] - ==>  Preparing: SELECT COUNT(*) FROM department
+[DEBUG] 24-11-01 16:25:11 [selectCount:135] - ==> Parameters: 
+[INFO ] 24-11-01 16:25:11 [sqlonly:228] - SELECT COUNT(*) FROM department
+
+[INFO ] 24-11-01 16:25:11 [resultsettable:610] - 
+|---------|
+|count(*) |
+|---------|
+|15       |
+|---------|
+
+[DEBUG] 24-11-01 16:25:11 [selectCount:135] - <==      Total: 1
+[DEBUG] 24-11-01 16:25:11 [Pagination:78] - Pagination(nowPage=1, totalCount=15, listCount=10, groupCount=5, totalPage=2, startPage=1, endPage=2, prevPage=0, nextPage=0, offset=0)
+[DEBUG] 24-11-01 16:25:11 [selectList:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department ORDER BY deptno DESC LIMIT ?, ?
+[DEBUG] 24-11-01 16:25:11 [selectList:135] - ==> Parameters: 0(Integer), 10(Integer)
+[INFO ] 24-11-01 16:25:11 [sqlonly:228] - SELECT deptno, dname, loc FROM department   ORDER BY deptno DESC LIMIT 0, 10
+
+[INFO ] 24-11-01 16:25:11 [resultsettable:610] - 
+|-------|--------|-------|
+|deptno |dname   |loc    |
+|-------|--------|-------|
+|219    |안녕하세요   |반갑습니다  |
+|215    |테스트학과   |테스트강의실 |
+|214    |테스트학과   |테스트강의실 |
+|213    |테스트학과   |테스트강의실 |
+|212    |테스트학과   |테스트강의실 |
+|211    |테스트학과   |테스트강의실 |
+|210    |테스트학과   |테스트강의실 |
+|209    |테스트학과   |테스트강의실 |
+|208    |메가스터디   |강남     |
+|206    |오징어심리학과 |내마음속   |
+|-------|--------|-------|
+
+[DEBUG] 24-11-01 16:25:11 [selectList:135] - <==      Total: 10
+[DEBUG] 24-11-01 16:26:33 [insert:135] - ==>  Preparing: INSERT INTO department (dname,loc) VALUES (?, ?)
+[DEBUG] 24-11-01 16:26:33 [insert:135] - ==> Parameters: 안녕하세요(String), 123(String)
+[INFO ] 24-11-01 16:26:33 [sqlonly:228] - INSERT INTO department (dname,loc) VALUES ('안녕하세요', '123')
+
+[DEBUG] 24-11-01 16:26:33 [insert:135] - <==    Updates: 1
+[INFO ] 24-11-01 16:26:33 [resultsettable:610] - 
+|--------------|
+|generated_key |
+|--------------|
+|220           |
+|--------------|
+
+[DEBUG] 24-11-01 16:26:33 [selectItem:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department WHERE deptno = ?
+[DEBUG] 24-11-01 16:26:33 [selectItem:135] - ==> Parameters: 220(Integer)
+[INFO ] 24-11-01 16:26:33 [sqlonly:228] - SELECT deptno, dname, loc FROM department WHERE deptno = 220
+
+[INFO ] 24-11-01 16:26:33 [resultsettable:610] - 
+|-------|------|----|
+|deptno |dname |loc |
+|-------|------|----|
+|220    |안녕하세요 |123 |
+|-------|------|----|
+
+[DEBUG] 24-11-01 16:26:33 [selectItem:135] - <==      Total: 1
+[DEBUG] 24-11-01 16:26:33 [selectItem:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department WHERE deptno = ?
+[DEBUG] 24-11-01 16:26:33 [selectItem:135] - ==> Parameters: 220(Integer)
+[INFO ] 24-11-01 16:26:33 [sqlonly:228] - SELECT deptno, dname, loc FROM department WHERE deptno = 220
+
+[INFO ] 24-11-01 16:26:33 [resultsettable:610] - 
+|-------|------|----|
+|deptno |dname |loc |
+|-------|------|----|
+|220    |안녕하세요 |123 |
+|-------|------|----|
+
+[DEBUG] 24-11-01 16:26:33 [selectItem:135] - <==      Total: 1
+[DEBUG] 24-11-01 16:26:35 [selectCount:135] - ==>  Preparing: SELECT COUNT(*) FROM department
+[DEBUG] 24-11-01 16:26:35 [selectCount:135] - ==> Parameters: 
+[INFO ] 24-11-01 16:26:35 [sqlonly:228] - SELECT COUNT(*) FROM department
+
+[INFO ] 24-11-01 16:26:35 [resultsettable:610] - 
+|---------|
+|count(*) |
+|---------|
+|16       |
+|---------|
+
+[DEBUG] 24-11-01 16:26:35 [selectCount:135] - <==      Total: 1
+[DEBUG] 24-11-01 16:26:35 [Pagination:78] - Pagination(nowPage=1, totalCount=16, listCount=10, groupCount=5, totalPage=2, startPage=1, endPage=2, prevPage=0, nextPage=0, offset=0)
+[DEBUG] 24-11-01 16:26:35 [selectList:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department ORDER BY deptno DESC LIMIT ?, ?
+[DEBUG] 24-11-01 16:26:35 [selectList:135] - ==> Parameters: 0(Integer), 10(Integer)
+[INFO ] 24-11-01 16:26:35 [sqlonly:228] - SELECT deptno, dname, loc FROM department   ORDER BY deptno DESC LIMIT 0, 10
+
+[INFO ] 24-11-01 16:26:35 [resultsettable:610] - 
+|-------|------|-------|
+|deptno |dname |loc    |
+|-------|------|-------|
+|220    |안녕하세요 |123    |
+|219    |안녕하세요 |반갑습니다  |
+|215    |테스트학과 |테스트강의실 |
+|214    |테스트학과 |테스트강의실 |
+|213    |테스트학과 |테스트강의실 |
+|212    |테스트학과 |테스트강의실 |
+|211    |테스트학과 |테스트강의실 |
+|210    |테스트학과 |테스트강의실 |
+|209    |테스트학과 |테스트강의실 |
+|208    |메가스터디 |강남     |
+|-------|------|-------|
+
+[DEBUG] 24-11-01 16:26:35 [selectList:135] - <==      Total: 10
+[INFO ] 24-11-01 16:27:51 [CrudApplication:50] - Starting CrudApplication using Java 17.0.2 with PID 16728 (C:\Users\user\Desktop\HOME\08_SpringBoot\10_CRUD\build\classes\java\main started by user in C:\Users\user\Desktop\HOME\08_SpringBoot\10_CRUD)
+[DEBUG] 24-11-01 16:27:51 [CrudApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-11-01 16:27:51 [CrudApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-11-01 16:27:52 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[INFO ] 24-11-01 16:27:54 [CrudApplication:56] - Started CrudApplication in 3.085 seconds (process running for 3.695)
+[DEBUG] 24-11-01 16:28:03 [selectCount:135] - ==>  Preparing: SELECT COUNT(*) FROM department
+[DEBUG] 24-11-01 16:28:03 [selectCount:135] - ==> Parameters: 
+[INFO ] 24-11-01 16:28:03 [sqlonly:228] - SELECT COUNT(*) FROM department
+
+[INFO ] 24-11-01 16:28:03 [resultsettable:610] - 
+|---------|
+|count(*) |
+|---------|
+|16       |
+|---------|
+
+[DEBUG] 24-11-01 16:28:03 [selectCount:135] - <==      Total: 1
+[DEBUG] 24-11-01 16:28:03 [Pagination:78] - Pagination(nowPage=1, totalCount=16, listCount=10, groupCount=5, totalPage=2, startPage=1, endPage=2, prevPage=0, nextPage=0, offset=0)
+[DEBUG] 24-11-01 16:28:03 [selectList:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department ORDER BY deptno DESC LIMIT ?, ?
+[DEBUG] 24-11-01 16:28:03 [selectList:135] - ==> Parameters: 0(Integer), 10(Integer)
+[INFO ] 24-11-01 16:28:03 [sqlonly:228] - SELECT deptno, dname, loc FROM department   ORDER BY deptno DESC LIMIT 0, 10
+
+[INFO ] 24-11-01 16:28:03 [resultsettable:610] - 
+|-------|------|-------|
+|deptno |dname |loc    |
+|-------|------|-------|
+|220    |안녕하세요 |123    |
+|219    |안녕하세요 |반갑습니다  |
+|215    |테스트학과 |테스트강의실 |
+|214    |테스트학과 |테스트강의실 |
+|213    |테스트학과 |테스트강의실 |
+|212    |테스트학과 |테스트강의실 |
+|211    |테스트학과 |테스트강의실 |
+|210    |테스트학과 |테스트강의실 |
+|209    |테스트학과 |테스트강의실 |
+|208    |메가스터디 |강남     |
+|-------|------|-------|
+
+[DEBUG] 24-11-01 16:28:03 [selectList:135] - <==      Total: 10
+[INFO ] 24-11-01 16:30:18 [CrudApplication:50] - Starting CrudApplication using Java 17.0.2 with PID 22400 (C:\Users\user\Desktop\HOME\08_SpringBoot\10_CRUD\build\classes\java\main started by user in C:\Users\user\Desktop\HOME\08_SpringBoot\10_CRUD)
+[DEBUG] 24-11-01 16:30:18 [CrudApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-11-01 16:30:18 [CrudApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-11-01 16:30:19 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[INFO ] 24-11-01 16:30:21 [CrudApplication:56] - Started CrudApplication in 3.43 seconds (process running for 4.065)
+[DEBUG] 24-11-01 16:30:22 [selectItem:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department WHERE deptno = ?
+[DEBUG] 24-11-01 16:30:22 [selectItem:135] - ==> Parameters: 208(Integer)
+[INFO ] 24-11-01 16:30:22 [sqlonly:228] - SELECT deptno, dname, loc FROM department WHERE deptno = 208
+
+[INFO ] 24-11-01 16:30:22 [resultsettable:610] - 
+|-------|------|----|
+|deptno |dname |loc |
+|-------|------|----|
+|208    |메가스터디 |강남  |
+|-------|------|----|
+
+[DEBUG] 24-11-01 16:30:22 [selectItem:135] - <==      Total: 1
+[DEBUG] 24-11-01 16:30:36 [selectCount:135] - ==>  Preparing: SELECT COUNT(*) FROM department
+[DEBUG] 24-11-01 16:30:36 [selectCount:135] - ==> Parameters: 
+[INFO ] 24-11-01 16:30:36 [sqlonly:228] - SELECT COUNT(*) FROM department
+
+[INFO ] 24-11-01 16:30:36 [resultsettable:610] - 
+|---------|
+|count(*) |
+|---------|
+|16       |
+|---------|
+
+[DEBUG] 24-11-01 16:30:36 [selectCount:135] - <==      Total: 1
+[DEBUG] 24-11-01 16:30:36 [Pagination:78] - Pagination(nowPage=1, totalCount=16, listCount=10, groupCount=5, totalPage=2, startPage=1, endPage=2, prevPage=0, nextPage=0, offset=0)
+[DEBUG] 24-11-01 16:30:36 [selectList:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department ORDER BY deptno DESC LIMIT ?, ?
+[DEBUG] 24-11-01 16:30:36 [selectList:135] - ==> Parameters: 0(Integer), 10(Integer)
+[INFO ] 24-11-01 16:30:36 [sqlonly:228] - SELECT deptno, dname, loc FROM department   ORDER BY deptno DESC LIMIT 0, 10
+
+[INFO ] 24-11-01 16:30:36 [resultsettable:610] - 
+|-------|------|-------|
+|deptno |dname |loc    |
+|-------|------|-------|
+|220    |안녕하세요 |123    |
+|219    |안녕하세요 |반갑습니다  |
+|215    |테스트학과 |테스트강의실 |
+|214    |테스트학과 |테스트강의실 |
+|213    |테스트학과 |테스트강의실 |
+|212    |테스트학과 |테스트강의실 |
+|211    |테스트학과 |테스트강의실 |
+|210    |테스트학과 |테스트강의실 |
+|209    |테스트학과 |테스트강의실 |
+|208    |메가스터디 |강남     |
+|-------|------|-------|
+
+[DEBUG] 24-11-01 16:30:36 [selectList:135] - <==      Total: 10
+[DEBUG] 24-11-01 16:30:38 [selectItem:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department WHERE deptno = ?
+[DEBUG] 24-11-01 16:30:38 [selectItem:135] - ==> Parameters: 220(Integer)
+[INFO ] 24-11-01 16:30:38 [sqlonly:228] - SELECT deptno, dname, loc FROM department WHERE deptno = 220
+
+[INFO ] 24-11-01 16:30:38 [resultsettable:610] - 
+|-------|------|----|
+|deptno |dname |loc |
+|-------|------|----|
+|220    |안녕하세요 |123 |
+|-------|------|----|
+
+[DEBUG] 24-11-01 16:30:38 [selectItem:135] - <==      Total: 1
+[DEBUG] 24-11-01 16:30:39 [selectItem:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department WHERE deptno = ?
+[DEBUG] 24-11-01 16:30:39 [selectItem:135] - ==> Parameters: 220(Integer)
+[INFO ] 24-11-01 16:30:39 [sqlonly:228] - SELECT deptno, dname, loc FROM department WHERE deptno = 220
+
+[INFO ] 24-11-01 16:30:39 [resultsettable:610] - 
+|-------|------|----|
+|deptno |dname |loc |
+|-------|------|----|
+|220    |안녕하세요 |123 |
+|-------|------|----|
+
+[DEBUG] 24-11-01 16:30:39 [selectItem:135] - <==      Total: 1
+[INFO ] 24-11-01 16:31:02 [CrudApplication:50] - Starting CrudApplication using Java 17.0.2 with PID 29560 (C:\Users\user\Desktop\HOME\08_SpringBoot\10_CRUD\build\classes\java\main started by user in C:\Users\user\Desktop\HOME\08_SpringBoot\10_CRUD)
+[DEBUG] 24-11-01 16:31:02 [CrudApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-11-01 16:31:02 [CrudApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-11-01 16:31:03 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[INFO ] 24-11-01 16:31:05 [CrudApplication:56] - Started CrudApplication in 3.433 seconds (process running for 4.019)
+[DEBUG] 24-11-01 16:31:15 [selectCount:135] - ==>  Preparing: SELECT COUNT(*) FROM department
+[DEBUG] 24-11-01 16:31:15 [selectCount:135] - ==> Parameters: 
+[INFO ] 24-11-01 16:31:15 [sqlonly:228] - SELECT COUNT(*) FROM department
+
+[INFO ] 24-11-01 16:31:15 [resultsettable:610] - 
+|---------|
+|count(*) |
+|---------|
+|16       |
+|---------|
+
+[DEBUG] 24-11-01 16:31:15 [selectCount:135] - <==      Total: 1
+[DEBUG] 24-11-01 16:31:15 [Pagination:78] - Pagination(nowPage=1, totalCount=16, listCount=10, groupCount=5, totalPage=2, startPage=1, endPage=2, prevPage=0, nextPage=0, offset=0)
+[DEBUG] 24-11-01 16:31:15 [selectList:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department ORDER BY deptno DESC LIMIT ?, ?
+[DEBUG] 24-11-01 16:31:15 [selectList:135] - ==> Parameters: 0(Integer), 10(Integer)
+[INFO ] 24-11-01 16:31:15 [sqlonly:228] - SELECT deptno, dname, loc FROM department   ORDER BY deptno DESC LIMIT 0, 10
+
+[INFO ] 24-11-01 16:31:15 [resultsettable:610] - 
+|-------|------|-------|
+|deptno |dname |loc    |
+|-------|------|-------|
+|220    |안녕하세요 |123    |
+|219    |안녕하세요 |반갑습니다  |
+|215    |테스트학과 |테스트강의실 |
+|214    |테스트학과 |테스트강의실 |
+|213    |테스트학과 |테스트강의실 |
+|212    |테스트학과 |테스트강의실 |
+|211    |테스트학과 |테스트강의실 |
+|210    |테스트학과 |테스트강의실 |
+|209    |테스트학과 |테스트강의실 |
+|208    |메가스터디 |강남     |
+|-------|------|-------|
+
+[DEBUG] 24-11-01 16:31:15 [selectList:135] - <==      Total: 10
+[DEBUG] 24-11-01 16:31:16 [selectItem:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department WHERE deptno = ?
+[DEBUG] 24-11-01 16:31:16 [selectItem:135] - ==> Parameters: 208(Integer)
+[INFO ] 24-11-01 16:31:16 [sqlonly:228] - SELECT deptno, dname, loc FROM department WHERE deptno = 208
+
+[INFO ] 24-11-01 16:31:16 [resultsettable:610] - 
+|-------|------|----|
+|deptno |dname |loc |
+|-------|------|----|
+|208    |메가스터디 |강남  |
+|-------|------|----|
+
+[DEBUG] 24-11-01 16:31:16 [selectItem:135] - <==      Total: 1
+[INFO ] 24-11-01 16:31:43 [CrudApplication:50] - Starting CrudApplication using Java 17.0.2 with PID 25548 (C:\Users\user\Desktop\HOME\08_SpringBoot\10_CRUD\build\classes\java\main started by user in C:\Users\user\Desktop\HOME\08_SpringBoot\10_CRUD)
+[DEBUG] 24-11-01 16:31:43 [CrudApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-11-01 16:31:43 [CrudApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-11-01 16:31:44 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[INFO ] 24-11-01 16:31:46 [CrudApplication:56] - Started CrudApplication in 3.201 seconds (process running for 3.692)
+[DEBUG] 24-11-01 16:31:53 [selectItem:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department WHERE deptno = ?
+[DEBUG] 24-11-01 16:31:53 [selectItem:135] - ==> Parameters: 208(Integer)
+[INFO ] 24-11-01 16:31:53 [sqlonly:228] - SELECT deptno, dname, loc FROM department WHERE deptno = 208
+
+[INFO ] 24-11-01 16:31:53 [resultsettable:610] - 
+|-------|------|----|
+|deptno |dname |loc |
+|-------|------|----|
+|208    |메가스터디 |강남  |
+|-------|------|----|
+
+[DEBUG] 24-11-01 16:31:53 [selectItem:135] - <==      Total: 1
+[DEBUG] 24-11-01 16:32:04 [selectCount:135] - ==>  Preparing: SELECT COUNT(*) FROM department
+[DEBUG] 24-11-01 16:32:04 [selectCount:135] - ==> Parameters: 
+[INFO ] 24-11-01 16:32:04 [sqlonly:228] - SELECT COUNT(*) FROM department
+
+[INFO ] 24-11-01 16:32:04 [resultsettable:610] - 
+|---------|
+|count(*) |
+|---------|
+|16       |
+|---------|
+
+[DEBUG] 24-11-01 16:32:04 [selectCount:135] - <==      Total: 1
+[DEBUG] 24-11-01 16:32:04 [Pagination:78] - Pagination(nowPage=1, totalCount=16, listCount=10, groupCount=5, totalPage=2, startPage=1, endPage=2, prevPage=0, nextPage=0, offset=0)
+[DEBUG] 24-11-01 16:32:04 [selectList:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department ORDER BY deptno DESC LIMIT ?, ?
+[DEBUG] 24-11-01 16:32:04 [selectList:135] - ==> Parameters: 0(Integer), 10(Integer)
+[INFO ] 24-11-01 16:32:04 [sqlonly:228] - SELECT deptno, dname, loc FROM department   ORDER BY deptno DESC LIMIT 0, 10
+
+[INFO ] 24-11-01 16:32:04 [resultsettable:610] - 
+|-------|------|-------|
+|deptno |dname |loc    |
+|-------|------|-------|
+|220    |안녕하세요 |123    |
+|219    |안녕하세요 |반갑습니다  |
+|215    |테스트학과 |테스트강의실 |
+|214    |테스트학과 |테스트강의실 |
+|213    |테스트학과 |테스트강의실 |
+|212    |테스트학과 |테스트강의실 |
+|211    |테스트학과 |테스트강의실 |
+|210    |테스트학과 |테스트강의실 |
+|209    |테스트학과 |테스트강의실 |
+|208    |메가스터디 |강남     |
+|-------|------|-------|
+
+[DEBUG] 24-11-01 16:32:04 [selectList:135] - <==      Total: 10
+[DEBUG] 24-11-01 16:32:05 [selectItem:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department WHERE deptno = ?
+[DEBUG] 24-11-01 16:32:05 [selectItem:135] - ==> Parameters: 209(Integer)
+[INFO ] 24-11-01 16:32:05 [sqlonly:228] - SELECT deptno, dname, loc FROM department WHERE deptno = 209
+
+[INFO ] 24-11-01 16:32:05 [resultsettable:610] - 
+|-------|------|-------|
+|deptno |dname |loc    |
+|-------|------|-------|
+|209    |테스트학과 |테스트강의실 |
+|-------|------|-------|
+
+[DEBUG] 24-11-01 16:32:05 [selectItem:135] - <==      Total: 1
+[INFO ] 24-11-01 16:33:01 [CrudApplication:50] - Starting CrudApplication using Java 17.0.2 with PID 24876 (C:\Users\user\Desktop\HOME\08_SpringBoot\10_CRUD\build\classes\java\main started by user in C:\Users\user\Desktop\HOME\08_SpringBoot\10_CRUD)
+[DEBUG] 24-11-01 16:33:01 [CrudApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-11-01 16:33:01 [CrudApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-11-01 16:33:02 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[INFO ] 24-11-01 16:33:04 [CrudApplication:56] - Started CrudApplication in 3.448 seconds (process running for 3.942)
+[DEBUG] 24-11-01 16:33:07 [selectItem:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department WHERE deptno = ?
+[DEBUG] 24-11-01 16:33:07 [selectItem:135] - ==> Parameters: 209(Integer)
+[INFO ] 24-11-01 16:33:07 [sqlonly:228] - SELECT deptno, dname, loc FROM department WHERE deptno = 209
+
+[INFO ] 24-11-01 16:33:07 [resultsettable:610] - 
+|-------|------|-------|
+|deptno |dname |loc    |
+|-------|------|-------|
+|209    |테스트학과 |테스트강의실 |
+|-------|------|-------|
+
+[DEBUG] 24-11-01 16:33:07 [selectItem:135] - <==      Total: 1
+[DEBUG] 24-11-01 16:33:09 [update:135] - ==>  Preparing: UPDATE department SET dname = ?, loc = ? WHERE deptno = ?
+[DEBUG] 24-11-01 16:33:09 [update:135] - ==> Parameters: 테스트학과(String), 테스트강의실d(String), 209(Integer)
+[INFO ] 24-11-01 16:33:09 [sqlonly:228] - UPDATE department SET dname = '테스트학과', loc = '테스트강의실d' WHERE deptno = 209
+
+[DEBUG] 24-11-01 16:33:09 [update:135] - <==    Updates: 1
+[DEBUG] 24-11-01 16:33:09 [selectItem:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department WHERE deptno = ?
+[DEBUG] 24-11-01 16:33:09 [selectItem:135] - ==> Parameters: 209(Integer)
+[INFO ] 24-11-01 16:33:09 [sqlonly:228] - SELECT deptno, dname, loc FROM department WHERE deptno = 209
+
+[INFO ] 24-11-01 16:33:09 [resultsettable:610] - 
+|-------|------|--------|
+|deptno |dname |loc     |
+|-------|------|--------|
+|209    |테스트학과 |테스트강의실d |
+|-------|------|--------|
+
+[DEBUG] 24-11-01 16:33:09 [selectItem:135] - <==      Total: 1
+[DEBUG] 24-11-01 16:33:11 [selectItem:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department WHERE deptno = ?
+[DEBUG] 24-11-01 16:33:11 [selectItem:135] - ==> Parameters: 209(Integer)
+[INFO ] 24-11-01 16:33:11 [sqlonly:228] - SELECT deptno, dname, loc FROM department WHERE deptno = 209
+
+[INFO ] 24-11-01 16:33:11 [resultsettable:610] - 
+|-------|------|--------|
+|deptno |dname |loc     |
+|-------|------|--------|
+|209    |테스트학과 |테스트강의실d |
+|-------|------|--------|
+
+[DEBUG] 24-11-01 16:33:11 [selectItem:135] - <==      Total: 1
