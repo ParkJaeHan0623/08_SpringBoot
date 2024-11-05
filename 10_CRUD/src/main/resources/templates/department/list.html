@@ -1,128 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>학과관리 ::: MySchool</title>
-    <link rel="stylesheet" th:href="@{/assets/css/style.css}" />
-  </head>
-  <body>
-    <div class="container">
-      <!-- header -->
-      <header>
-        <h1>학과관리</h1>
-        <hr />
-      </header>
-      <!-- body -->
-      <section>
-        <!-- 데이터 추가 페이지로 이동하기 위한 링크 -->
-        <p>
-          <a th:href="@{/department/add}">새 학과 추가</a>
-        </p>
-
-        <!-- 데이터 조회 목록을 위한 테이블 시작 -->
-        <table class="table">
-          <colgroup>
-            <col width="25%" />
-            <col width="25%" />
-            <col width="25%" />
-            <col width="25%" />
-          </colgroup>
-          <thead>
-            <tr>
-              <th class="text-center">학과번호</th>
-              <th class="text-center">학과이름</th>
-              <th class="text-center">학과위치</th>
-              <th class="text-center">-</th>
-            </tr>
-          </thead>
-          <tbody id="listBody">
-            <!-- Ajax로 조회한 목록이 출력될 위치 -->
-          </tbody>
-        </table>
-      </section>
-      <!-- footer -->
-      <footer>
-        <hr />
-        <address>copyright&copy;2024. megastudy</address>
-      </footer>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello Spring</title>
+    <link rel="stylesheet" th:href="@{/assets/css/common.css}" />
+</head>
+<body>
+    <h2>학과관리</h2>
+    <hr />
+    <div class="button-container search-field">
+        <!-- 검색폼 -->
+        <!-- 1) 검색어는 GET방식으로 전송 -->
+        <!-- 2) 검색 결과 페이지가 별도로 없는 경우 action은 자기 스스로를 지정 -->
+        <!-- 3) submit은 컨트롤러에게 검색어를 전송한다. -->
+        <!-- 4) 컨트롤러는 전송받은 검색어를 다시 View에게 전달하여 자동완성 시켜야 한다. -->
+        <form method="get" th:action="@{/department}">
+            <input type="search" name="keyword" placeholder="학과명 or 위치 검색" th:value="${keyword}"/>
+            <button type="submit" class="mybutton gray">검색</button>
+        </form>
+        <a class="mybutton blue" th:href="@{/department/add}">새 학과 등록</a>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script th:src="@{/assets/js/axios-helper.js}"></script>
-    <script>
-      const listBody = document.querySelector("#listBody");
+    <table class="mytable">
+        <thead>
+            <tr>
+                <th>학과번호</th>
+                <th>학과이름</th>
+                <th>학과위치</th>
+                <th>-</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="department : ${departments}">
+                <td th:text="${department.deptno}"></td>
+                <!--
+                    QueryString 파라미터 설정
+                    @{/hello/(param1=${변수1}, param2=${변수2})}
+                    => /hello/?param1=변수1&param2=변수2
 
-      (async () => {
-        let data = await axiosHelper.get("/api/department");
+                    path 파라미터 설정
+                    @{/hello/{param1}/{param2}(param1=${변수1}, param2=${변수2})}
+                    => /hello/변수1/변수2
 
-        data?.item.forEach((v,i) => {
-          // tr을 tbody에 추가
-          const tr = document.createElement("tr");
-          listBody.appendChild(tr);
+                    path 파라미터 + 쿼리 파라미터가 포함된 URL
+                    @{/hello/{param1}(param1=${변수1}, param2=${변수2})}
+                    => /hello/변수1?param2=변수2
+                -->
+                <td><a th:href="@{/department/view/{deptno}(deptno=${department.deptno})}"
+                        th:text="${department.dname}" /></td>
+                <td th:text="${department.loc}"></td>
+                <td>
+                    <a th:href="@{/department/edit/{deptno}(deptno=${department.deptno})}">수정</a>
+                    <a th:href="@{/department/delete/{deptno}(deptno=${department.deptno})}">삭제</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
 
-          // 일련번호를 출력한 첫 번째 칸을 tr에 추가
-          const td1 = document.createElement("td");
-          td1.innerHTML = v.deptno;
-          tr.appendChild(td1);
+    <!-- 페이지 번호 -->
+    <ul class="pagination">
+        <!-- 이전 페이지 그룹 이동 버튼 -->
+        <li th:if="${pagination.prevPage > 0}">
+            <a th:href="@{/department(keyword=${keyword}, page=${pagination.prevPage})}">&laquo;</a>
+        </li>
+        <li th:unless= "${pagination.prevPage > 0}"><a>&laquo;</a></li>
 
-          // 두 번째 칸을 생성 후 tr에 추가
-          const td2 = document.createElement("td");
-          tr.appendChild(td2);
+        <!-- 페이지 번호 링크 -->
+        <li th:each="i : ${#numbers.sequence(pagination.startPage, pagination.endPage)}">
+            <a th:if="${i == pagination.nowPage}" class="active" th:text="${i}" />
+            <a th:unless="${i == pagination.nowPage}" th:text="${i}"
+                th:href="@{/department(keyword=${keyword}, page=${i})}"  />
+        </li>
 
-          /**
-           * 상세 보기를 위한 링크로 구현된 학과 이름을 두 번째 칸에 추가 
-           *    어떤 학과를 열람 할 것인가를 의미하는 id값을 GET 파라미터로 전달함
-           * 대체로 id 라는 이름의 변수는 그 대상을 식별하기 위한 고유한 값을 의미 (=일련번호)
-           */
-          const a1 = document.createElement("a");
-          a1.setAttribute("href", `/department/view/${v.deptno}`);
-          a1.innerHTML = v.dname;
-          td2.appendChild(a1);
-          
-          // 학과 위치를 포함하는 세 번째 칸을 tr에 추가
-          const td3 = document.createElement("td");
-          td3.innerHTML = v.loc;
-          tr.appendChild(td3);
-
-          // 네 번쨰 칸을 tr에 추가
-          const td4 = document.createElement("td");
-          tr.appendChild(td4);
-
-          // 어떤 항목을 수정할 것인지를 GET 파라미터로 담은 링크를 네 번째 칸에 추가
-          const a2 = document.createElement("a");
-          a2.setAttribute("href", `/department/edit/${v.deptno}`);
-          a2.innerHTML = "수정";
-          td4.appendChild(a2);
-
-          // 어떤 항목을 삭제할 것인지를 dataset으로 저장하고 있는 링크를 네 번째 칸에 추가
-          const a3 = document.createElement("a");
-          a3.setAttribute("href", `#`);
-          a3.dataset.deptno = v.deptno;
-          a3.dataset.dname = v.dname;
-          a3.innerHTML = "삭제";
-          a3.classList.add("btn-delete");
-          td4.appendChild(a3);
-
-          // 삭제 버튼에 대한 클릭 이벤트 구현
-          a3.addEventListener("click", async (e) => {
-            e.preventDefault();
-            const current = e.currentTarget;
-            const deptno = e.target.dataset.deptno;
-            const dname = e.target.dataset.dname;
-
-            if (confirm(`정말 ${dname}을(를) 삭제하시겠습니까?`)) {
-              const data = await axiosHelper.delete(`/api/department/${deptno}`);
-              if (data) {
-                alert("삭제되었습니다.");
-                // 클릭된 링크를 기준으로 가장 가까운 tr 태그를 상위 요소 중에서 찾아 제거함
-                current.closest("tr").remove();
-              }
-            }
-          });
-        })
-      })();
-      
-        
-    </script>
-  </body>
+        <!-- 다음 페이지 그룹 이동 버튼 -->
+        <li th:if="${pagination.nextPage > 0}">
+            <a th:href="@{/department(keyword=${keyword}, page=${pagination.nextPage})}">&raquo;</a>
+        </li>
+        <li th:unless= "${pagination.nextPage > 0}"><a>&raquo;</a></li>
+    </ul>
+</body>
 </html>

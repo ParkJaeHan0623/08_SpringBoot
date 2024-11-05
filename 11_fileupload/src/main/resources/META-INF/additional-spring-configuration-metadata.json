@@ -1,0 +1,37 @@
+{"properties": [
+  {
+    "name": "mailhelper.sender.name",
+    "type": "java.lang.String",
+    "description": "catdoge name"
+  },
+  {
+    "name": "mailhelper.sender.email",
+    "type": "java.lang.String",
+    "description": "catdoge email'"
+  },
+  {
+    "name": "upload.dir",
+    "type": "java.lang.String",
+    "description": "'upload.dir' 은 스프링으로 업로드된 파일들이 위치할 공간"
+  },
+  {
+    "name": "upload.url",
+    "type": "java.lang.String",
+    "description": "upload.dir이 URL로 보여질 문자열"
+  },
+  {
+    "name": "thumbnail.width",
+    "type": "java.lang.String",
+    "description": "A description for 'thumbnail.width'"
+  },
+  {
+    "name": "thumbnail.height",
+    "type": "java.lang.String",
+    "description": "A description for 'thumbnail.height'"
+  },
+  {
+    "name": "thumbnail.crop",
+    "type": "java.lang.String",
+    "description": "A description for 'thumbnail.prefix'"
+  }
+]}

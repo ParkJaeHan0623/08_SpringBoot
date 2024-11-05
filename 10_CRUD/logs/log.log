@@ -1166,3 +1166,1270 @@
 |-------|------|--------|
 
 [DEBUG] 24-11-01 16:33:11 [selectItem:135] - <==      Total: 1
+[INFO ] 24-11-01 16:52:00 [CrudApplication:50] - Starting CrudApplication using Java 17.0.2 with PID 27084 (C:\Users\user\Desktop\HOME\08_SpringBoot\10_CRUD\build\classes\java\main started by user in C:\Users\user\Desktop\HOME\08_SpringBoot\10_CRUD)
+[DEBUG] 24-11-01 16:52:00 [CrudApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-11-01 16:52:00 [CrudApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-11-01 16:52:01 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[INFO ] 24-11-01 16:52:03 [CrudApplication:56] - Started CrudApplication in 3.047 seconds (process running for 3.672)
+[DEBUG] 24-11-01 16:52:14 [selectCount:135] - ==>  Preparing: SELECT COUNT(*) FROM department
+[DEBUG] 24-11-01 16:52:14 [selectCount:135] - ==> Parameters: 
+[INFO ] 24-11-01 16:52:14 [sqlonly:228] - SELECT COUNT(*) FROM department
+
+[INFO ] 24-11-01 16:52:14 [resultsettable:610] - 
+|---------|
+|count(*) |
+|---------|
+|16       |
+|---------|
+
+[DEBUG] 24-11-01 16:52:14 [selectCount:135] - <==      Total: 1
+[DEBUG] 24-11-01 16:52:14 [Pagination:78] - Pagination(nowPage=1, totalCount=16, listCount=10, groupCount=5, totalPage=2, startPage=1, endPage=2, prevPage=0, nextPage=0, offset=0)
+[DEBUG] 24-11-01 16:52:14 [selectList:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department ORDER BY deptno DESC LIMIT ?, ?
+[DEBUG] 24-11-01 16:52:14 [selectList:135] - ==> Parameters: 0(Integer), 10(Integer)
+[INFO ] 24-11-01 16:52:14 [sqlonly:228] - SELECT deptno, dname, loc FROM department   ORDER BY deptno DESC LIMIT 0, 10
+
+[INFO ] 24-11-01 16:52:14 [resultsettable:610] - 
+|-------|------|--------|
+|deptno |dname |loc     |
+|-------|------|--------|
+|220    |안녕하세요 |123     |
+|219    |안녕하세요 |반갑습니다   |
+|215    |테스트학과 |테스트강의실  |
+|214    |테스트학과 |테스트강의실  |
+|213    |테스트학과 |테스트강의실  |
+|212    |테스트학과 |테스트강의실  |
+|211    |테스트학과 |테스트강의실  |
+|210    |테스트학과 |테스트강의실  |
+|209    |테스트학과 |테스트강의실d |
+|208    |메가스터디 |강남      |
+|-------|------|--------|
+
+[DEBUG] 24-11-01 16:52:14 [selectList:135] - <==      Total: 10
+[ERROR] 24-11-01 16:52:15 [TemplateEngine:1141] - [THYMELEAF][http-nio-8080-exec-1] Exception processing template "/department/list": An error happened during template parsing (template: "class path resource [templates//department/list.html]")
+org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates//department/list.html]")
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:241)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077)
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372)
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1432)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1168)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:113)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.attoparser.ParseException: Exception evaluating SpringEL expression: "department.deptNo" (template: "/department/list" - line 35, col 21)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:393)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	... 52 common frames omitted
+Caused by: org.thymeleaf.exceptions.TemplateProcessingException: Exception evaluating SpringEL expression: "department.deptNo" (template: "/department/list" - line 35, col 21)
+	at org.thymeleaf.spring6.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:292)
+	at org.thymeleaf.standard.expression.VariableExpression.executeVariableExpression(VariableExpression.java:166)
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:66)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138)
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:144)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205)
+	at org.thymeleaf.engine.Model.process(Model.java:282)
+	at org.thymeleaf.engine.Model.process(Model.java:290)
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.processIterationModel(IteratedGatheringModelProcessable.java:368)
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.process(IteratedGatheringModelProcessable.java:222)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleCloseElement(ProcessorTemplateHandler.java:1640)
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleCloseElementEnd(TemplateHandlerAdapterMarkupHandler.java:388)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleCloseElementEnd(InlinedOutputExpressionMarkupHandler.java:322)
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleCloseElementEnd(OutputExpressionInlinePreProcessorHandler.java:220)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleCloseElementEnd(InlinedOutputExpressionMarkupHandler.java:164)
+	at org.attoparser.HtmlElement.handleCloseElementEnd(HtmlElement.java:169)
+	at org.attoparser.HtmlMarkupHandler.handleCloseElementEnd(HtmlMarkupHandler.java:412)
+	at org.attoparser.MarkupEventProcessorHandler.handleCloseElementEnd(MarkupEventProcessorHandler.java:473)
+	at org.attoparser.ParsingElementMarkupUtil.parseCloseElement(ParsingElementMarkupUtil.java:201)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:725)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	... 54 common frames omitted
+Caused by: org.springframework.expression.spel.SpelEvaluationException: EL1008E: Property or field 'deptNo' cannot be found on object of type 'kr.parkjaehan.crud.models.Department' - maybe not public or not valid?
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.readProperty(PropertyOrFieldReference.java:229)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.getValueInternal(PropertyOrFieldReference.java:112)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference$AccessorValueRef.getValue(PropertyOrFieldReference.java:417)
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:97)
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:114)
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:338)
+	at org.thymeleaf.spring6.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:265)
+	... 79 common frames omitted
+[ERROR] 24-11-01 16:52:15 [[dispatcherServlet]:175] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates//department/list.html]")] with root cause
+org.springframework.expression.spel.SpelEvaluationException: EL1008E: Property or field 'deptNo' cannot be found on object of type 'kr.parkjaehan.crud.models.Department' - maybe not public or not valid?
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.readProperty(PropertyOrFieldReference.java:229)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.getValueInternal(PropertyOrFieldReference.java:112)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference$AccessorValueRef.getValue(PropertyOrFieldReference.java:417)
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:97)
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:114)
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:338)
+	at org.thymeleaf.spring6.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:265)
+	at org.thymeleaf.standard.expression.VariableExpression.executeVariableExpression(VariableExpression.java:166)
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:66)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138)
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:144)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205)
+	at org.thymeleaf.engine.Model.process(Model.java:282)
+	at org.thymeleaf.engine.Model.process(Model.java:290)
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.processIterationModel(IteratedGatheringModelProcessable.java:368)
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.process(IteratedGatheringModelProcessable.java:222)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleCloseElement(ProcessorTemplateHandler.java:1640)
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleCloseElementEnd(TemplateHandlerAdapterMarkupHandler.java:388)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleCloseElementEnd(InlinedOutputExpressionMarkupHandler.java:322)
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleCloseElementEnd(OutputExpressionInlinePreProcessorHandler.java:220)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleCloseElementEnd(InlinedOutputExpressionMarkupHandler.java:164)
+	at org.attoparser.HtmlElement.handleCloseElementEnd(HtmlElement.java:169)
+	at org.attoparser.HtmlMarkupHandler.handleCloseElementEnd(HtmlMarkupHandler.java:412)
+	at org.attoparser.MarkupEventProcessorHandler.handleCloseElementEnd(MarkupEventProcessorHandler.java:473)
+	at org.attoparser.ParsingElementMarkupUtil.parseCloseElement(ParsingElementMarkupUtil.java:201)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:725)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077)
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372)
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1432)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1168)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:113)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[DEBUG] 24-11-01 16:52:29 [selectCount:135] - ==>  Preparing: SELECT COUNT(*) FROM department
+[DEBUG] 24-11-01 16:52:29 [selectCount:135] - ==> Parameters: 
+[INFO ] 24-11-01 16:52:29 [sqlonly:228] - SELECT COUNT(*) FROM department
+
+[INFO ] 24-11-01 16:52:29 [resultsettable:610] - 
+|---------|
+|count(*) |
+|---------|
+|16       |
+|---------|
+
+[DEBUG] 24-11-01 16:52:29 [selectCount:135] - <==      Total: 1
+[DEBUG] 24-11-01 16:52:29 [Pagination:78] - Pagination(nowPage=1, totalCount=16, listCount=10, groupCount=5, totalPage=2, startPage=1, endPage=2, prevPage=0, nextPage=0, offset=0)
+[DEBUG] 24-11-01 16:52:29 [selectList:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department ORDER BY deptno DESC LIMIT ?, ?
+[DEBUG] 24-11-01 16:52:29 [selectList:135] - ==> Parameters: 0(Integer), 10(Integer)
+[INFO ] 24-11-01 16:52:29 [sqlonly:228] - SELECT deptno, dname, loc FROM department   ORDER BY deptno DESC LIMIT 0, 10
+
+[INFO ] 24-11-01 16:52:29 [resultsettable:610] - 
+|-------|------|--------|
+|deptno |dname |loc     |
+|-------|------|--------|
+|220    |안녕하세요 |123     |
+|219    |안녕하세요 |반갑습니다   |
+|215    |테스트학과 |테스트강의실  |
+|214    |테스트학과 |테스트강의실  |
+|213    |테스트학과 |테스트강의실  |
+|212    |테스트학과 |테스트강의실  |
+|211    |테스트학과 |테스트강의실  |
+|210    |테스트학과 |테스트강의실  |
+|209    |테스트학과 |테스트강의실d |
+|208    |메가스터디 |강남      |
+|-------|------|--------|
+
+[DEBUG] 24-11-01 16:52:29 [selectList:135] - <==      Total: 10
+[ERROR] 24-11-01 16:52:29 [TemplateEngine:1141] - [THYMELEAF][http-nio-8080-exec-2] Exception processing template "/department/list": An error happened during template parsing (template: "class path resource [templates//department/list.html]")
+org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates//department/list.html]")
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:241)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077)
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372)
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1432)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1168)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:113)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.attoparser.ParseException: Exception evaluating SpringEL expression: "department.deptNo" (template: "/department/list" - line 35, col 21)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:393)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	... 52 common frames omitted
+Caused by: org.thymeleaf.exceptions.TemplateProcessingException: Exception evaluating SpringEL expression: "department.deptNo" (template: "/department/list" - line 35, col 21)
+	at org.thymeleaf.spring6.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:292)
+	at org.thymeleaf.standard.expression.VariableExpression.executeVariableExpression(VariableExpression.java:166)
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:66)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138)
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:144)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205)
+	at org.thymeleaf.engine.Model.process(Model.java:282)
+	at org.thymeleaf.engine.Model.process(Model.java:290)
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.processIterationModel(IteratedGatheringModelProcessable.java:368)
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.process(IteratedGatheringModelProcessable.java:222)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleCloseElement(ProcessorTemplateHandler.java:1640)
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleCloseElementEnd(TemplateHandlerAdapterMarkupHandler.java:388)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleCloseElementEnd(InlinedOutputExpressionMarkupHandler.java:322)
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleCloseElementEnd(OutputExpressionInlinePreProcessorHandler.java:220)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleCloseElementEnd(InlinedOutputExpressionMarkupHandler.java:164)
+	at org.attoparser.HtmlElement.handleCloseElementEnd(HtmlElement.java:169)
+	at org.attoparser.HtmlMarkupHandler.handleCloseElementEnd(HtmlMarkupHandler.java:412)
+	at org.attoparser.MarkupEventProcessorHandler.handleCloseElementEnd(MarkupEventProcessorHandler.java:473)
+	at org.attoparser.ParsingElementMarkupUtil.parseCloseElement(ParsingElementMarkupUtil.java:201)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:725)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	... 54 common frames omitted
+Caused by: org.springframework.expression.spel.SpelEvaluationException: EL1008E: Property or field 'deptNo' cannot be found on object of type 'kr.parkjaehan.crud.models.Department' - maybe not public or not valid?
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.readProperty(PropertyOrFieldReference.java:229)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.getValueInternal(PropertyOrFieldReference.java:112)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference$AccessorValueRef.getValue(PropertyOrFieldReference.java:417)
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:97)
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:114)
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:338)
+	at org.thymeleaf.spring6.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:265)
+	... 79 common frames omitted
+[ERROR] 24-11-01 16:52:29 [[dispatcherServlet]:175] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates//department/list.html]")] with root cause
+org.springframework.expression.spel.SpelEvaluationException: EL1008E: Property or field 'deptNo' cannot be found on object of type 'kr.parkjaehan.crud.models.Department' - maybe not public or not valid?
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.readProperty(PropertyOrFieldReference.java:229)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.getValueInternal(PropertyOrFieldReference.java:112)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference$AccessorValueRef.getValue(PropertyOrFieldReference.java:417)
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:97)
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:114)
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:338)
+	at org.thymeleaf.spring6.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:265)
+	at org.thymeleaf.standard.expression.VariableExpression.executeVariableExpression(VariableExpression.java:166)
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:66)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138)
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:144)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205)
+	at org.thymeleaf.engine.Model.process(Model.java:282)
+	at org.thymeleaf.engine.Model.process(Model.java:290)
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.processIterationModel(IteratedGatheringModelProcessable.java:368)
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.process(IteratedGatheringModelProcessable.java:222)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleCloseElement(ProcessorTemplateHandler.java:1640)
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleCloseElementEnd(TemplateHandlerAdapterMarkupHandler.java:388)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleCloseElementEnd(InlinedOutputExpressionMarkupHandler.java:322)
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleCloseElementEnd(OutputExpressionInlinePreProcessorHandler.java:220)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleCloseElementEnd(InlinedOutputExpressionMarkupHandler.java:164)
+	at org.attoparser.HtmlElement.handleCloseElementEnd(HtmlElement.java:169)
+	at org.attoparser.HtmlMarkupHandler.handleCloseElementEnd(HtmlMarkupHandler.java:412)
+	at org.attoparser.MarkupEventProcessorHandler.handleCloseElementEnd(MarkupEventProcessorHandler.java:473)
+	at org.attoparser.ParsingElementMarkupUtil.parseCloseElement(ParsingElementMarkupUtil.java:201)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:725)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077)
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372)
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1432)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1168)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:113)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[INFO ] 24-11-01 16:53:12 [CrudApplication:50] - Starting CrudApplication using Java 17.0.2 with PID 8540 (C:\Users\user\Desktop\HOME\08_SpringBoot\10_CRUD\build\classes\java\main started by user in C:\Users\user\Desktop\HOME\08_SpringBoot\10_CRUD)
+[DEBUG] 24-11-01 16:53:12 [CrudApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-11-01 16:53:12 [CrudApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-11-01 16:53:13 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[INFO ] 24-11-01 16:53:14 [CrudApplication:56] - Started CrudApplication in 2.933 seconds (process running for 3.409)
+[DEBUG] 24-11-01 16:53:19 [selectCount:135] - ==>  Preparing: SELECT COUNT(*) FROM department
+[DEBUG] 24-11-01 16:53:19 [selectCount:135] - ==> Parameters: 
+[INFO ] 24-11-01 16:53:19 [sqlonly:228] - SELECT COUNT(*) FROM department
+
+[INFO ] 24-11-01 16:53:19 [resultsettable:610] - 
+|---------|
+|count(*) |
+|---------|
+|16       |
+|---------|
+
+[DEBUG] 24-11-01 16:53:19 [selectCount:135] - <==      Total: 1
+[DEBUG] 24-11-01 16:53:19 [Pagination:78] - Pagination(nowPage=1, totalCount=16, listCount=10, groupCount=5, totalPage=2, startPage=1, endPage=2, prevPage=0, nextPage=0, offset=0)
+[DEBUG] 24-11-01 16:53:19 [selectList:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department ORDER BY deptno DESC LIMIT ?, ?
+[DEBUG] 24-11-01 16:53:19 [selectList:135] - ==> Parameters: 0(Integer), 10(Integer)
+[INFO ] 24-11-01 16:53:19 [sqlonly:228] - SELECT deptno, dname, loc FROM department   ORDER BY deptno DESC LIMIT 0, 10
+
+[INFO ] 24-11-01 16:53:19 [resultsettable:610] - 
+|-------|------|--------|
+|deptno |dname |loc     |
+|-------|------|--------|
+|220    |안녕하세요 |123     |
+|219    |안녕하세요 |반갑습니다   |
+|215    |테스트학과 |테스트강의실  |
+|214    |테스트학과 |테스트강의실  |
+|213    |테스트학과 |테스트강의실  |
+|212    |테스트학과 |테스트강의실  |
+|211    |테스트학과 |테스트강의실  |
+|210    |테스트학과 |테스트강의실  |
+|209    |테스트학과 |테스트강의실d |
+|208    |메가스터디 |강남      |
+|-------|------|--------|
+
+[DEBUG] 24-11-01 16:53:19 [selectList:135] - <==      Total: 10
+[DEBUG] 24-11-01 16:53:21 [selectCount:135] - ==>  Preparing: SELECT COUNT(*) FROM department WHERE dname LIKE concat('%', ?, '%')OR loc LIKE concat('%', ?, '%')
+[DEBUG] 24-11-01 16:53:21 [selectCount:135] - ==> Parameters: (String), (String)
+[INFO ] 24-11-01 16:53:21 [sqlonly:228] - SELECT COUNT(*) FROM department  WHERE dname LIKE concat('%', '', '%')OR loc LIKE concat('%', '', '%')
+
+[INFO ] 24-11-01 16:53:21 [resultsettable:610] - 
+|---------|
+|count(*) |
+|---------|
+|16       |
+|---------|
+
+[DEBUG] 24-11-01 16:53:21 [selectCount:135] - <==      Total: 1
+[DEBUG] 24-11-01 16:53:21 [Pagination:78] - Pagination(nowPage=2, totalCount=16, listCount=10, groupCount=5, totalPage=2, startPage=1, endPage=2, prevPage=0, nextPage=0, offset=10)
+[DEBUG] 24-11-01 16:53:21 [selectList:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department WHERE dname LIKE concat('%', ?, '%')OR loc LIKE concat('%', ?, '%') ORDER BY deptno DESC LIMIT ?, ?
+[DEBUG] 24-11-01 16:53:21 [selectList:135] - ==> Parameters: (String), (String), 10(Integer), 10(Integer)
+[INFO ] 24-11-01 16:53:21 [sqlonly:228] - SELECT deptno, dname, loc FROM department  WHERE dname LIKE concat('%', '', '%')OR loc LIKE concat('%', '', '%') ORDER BY deptno DESC LIMIT 10, 10
+
+[INFO ] 24-11-01 16:53:21 [resultsettable:610] - 
+|-------|--------|-------|
+|deptno |dname   |loc    |
+|-------|--------|-------|
+|206    |오징어심리학과 |내마음속   |
+|205    |목탁디자인학과 |개불     |
+|202    |기계공학과   |4호관    |
+|201    |전자공학과   |3호관    |
+|102    |테스트학과   |테스트강의실 |
+|101    |컴퓨터공학과  |1호관    |
+|-------|--------|-------|
+
+[DEBUG] 24-11-01 16:53:21 [selectList:135] - <==      Total: 6
+[DEBUG] 24-11-01 16:53:22 [selectCount:135] - ==>  Preparing: SELECT COUNT(*) FROM department WHERE dname LIKE concat('%', ?, '%')OR loc LIKE concat('%', ?, '%')
+[DEBUG] 24-11-01 16:53:22 [selectCount:135] - ==> Parameters: (String), (String)
+[INFO ] 24-11-01 16:53:22 [sqlonly:228] - SELECT COUNT(*) FROM department  WHERE dname LIKE concat('%', '', '%')OR loc LIKE concat('%', '', '%')
+
+[INFO ] 24-11-01 16:53:22 [resultsettable:610] - 
+|---------|
+|count(*) |
+|---------|
+|16       |
+|---------|
+
+[DEBUG] 24-11-01 16:53:22 [selectCount:135] - <==      Total: 1
+[DEBUG] 24-11-01 16:53:22 [Pagination:78] - Pagination(nowPage=1, totalCount=16, listCount=10, groupCount=5, totalPage=2, startPage=1, endPage=2, prevPage=0, nextPage=0, offset=0)
+[DEBUG] 24-11-01 16:53:22 [selectList:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department WHERE dname LIKE concat('%', ?, '%')OR loc LIKE concat('%', ?, '%') ORDER BY deptno DESC LIMIT ?, ?
+[DEBUG] 24-11-01 16:53:22 [selectList:135] - ==> Parameters: (String), (String), 0(Integer), 10(Integer)
+[INFO ] 24-11-01 16:53:22 [sqlonly:228] - SELECT deptno, dname, loc FROM department  WHERE dname LIKE concat('%', '', '%')OR loc LIKE concat('%', '', '%') ORDER BY deptno DESC LIMIT 0, 10
+
+[INFO ] 24-11-01 16:53:22 [resultsettable:610] - 
+|-------|------|--------|
+|deptno |dname |loc     |
+|-------|------|--------|
+|220    |안녕하세요 |123     |
+|219    |안녕하세요 |반갑습니다   |
+|215    |테스트학과 |테스트강의실  |
+|214    |테스트학과 |테스트강의실  |
+|213    |테스트학과 |테스트강의실  |
+|212    |테스트학과 |테스트강의실  |
+|211    |테스트학과 |테스트강의실  |
+|210    |테스트학과 |테스트강의실  |
+|209    |테스트학과 |테스트강의실d |
+|208    |메가스터디 |강남      |
+|-------|------|--------|
+
+[DEBUG] 24-11-01 16:53:22 [selectList:135] - <==      Total: 10
+[DEBUG] 24-11-01 16:53:31 [selectCount:135] - ==>  Preparing: SELECT COUNT(*) FROM department WHERE dname LIKE concat('%', ?, '%')OR loc LIKE concat('%', ?, '%')
+[DEBUG] 24-11-01 16:53:31 [selectCount:135] - ==> Parameters: (String), (String)
+[INFO ] 24-11-01 16:53:31 [sqlonly:228] - SELECT COUNT(*) FROM department  WHERE dname LIKE concat('%', '', '%')OR loc LIKE concat('%', '', '%')
+
+[INFO ] 24-11-01 16:53:31 [resultsettable:610] - 
+|---------|
+|count(*) |
+|---------|
+|16       |
+|---------|
+
+[DEBUG] 24-11-01 16:53:31 [selectCount:135] - <==      Total: 1
+[DEBUG] 24-11-01 16:53:31 [Pagination:78] - Pagination(nowPage=2, totalCount=16, listCount=10, groupCount=5, totalPage=2, startPage=1, endPage=2, prevPage=0, nextPage=0, offset=10)
+[DEBUG] 24-11-01 16:53:31 [selectList:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department WHERE dname LIKE concat('%', ?, '%')OR loc LIKE concat('%', ?, '%') ORDER BY deptno DESC LIMIT ?, ?
+[DEBUG] 24-11-01 16:53:31 [selectList:135] - ==> Parameters: (String), (String), 10(Integer), 10(Integer)
+[INFO ] 24-11-01 16:53:31 [sqlonly:228] - SELECT deptno, dname, loc FROM department  WHERE dname LIKE concat('%', '', '%')OR loc LIKE concat('%', '', '%') ORDER BY deptno DESC LIMIT 10, 10
+
+[INFO ] 24-11-01 16:53:31 [resultsettable:610] - 
+|-------|--------|-------|
+|deptno |dname   |loc    |
+|-------|--------|-------|
+|206    |오징어심리학과 |내마음속   |
+|205    |목탁디자인학과 |개불     |
+|202    |기계공학과   |4호관    |
+|201    |전자공학과   |3호관    |
+|102    |테스트학과   |테스트강의실 |
+|101    |컴퓨터공학과  |1호관    |
+|-------|--------|-------|
+
+[DEBUG] 24-11-01 16:53:31 [selectList:135] - <==      Total: 6
+[DEBUG] 24-11-01 16:53:33 [selectCount:135] - ==>  Preparing: SELECT COUNT(*) FROM department WHERE dname LIKE concat('%', ?, '%')OR loc LIKE concat('%', ?, '%')
+[DEBUG] 24-11-01 16:53:33 [selectCount:135] - ==> Parameters: (String), (String)
+[INFO ] 24-11-01 16:53:33 [sqlonly:228] - SELECT COUNT(*) FROM department  WHERE dname LIKE concat('%', '', '%')OR loc LIKE concat('%', '', '%')
+
+[INFO ] 24-11-01 16:53:33 [resultsettable:610] - 
+|---------|
+|count(*) |
+|---------|
+|16       |
+|---------|
+
+[DEBUG] 24-11-01 16:53:33 [selectCount:135] - <==      Total: 1
+[DEBUG] 24-11-01 16:53:33 [Pagination:78] - Pagination(nowPage=1, totalCount=16, listCount=10, groupCount=5, totalPage=2, startPage=1, endPage=2, prevPage=0, nextPage=0, offset=0)
+[DEBUG] 24-11-01 16:53:33 [selectList:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department WHERE dname LIKE concat('%', ?, '%')OR loc LIKE concat('%', ?, '%') ORDER BY deptno DESC LIMIT ?, ?
+[DEBUG] 24-11-01 16:53:33 [selectList:135] - ==> Parameters: (String), (String), 0(Integer), 10(Integer)
+[INFO ] 24-11-01 16:53:33 [sqlonly:228] - SELECT deptno, dname, loc FROM department  WHERE dname LIKE concat('%', '', '%')OR loc LIKE concat('%', '', '%') ORDER BY deptno DESC LIMIT 0, 10
+
+[INFO ] 24-11-01 16:53:33 [resultsettable:610] - 
+|-------|------|--------|
+|deptno |dname |loc     |
+|-------|------|--------|
+|220    |안녕하세요 |123     |
+|219    |안녕하세요 |반갑습니다   |
+|215    |테스트학과 |테스트강의실  |
+|214    |테스트학과 |테스트강의실  |
+|213    |테스트학과 |테스트강의실  |
+|212    |테스트학과 |테스트강의실  |
+|211    |테스트학과 |테스트강의실  |
+|210    |테스트학과 |테스트강의실  |
+|209    |테스트학과 |테스트강의실d |
+|208    |메가스터디 |강남      |
+|-------|------|--------|
+
+[DEBUG] 24-11-01 16:53:33 [selectList:135] - <==      Total: 10
+[DEBUG] 24-11-01 16:53:40 [selectItem:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department WHERE deptno = ?
+[DEBUG] 24-11-01 16:53:40 [selectItem:135] - ==> Parameters: 220(Integer)
+[INFO ] 24-11-01 16:53:40 [sqlonly:228] - SELECT deptno, dname, loc FROM department WHERE deptno = 220
+
+[INFO ] 24-11-01 16:53:40 [resultsettable:610] - 
+|-------|------|----|
+|deptno |dname |loc |
+|-------|------|----|
+|220    |안녕하세요 |123 |
+|-------|------|----|
+
+[DEBUG] 24-11-01 16:53:40 [selectItem:135] - <==      Total: 1
+[DEBUG] 24-11-01 16:53:40 [selectItem:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department WHERE deptno = ?
+[DEBUG] 24-11-01 16:53:40 [selectItem:135] - ==> Parameters: 220(Integer)
+[INFO ] 24-11-01 16:53:40 [sqlonly:228] - SELECT deptno, dname, loc FROM department WHERE deptno = 220
+
+[INFO ] 24-11-01 16:53:40 [resultsettable:610] - 
+|-------|------|----|
+|deptno |dname |loc |
+|-------|------|----|
+|220    |안녕하세요 |123 |
+|-------|------|----|
+
+[DEBUG] 24-11-01 16:53:40 [selectItem:135] - <==      Total: 1
+[DEBUG] 24-11-01 16:53:42 [update:135] - ==>  Preparing: UPDATE department SET dname = ?, loc = ? WHERE deptno = ?
+[DEBUG] 24-11-01 16:53:42 [update:135] - ==> Parameters: 안녕하세요(String), 123(String), 220(Integer)
+[INFO ] 24-11-01 16:53:42 [sqlonly:228] - UPDATE department SET dname = '안녕하세요', loc = '123' WHERE deptno = 220
+
+[DEBUG] 24-11-01 16:53:42 [update:135] - <==    Updates: 1
+[DEBUG] 24-11-01 16:53:42 [selectItem:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department WHERE deptno = ?
+[DEBUG] 24-11-01 16:53:42 [selectItem:135] - ==> Parameters: 220(Integer)
+[INFO ] 24-11-01 16:53:42 [sqlonly:228] - SELECT deptno, dname, loc FROM department WHERE deptno = 220
+
+[INFO ] 24-11-01 16:53:42 [resultsettable:610] - 
+|-------|------|----|
+|deptno |dname |loc |
+|-------|------|----|
+|220    |안녕하세요 |123 |
+|-------|------|----|
+
+[DEBUG] 24-11-01 16:53:42 [selectItem:135] - <==      Total: 1
+[DEBUG] 24-11-01 16:53:43 [selectItem:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department WHERE deptno = ?
+[DEBUG] 24-11-01 16:53:43 [selectItem:135] - ==> Parameters: 220(Integer)
+[INFO ] 24-11-01 16:53:43 [sqlonly:228] - SELECT deptno, dname, loc FROM department WHERE deptno = 220
+
+[INFO ] 24-11-01 16:53:43 [resultsettable:610] - 
+|-------|------|----|
+|deptno |dname |loc |
+|-------|------|----|
+|220    |안녕하세요 |123 |
+|-------|------|----|
+
+[DEBUG] 24-11-01 16:53:43 [selectItem:135] - <==      Total: 1
+[DEBUG] 24-11-01 16:53:43 [selectList:135] - ==>  Preparing: SELECT profno, name, userid, position, sal, hiredate, comm, p.deptno as deptno, dname FROM professor p INNER JOIN department d ON p.deptno = d.deptno WHERE p.deptNo = ? ORDER BY profno DESC
+[DEBUG] 24-11-01 16:53:43 [selectList:135] - ==> Parameters: 220(Integer)
+[INFO ] 24-11-01 16:53:43 [sqlonly:228] - SELECT profno, name, userid, position, sal, hiredate, comm, p.deptno as deptno, dname FROM professor p INNER JOIN department d ON p.deptno = d.deptno  WHERE p.deptNo = 220 ORDER BY profno DESC
+
+[INFO ] 24-11-01 16:53:43 [resultsettable:610] - 
+|-------|-----|-------|---------|----|---------|-----|-------|------|
+|profno |name |userid |position |sal |hiredate |comm |deptno |dname |
+|-------|-----|-------|---------|----|---------|-----|-------|------|
+|-------|-----|-------|---------|----|---------|-----|-------|------|
+
+[DEBUG] 24-11-01 16:53:43 [selectList:135] - <==      Total: 0
+[ERROR] 24-11-01 16:53:43 [TemplateEngine:1141] - [THYMELEAF][http-nio-8080-exec-9] Exception processing template "/department/view": An error happened during template parsing (template: "class path resource [templates//department/view.html]")
+org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates//department/view.html]")
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:241)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077)
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372)
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1432)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1168)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:113)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.attoparser.ParseException: Exception evaluating SpringEL expression: "department.deptNo" (template: "/department/view" - line 20, col 39)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:393)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	... 52 common frames omitted
+Caused by: org.thymeleaf.exceptions.TemplateProcessingException: Exception evaluating SpringEL expression: "department.deptNo" (template: "/department/view" - line 20, col 39)
+	at org.thymeleaf.spring6.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:292)
+	at org.thymeleaf.standard.expression.VariableExpression.executeVariableExpression(VariableExpression.java:166)
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:66)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138)
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:144)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleOpenElementEnd(TemplateHandlerAdapterMarkupHandler.java:304)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:278)
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleOpenElementEnd(OutputExpressionInlinePreProcessorHandler.java:186)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:124)
+	at org.attoparser.HtmlElement.handleOpenElementEnd(HtmlElement.java:109)
+	at org.attoparser.HtmlMarkupHandler.handleOpenElementEnd(HtmlMarkupHandler.java:297)
+	at org.attoparser.MarkupEventProcessorHandler.handleOpenElementEnd(MarkupEventProcessorHandler.java:402)
+	at org.attoparser.ParsingElementMarkupUtil.parseOpenElement(ParsingElementMarkupUtil.java:159)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:710)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	... 54 common frames omitted
+Caused by: org.springframework.expression.spel.SpelEvaluationException: EL1008E: Property or field 'deptNo' cannot be found on object of type 'kr.parkjaehan.crud.models.Department' - maybe not public or not valid?
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.readProperty(PropertyOrFieldReference.java:229)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.getValueInternal(PropertyOrFieldReference.java:112)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference$AccessorValueRef.getValue(PropertyOrFieldReference.java:417)
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:97)
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:114)
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:338)
+	at org.thymeleaf.spring6.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:265)
+	... 73 common frames omitted
+[ERROR] 24-11-01 16:53:43 [[dispatcherServlet]:175] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates//department/view.html]")] with root cause
+org.springframework.expression.spel.SpelEvaluationException: EL1008E: Property or field 'deptNo' cannot be found on object of type 'kr.parkjaehan.crud.models.Department' - maybe not public or not valid?
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.readProperty(PropertyOrFieldReference.java:229)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.getValueInternal(PropertyOrFieldReference.java:112)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference$AccessorValueRef.getValue(PropertyOrFieldReference.java:417)
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:97)
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:114)
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:338)
+	at org.thymeleaf.spring6.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:265)
+	at org.thymeleaf.standard.expression.VariableExpression.executeVariableExpression(VariableExpression.java:166)
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:66)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138)
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:144)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleOpenElementEnd(TemplateHandlerAdapterMarkupHandler.java:304)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:278)
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleOpenElementEnd(OutputExpressionInlinePreProcessorHandler.java:186)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:124)
+	at org.attoparser.HtmlElement.handleOpenElementEnd(HtmlElement.java:109)
+	at org.attoparser.HtmlMarkupHandler.handleOpenElementEnd(HtmlMarkupHandler.java:297)
+	at org.attoparser.MarkupEventProcessorHandler.handleOpenElementEnd(MarkupEventProcessorHandler.java:402)
+	at org.attoparser.ParsingElementMarkupUtil.parseOpenElement(ParsingElementMarkupUtil.java:159)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:710)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077)
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372)
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1432)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1168)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:113)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[DEBUG] 24-11-01 16:53:59 [selectItem:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department WHERE deptno = ?
+[DEBUG] 24-11-01 16:53:59 [selectItem:135] - ==> Parameters: 220(Integer)
+[INFO ] 24-11-01 16:53:59 [sqlonly:228] - SELECT deptno, dname, loc FROM department WHERE deptno = 220
+
+[INFO ] 24-11-01 16:53:59 [resultsettable:610] - 
+|-------|------|----|
+|deptno |dname |loc |
+|-------|------|----|
+|220    |안녕하세요 |123 |
+|-------|------|----|
+
+[DEBUG] 24-11-01 16:53:59 [selectItem:135] - <==      Total: 1
+[DEBUG] 24-11-01 16:53:59 [selectList:135] - ==>  Preparing: SELECT profno, name, userid, position, sal, hiredate, comm, p.deptno as deptno, dname FROM professor p INNER JOIN department d ON p.deptno = d.deptno WHERE p.deptNo = ? ORDER BY profno DESC
+[DEBUG] 24-11-01 16:53:59 [selectList:135] - ==> Parameters: 220(Integer)
+[INFO ] 24-11-01 16:53:59 [sqlonly:228] - SELECT profno, name, userid, position, sal, hiredate, comm, p.deptno as deptno, dname FROM professor p INNER JOIN department d ON p.deptno = d.deptno  WHERE p.deptNo = 220 ORDER BY profno DESC
+
+[INFO ] 24-11-01 16:53:59 [resultsettable:610] - 
+|-------|-----|-------|---------|----|---------|-----|-------|------|
+|profno |name |userid |position |sal |hiredate |comm |deptno |dname |
+|-------|-----|-------|---------|----|---------|-----|-------|------|
+|-------|-----|-------|---------|----|---------|-----|-------|------|
+
+[DEBUG] 24-11-01 16:53:59 [selectList:135] - <==      Total: 0
+[ERROR] 24-11-01 16:53:59 [TemplateEngine:1141] - [THYMELEAF][http-nio-8080-exec-10] Exception processing template "/department/view": An error happened during template parsing (template: "class path resource [templates//department/view.html]")
+org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates//department/view.html]")
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:241)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077)
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372)
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1432)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1168)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:113)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.attoparser.ParseException: Exception evaluating SpringEL expression: "department.deptNo" (template: "/department/view" - line 20, col 39)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:393)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	... 52 common frames omitted
+Caused by: org.thymeleaf.exceptions.TemplateProcessingException: Exception evaluating SpringEL expression: "department.deptNo" (template: "/department/view" - line 20, col 39)
+	at org.thymeleaf.spring6.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:292)
+	at org.thymeleaf.standard.expression.VariableExpression.executeVariableExpression(VariableExpression.java:166)
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:66)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138)
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:144)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleOpenElementEnd(TemplateHandlerAdapterMarkupHandler.java:304)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:278)
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleOpenElementEnd(OutputExpressionInlinePreProcessorHandler.java:186)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:124)
+	at org.attoparser.HtmlElement.handleOpenElementEnd(HtmlElement.java:109)
+	at org.attoparser.HtmlMarkupHandler.handleOpenElementEnd(HtmlMarkupHandler.java:297)
+	at org.attoparser.MarkupEventProcessorHandler.handleOpenElementEnd(MarkupEventProcessorHandler.java:402)
+	at org.attoparser.ParsingElementMarkupUtil.parseOpenElement(ParsingElementMarkupUtil.java:159)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:710)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	... 54 common frames omitted
+Caused by: org.springframework.expression.spel.SpelEvaluationException: EL1008E: Property or field 'deptNo' cannot be found on object of type 'kr.parkjaehan.crud.models.Department' - maybe not public or not valid?
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.readProperty(PropertyOrFieldReference.java:229)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.getValueInternal(PropertyOrFieldReference.java:112)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference$AccessorValueRef.getValue(PropertyOrFieldReference.java:417)
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:97)
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:114)
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:338)
+	at org.thymeleaf.spring6.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:265)
+	... 73 common frames omitted
+[ERROR] 24-11-01 16:53:59 [[dispatcherServlet]:175] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates//department/view.html]")] with root cause
+org.springframework.expression.spel.SpelEvaluationException: EL1008E: Property or field 'deptNo' cannot be found on object of type 'kr.parkjaehan.crud.models.Department' - maybe not public or not valid?
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.readProperty(PropertyOrFieldReference.java:229)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.getValueInternal(PropertyOrFieldReference.java:112)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference$AccessorValueRef.getValue(PropertyOrFieldReference.java:417)
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:97)
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:114)
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:338)
+	at org.thymeleaf.spring6.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:265)
+	at org.thymeleaf.standard.expression.VariableExpression.executeVariableExpression(VariableExpression.java:166)
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:66)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138)
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:144)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleOpenElementEnd(TemplateHandlerAdapterMarkupHandler.java:304)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:278)
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleOpenElementEnd(OutputExpressionInlinePreProcessorHandler.java:186)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:124)
+	at org.attoparser.HtmlElement.handleOpenElementEnd(HtmlElement.java:109)
+	at org.attoparser.HtmlMarkupHandler.handleOpenElementEnd(HtmlMarkupHandler.java:297)
+	at org.attoparser.MarkupEventProcessorHandler.handleOpenElementEnd(MarkupEventProcessorHandler.java:402)
+	at org.attoparser.ParsingElementMarkupUtil.parseOpenElement(ParsingElementMarkupUtil.java:159)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:710)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077)
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372)
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1432)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1168)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:113)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[INFO ] 24-11-01 16:54:21 [CrudApplication:50] - Starting CrudApplication using Java 17.0.2 with PID 22548 (C:\Users\user\Desktop\HOME\08_SpringBoot\10_CRUD\build\classes\java\main started by user in C:\Users\user\Desktop\HOME\08_SpringBoot\10_CRUD)
+[DEBUG] 24-11-01 16:54:21 [CrudApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-11-01 16:54:21 [CrudApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-11-01 16:54:22 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[INFO ] 24-11-01 16:54:24 [CrudApplication:56] - Started CrudApplication in 2.905 seconds (process running for 3.394)
+[DEBUG] 24-11-01 16:54:28 [selectItem:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department WHERE deptno = ?
+[DEBUG] 24-11-01 16:54:28 [selectItem:135] - ==> Parameters: 220(Integer)
+[INFO ] 24-11-01 16:54:28 [sqlonly:228] - SELECT deptno, dname, loc FROM department WHERE deptno = 220
+
+[INFO ] 24-11-01 16:54:28 [resultsettable:610] - 
+|-------|------|----|
+|deptno |dname |loc |
+|-------|------|----|
+|220    |안녕하세요 |123 |
+|-------|------|----|
+
+[DEBUG] 24-11-01 16:54:28 [selectItem:135] - <==      Total: 1
+[DEBUG] 24-11-01 16:54:28 [selectList:135] - ==>  Preparing: SELECT profno, name, userid, position, sal, hiredate, comm, p.deptno as deptno, dname FROM professor p INNER JOIN department d ON p.deptno = d.deptno WHERE p.deptNo = ? ORDER BY profno DESC
+[DEBUG] 24-11-01 16:54:28 [selectList:135] - ==> Parameters: 220(Integer)
+[INFO ] 24-11-01 16:54:28 [sqlonly:228] - SELECT profno, name, userid, position, sal, hiredate, comm, p.deptno as deptno, dname FROM professor p INNER JOIN department d ON p.deptno = d.deptno  WHERE p.deptNo = 220 ORDER BY profno DESC
+
+[INFO ] 24-11-01 16:54:28 [resultsettable:610] - 
+|-------|-----|-------|---------|----|---------|-----|-------|------|
+|profno |name |userid |position |sal |hiredate |comm |deptno |dname |
+|-------|-----|-------|---------|----|---------|-----|-------|------|
+|-------|-----|-------|---------|----|---------|-----|-------|------|
+
+[DEBUG] 24-11-01 16:54:28 [selectList:135] - <==      Total: 0
+[DEBUG] 24-11-01 16:54:30 [selectCount:135] - ==>  Preparing: SELECT COUNT(*) FROM department
+[DEBUG] 24-11-01 16:54:30 [selectCount:135] - ==> Parameters: 
+[INFO ] 24-11-01 16:54:30 [sqlonly:228] - SELECT COUNT(*) FROM department
+
+[INFO ] 24-11-01 16:54:30 [resultsettable:610] - 
+|---------|
+|count(*) |
+|---------|
+|16       |
+|---------|
+
+[DEBUG] 24-11-01 16:54:30 [selectCount:135] - <==      Total: 1
+[DEBUG] 24-11-01 16:54:30 [Pagination:78] - Pagination(nowPage=1, totalCount=16, listCount=10, groupCount=5, totalPage=2, startPage=1, endPage=2, prevPage=0, nextPage=0, offset=0)
+[DEBUG] 24-11-01 16:54:30 [selectList:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department ORDER BY deptno DESC LIMIT ?, ?
+[DEBUG] 24-11-01 16:54:30 [selectList:135] - ==> Parameters: 0(Integer), 10(Integer)
+[INFO ] 24-11-01 16:54:30 [sqlonly:228] - SELECT deptno, dname, loc FROM department   ORDER BY deptno DESC LIMIT 0, 10
+
+[INFO ] 24-11-01 16:54:30 [resultsettable:610] - 
+|-------|------|--------|
+|deptno |dname |loc     |
+|-------|------|--------|
+|220    |안녕하세요 |123     |
+|219    |안녕하세요 |반갑습니다   |
+|215    |테스트학과 |테스트강의실  |
+|214    |테스트학과 |테스트강의실  |
+|213    |테스트학과 |테스트강의실  |
+|212    |테스트학과 |테스트강의실  |
+|211    |테스트학과 |테스트강의실  |
+|210    |테스트학과 |테스트강의실  |
+|209    |테스트학과 |테스트강의실d |
+|208    |메가스터디 |강남      |
+|-------|------|--------|
+
+[DEBUG] 24-11-01 16:54:30 [selectList:135] - <==      Total: 10
+[DEBUG] 24-11-01 16:54:32 [selectItem:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department WHERE deptno = ?
+[DEBUG] 24-11-01 16:54:32 [selectItem:135] - ==> Parameters: 220(Integer)
+[INFO ] 24-11-01 16:54:32 [sqlonly:228] - SELECT deptno, dname, loc FROM department WHERE deptno = 220
+
+[INFO ] 24-11-01 16:54:32 [resultsettable:610] - 
+|-------|------|----|
+|deptno |dname |loc |
+|-------|------|----|
+|220    |안녕하세요 |123 |
+|-------|------|----|
+
+[DEBUG] 24-11-01 16:54:32 [selectItem:135] - <==      Total: 1
+[DEBUG] 24-11-01 16:54:32 [selectItem:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department WHERE deptno = ?
+[DEBUG] 24-11-01 16:54:32 [selectItem:135] - ==> Parameters: 220(Integer)
+[INFO ] 24-11-01 16:54:32 [sqlonly:228] - SELECT deptno, dname, loc FROM department WHERE deptno = 220
+
+[INFO ] 24-11-01 16:54:32 [resultsettable:610] - 
+|-------|------|----|
+|deptno |dname |loc |
+|-------|------|----|
+|220    |안녕하세요 |123 |
+|-------|------|----|
+
+[DEBUG] 24-11-01 16:54:32 [selectItem:135] - <==      Total: 1
+[DEBUG] 24-11-01 16:54:33 [update:135] - ==>  Preparing: UPDATE department SET dname = ?, loc = ? WHERE deptno = ?
+[DEBUG] 24-11-01 16:54:33 [update:135] - ==> Parameters: 안녕하세요(String), 123(String), 220(Integer)
+[INFO ] 24-11-01 16:54:33 [sqlonly:228] - UPDATE department SET dname = '안녕하세요', loc = '123' WHERE deptno = 220
+
+[DEBUG] 24-11-01 16:54:33 [update:135] - <==    Updates: 1
+[DEBUG] 24-11-01 16:54:33 [selectItem:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department WHERE deptno = ?
+[DEBUG] 24-11-01 16:54:33 [selectItem:135] - ==> Parameters: 220(Integer)
+[INFO ] 24-11-01 16:54:33 [sqlonly:228] - SELECT deptno, dname, loc FROM department WHERE deptno = 220
+
+[INFO ] 24-11-01 16:54:33 [resultsettable:610] - 
+|-------|------|----|
+|deptno |dname |loc |
+|-------|------|----|
+|220    |안녕하세요 |123 |
+|-------|------|----|
+
+[DEBUG] 24-11-01 16:54:33 [selectItem:135] - <==      Total: 1
+[DEBUG] 24-11-01 16:54:34 [selectItem:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department WHERE deptno = ?
+[DEBUG] 24-11-01 16:54:34 [selectItem:135] - ==> Parameters: 220(Integer)
+[INFO ] 24-11-01 16:54:34 [sqlonly:228] - SELECT deptno, dname, loc FROM department WHERE deptno = 220
+
+[INFO ] 24-11-01 16:54:34 [resultsettable:610] - 
+|-------|------|----|
+|deptno |dname |loc |
+|-------|------|----|
+|220    |안녕하세요 |123 |
+|-------|------|----|
+
+[DEBUG] 24-11-01 16:54:34 [selectItem:135] - <==      Total: 1
+[DEBUG] 24-11-01 16:54:34 [selectList:135] - ==>  Preparing: SELECT profno, name, userid, position, sal, hiredate, comm, p.deptno as deptno, dname FROM professor p INNER JOIN department d ON p.deptno = d.deptno WHERE p.deptNo = ? ORDER BY profno DESC
+[DEBUG] 24-11-01 16:54:34 [selectList:135] - ==> Parameters: 220(Integer)
+[INFO ] 24-11-01 16:54:34 [sqlonly:228] - SELECT profno, name, userid, position, sal, hiredate, comm, p.deptno as deptno, dname FROM professor p INNER JOIN department d ON p.deptno = d.deptno  WHERE p.deptNo = 220 ORDER BY profno DESC
+
+[INFO ] 24-11-01 16:54:34 [resultsettable:610] - 
+|-------|-----|-------|---------|----|---------|-----|-------|------|
+|profno |name |userid |position |sal |hiredate |comm |deptno |dname |
+|-------|-----|-------|---------|----|---------|-----|-------|------|
+|-------|-----|-------|---------|----|---------|-----|-------|------|
+
+[DEBUG] 24-11-01 16:54:34 [selectList:135] - <==      Total: 0
+[DEBUG] 24-11-01 16:54:36 [selectCount:135] - ==>  Preparing: SELECT COUNT(*) FROM department
+[DEBUG] 24-11-01 16:54:36 [selectCount:135] - ==> Parameters: 
+[INFO ] 24-11-01 16:54:36 [sqlonly:228] - SELECT COUNT(*) FROM department
+
+[INFO ] 24-11-01 16:54:36 [resultsettable:610] - 
+|---------|
+|count(*) |
+|---------|
+|16       |
+|---------|
+
+[DEBUG] 24-11-01 16:54:36 [selectCount:135] - <==      Total: 1
+[DEBUG] 24-11-01 16:54:36 [Pagination:78] - Pagination(nowPage=1, totalCount=16, listCount=10, groupCount=5, totalPage=2, startPage=1, endPage=2, prevPage=0, nextPage=0, offset=0)
+[DEBUG] 24-11-01 16:54:36 [selectList:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department ORDER BY deptno DESC LIMIT ?, ?
+[DEBUG] 24-11-01 16:54:36 [selectList:135] - ==> Parameters: 0(Integer), 10(Integer)
+[INFO ] 24-11-01 16:54:36 [sqlonly:228] - SELECT deptno, dname, loc FROM department   ORDER BY deptno DESC LIMIT 0, 10
+
+[INFO ] 24-11-01 16:54:36 [resultsettable:610] - 
+|-------|------|--------|
+|deptno |dname |loc     |
+|-------|------|--------|
+|220    |안녕하세요 |123     |
+|219    |안녕하세요 |반갑습니다   |
+|215    |테스트학과 |테스트강의실  |
+|214    |테스트학과 |테스트강의실  |
+|213    |테스트학과 |테스트강의실  |
+|212    |테스트학과 |테스트강의실  |
+|211    |테스트학과 |테스트강의실  |
+|210    |테스트학과 |테스트강의실  |
+|209    |테스트학과 |테스트강의실d |
+|208    |메가스터디 |강남      |
+|-------|------|--------|
+
+[DEBUG] 24-11-01 16:54:36 [selectList:135] - <==      Total: 10
+[DEBUG] 24-11-01 16:54:38 [selectCount:135] - ==>  Preparing: SELECT COUNT(*) FROM department WHERE dname LIKE concat('%', ?, '%')OR loc LIKE concat('%', ?, '%')
+[DEBUG] 24-11-01 16:54:38 [selectCount:135] - ==> Parameters: (String), (String)
+[INFO ] 24-11-01 16:54:38 [sqlonly:228] - SELECT COUNT(*) FROM department  WHERE dname LIKE concat('%', '', '%')OR loc LIKE concat('%', '', '%')
+
+[INFO ] 24-11-01 16:54:38 [resultsettable:610] - 
+|---------|
+|count(*) |
+|---------|
+|16       |
+|---------|
+
+[DEBUG] 24-11-01 16:54:38 [selectCount:135] - <==      Total: 1
+[DEBUG] 24-11-01 16:54:38 [Pagination:78] - Pagination(nowPage=2, totalCount=16, listCount=10, groupCount=5, totalPage=2, startPage=1, endPage=2, prevPage=0, nextPage=0, offset=10)
+[DEBUG] 24-11-01 16:54:38 [selectList:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department WHERE dname LIKE concat('%', ?, '%')OR loc LIKE concat('%', ?, '%') ORDER BY deptno DESC LIMIT ?, ?
+[DEBUG] 24-11-01 16:54:38 [selectList:135] - ==> Parameters: (String), (String), 10(Integer), 10(Integer)
+[INFO ] 24-11-01 16:54:38 [sqlonly:228] - SELECT deptno, dname, loc FROM department  WHERE dname LIKE concat('%', '', '%')OR loc LIKE concat('%', '', '%') ORDER BY deptno DESC LIMIT 10, 10
+
+[INFO ] 24-11-01 16:54:38 [resultsettable:610] - 
+|-------|--------|-------|
+|deptno |dname   |loc    |
+|-------|--------|-------|
+|206    |오징어심리학과 |내마음속   |
+|205    |목탁디자인학과 |개불     |
+|202    |기계공학과   |4호관    |
+|201    |전자공학과   |3호관    |
+|102    |테스트학과   |테스트강의실 |
+|101    |컴퓨터공학과  |1호관    |
+|-------|--------|-------|
+
+[DEBUG] 24-11-01 16:54:38 [selectList:135] - <==      Total: 6
+[DEBUG] 24-11-01 16:54:38 [selectCount:135] - ==>  Preparing: SELECT COUNT(*) FROM department WHERE dname LIKE concat('%', ?, '%')OR loc LIKE concat('%', ?, '%')
+[DEBUG] 24-11-01 16:54:38 [selectCount:135] - ==> Parameters: (String), (String)
+[INFO ] 24-11-01 16:54:38 [sqlonly:228] - SELECT COUNT(*) FROM department  WHERE dname LIKE concat('%', '', '%')OR loc LIKE concat('%', '', '%')
+
+[INFO ] 24-11-01 16:54:38 [resultsettable:610] - 
+|---------|
+|count(*) |
+|---------|
+|16       |
+|---------|
+
+[DEBUG] 24-11-01 16:54:38 [selectCount:135] - <==      Total: 1
+[DEBUG] 24-11-01 16:54:38 [Pagination:78] - Pagination(nowPage=1, totalCount=16, listCount=10, groupCount=5, totalPage=2, startPage=1, endPage=2, prevPage=0, nextPage=0, offset=0)
+[DEBUG] 24-11-01 16:54:38 [selectList:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department WHERE dname LIKE concat('%', ?, '%')OR loc LIKE concat('%', ?, '%') ORDER BY deptno DESC LIMIT ?, ?
+[DEBUG] 24-11-01 16:54:38 [selectList:135] - ==> Parameters: (String), (String), 0(Integer), 10(Integer)
+[INFO ] 24-11-01 16:54:38 [sqlonly:228] - SELECT deptno, dname, loc FROM department  WHERE dname LIKE concat('%', '', '%')OR loc LIKE concat('%', '', '%') ORDER BY deptno DESC LIMIT 0, 10
+
+[INFO ] 24-11-01 16:54:38 [resultsettable:610] - 
+|-------|------|--------|
+|deptno |dname |loc     |
+|-------|------|--------|
+|220    |안녕하세요 |123     |
+|219    |안녕하세요 |반갑습니다   |
+|215    |테스트학과 |테스트강의실  |
+|214    |테스트학과 |테스트강의실  |
+|213    |테스트학과 |테스트강의실  |
+|212    |테스트학과 |테스트강의실  |
+|211    |테스트학과 |테스트강의실  |
+|210    |테스트학과 |테스트강의실  |
+|209    |테스트학과 |테스트강의실d |
+|208    |메가스터디 |강남      |
+|-------|------|--------|
+
+[DEBUG] 24-11-01 16:54:38 [selectList:135] - <==      Total: 10
