@@ -1,678 +1,576 @@
-[INFO ] 24-11-05 15:24:25 [MyInterceptor:44] - ---------- new client connected ----------
-[INFO ] 24-11-05 15:24:25 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Chrome, 130.0, Windows, 10, Other
-[INFO ] 24-11-05 15:24:25 [MyInterceptor:80] - [POST], http://localhost:8080/multi/upload_ok
-[INFO ] 24-11-05 15:24:25 [MyInterceptor:96] - - Referer : time=15373, url = http://localhost:8080/multi/upload
-[DEBUG] 24-11-05 15:24:25 [FileHelper:290] - [Thumbnail] Path: /2024/11/05/17307878654490.png, Size: 640x640, Crop: true
-[DEBUG] 24-11-05 15:24:25 [FileHelper:308] - [Thumbnail] Thumbnail File: C:\Users\user\Desktop\HOME\08_SpringBoot\FileUpload\2024\11\05\17307878654490_640x640.png
-[DEBUG] 24-11-05 15:24:26 [FileHelper:273] - UploadItem(fieldName=photo, originName=01-MyWebConfig.java.png, contentType=image/png, fileSize=601429, filePath=/2024/11/05/17307878654490.png, fileUrl=/files/2024/11/05/17307878654490.png, thumbnailPath=/2024/11/05/17307878654490_640x640.png, thumbnailUrl=/files/2024/11/05/17307878654490_640x640.png)
-[DEBUG] 24-11-05 15:24:26 [FileHelper:290] - [Thumbnail] Path: /2024/11/05/17307878661540.png, Size: 640x640, Crop: true
-[DEBUG] 24-11-05 15:24:26 [FileHelper:308] - [Thumbnail] Thumbnail File: C:\Users\user\Desktop\HOME\08_SpringBoot\FileUpload\2024\11\05\17307878661540_640x640.png
-[DEBUG] 24-11-05 15:24:26 [FileHelper:273] - UploadItem(fieldName=photo, originName=02_SimpleUploadController.java.png, contentType=image/png, fileSize=1541896, filePath=/2024/11/05/17307878661540.png, fileUrl=/files/2024/11/05/17307878661540.png, thumbnailPath=/2024/11/05/17307878661540_640x640.png, thumbnailUrl=/files/2024/11/05/17307878661540_640x640.png)
-[DEBUG] 24-11-05 15:24:26 [FileHelper:290] - [Thumbnail] Path: /2024/11/05/17307878667960.png, Size: 640x640, Crop: true
-[DEBUG] 24-11-05 15:24:26 [FileHelper:308] - [Thumbnail] Thumbnail File: C:\Users\user\Desktop\HOME\08_SpringBoot\FileUpload\2024\11\05\17307878667960_640x640.png
-[DEBUG] 24-11-05 15:24:26 [FileHelper:273] - UploadItem(fieldName=photo, originName=03-upload_sinlge_ok.html.png, contentType=image/png, fileSize=277430, filePath=/2024/11/05/17307878667960.png, fileUrl=/files/2024/11/05/17307878667960.png, thumbnailPath=/2024/11/05/17307878667960_640x640.png, thumbnailUrl=/files/2024/11/05/17307878667960_640x640.png)
-[INFO ] 24-11-05 15:24:27 [MyInterceptor:117] - - duration : 1680 ms
-[ERROR] 24-11-05 15:24:27 [TemplateEngine:1141] - [THYMELEAF][http-nio-8080-exec-6] Exception processing template "multi/upload_ok": An error happened during template parsing (template: "class path resource [templates/multi/upload_ok.html]")
-org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/multi/upload_ok.html]")
-	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:241)
-	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
-	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
-	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103)
-	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077)
-	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372)
-	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192)
-	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1432)
-	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1168)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
-	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:113)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-Caused by: org.attoparser.ParseException: Exception evaluating SpringEL expression: "item.fieldName" (template: "multi/upload_ok" - line 57, col 30)
-	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:393)
-	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
-	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
-	... 52 common frames omitted
-Caused by: org.thymeleaf.exceptions.TemplateProcessingException: Exception evaluating SpringEL expression: "item.fieldName" (template: "multi/upload_ok" - line 57, col 30)
-	at org.thymeleaf.spring6.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:292)
-	at org.thymeleaf.standard.expression.VariableExpression.executeVariableExpression(VariableExpression.java:166)
-	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:66)
-	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109)
-	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138)
-	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:144)
-	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
-	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
-	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
-	at org.thymeleaf.engine.ProcessorTemplateHandler.handleStandaloneElement(ProcessorTemplateHandler.java:918)
-	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleStandaloneElementEnd(TemplateHandlerAdapterMarkupHandler.java:260)
-	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleStandaloneElementEnd(InlinedOutputExpressionMarkupHandler.java:256)
-	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleStandaloneElementEnd(OutputExpressionInlinePreProcessorHandler.java:169)
-	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleStandaloneElementEnd(InlinedOutputExpressionMarkupHandler.java:104)
-	at org.attoparser.HtmlElement.handleStandaloneElementEnd(HtmlElement.java:79)
-	at org.attoparser.HtmlMarkupHandler.handleStandaloneElementEnd(HtmlMarkupHandler.java:241)
-	at org.attoparser.MarkupEventProcessorHandler.handleStandaloneElementEnd(MarkupEventProcessorHandler.java:327)
-	at org.attoparser.ParsingElementMarkupUtil.parseStandaloneElement(ParsingElementMarkupUtil.java:96)
-	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:706)
-	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
-	... 54 common frames omitted
-Caused by: org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property or field 'fieldName' cannot be found on null
-	at org.springframework.expression.spel.ast.PropertyOrFieldReference.readProperty(PropertyOrFieldReference.java:225)
-	at org.springframework.expression.spel.ast.PropertyOrFieldReference.getValueInternal(PropertyOrFieldReference.java:112)
-	at org.springframework.expression.spel.ast.PropertyOrFieldReference$AccessorValueRef.getValue(PropertyOrFieldReference.java:417)
-	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:97)
-	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:114)
-	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:338)
-	at org.thymeleaf.spring6.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:265)
-	... 73 common frames omitted
-[ERROR] 24-11-05 15:24:27 [[dispatcherServlet]:175] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/multi/upload_ok.html]")] with root cause
-org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property or field 'fieldName' cannot be found on null
-	at org.springframework.expression.spel.ast.PropertyOrFieldReference.readProperty(PropertyOrFieldReference.java:225)
-	at org.springframework.expression.spel.ast.PropertyOrFieldReference.getValueInternal(PropertyOrFieldReference.java:112)
-	at org.springframework.expression.spel.ast.PropertyOrFieldReference$AccessorValueRef.getValue(PropertyOrFieldReference.java:417)
-	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:97)
-	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:114)
-	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:338)
-	at org.thymeleaf.spring6.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:265)
-	at org.thymeleaf.standard.expression.VariableExpression.executeVariableExpression(VariableExpression.java:166)
-	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:66)
-	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109)
-	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138)
-	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:144)
-	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
-	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
-	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
-	at org.thymeleaf.engine.ProcessorTemplateHandler.handleStandaloneElement(ProcessorTemplateHandler.java:918)
-	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleStandaloneElementEnd(TemplateHandlerAdapterMarkupHandler.java:260)
-	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleStandaloneElementEnd(InlinedOutputExpressionMarkupHandler.java:256)
-	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleStandaloneElementEnd(OutputExpressionInlinePreProcessorHandler.java:169)
-	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleStandaloneElementEnd(InlinedOutputExpressionMarkupHandler.java:104)
-	at org.attoparser.HtmlElement.handleStandaloneElementEnd(HtmlElement.java:79)
-	at org.attoparser.HtmlMarkupHandler.handleStandaloneElementEnd(HtmlMarkupHandler.java:241)
-	at org.attoparser.MarkupEventProcessorHandler.handleStandaloneElementEnd(MarkupEventProcessorHandler.java:327)
-	at org.attoparser.ParsingElementMarkupUtil.parseStandaloneElement(ParsingElementMarkupUtil.java:96)
-	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:706)
-	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
-	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
-	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
-	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
-	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
-	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103)
-	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077)
-	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372)
-	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192)
-	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1432)
-	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1168)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
-	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:113)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-[INFO ] 24-11-05 15:26:31 [FileuploadApplication:50] - Starting FileuploadApplication using Java 17.0.2 with PID 15292 (C:\Users\user\Desktop\HOME\08_SpringBoot\11_fileupload\build\classes\java\main started by user in C:\Users\user\Desktop\HOME\08_SpringBoot\11_fileupload)
-[DEBUG] 24-11-05 15:26:31 [FileuploadApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
-[INFO ] 24-11-05 15:26:31 [FileuploadApplication:654] - No active profile set, falling back to 1 default profile: "default"
-[DEBUG] 24-11-05 15:26:33 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
-[WARN ] 24-11-05 15:26:33 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.parkjaehan.fileupload]' package. Please check your configuration.
-[INFO ] 24-11-05 15:26:36 [FileuploadApplication:56] - Started FileuploadApplication in 6.841 seconds (process running for 8.542)
-[INFO ] 24-11-05 15:26:40 [MyInterceptor:44] - ---------- new client connected ----------
-[INFO ] 24-11-05 15:26:41 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Chrome, 130.0, Windows, 10, Other
-[INFO ] 24-11-05 15:26:41 [MyInterceptor:80] - [GET], http://localhost:8080/multi/upload
-[INFO ] 24-11-05 15:26:41 [MyInterceptor:117] - - duration : 351 ms
-[INFO ] 24-11-05 15:26:48 [MyInterceptor:44] - ---------- new client connected ----------
-[INFO ] 24-11-05 15:26:48 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Chrome, 130.0, Windows, 10, Other
-[INFO ] 24-11-05 15:26:48 [MyInterceptor:80] - [POST], http://localhost:8080/multi/upload_ok
-[INFO ] 24-11-05 15:26:48 [MyInterceptor:96] - - Referer : time=6853, url = http://localhost:8080/multi/upload
-[DEBUG] 24-11-05 15:26:48 [FileHelper:290] - [Thumbnail] Path: /2024/11/05/17307880081870.png, Size: 640x640, Crop: true
-[DEBUG] 24-11-05 15:26:48 [FileHelper:308] - [Thumbnail] Thumbnail File: C:\Users\user\Desktop\HOME\08_SpringBoot\FileUpload\2024\11\05\17307880081870_640x640.png
-[DEBUG] 24-11-05 15:26:48 [FileHelper:273] - UploadItem(fieldName=photo, originName=01-MyWebConfig.java.png, contentType=image/png, fileSize=601429, filePath=/2024/11/05/17307880081870.png, fileUrl=/files/2024/11/05/17307880081870.png, thumbnailPath=/2024/11/05/17307880081870_640x640.png, thumbnailUrl=/files/2024/11/05/17307880081870_640x640.png)
-[DEBUG] 24-11-05 15:26:48 [FileHelper:290] - [Thumbnail] Path: /2024/11/05/17307880089480.png, Size: 640x640, Crop: true
-[DEBUG] 24-11-05 15:26:48 [FileHelper:308] - [Thumbnail] Thumbnail File: C:\Users\user\Desktop\HOME\08_SpringBoot\FileUpload\2024\11\05\17307880089480_640x640.png
-[DEBUG] 24-11-05 15:26:49 [FileHelper:273] - UploadItem(fieldName=photo, originName=02_SimpleUploadController.java.png, contentType=image/png, fileSize=1541896, filePath=/2024/11/05/17307880089480.png, fileUrl=/files/2024/11/05/17307880089480.png, thumbnailPath=/2024/11/05/17307880089480_640x640.png, thumbnailUrl=/files/2024/11/05/17307880089480_640x640.png)
-[DEBUG] 24-11-05 15:26:49 [FileHelper:290] - [Thumbnail] Path: /2024/11/05/17307880096230.png, Size: 640x640, Crop: true
-[DEBUG] 24-11-05 15:26:49 [FileHelper:308] - [Thumbnail] Thumbnail File: C:\Users\user\Desktop\HOME\08_SpringBoot\FileUpload\2024\11\05\17307880096230_640x640.png
-[DEBUG] 24-11-05 15:26:49 [FileHelper:273] - UploadItem(fieldName=photo, originName=03-upload_sinlge_ok.html.png, contentType=image/png, fileSize=277430, filePath=/2024/11/05/17307880096230.png, fileUrl=/files/2024/11/05/17307880096230.png, thumbnailPath=/2024/11/05/17307880096230_640x640.png, thumbnailUrl=/files/2024/11/05/17307880096230_640x640.png)
-[INFO ] 24-11-05 15:26:49 [MyInterceptor:117] - - duration : 1797 ms
-[ERROR] 24-11-05 15:26:49 [TemplateEngine:1141] - [THYMELEAF][http-nio-8080-exec-7] Exception processing template "multi/upload_ok": An error happened during template parsing (template: "class path resource [templates/multi/upload_ok.html]")
-org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/multi/upload_ok.html]")
-	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:241)
-	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
-	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
-	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103)
-	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077)
-	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372)
-	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192)
-	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1432)
-	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1168)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
-	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:113)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-Caused by: org.attoparser.ParseException: Exception evaluating SpringEL expression: "item.fieldName" (template: "multi/upload_ok" - line 57, col 30)
-	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:393)
-	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
-	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
-	... 52 common frames omitted
-Caused by: org.thymeleaf.exceptions.TemplateProcessingException: Exception evaluating SpringEL expression: "item.fieldName" (template: "multi/upload_ok" - line 57, col 30)
-	at org.thymeleaf.spring6.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:292)
-	at org.thymeleaf.standard.expression.VariableExpression.executeVariableExpression(VariableExpression.java:166)
-	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:66)
-	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109)
-	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138)
-	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:144)
-	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
-	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
-	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
-	at org.thymeleaf.engine.ProcessorTemplateHandler.handleStandaloneElement(ProcessorTemplateHandler.java:918)
-	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleStandaloneElementEnd(TemplateHandlerAdapterMarkupHandler.java:260)
-	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleStandaloneElementEnd(InlinedOutputExpressionMarkupHandler.java:256)
-	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleStandaloneElementEnd(OutputExpressionInlinePreProcessorHandler.java:169)
-	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleStandaloneElementEnd(InlinedOutputExpressionMarkupHandler.java:104)
-	at org.attoparser.HtmlElement.handleStandaloneElementEnd(HtmlElement.java:79)
-	at org.attoparser.HtmlMarkupHandler.handleStandaloneElementEnd(HtmlMarkupHandler.java:241)
-	at org.attoparser.MarkupEventProcessorHandler.handleStandaloneElementEnd(MarkupEventProcessorHandler.java:327)
-	at org.attoparser.ParsingElementMarkupUtil.parseStandaloneElement(ParsingElementMarkupUtil.java:96)
-	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:706)
-	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
-	... 54 common frames omitted
-Caused by: org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property or field 'fieldName' cannot be found on null
-	at org.springframework.expression.spel.ast.PropertyOrFieldReference.readProperty(PropertyOrFieldReference.java:225)
-	at org.springframework.expression.spel.ast.PropertyOrFieldReference.getValueInternal(PropertyOrFieldReference.java:112)
-	at org.springframework.expression.spel.ast.PropertyOrFieldReference$AccessorValueRef.getValue(PropertyOrFieldReference.java:417)
-	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:97)
-	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:114)
-	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:338)
-	at org.thymeleaf.spring6.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:265)
-	... 73 common frames omitted
-[ERROR] 24-11-05 15:26:49 [[dispatcherServlet]:175] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/multi/upload_ok.html]")] with root cause
-org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property or field 'fieldName' cannot be found on null
-	at org.springframework.expression.spel.ast.PropertyOrFieldReference.readProperty(PropertyOrFieldReference.java:225)
-	at org.springframework.expression.spel.ast.PropertyOrFieldReference.getValueInternal(PropertyOrFieldReference.java:112)
-	at org.springframework.expression.spel.ast.PropertyOrFieldReference$AccessorValueRef.getValue(PropertyOrFieldReference.java:417)
-	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:97)
-	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:114)
-	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:338)
-	at org.thymeleaf.spring6.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:265)
-	at org.thymeleaf.standard.expression.VariableExpression.executeVariableExpression(VariableExpression.java:166)
-	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:66)
-	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109)
-	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138)
-	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:144)
-	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
-	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
-	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
-	at org.thymeleaf.engine.ProcessorTemplateHandler.handleStandaloneElement(ProcessorTemplateHandler.java:918)
-	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleStandaloneElementEnd(TemplateHandlerAdapterMarkupHandler.java:260)
-	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleStandaloneElementEnd(InlinedOutputExpressionMarkupHandler.java:256)
-	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleStandaloneElementEnd(OutputExpressionInlinePreProcessorHandler.java:169)
-	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleStandaloneElementEnd(InlinedOutputExpressionMarkupHandler.java:104)
-	at org.attoparser.HtmlElement.handleStandaloneElementEnd(HtmlElement.java:79)
-	at org.attoparser.HtmlMarkupHandler.handleStandaloneElementEnd(HtmlMarkupHandler.java:241)
-	at org.attoparser.MarkupEventProcessorHandler.handleStandaloneElementEnd(MarkupEventProcessorHandler.java:327)
-	at org.attoparser.ParsingElementMarkupUtil.parseStandaloneElement(ParsingElementMarkupUtil.java:96)
-	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:706)
-	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
-	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
-	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
-	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
-	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
-	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103)
-	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077)
-	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372)
-	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192)
-	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1432)
-	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1168)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
-	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:113)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-[INFO ] 24-11-05 15:28:50 [FileuploadApplication:50] - Starting FileuploadApplication using Java 17.0.2 with PID 15292 (C:\Users\user\Desktop\HOME\08_SpringBoot\11_fileupload\build\classes\java\main started by user in C:\Users\user\Desktop\HOME\08_SpringBoot\11_fileupload)
-[DEBUG] 24-11-05 15:28:50 [FileuploadApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
-[INFO ] 24-11-05 15:28:50 [FileuploadApplication:654] - No active profile set, falling back to 1 default profile: "default"
-[WARN ] 24-11-05 15:28:51 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.parkjaehan.fileupload]' package. Please check your configuration.
-[INFO ] 24-11-05 15:28:52 [FileuploadApplication:56] - Started FileuploadApplication in 3.258 seconds (process running for 144.602)
-[INFO ] 24-11-05 15:29:44 [FileuploadApplication:50] - Starting FileuploadApplication using Java 17.0.2 with PID 15732 (C:\Users\user\Desktop\HOME\08_SpringBoot\11_fileupload\build\classes\java\main started by user in C:\Users\user\Desktop\HOME\08_SpringBoot\11_fileupload)
-[DEBUG] 24-11-05 15:29:44 [FileuploadApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
-[INFO ] 24-11-05 15:29:44 [FileuploadApplication:654] - No active profile set, falling back to 1 default profile: "default"
-[DEBUG] 24-11-05 15:29:46 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
-[WARN ] 24-11-05 15:29:46 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.parkjaehan.fileupload]' package. Please check your configuration.
-[INFO ] 24-11-05 15:29:49 [FileuploadApplication:56] - Started FileuploadApplication in 6.553 seconds (process running for 7.773)
-[INFO ] 24-11-05 15:29:55 [MyInterceptor:44] - ---------- new client connected ----------
-[INFO ] 24-11-05 15:29:55 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Chrome, 130.0, Windows, 10, Other
-[INFO ] 24-11-05 15:29:55 [MyInterceptor:80] - [GET], http://localhost:8080/multi/upload
-[INFO ] 24-11-05 15:29:55 [MyInterceptor:117] - - duration : 320 ms
-[INFO ] 24-11-05 15:29:58 [MyInterceptor:44] - ---------- new client connected ----------
-[INFO ] 24-11-05 15:29:58 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Chrome, 130.0, Windows, 10, Other
-[INFO ] 24-11-05 15:29:58 [MyInterceptor:80] - [GET], http://localhost:8080/simple/upload_single
-[INFO ] 24-11-05 15:29:58 [MyInterceptor:96] - - Referer : time=2911, url = http://localhost:8080/multi/upload
-[INFO ] 24-11-05 15:29:58 [MyInterceptor:117] - - duration : 128 ms
-[INFO ] 24-11-05 15:29:59 [MyInterceptor:44] - ---------- new client connected ----------
-[INFO ] 24-11-05 15:29:59 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Chrome, 130.0, Windows, 10, Other
-[INFO ] 24-11-05 15:29:59 [MyInterceptor:80] - [GET], http://localhost:8080/use_helper/upload_single
-[INFO ] 24-11-05 15:29:59 [MyInterceptor:96] - - Referer : time=365, url = http://localhost:8080/simple/upload_single
-[INFO ] 24-11-05 15:29:59 [MyInterceptor:117] - - duration : 96 ms
-[INFO ] 24-11-05 15:29:59 [MyInterceptor:44] - ---------- new client connected ----------
-[INFO ] 24-11-05 15:29:59 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Chrome, 130.0, Windows, 10, Other
-[INFO ] 24-11-05 15:29:59 [MyInterceptor:80] - [GET], http://localhost:8080/use_helper/@%7B/assets/img/noimg.jpg%7D
-[INFO ] 24-11-05 15:29:59 [MyInterceptor:96] - - Referer : time=52, url = http://localhost:8080/use_helper/upload_single
-[INFO ] 24-11-05 15:29:59 [MyInterceptor:44] - ---------- new client connected ----------
-[INFO ] 24-11-05 15:29:59 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Chrome, 130.0, Windows, 10, Other
-[INFO ] 24-11-05 15:29:59 [MyInterceptor:80] - [GET], http://localhost:8080/multi/upload
-[INFO ] 24-11-05 15:29:59 [MyInterceptor:96] - - Referer : time=506, url = http://localhost:8080/use_helper/upload_single
-[INFO ] 24-11-05 15:29:59 [MyInterceptor:117] - - duration : 75 ms
-[INFO ] 24-11-05 15:30:09 [MyInterceptor:44] - ---------- new client connected ----------
-[INFO ] 24-11-05 15:30:09 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Chrome, 130.0, Windows, 10, Other
-[INFO ] 24-11-05 15:30:09 [MyInterceptor:80] - [POST], http://localhost:8080/multi/upload_ok
-[INFO ] 24-11-05 15:30:09 [MyInterceptor:96] - - Referer : time=9812, url = http://localhost:8080/multi/upload
-[DEBUG] 24-11-05 15:30:09 [FileHelper:290] - [Thumbnail] Path: /2024/11/05/17307882095940.png, Size: 640x640, Crop: true
-[DEBUG] 24-11-05 15:30:09 [FileHelper:308] - [Thumbnail] Thumbnail File: C:\Users\user\Desktop\HOME\08_SpringBoot\FileUpload\2024\11\05\17307882095940_640x640.png
-[DEBUG] 24-11-05 15:30:10 [FileHelper:273] - UploadItem(fieldName=photo, originName=01-MyWebConfig.java.png, contentType=image/png, fileSize=601429, filePath=/2024/11/05/17307882095940.png, fileUrl=/files/2024/11/05/17307882095940.png, thumbnailPath=/2024/11/05/17307882095940_640x640.png, thumbnailUrl=/files/2024/11/05/17307882095940_640x640.png)
-[DEBUG] 24-11-05 15:30:10 [FileHelper:290] - [Thumbnail] Path: /2024/11/05/17307882103170.png, Size: 640x640, Crop: true
-[DEBUG] 24-11-05 15:30:10 [FileHelper:308] - [Thumbnail] Thumbnail File: C:\Users\user\Desktop\HOME\08_SpringBoot\FileUpload\2024\11\05\17307882103170_640x640.png
-[DEBUG] 24-11-05 15:30:10 [FileHelper:273] - UploadItem(fieldName=photo, originName=02_SimpleUploadController.java.png, contentType=image/png, fileSize=1541896, filePath=/2024/11/05/17307882103170.png, fileUrl=/files/2024/11/05/17307882103170.png, thumbnailPath=/2024/11/05/17307882103170_640x640.png, thumbnailUrl=/files/2024/11/05/17307882103170_640x640.png)
-[DEBUG] 24-11-05 15:30:10 [FileHelper:290] - [Thumbnail] Path: /2024/11/05/17307882109960.png, Size: 640x640, Crop: true
-[DEBUG] 24-11-05 15:30:10 [FileHelper:308] - [Thumbnail] Thumbnail File: C:\Users\user\Desktop\HOME\08_SpringBoot\FileUpload\2024\11\05\17307882109960_640x640.png
-[DEBUG] 24-11-05 15:30:11 [FileHelper:273] - UploadItem(fieldName=photo, originName=03-upload_sinlge_ok.html.png, contentType=image/png, fileSize=277430, filePath=/2024/11/05/17307882109960.png, fileUrl=/files/2024/11/05/17307882109960.png, thumbnailPath=/2024/11/05/17307882109960_640x640.png, thumbnailUrl=/files/2024/11/05/17307882109960_640x640.png)
-[INFO ] 24-11-05 15:30:11 [MyInterceptor:117] - - duration : 1708 ms
-[ERROR] 24-11-05 15:30:11 [TemplateEngine:1141] - [THYMELEAF][http-nio-8080-exec-3] Exception processing template "multi/upload_ok": An error happened during template parsing (template: "class path resource [templates/multi/upload_ok.html]")
-org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/multi/upload_ok.html]")
-	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:241)
-	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
-	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
-	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103)
-	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077)
-	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372)
-	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192)
-	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1432)
-	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1168)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
-	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:113)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-Caused by: org.attoparser.ParseException: Exception evaluating SpringEL expression: "item.fieldName" (template: "multi/upload_ok" - line 57, col 30)
-	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:393)
-	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
-	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
-	... 52 common frames omitted
-Caused by: org.thymeleaf.exceptions.TemplateProcessingException: Exception evaluating SpringEL expression: "item.fieldName" (template: "multi/upload_ok" - line 57, col 30)
-	at org.thymeleaf.spring6.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:292)
-	at org.thymeleaf.standard.expression.VariableExpression.executeVariableExpression(VariableExpression.java:166)
-	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:66)
-	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109)
-	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138)
-	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:144)
-	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
-	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
-	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
-	at org.thymeleaf.engine.ProcessorTemplateHandler.handleStandaloneElement(ProcessorTemplateHandler.java:918)
-	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleStandaloneElementEnd(TemplateHandlerAdapterMarkupHandler.java:260)
-	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleStandaloneElementEnd(InlinedOutputExpressionMarkupHandler.java:256)
-	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleStandaloneElementEnd(OutputExpressionInlinePreProcessorHandler.java:169)
-	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleStandaloneElementEnd(InlinedOutputExpressionMarkupHandler.java:104)
-	at org.attoparser.HtmlElement.handleStandaloneElementEnd(HtmlElement.java:79)
-	at org.attoparser.HtmlMarkupHandler.handleStandaloneElementEnd(HtmlMarkupHandler.java:241)
-	at org.attoparser.MarkupEventProcessorHandler.handleStandaloneElementEnd(MarkupEventProcessorHandler.java:327)
-	at org.attoparser.ParsingElementMarkupUtil.parseStandaloneElement(ParsingElementMarkupUtil.java:96)
-	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:706)
-	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
-	... 54 common frames omitted
-Caused by: org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property or field 'fieldName' cannot be found on null
-	at org.springframework.expression.spel.ast.PropertyOrFieldReference.readProperty(PropertyOrFieldReference.java:225)
-	at org.springframework.expression.spel.ast.PropertyOrFieldReference.getValueInternal(PropertyOrFieldReference.java:112)
-	at org.springframework.expression.spel.ast.PropertyOrFieldReference$AccessorValueRef.getValue(PropertyOrFieldReference.java:417)
-	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:97)
-	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:114)
-	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:338)
-	at org.thymeleaf.spring6.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:265)
-	... 73 common frames omitted
-[ERROR] 24-11-05 15:30:11 [[dispatcherServlet]:175] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/multi/upload_ok.html]")] with root cause
-org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property or field 'fieldName' cannot be found on null
-	at org.springframework.expression.spel.ast.PropertyOrFieldReference.readProperty(PropertyOrFieldReference.java:225)
-	at org.springframework.expression.spel.ast.PropertyOrFieldReference.getValueInternal(PropertyOrFieldReference.java:112)
-	at org.springframework.expression.spel.ast.PropertyOrFieldReference$AccessorValueRef.getValue(PropertyOrFieldReference.java:417)
-	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:97)
-	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:114)
-	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:338)
-	at org.thymeleaf.spring6.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:265)
-	at org.thymeleaf.standard.expression.VariableExpression.executeVariableExpression(VariableExpression.java:166)
-	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:66)
-	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109)
-	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138)
-	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:144)
-	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
-	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
-	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
-	at org.thymeleaf.engine.ProcessorTemplateHandler.handleStandaloneElement(ProcessorTemplateHandler.java:918)
-	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleStandaloneElementEnd(TemplateHandlerAdapterMarkupHandler.java:260)
-	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleStandaloneElementEnd(InlinedOutputExpressionMarkupHandler.java:256)
-	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleStandaloneElementEnd(OutputExpressionInlinePreProcessorHandler.java:169)
-	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleStandaloneElementEnd(InlinedOutputExpressionMarkupHandler.java:104)
-	at org.attoparser.HtmlElement.handleStandaloneElementEnd(HtmlElement.java:79)
-	at org.attoparser.HtmlMarkupHandler.handleStandaloneElementEnd(HtmlMarkupHandler.java:241)
-	at org.attoparser.MarkupEventProcessorHandler.handleStandaloneElementEnd(MarkupEventProcessorHandler.java:327)
-	at org.attoparser.ParsingElementMarkupUtil.parseStandaloneElement(ParsingElementMarkupUtil.java:96)
-	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:706)
-	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
-	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
-	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
-	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
-	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
-	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103)
-	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077)
-	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372)
-	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192)
-	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1432)
-	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1168)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
-	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:113)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-[INFO ] 24-11-05 15:31:09 [FileuploadApplication:50] - Starting FileuploadApplication using Java 17.0.2 with PID 19892 (C:\Users\user\Desktop\HOME\08_SpringBoot\11_fileupload\build\classes\java\main started by user in C:\Users\user\Desktop\HOME\08_SpringBoot\11_fileupload)
-[DEBUG] 24-11-05 15:31:09 [FileuploadApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
-[INFO ] 24-11-05 15:31:09 [FileuploadApplication:654] - No active profile set, falling back to 1 default profile: "default"
-[DEBUG] 24-11-05 15:31:11 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
-[WARN ] 24-11-05 15:31:11 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.parkjaehan.fileupload]' package. Please check your configuration.
-[INFO ] 24-11-05 15:31:14 [FileuploadApplication:56] - Started FileuploadApplication in 5.88 seconds (process running for 7.518)
-[INFO ] 24-11-05 15:31:20 [MyInterceptor:44] - ---------- new client connected ----------
-[INFO ] 24-11-05 15:31:20 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Chrome, 130.0, Windows, 10, Other
-[INFO ] 24-11-05 15:31:20 [MyInterceptor:80] - [GET], http://localhost:8080/multi/upload
-[INFO ] 24-11-05 15:31:20 [MyInterceptor:117] - - duration : 342 ms
-[INFO ] 24-11-05 15:31:23 [MyInterceptor:44] - ---------- new client connected ----------
-[INFO ] 24-11-05 15:31:23 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Chrome, 130.0, Windows, 10, Other
-[INFO ] 24-11-05 15:31:23 [MyInterceptor:80] - [GET], http://localhost:8080/multi/upload
-[INFO ] 24-11-05 15:31:23 [MyInterceptor:96] - - Referer : time=2469, url = http://localhost:8080/multi/upload
-[INFO ] 24-11-05 15:31:23 [MyInterceptor:117] - - duration : 149 ms
-[INFO ] 24-11-05 15:31:27 [MyInterceptor:44] - ---------- new client connected ----------
-[INFO ] 24-11-05 15:31:27 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Chrome, 130.0, Windows, 10, Other
-[INFO ] 24-11-05 15:31:27 [MyInterceptor:80] - [POST], http://localhost:8080/multi/upload_ok
-[INFO ] 24-11-05 15:31:27 [MyInterceptor:96] - - Referer : time=4354, url = http://localhost:8080/multi/upload
-[DEBUG] 24-11-05 15:31:28 [FileHelper:290] - [Thumbnail] Path: /2024/11/05/17307882880140.png, Size: 640x640, Crop: true
-[DEBUG] 24-11-05 15:31:28 [FileHelper:308] - [Thumbnail] Thumbnail File: C:\Users\user\Desktop\HOME\08_SpringBoot\FileUpload\2024\11\05\17307882880140_640x640.png
-[DEBUG] 24-11-05 15:31:28 [FileHelper:273] - UploadItem(fieldName=photo, originName=01-MyWebConfig.java.png, contentType=image/png, fileSize=601429, filePath=/2024/11/05/17307882880140.png, fileUrl=/files/2024/11/05/17307882880140.png, thumbnailPath=/2024/11/05/17307882880140_640x640.png, thumbnailUrl=/files/2024/11/05/17307882880140_640x640.png)
-[DEBUG] 24-11-05 15:31:28 [FileHelper:290] - [Thumbnail] Path: /2024/11/05/17307882887670.png, Size: 640x640, Crop: true
-[DEBUG] 24-11-05 15:31:28 [FileHelper:308] - [Thumbnail] Thumbnail File: C:\Users\user\Desktop\HOME\08_SpringBoot\FileUpload\2024\11\05\17307882887670_640x640.png
-[DEBUG] 24-11-05 15:31:29 [FileHelper:273] - UploadItem(fieldName=photo, originName=02_SimpleUploadController.java.png, contentType=image/png, fileSize=1541896, filePath=/2024/11/05/17307882887670.png, fileUrl=/files/2024/11/05/17307882887670.png, thumbnailPath=/2024/11/05/17307882887670_640x640.png, thumbnailUrl=/files/2024/11/05/17307882887670_640x640.png)
-[DEBUG] 24-11-05 15:31:29 [FileHelper:290] - [Thumbnail] Path: /2024/11/05/17307882894420.png, Size: 640x640, Crop: true
-[DEBUG] 24-11-05 15:31:29 [FileHelper:308] - [Thumbnail] Thumbnail File: C:\Users\user\Desktop\HOME\08_SpringBoot\FileUpload\2024\11\05\17307882894420_640x640.png
-[DEBUG] 24-11-05 15:31:29 [FileHelper:273] - UploadItem(fieldName=photo, originName=03-upload_sinlge_ok.html.png, contentType=image/png, fileSize=277430, filePath=/2024/11/05/17307882894420.png, fileUrl=/files/2024/11/05/17307882894420.png, thumbnailPath=/2024/11/05/17307882894420_640x640.png, thumbnailUrl=/files/2024/11/05/17307882894420_640x640.png)
-[INFO ] 24-11-05 15:31:29 [MyInterceptor:117] - - duration : 1848 ms
-[INFO ] 24-11-05 15:31:29 [MyInterceptor:44] - ---------- new client connected ----------
-[INFO ] 24-11-05 15:31:29 [MyInterceptor:44] - ---------- new client connected ----------
-[INFO ] 24-11-05 15:31:29 [MyInterceptor:44] - ---------- new client connected ----------
-[INFO ] 24-11-05 15:31:29 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Chrome, 130.0, Windows, 10, Other
-[INFO ] 24-11-05 15:31:29 [MyInterceptor:80] - [GET], http://localhost:8080/files/2024/11/05/17307882880140_640x640.png
-[INFO ] 24-11-05 15:31:29 [MyInterceptor:96] - - Referer : time=88, url = http://localhost:8080/multi/upload_ok
-[INFO ] 24-11-05 15:31:29 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Chrome, 130.0, Windows, 10, Other
-[INFO ] 24-11-05 15:31:29 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Chrome, 130.0, Windows, 10, Other
-[INFO ] 24-11-05 15:31:29 [MyInterceptor:80] - [GET], http://localhost:8080/files/2024/11/05/17307882894420_640x640.png
-[INFO ] 24-11-05 15:31:29 [MyInterceptor:96] - - Referer : time=88, url = http://localhost:8080/multi/upload_ok
-[INFO ] 24-11-05 15:31:29 [MyInterceptor:80] - [GET], http://localhost:8080/files/2024/11/05/17307882887670_640x640.png
-[INFO ] 24-11-05 15:31:29 [MyInterceptor:96] - - Referer : time=88, url = http://localhost:8080/multi/upload_ok
-[INFO ] 24-11-05 15:31:29 [MyInterceptor:117] - - duration : 143 ms
-[INFO ] 24-11-05 15:31:29 [MyInterceptor:117] - - duration : 146 ms
-[INFO ] 24-11-05 15:31:29 [MyInterceptor:117] - - duration : 160 ms
-[INFO ] 24-11-05 15:31:42 [MyInterceptor:44] - ---------- new client connected ----------
-[INFO ] 24-11-05 15:31:42 [MyInterceptor:44] - ---------- new client connected ----------
-[INFO ] 24-11-05 15:31:42 [MyInterceptor:44] - ---------- new client connected ----------
-[INFO ] 24-11-05 15:31:42 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Chrome, 130.0, Windows, 10, Other
-[INFO ] 24-11-05 15:31:42 [MyInterceptor:80] - [GET], http://localhost:8080/files/2024/11/05/17307882880140.png
-[INFO ] 24-11-05 15:31:42 [MyInterceptor:96] - - Referer : time=12550, url = http://localhost:8080/multi/upload_ok
-[INFO ] 24-11-05 15:31:42 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Chrome, 130.0, Windows, 10, Other
-[INFO ] 24-11-05 15:31:42 [MyInterceptor:44] - ---------- new client connected ----------
-[INFO ] 24-11-05 15:31:42 [MyInterceptor:80] - [GET], http://localhost:8080/files/2024/11/05/17307882894420.png
-[INFO ] 24-11-05 15:31:42 [MyInterceptor:96] - - Referer : time=12691, url = http://localhost:8080/multi/upload_ok
-[INFO ] 24-11-05 15:31:42 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Chrome, 130.0, Windows, 10, Other
-[INFO ] 24-11-05 15:31:42 [MyInterceptor:80] - [GET], http://localhost:8080/files/2024/11/05/17307882887670.png
-[INFO ] 24-11-05 15:31:42 [MyInterceptor:96] - - Referer : time=12691, url = http://localhost:8080/multi/upload_ok
-[INFO ] 24-11-05 15:31:42 [MyInterceptor:117] - - duration : 108 ms
-[INFO ] 24-11-05 15:31:42 [MyInterceptor:117] - - duration : 134 ms
-[INFO ] 24-11-05 15:31:42 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Chrome, 130.0, Windows, 10, Other
-[INFO ] 24-11-05 15:31:42 [MyInterceptor:80] - [GET], http://localhost:8080/files/2024/11/05/17307882880140.png
-[INFO ] 24-11-05 15:31:42 [MyInterceptor:96] - - Referer : time=-134, url = http://localhost:8080/multi/upload_ok
-[INFO ] 24-11-05 15:31:42 [MyInterceptor:44] - ---------- new client connected ----------
-[INFO ] 24-11-05 15:31:42 [MyInterceptor:44] - ---------- new client connected ----------
-[INFO ] 24-11-05 15:31:42 [MyInterceptor:117] - - duration : 1 ms
-[INFO ] 24-11-05 15:31:42 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Chrome, 130.0, Windows, 10, Other
-[INFO ] 24-11-05 15:31:42 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Chrome, 130.0, Windows, 10, Other
-[INFO ] 24-11-05 15:31:42 [MyInterceptor:80] - [GET], http://localhost:8080/files/2024/11/05/17307882894420.png
-[INFO ] 24-11-05 15:31:42 [MyInterceptor:80] - [GET], http://localhost:8080/files/2024/11/05/17307882887670.png
-[INFO ] 24-11-05 15:31:42 [MyInterceptor:96] - - Referer : time=-1, url = http://localhost:8080/multi/upload_ok
-[INFO ] 24-11-05 15:31:42 [MyInterceptor:96] - - Referer : time=-1, url = http://localhost:8080/multi/upload_ok
-[INFO ] 24-11-05 15:31:42 [MyInterceptor:117] - - duration : 97 ms
-[INFO ] 24-11-05 15:31:43 [MyInterceptor:117] - - duration : 121 ms
+[INFO ] 24-11-06 13:21:01 [FileuploadApplication:50] - Starting FileuploadApplication using Java 17.0.2 with PID 11912 (C:\Users\user\Desktop\HOME\08_SpringBoot\11_fileupload\build\classes\java\main started by user in C:\Users\user\Desktop\HOME\08_SpringBoot\11_fileupload)
+[DEBUG] 24-11-06 13:21:01 [FileuploadApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-11-06 13:21:01 [FileuploadApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-11-06 13:21:02 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[WARN ] 24-11-06 13:21:02 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.parkjaehan.fileupload]' package. Please check your configuration.
+[INFO ] 24-11-06 13:21:04 [FileuploadApplication:56] - Started FileuploadApplication in 3.28 seconds (process running for 4.014)
+[INFO ] 24-11-06 13:21:12 [MyInterceptor:44] - ---------- new client connected ----------
+[INFO ] 24-11-06 13:21:12 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Chrome, 130.0, Windows, 10, Other
+[INFO ] 24-11-06 13:21:12 [MyInterceptor:80] - [GET], http://localhost:8080/ajax/upload
+[INFO ] 24-11-06 13:21:12 [MyInterceptor:117] - - duration : 294 ms
+[INFO ] 24-11-06 13:57:45 [FileuploadApplication:50] - Starting FileuploadApplication using Java 17.0.2 with PID 27852 (C:\Users\user\Desktop\HOME\08_SpringBoot\11_fileupload\build\classes\java\main started by user in C:\Users\user\Desktop\HOME\08_SpringBoot\11_fileupload)
+[DEBUG] 24-11-06 13:57:45 [FileuploadApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-11-06 13:57:45 [FileuploadApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-11-06 13:57:47 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[WARN ] 24-11-06 13:57:47 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.parkjaehan.fileupload]' package. Please check your configuration.
+[INFO ] 24-11-06 13:57:48 [FileuploadApplication:56] - Started FileuploadApplication in 3.236 seconds (process running for 4.266)
+[INFO ] 24-11-06 13:57:53 [MyInterceptor:44] - ---------- new client connected ----------
+[INFO ] 24-11-06 13:57:53 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Chrome, 130.0, Windows, 10, Other
+[INFO ] 24-11-06 13:57:53 [MyInterceptor:80] - [GET], http://localhost:8080/ajax/upload
+[INFO ] 24-11-06 13:57:53 [MyInterceptor:117] - - duration : 249 ms
+[INFO ] 24-11-06 13:58:16 [MyInterceptor:44] - ---------- new client connected ----------
+[INFO ] 24-11-06 13:58:16 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Chrome, 130.0, Windows, 10, Other
+[INFO ] 24-11-06 13:58:16 [MyInterceptor:80] - [GET], http://localhost:8080/ajax/upload_multi
+[INFO ] 24-11-06 13:58:16 [MyInterceptor:117] - - duration : 89 ms
+[INFO ] 24-11-06 14:05:49 [FileuploadApplication:50] - Starting FileuploadApplication using Java 17.0.2 with PID 34980 (C:\Users\user\Desktop\HOME\08_SpringBoot\11_fileupload\build\classes\java\main started by user in C:\Users\user\Desktop\HOME\08_SpringBoot\11_fileupload)
+[DEBUG] 24-11-06 14:05:49 [FileuploadApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-11-06 14:05:49 [FileuploadApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-11-06 14:05:50 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[WARN ] 24-11-06 14:05:50 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.parkjaehan.fileupload]' package. Please check your configuration.
+[INFO ] 24-11-06 14:05:52 [FileuploadApplication:56] - Started FileuploadApplication in 3.423 seconds (process running for 4.327)
+[INFO ] 24-11-06 14:05:56 [MyInterceptor:44] - ---------- new client connected ----------
+[INFO ] 24-11-06 14:05:56 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Chrome, 130.0, Windows, 10, Other
+[INFO ] 24-11-06 14:05:56 [MyInterceptor:80] - [GET], http://localhost:8080/
+[INFO ] 24-11-06 14:06:01 [MyInterceptor:44] - ---------- new client connected ----------
+[INFO ] 24-11-06 14:06:01 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Chrome, 130.0, Windows, 10, Other
+[INFO ] 24-11-06 14:06:01 [MyInterceptor:80] - [GET], http://localhost:8080/ajax/upload
+[INFO ] 24-11-06 14:06:01 [MyInterceptor:117] - - duration : 159 ms
+[INFO ] 24-11-06 14:06:03 [MyInterceptor:44] - ---------- new client connected ----------
+[INFO ] 24-11-06 14:06:03 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Chrome, 130.0, Windows, 10, Other
+[INFO ] 24-11-06 14:06:03 [MyInterceptor:80] - [GET], http://localhost:8080/ajax/upload_multi
+[INFO ] 24-11-06 14:06:03 [MyInterceptor:96] - - Referer : time=2161, url = http://localhost:8080/ajax/upload
+[INFO ] 24-11-06 14:06:03 [MyInterceptor:117] - - duration : 50 ms
+[INFO ] 24-11-06 14:06:06 [MyInterceptor:44] - ---------- new client connected ----------
+[INFO ] 24-11-06 14:06:06 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Chrome, 130.0, Windows, 10, Other
+[INFO ] 24-11-06 14:06:06 [MyInterceptor:80] - [GET], http://localhost:8080/ajax/upload
+[INFO ] 24-11-06 14:06:06 [MyInterceptor:96] - - Referer : time=2417, url = http://localhost:8080/ajax/upload_multi
+[INFO ] 24-11-06 14:06:06 [MyInterceptor:117] - - duration : 62 ms
+[INFO ] 24-11-06 14:06:07 [MyInterceptor:44] - ---------- new client connected ----------
+[INFO ] 24-11-06 14:06:07 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Chrome, 130.0, Windows, 10, Other
+[INFO ] 24-11-06 14:06:07 [MyInterceptor:80] - [GET], http://localhost:8080/ajax/upload_multi
+[INFO ] 24-11-06 14:06:07 [MyInterceptor:96] - - Referer : time=1149, url = http://localhost:8080/ajax/upload
+[INFO ] 24-11-06 14:06:07 [MyInterceptor:117] - - duration : 25 ms
+[INFO ] 24-11-06 14:06:07 [MyInterceptor:44] - ---------- new client connected ----------
+[INFO ] 24-11-06 14:06:07 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Chrome, 130.0, Windows, 10, Other
+[INFO ] 24-11-06 14:06:07 [MyInterceptor:80] - [GET], http://localhost:8080/ajax/upload
+[INFO ] 24-11-06 14:06:07 [MyInterceptor:96] - - Referer : time=627, url = http://localhost:8080/ajax/upload_multi
+[INFO ] 24-11-06 14:06:07 [MyInterceptor:117] - - duration : 26 ms
+[INFO ] 24-11-06 14:06:08 [MyInterceptor:44] - ---------- new client connected ----------
+[INFO ] 24-11-06 14:06:08 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Chrome, 130.0, Windows, 10, Other
+[INFO ] 24-11-06 14:06:08 [MyInterceptor:80] - [GET], http://localhost:8080/ajax/upload
+[INFO ] 24-11-06 14:06:08 [MyInterceptor:96] - - Referer : time=473, url = http://localhost:8080/ajax/upload
+[INFO ] 24-11-06 14:06:08 [MyInterceptor:117] - - duration : 24 ms
+[INFO ] 24-11-06 14:06:09 [MyInterceptor:44] - ---------- new client connected ----------
+[INFO ] 24-11-06 14:06:09 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Chrome, 130.0, Windows, 10, Other
+[INFO ] 24-11-06 14:06:09 [MyInterceptor:80] - [GET], http://localhost:8080/multi/upload
+[INFO ] 24-11-06 14:06:09 [MyInterceptor:96] - - Referer : time=1187, url = http://localhost:8080/ajax/upload
+[INFO ] 24-11-06 14:06:09 [MyInterceptor:117] - - duration : 18 ms
+[INFO ] 24-11-06 14:06:12 [MyInterceptor:44] - ---------- new client connected ----------
+[INFO ] 24-11-06 14:06:12 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Chrome, 130.0, Windows, 10, Other
+[INFO ] 24-11-06 14:06:12 [MyInterceptor:80] - [GET], http://localhost:8080/simple/upload_single
+[INFO ] 24-11-06 14:06:12 [MyInterceptor:96] - - Referer : time=2697, url = http://localhost:8080/multi/upload
+[INFO ] 24-11-06 14:06:12 [MyInterceptor:117] - - duration : 21 ms
+[INFO ] 24-11-06 14:06:13 [MyInterceptor:44] - ---------- new client connected ----------
+[INFO ] 24-11-06 14:06:13 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Chrome, 130.0, Windows, 10, Other
+[INFO ] 24-11-06 14:06:13 [MyInterceptor:80] - [GET], http://localhost:8080/use_helper/upload_single
+[INFO ] 24-11-06 14:06:13 [MyInterceptor:96] - - Referer : time=1215, url = http://localhost:8080/simple/upload_single
+[INFO ] 24-11-06 14:06:13 [MyInterceptor:117] - - duration : 19 ms
+[INFO ] 24-11-06 14:06:13 [MyInterceptor:44] - ---------- new client connected ----------
+[INFO ] 24-11-06 14:06:13 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Chrome, 130.0, Windows, 10, Other
+[INFO ] 24-11-06 14:06:13 [MyInterceptor:80] - [GET], http://localhost:8080/use_helper/@%7B/assets/img/noimg.jpg%7D
+[INFO ] 24-11-06 14:06:13 [MyInterceptor:96] - - Referer : time=32, url = http://localhost:8080/use_helper/upload_single
+[INFO ] 24-11-06 14:06:14 [MyInterceptor:44] - ---------- new client connected ----------
+[INFO ] 24-11-06 14:06:14 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Chrome, 130.0, Windows, 10, Other
+[INFO ] 24-11-06 14:06:14 [MyInterceptor:80] - [GET], http://localhost:8080/simple/upload_single
+[INFO ] 24-11-06 14:06:14 [MyInterceptor:96] - - Referer : time=1129, url = http://localhost:8080/use_helper/upload_single
+[INFO ] 24-11-06 14:06:14 [MyInterceptor:117] - - duration : 20 ms
+[INFO ] 24-11-06 14:06:15 [MyInterceptor:44] - ---------- new client connected ----------
+[INFO ] 24-11-06 14:06:15 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Chrome, 130.0, Windows, 10, Other
+[INFO ] 24-11-06 14:06:15 [MyInterceptor:80] - [GET], http://localhost:8080/use_helper/upload_single
+[INFO ] 24-11-06 14:06:15 [MyInterceptor:96] - - Referer : time=408, url = http://localhost:8080/simple/upload_single
+[INFO ] 24-11-06 14:06:15 [MyInterceptor:117] - - duration : 17 ms
+[INFO ] 24-11-06 14:06:15 [MyInterceptor:44] - ---------- new client connected ----------
+[INFO ] 24-11-06 14:06:15 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Chrome, 130.0, Windows, 10, Other
+[INFO ] 24-11-06 14:06:15 [MyInterceptor:80] - [GET], http://localhost:8080/use_helper/@%7B/assets/img/noimg.jpg%7D
+[INFO ] 24-11-06 14:06:15 [MyInterceptor:96] - - Referer : time=27, url = http://localhost:8080/use_helper/upload_single
+[INFO ] 24-11-06 14:06:18 [MyInterceptor:44] - ---------- new client connected ----------
+[INFO ] 24-11-06 14:06:18 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Chrome, 130.0, Windows, 10, Other
+[INFO ] 24-11-06 14:06:18 [MyInterceptor:80] - [GET], http://localhost:8080/ajax/upload
+[INFO ] 24-11-06 14:06:18 [MyInterceptor:96] - - Referer : time=3524, url = http://localhost:8080/use_helper/upload_single
+[INFO ] 24-11-06 14:06:18 [MyInterceptor:117] - - duration : 15 ms
+[INFO ] 24-11-06 14:06:19 [MyInterceptor:44] - ---------- new client connected ----------
+[INFO ] 24-11-06 14:06:19 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Chrome, 130.0, Windows, 10, Other
+[INFO ] 24-11-06 14:06:19 [MyInterceptor:80] - [GET], http://localhost:8080/use_helper/upload_single
+[INFO ] 24-11-06 14:06:19 [MyInterceptor:96] - - Referer : time=1138, url = http://localhost:8080/ajax/upload
+[INFO ] 24-11-06 14:06:19 [MyInterceptor:117] - - duration : 20 ms
+[INFO ] 24-11-06 14:06:19 [MyInterceptor:44] - ---------- new client connected ----------
+[INFO ] 24-11-06 14:06:19 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Chrome, 130.0, Windows, 10, Other
+[INFO ] 24-11-06 14:06:19 [MyInterceptor:80] - [GET], http://localhost:8080/use_helper/@%7B/assets/img/noimg.jpg%7D
+[INFO ] 24-11-06 14:06:19 [MyInterceptor:96] - - Referer : time=22, url = http://localhost:8080/use_helper/upload_single
+[INFO ] 24-11-06 14:06:20 [MyInterceptor:44] - ---------- new client connected ----------
+[INFO ] 24-11-06 14:06:20 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Chrome, 130.0, Windows, 10, Other
+[INFO ] 24-11-06 14:06:20 [MyInterceptor:80] - [GET], http://localhost:8080/ajax/upload
+[INFO ] 24-11-06 14:06:20 [MyInterceptor:96] - - Referer : time=1029, url = http://localhost:8080/use_helper/upload_single
+[INFO ] 24-11-06 14:06:20 [MyInterceptor:117] - - duration : 16 ms
+[INFO ] 24-11-06 14:06:48 [MyInterceptor:44] - ---------- new client connected ----------
+[INFO ] 24-11-06 14:06:48 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Chrome, 130.0, Windows, 10, Other
+[INFO ] 24-11-06 14:06:48 [MyInterceptor:80] - [GET], http://localhost:8080/simple/upload_single
+[INFO ] 24-11-06 14:06:48 [MyInterceptor:96] - - Referer : time=27444, url = http://localhost:8080/ajax/upload
+[INFO ] 24-11-06 14:06:48 [MyInterceptor:117] - - duration : 17 ms
+[INFO ] 24-11-06 14:06:52 [MyInterceptor:44] - ---------- new client connected ----------
+[INFO ] 24-11-06 14:06:52 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Chrome, 130.0, Windows, 10, Other
+[INFO ] 24-11-06 14:06:52 [MyInterceptor:80] - [GET], http://localhost:8080/use_helper/upload_single
+[INFO ] 24-11-06 14:06:52 [MyInterceptor:96] - - Referer : time=3852, url = http://localhost:8080/simple/upload_single
+[INFO ] 24-11-06 14:06:52 [MyInterceptor:117] - - duration : 15 ms
+[INFO ] 24-11-06 14:06:52 [MyInterceptor:44] - ---------- new client connected ----------
+[INFO ] 24-11-06 14:06:52 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Chrome, 130.0, Windows, 10, Other
+[INFO ] 24-11-06 14:06:52 [MyInterceptor:80] - [GET], http://localhost:8080/use_helper/@%7B/assets/img/noimg.jpg%7D
+[INFO ] 24-11-06 14:06:52 [MyInterceptor:96] - - Referer : time=24, url = http://localhost:8080/use_helper/upload_single
+[INFO ] 24-11-06 14:09:00 [FileuploadApplication:50] - Starting FileuploadApplication using Java 17.0.2 with PID 34108 (C:\Users\user\Desktop\HOME\08_SpringBoot\11_fileupload\build\classes\java\main started by user in C:\Users\user\Desktop\HOME\08_SpringBoot\11_fileupload)
+[DEBUG] 24-11-06 14:09:00 [FileuploadApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-11-06 14:09:00 [FileuploadApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-11-06 14:09:01 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[WARN ] 24-11-06 14:09:01 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.parkjaehan.fileupload]' package. Please check your configuration.
+[INFO ] 24-11-06 14:09:03 [FileuploadApplication:56] - Started FileuploadApplication in 3.224 seconds (process running for 4.004)
+[INFO ] 24-11-06 14:10:25 [MyInterceptor:44] - ---------- new client connected ----------
+[INFO ] 24-11-06 14:10:25 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Chrome, 130.0, Windows, 10, Other
+[INFO ] 24-11-06 14:10:25 [MyInterceptor:80] - [GET], http://localhost:8080/use_helper/upload_single
+[INFO ] 24-11-06 14:10:25 [MyInterceptor:117] - - duration : 191 ms
+[INFO ] 24-11-06 14:10:27 [MyInterceptor:44] - ---------- new client connected ----------
+[INFO ] 24-11-06 14:10:27 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Chrome, 130.0, Windows, 10, Other
+[INFO ] 24-11-06 14:10:27 [MyInterceptor:80] - [GET], http://localhost:8080/use_helper/upload_single
+[INFO ] 24-11-06 14:10:27 [MyInterceptor:96] - - Referer : time=2011, url = http://localhost:8080/use_helper/upload_single
+[INFO ] 24-11-06 14:10:27 [MyInterceptor:117] - - duration : 55 ms
+[INFO ] 24-11-06 14:10:27 [MyInterceptor:44] - ---------- new client connected ----------
+[INFO ] 24-11-06 14:10:28 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Chrome, 130.0, Windows, 10, Other
+[INFO ] 24-11-06 14:10:28 [MyInterceptor:80] - [GET], http://localhost:8080/multi/upload
+[INFO ] 24-11-06 14:10:28 [MyInterceptor:96] - - Referer : time=642, url = http://localhost:8080/use_helper/upload_single
+[INFO ] 24-11-06 14:10:28 [MyInterceptor:117] - - duration : 53 ms
+[INFO ] 24-11-06 14:10:28 [MyInterceptor:44] - ---------- new client connected ----------
+[INFO ] 24-11-06 14:10:28 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Chrome, 130.0, Windows, 10, Other
+[INFO ] 24-11-06 14:10:28 [MyInterceptor:80] - [GET], http://localhost:8080/ajax/upload
+[INFO ] 24-11-06 14:10:28 [MyInterceptor:96] - - Referer : time=771, url = http://localhost:8080/multi/upload
+[INFO ] 24-11-06 14:10:28 [MyInterceptor:117] - - duration : 54 ms
+[INFO ] 24-11-06 14:10:29 [MyInterceptor:44] - ---------- new client connected ----------
+[INFO ] 24-11-06 14:10:29 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Chrome, 130.0, Windows, 10, Other
+[INFO ] 24-11-06 14:10:29 [MyInterceptor:80] - [GET], http://localhost:8080/ajax/upload_multi
+[INFO ] 24-11-06 14:10:29 [MyInterceptor:96] - - Referer : time=384, url = http://localhost:8080/ajax/upload
+[INFO ] 24-11-06 14:10:29 [MyInterceptor:117] - - duration : 27 ms
+[INFO ] 24-11-06 14:10:52 [MyInterceptor:44] - ---------- new client connected ----------
+[INFO ] 24-11-06 14:10:52 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Chrome, 130.0, Windows, 10, Other
+[INFO ] 24-11-06 14:10:52 [MyInterceptor:80] - [GET], http://localhost:8080/ajax/upload_multi
+[INFO ] 24-11-06 14:10:52 [MyInterceptor:96] - - Referer : time=23623, url = http://localhost:8080/ajax/upload
+[INFO ] 24-11-06 14:10:52 [MyInterceptor:117] - - duration : 19 ms
+[INFO ] 24-11-06 14:10:54 [MyInterceptor:44] - ---------- new client connected ----------
+[INFO ] 24-11-06 14:10:54 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Chrome, 130.0, Windows, 10, Other
+[INFO ] 24-11-06 14:10:54 [MyInterceptor:80] - [GET], http://localhost:8080/ajax/upload_multi
+[INFO ] 24-11-06 14:10:54 [MyInterceptor:96] - - Referer : time=1291, url = http://localhost:8080/ajax/upload
+[INFO ] 24-11-06 14:10:54 [MyInterceptor:117] - - duration : 24 ms
+[INFO ] 24-11-06 14:11:07 [FileuploadApplication:50] - Starting FileuploadApplication using Java 17.0.2 with PID 13420 (C:\Users\user\Desktop\HOME\08_SpringBoot\11_fileupload\build\classes\java\main started by user in C:\Users\user\Desktop\HOME\08_SpringBoot\11_fileupload)
+[DEBUG] 24-11-06 14:11:07 [FileuploadApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-11-06 14:11:07 [FileuploadApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-11-06 14:11:09 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[WARN ] 24-11-06 14:11:09 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.parkjaehan.fileupload]' package. Please check your configuration.
+[INFO ] 24-11-06 14:11:10 [FileuploadApplication:56] - Started FileuploadApplication in 3.278 seconds (process running for 3.981)
+[INFO ] 24-11-06 14:11:12 [MyInterceptor:44] - ---------- new client connected ----------
+[INFO ] 24-11-06 14:11:13 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Chrome, 130.0, Windows, 10, Other
+[INFO ] 24-11-06 14:11:13 [MyInterceptor:80] - [GET], http://localhost:8080/ajax/upload_multi
+[INFO ] 24-11-06 14:11:13 [MyInterceptor:117] - - duration : 210 ms
+[INFO ] 24-11-06 14:11:20 [MyInterceptor:44] - ---------- new client connected ----------
+[INFO ] 24-11-06 14:11:20 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Chrome, 130.0, Windows, 10, Other
+[INFO ] 24-11-06 14:11:20 [MyInterceptor:80] - [GET], http://localhost:8080/multi/upload
+[INFO ] 24-11-06 14:11:20 [MyInterceptor:96] - - Referer : time=7389, url = http://localhost:8080/ajax/upload_multi
+[INFO ] 24-11-06 14:11:20 [MyInterceptor:117] - - duration : 58 ms
+[INFO ] 24-11-06 14:11:21 [MyInterceptor:44] - ---------- new client connected ----------
+[INFO ] 24-11-06 14:11:21 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Chrome, 130.0, Windows, 10, Other
+[INFO ] 24-11-06 14:11:21 [MyInterceptor:80] - [GET], http://localhost:8080/ajax/upload_multi
+[INFO ] 24-11-06 14:11:21 [MyInterceptor:96] - - Referer : time=1163, url = http://localhost:8080/multi/upload
+[INFO ] 24-11-06 14:11:21 [MyInterceptor:117] - - duration : 47 ms
+[INFO ] 24-11-06 14:12:37 [FileuploadApplication:50] - Starting FileuploadApplication using Java 17.0.2 with PID 23584 (C:\Users\user\Desktop\HOME\08_SpringBoot\11_fileupload\build\classes\java\main started by user in C:\Users\user\Desktop\HOME\08_SpringBoot\11_fileupload)
+[DEBUG] 24-11-06 14:12:37 [FileuploadApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-11-06 14:12:37 [FileuploadApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-11-06 14:12:38 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[WARN ] 24-11-06 14:12:38 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.parkjaehan.fileupload]' package. Please check your configuration.
+[INFO ] 24-11-06 14:12:40 [FileuploadApplication:56] - Started FileuploadApplication in 3.115 seconds (process running for 3.949)
+[INFO ] 24-11-06 14:12:46 [MyInterceptor:44] - ---------- new client connected ----------
+[INFO ] 24-11-06 14:12:46 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Chrome, 130.0, Windows, 10, Other
+[INFO ] 24-11-06 14:12:46 [MyInterceptor:80] - [GET], http://localhost:8080/ajax/upload_multi
+[INFO ] 24-11-06 14:12:46 [MyInterceptor:117] - - duration : 169 ms
+[INFO ] 24-11-06 14:12:47 [MyInterceptor:44] - ---------- new client connected ----------
+[INFO ] 24-11-06 14:12:47 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Chrome, 130.0, Windows, 10, Other
+[INFO ] 24-11-06 14:12:47 [MyInterceptor:80] - [GET], http://localhost:8080/ajax/upload_multi
+[INFO ] 24-11-06 14:12:47 [MyInterceptor:96] - - Referer : time=636, url = http://localhost:8080/multi/upload
+[INFO ] 24-11-06 14:12:47 [MyInterceptor:117] - - duration : 58 ms
+[INFO ] 24-11-06 14:12:48 [MyInterceptor:44] - ---------- new client connected ----------
+[INFO ] 24-11-06 14:12:48 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Chrome, 130.0, Windows, 10, Other
+[INFO ] 24-11-06 14:12:48 [MyInterceptor:80] - [GET], http://localhost:8080/multi/upload
+[INFO ] 24-11-06 14:12:48 [MyInterceptor:96] - - Referer : time=1151, url = http://localhost:8080/ajax/upload_multi
+[INFO ] 24-11-06 14:12:48 [MyInterceptor:117] - - duration : 49 ms
+[INFO ] 24-11-06 14:12:50 [MyInterceptor:44] - ---------- new client connected ----------
+[INFO ] 24-11-06 14:12:50 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Chrome, 130.0, Windows, 10, Other
+[INFO ] 24-11-06 14:12:50 [MyInterceptor:80] - [GET], http://localhost:8080/ajax/upload_multi
+[INFO ] 24-11-06 14:12:50 [MyInterceptor:96] - - Referer : time=1399, url = http://localhost:8080/multi/upload
+[INFO ] 24-11-06 14:12:50 [MyInterceptor:117] - - duration : 54 ms
+[INFO ] 24-11-06 14:12:52 [MyInterceptor:44] - ---------- new client connected ----------
+[INFO ] 24-11-06 14:12:52 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Chrome, 130.0, Windows, 10, Other
+[INFO ] 24-11-06 14:12:52 [MyInterceptor:80] - [GET], http://localhost:8080/simple/upload_single
+[INFO ] 24-11-06 14:12:52 [MyInterceptor:96] - - Referer : time=2336, url = http://localhost:8080/ajax/upload_multi
+[INFO ] 24-11-06 14:12:52 [MyInterceptor:117] - - duration : 36 ms
+[INFO ] 24-11-06 14:12:53 [MyInterceptor:44] - ---------- new client connected ----------
+[INFO ] 24-11-06 14:12:53 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Chrome, 130.0, Windows, 10, Other
+[INFO ] 24-11-06 14:12:53 [MyInterceptor:80] - [GET], http://localhost:8080/use_helper/upload_single
+[INFO ] 24-11-06 14:12:53 [MyInterceptor:96] - - Referer : time=552, url = http://localhost:8080/simple/upload_single
+[INFO ] 24-11-06 14:12:53 [MyInterceptor:117] - - duration : 31 ms
+[INFO ] 24-11-06 14:12:53 [MyInterceptor:44] - ---------- new client connected ----------
+[INFO ] 24-11-06 14:12:53 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Chrome, 130.0, Windows, 10, Other
+[INFO ] 24-11-06 14:12:53 [MyInterceptor:80] - [GET], http://localhost:8080/multi/upload
+[INFO ] 24-11-06 14:12:53 [MyInterceptor:96] - - Referer : time=426, url = http://localhost:8080/use_helper/upload_single
+[INFO ] 24-11-06 14:12:53 [MyInterceptor:117] - - duration : 18 ms
+[INFO ] 24-11-06 14:12:53 [MyInterceptor:44] - ---------- new client connected ----------
+[INFO ] 24-11-06 14:12:53 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Chrome, 130.0, Windows, 10, Other
+[INFO ] 24-11-06 14:12:53 [MyInterceptor:80] - [GET], http://localhost:8080/ajax/upload
+[INFO ] 24-11-06 14:12:53 [MyInterceptor:96] - - Referer : time=483, url = http://localhost:8080/multi/upload
+[INFO ] 24-11-06 14:12:53 [MyInterceptor:117] - - duration : 22 ms
+[INFO ] 24-11-06 14:12:55 [MyInterceptor:44] - ---------- new client connected ----------
+[INFO ] 24-11-06 14:12:55 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Chrome, 130.0, Windows, 10, Other
+[INFO ] 24-11-06 14:12:55 [MyInterceptor:80] - [GET], http://localhost:8080/ajax/upload_multi
+[INFO ] 24-11-06 14:12:55 [MyInterceptor:96] - - Referer : time=1134, url = http://localhost:8080/ajax/upload
+[INFO ] 24-11-06 14:12:55 [MyInterceptor:117] - - duration : 18 ms
+[INFO ] 24-11-06 14:28:23 [MyInterceptor:44] - ---------- new client connected ----------
+[INFO ] 24-11-06 14:28:23 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Chrome, 130.0, Windows, 10, Other
+[INFO ] 24-11-06 14:28:23 [MyInterceptor:80] - [GET], http://localhost:8080/ajax/upload_multi
+[INFO ] 24-11-06 14:28:23 [MyInterceptor:96] - - Referer : time=927894, url = http://localhost:8080/ajax/upload_multi
+[INFO ] 24-11-06 14:28:23 [MyInterceptor:117] - - duration : 17 ms
+[INFO ] 24-11-06 14:28:23 [MyInterceptor:44] - ---------- new client connected ----------
+[INFO ] 24-11-06 14:28:23 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Chrome, 130.0, Windows, 10, Other
+[INFO ] 24-11-06 14:28:23 [MyInterceptor:80] - [GET], http://localhost:8080/ajax/upload
+[INFO ] 24-11-06 14:28:23 [MyInterceptor:96] - - Referer : time=528, url = http://localhost:8080/ajax/upload_multi
+[INFO ] 24-11-06 14:28:23 [MyInterceptor:117] - - duration : 16 ms
+[INFO ] 24-11-06 14:28:24 [MyInterceptor:44] - ---------- new client connected ----------
+[INFO ] 24-11-06 14:28:24 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Chrome, 130.0, Windows, 10, Other
+[INFO ] 24-11-06 14:28:24 [MyInterceptor:80] - [GET], http://localhost:8080/ajax/upload_multi
+[INFO ] 24-11-06 14:28:24 [MyInterceptor:96] - - Referer : time=556, url = http://localhost:8080/ajax/upload
+[INFO ] 24-11-06 14:28:24 [MyInterceptor:117] - - duration : 18 ms
+[INFO ] 24-11-06 14:28:24 [MyInterceptor:44] - ---------- new client connected ----------
+[INFO ] 24-11-06 14:28:24 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Chrome, 130.0, Windows, 10, Other
+[INFO ] 24-11-06 14:28:24 [MyInterceptor:80] - [GET], http://localhost:8080/multi/upload
+[INFO ] 24-11-06 14:28:24 [MyInterceptor:96] - - Referer : time=791, url = http://localhost:8080/ajax/upload_multi
+[INFO ] 24-11-06 14:28:24 [MyInterceptor:117] - - duration : 17 ms
+[INFO ] 24-11-06 14:28:25 [MyInterceptor:44] - ---------- new client connected ----------
+[INFO ] 24-11-06 14:28:25 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Chrome, 130.0, Windows, 10, Other
+[INFO ] 24-11-06 14:28:25 [MyInterceptor:80] - [GET], http://localhost:8080/ajax/upload
+[INFO ] 24-11-06 14:28:25 [MyInterceptor:96] - - Referer : time=403, url = http://localhost:8080/multi/upload
+[INFO ] 24-11-06 14:28:25 [MyInterceptor:117] - - duration : 15 ms
+[INFO ] 24-11-06 14:28:25 [MyInterceptor:44] - ---------- new client connected ----------
+[INFO ] 24-11-06 14:28:25 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Chrome, 130.0, Windows, 10, Other
+[INFO ] 24-11-06 14:28:25 [MyInterceptor:80] - [GET], http://localhost:8080/ajax/upload_multi
+[INFO ] 24-11-06 14:28:25 [MyInterceptor:96] - - Referer : time=313, url = http://localhost:8080/ajax/upload
+[INFO ] 24-11-06 14:28:25 [MyInterceptor:117] - - duration : 18 ms
+[INFO ] 24-11-06 14:28:26 [MyInterceptor:44] - ---------- new client connected ----------
+[INFO ] 24-11-06 14:28:26 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Chrome, 130.0, Windows, 10, Other
+[INFO ] 24-11-06 14:28:26 [MyInterceptor:80] - [GET], http://localhost:8080/use_helper/upload_single
+[INFO ] 24-11-06 14:28:26 [MyInterceptor:96] - - Referer : time=389, url = http://localhost:8080/ajax/upload_multi
+[INFO ] 24-11-06 14:28:26 [MyInterceptor:117] - - duration : 16 ms
+[INFO ] 24-11-06 14:28:26 [MyInterceptor:44] - ---------- new client connected ----------
+[INFO ] 24-11-06 14:28:26 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Chrome, 130.0, Windows, 10, Other
+[INFO ] 24-11-06 14:28:26 [MyInterceptor:80] - [GET], http://localhost:8080/ajax/upload_multi
+[INFO ] 24-11-06 14:28:26 [MyInterceptor:96] - - Referer : time=562, url = http://localhost:8080/use_helper/upload_single
+[INFO ] 24-11-06 14:28:26 [MyInterceptor:117] - - duration : 20 ms
+[INFO ] 24-11-06 14:28:56 [FileuploadApplication:50] - Starting FileuploadApplication using Java 17.0.2 with PID 21488 (C:\Users\user\Desktop\HOME\08_SpringBoot\11_fileupload\build\classes\java\main started by user in C:\Users\user\Desktop\HOME\08_SpringBoot\11_fileupload)
+[DEBUG] 24-11-06 14:28:56 [FileuploadApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-11-06 14:28:56 [FileuploadApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-11-06 14:28:57 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[WARN ] 24-11-06 14:28:57 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.parkjaehan.fileupload]' package. Please check your configuration.
+[INFO ] 24-11-06 14:28:59 [FileuploadApplication:56] - Started FileuploadApplication in 3.313 seconds (process running for 4.031)
+[INFO ] 24-11-06 14:29:05 [MyInterceptor:44] - ---------- new client connected ----------
+[INFO ] 24-11-06 14:29:05 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Chrome, 130.0, Windows, 10, Other
+[INFO ] 24-11-06 14:29:05 [MyInterceptor:80] - [GET], http://localhost:8080/ajax/upload
+[INFO ] 24-11-06 14:29:05 [MyInterceptor:117] - - duration : 201 ms
+[INFO ] 24-11-06 14:29:06 [MyInterceptor:44] - ---------- new client connected ----------
+[INFO ] 24-11-06 14:29:06 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Chrome, 130.0, Windows, 10, Other
+[INFO ] 24-11-06 14:29:06 [MyInterceptor:80] - [GET], http://localhost:8080/ajax/upload_multi
+[INFO ] 24-11-06 14:29:06 [MyInterceptor:96] - - Referer : time=1108, url = http://localhost:8080/ajax/upload
+[INFO ] 24-11-06 14:29:06 [MyInterceptor:117] - - duration : 63 ms
+[INFO ] 24-11-06 14:29:10 [MyInterceptor:44] - ---------- new client connected ----------
+[INFO ] 24-11-06 14:29:10 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Chrome, 130.0, Windows, 10, Other
+[INFO ] 24-11-06 14:29:10 [MyInterceptor:80] - [GET], http://localhost:8080/use_helper/upload_single
+[INFO ] 24-11-06 14:29:10 [MyInterceptor:96] - - Referer : time=3827, url = http://localhost:8080/ajax/upload_multi
+[INFO ] 24-11-06 14:29:10 [MyInterceptor:117] - - duration : 56 ms
+[INFO ] 24-11-06 14:29:12 [MyInterceptor:44] - ---------- new client connected ----------
+[INFO ] 24-11-06 14:29:12 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Chrome, 130.0, Windows, 10, Other
+[INFO ] 24-11-06 14:29:12 [MyInterceptor:80] - [GET], http://localhost:8080/multi/upload
+[INFO ] 24-11-06 14:29:12 [MyInterceptor:96] - - Referer : time=1385, url = http://localhost:8080/use_helper/upload_single
+[INFO ] 24-11-06 14:29:12 [MyInterceptor:117] - - duration : 54 ms
+[INFO ] 24-11-06 14:29:13 [MyInterceptor:44] - ---------- new client connected ----------
+[INFO ] 24-11-06 14:29:13 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Chrome, 130.0, Windows, 10, Other
+[INFO ] 24-11-06 14:29:13 [MyInterceptor:80] - [GET], http://localhost:8080/ajax/upload
+[INFO ] 24-11-06 14:29:13 [MyInterceptor:96] - - Referer : time=1325, url = http://localhost:8080/multi/upload
+[INFO ] 24-11-06 14:29:13 [MyInterceptor:117] - - duration : 47 ms
+[INFO ] 24-11-06 14:29:13 [MyInterceptor:44] - ---------- new client connected ----------
+[INFO ] 24-11-06 14:29:13 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Chrome, 130.0, Windows, 10, Other
+[INFO ] 24-11-06 14:29:13 [MyInterceptor:80] - [GET], http://localhost:8080/ajax/upload_multi
+[INFO ] 24-11-06 14:29:13 [MyInterceptor:96] - - Referer : time=253, url = http://localhost:8080/ajax/upload
+[INFO ] 24-11-06 14:29:13 [MyInterceptor:117] - - duration : 23 ms
+[INFO ] 24-11-06 14:29:18 [MyInterceptor:44] - ---------- new client connected ----------
+[INFO ] 24-11-06 14:29:18 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Chrome, 130.0, Windows, 10, Other
+[INFO ] 24-11-06 14:29:18 [MyInterceptor:80] - [GET], http://localhost:8080/ajax/upload
+[INFO ] 24-11-06 14:29:18 [MyInterceptor:96] - - Referer : time=4672, url = http://localhost:8080/ajax/upload_multi
+[INFO ] 24-11-06 14:29:18 [MyInterceptor:117] - - duration : 26 ms
+[INFO ] 24-11-06 14:29:18 [MyInterceptor:44] - ---------- new client connected ----------
+[INFO ] 24-11-06 14:29:18 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Chrome, 130.0, Windows, 10, Other
+[INFO ] 24-11-06 14:29:18 [MyInterceptor:80] - [GET], http://localhost:8080/ajax/upload_multi
+[INFO ] 24-11-06 14:29:18 [MyInterceptor:96] - - Referer : time=396, url = http://localhost:8080/ajax/upload
+[INFO ] 24-11-06 14:29:18 [MyInterceptor:117] - - duration : 18 ms
+[INFO ] 24-11-06 14:29:19 [MyInterceptor:44] - ---------- new client connected ----------
+[INFO ] 24-11-06 14:29:19 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Chrome, 130.0, Windows, 10, Other
+[INFO ] 24-11-06 14:29:19 [MyInterceptor:80] - [GET], http://localhost:8080/multi/upload
+[INFO ] 24-11-06 14:29:19 [MyInterceptor:96] - - Referer : time=559, url = http://localhost:8080/ajax/upload_multi
+[INFO ] 24-11-06 14:29:19 [MyInterceptor:117] - - duration : 21 ms
+[INFO ] 24-11-06 14:29:19 [MyInterceptor:44] - ---------- new client connected ----------
+[INFO ] 24-11-06 14:29:19 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Chrome, 130.0, Windows, 10, Other
+[INFO ] 24-11-06 14:29:19 [MyInterceptor:80] - [GET], http://localhost:8080/use_helper/upload_single
+[INFO ] 24-11-06 14:29:19 [MyInterceptor:96] - - Referer : time=550, url = http://localhost:8080/multi/upload
+[INFO ] 24-11-06 14:29:19 [MyInterceptor:117] - - duration : 19 ms
+[INFO ] 24-11-06 14:29:20 [MyInterceptor:44] - ---------- new client connected ----------
+[INFO ] 24-11-06 14:29:20 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Chrome, 130.0, Windows, 10, Other
+[INFO ] 24-11-06 14:29:20 [MyInterceptor:80] - [GET], http://localhost:8080/simple/upload_single
+[INFO ] 24-11-06 14:29:20 [MyInterceptor:96] - - Referer : time=451, url = http://localhost:8080/use_helper/upload_single
+[INFO ] 24-11-06 14:29:20 [MyInterceptor:117] - - duration : 19 ms
+[INFO ] 24-11-06 14:29:20 [MyInterceptor:44] - ---------- new client connected ----------
+[INFO ] 24-11-06 14:29:20 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Chrome, 130.0, Windows, 10, Other
+[INFO ] 24-11-06 14:29:20 [MyInterceptor:80] - [GET], http://localhost:8080/use_helper/upload_single
+[INFO ] 24-11-06 14:29:20 [MyInterceptor:96] - - Referer : time=388, url = http://localhost:8080/simple/upload_single
+[INFO ] 24-11-06 14:29:20 [MyInterceptor:117] - - duration : 17 ms
+[INFO ] 24-11-06 14:29:21 [MyInterceptor:44] - ---------- new client connected ----------
+[INFO ] 24-11-06 14:29:21 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Chrome, 130.0, Windows, 10, Other
+[INFO ] 24-11-06 14:29:21 [MyInterceptor:80] - [GET], http://localhost:8080/multi/upload
+[INFO ] 24-11-06 14:29:21 [MyInterceptor:96] - - Referer : time=364, url = http://localhost:8080/use_helper/upload_single
+[INFO ] 24-11-06 14:29:21 [MyInterceptor:117] - - duration : 20 ms
+[INFO ] 24-11-06 14:29:22 [MyInterceptor:44] - ---------- new client connected ----------
+[INFO ] 24-11-06 14:29:22 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Chrome, 130.0, Windows, 10, Other
+[INFO ] 24-11-06 14:29:22 [MyInterceptor:80] - [GET], http://localhost:8080/ajax/upload_multi
+[INFO ] 24-11-06 14:29:22 [MyInterceptor:96] - - Referer : time=873, url = http://localhost:8080/multi/upload
+[INFO ] 24-11-06 14:29:22 [MyInterceptor:117] - - duration : 18 ms
+[INFO ] 24-11-06 14:29:54 [FileuploadApplication:50] - Starting FileuploadApplication using Java 17.0.2 with PID 22788 (C:\Users\user\Desktop\HOME\08_SpringBoot\11_fileupload\build\classes\java\main started by user in C:\Users\user\Desktop\HOME\08_SpringBoot\11_fileupload)
+[DEBUG] 24-11-06 14:29:54 [FileuploadApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-11-06 14:29:54 [FileuploadApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-11-06 14:29:55 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[WARN ] 24-11-06 14:29:55 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.parkjaehan.fileupload]' package. Please check your configuration.
+[INFO ] 24-11-06 14:29:57 [FileuploadApplication:56] - Started FileuploadApplication in 3.027 seconds (process running for 3.905)
+[INFO ] 24-11-06 14:29:59 [MyInterceptor:44] - ---------- new client connected ----------
+[INFO ] 24-11-06 14:29:59 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Chrome, 130.0, Windows, 10, Other
+[INFO ] 24-11-06 14:29:59 [MyInterceptor:80] - [GET], http://localhost:8080/ajax/upload
+[INFO ] 24-11-06 14:29:59 [MyInterceptor:117] - - duration : 212 ms
+[INFO ] 24-11-06 14:30:01 [MyInterceptor:44] - ---------- new client connected ----------
+[INFO ] 24-11-06 14:30:01 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Chrome, 130.0, Windows, 10, Other
+[INFO ] 24-11-06 14:30:01 [MyInterceptor:80] - [GET], http://localhost:8080/ajax/upload_multi
+[INFO ] 24-11-06 14:30:01 [MyInterceptor:96] - - Referer : time=1563, url = http://localhost:8080/ajax/upload
+[INFO ] 24-11-06 14:30:01 [MyInterceptor:117] - - duration : 55 ms
+[INFO ] 24-11-06 14:30:05 [MyInterceptor:44] - ---------- new client connected ----------
+[INFO ] 24-11-06 14:30:05 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Chrome, 130.0, Windows, 10, Other
+[INFO ] 24-11-06 14:30:05 [MyInterceptor:80] - [GET], http://localhost:8080/multi/upload
+[INFO ] 24-11-06 14:30:05 [MyInterceptor:96] - - Referer : time=4790, url = http://localhost:8080/ajax/upload_multi
+[INFO ] 24-11-06 14:30:05 [MyInterceptor:117] - - duration : 51 ms
+[INFO ] 24-11-06 14:30:06 [MyInterceptor:44] - ---------- new client connected ----------
+[INFO ] 24-11-06 14:30:06 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Chrome, 130.0, Windows, 10, Other
+[INFO ] 24-11-06 14:30:06 [MyInterceptor:80] - [GET], http://localhost:8080/ajax/upload
+[INFO ] 24-11-06 14:30:06 [MyInterceptor:96] - - Referer : time=461, url = http://localhost:8080/multi/upload
+[INFO ] 24-11-06 14:30:06 [MyInterceptor:117] - - duration : 36 ms
+[INFO ] 24-11-06 14:30:06 [MyInterceptor:44] - ---------- new client connected ----------
+[INFO ] 24-11-06 14:30:06 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Chrome, 130.0, Windows, 10, Other
+[INFO ] 24-11-06 14:30:06 [MyInterceptor:80] - [GET], http://localhost:8080/multi/upload
+[INFO ] 24-11-06 14:30:06 [MyInterceptor:96] - - Referer : time=502, url = http://localhost:8080/ajax/upload
+[INFO ] 24-11-06 14:30:06 [MyInterceptor:117] - - duration : 34 ms
+[INFO ] 24-11-06 14:30:09 [MyInterceptor:44] - ---------- new client connected ----------
+[INFO ] 24-11-06 14:30:09 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Chrome, 130.0, Windows, 10, Other
+[INFO ] 24-11-06 14:30:09 [MyInterceptor:80] - [GET], http://localhost:8080/ajax/upload_multi
+[INFO ] 24-11-06 14:30:09 [MyInterceptor:96] - - Referer : time=2667, url = http://localhost:8080/multi/upload
+[INFO ] 24-11-06 14:30:09 [MyInterceptor:117] - - duration : 31 ms
+[INFO ] 24-11-06 14:31:56 [FileuploadApplication:50] - Starting FileuploadApplication using Java 17.0.2 with PID 364 (C:\Users\user\Desktop\HOME\08_SpringBoot\11_fileupload\build\classes\java\main started by user in C:\Users\user\Desktop\HOME\08_SpringBoot\11_fileupload)
+[DEBUG] 24-11-06 14:31:56 [FileuploadApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-11-06 14:31:56 [FileuploadApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-11-06 14:31:57 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[WARN ] 24-11-06 14:31:57 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.parkjaehan.fileupload]' package. Please check your configuration.
+[INFO ] 24-11-06 14:31:59 [FileuploadApplication:56] - Started FileuploadApplication in 2.9 seconds (process running for 3.648)
+[INFO ] 24-11-06 14:32:03 [MyInterceptor:44] - ---------- new client connected ----------
+[INFO ] 24-11-06 14:32:03 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Chrome, 130.0, Windows, 10, Other
+[INFO ] 24-11-06 14:32:03 [MyInterceptor:80] - [GET], http://localhost:8080/ajax/upload
+[INFO ] 24-11-06 14:32:03 [MyInterceptor:117] - - duration : 162 ms
+[INFO ] 24-11-06 14:32:05 [MyInterceptor:44] - ---------- new client connected ----------
+[INFO ] 24-11-06 14:32:05 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Chrome, 130.0, Windows, 10, Other
+[INFO ] 24-11-06 14:32:05 [MyInterceptor:80] - [GET], http://localhost:8080/ajax/upload_multi
+[INFO ] 24-11-06 14:32:05 [MyInterceptor:96] - - Referer : time=1859, url = http://localhost:8080/ajax/upload
+[INFO ] 24-11-06 14:32:05 [MyInterceptor:117] - - duration : 55 ms
+[INFO ] 24-11-06 14:32:47 [FileuploadApplication:50] - Starting FileuploadApplication using Java 17.0.2 with PID 18364 (C:\Users\user\Desktop\HOME\08_SpringBoot\11_fileupload\build\classes\java\main started by user in C:\Users\user\Desktop\HOME\08_SpringBoot\11_fileupload)
+[DEBUG] 24-11-06 14:32:47 [FileuploadApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-11-06 14:32:47 [FileuploadApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-11-06 14:32:48 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[WARN ] 24-11-06 14:32:48 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.parkjaehan.fileupload]' package. Please check your configuration.
+[INFO ] 24-11-06 14:32:50 [FileuploadApplication:56] - Started FileuploadApplication in 3.393 seconds (process running for 4.145)
+[INFO ] 24-11-06 14:32:54 [MyInterceptor:44] - ---------- new client connected ----------
+[INFO ] 24-11-06 14:32:54 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Chrome, 130.0, Windows, 10, Other
+[INFO ] 24-11-06 14:32:54 [MyInterceptor:80] - [GET], http://localhost:8080/ajax/upload
+[INFO ] 24-11-06 14:32:54 [MyInterceptor:117] - - duration : 191 ms
+[INFO ] 24-11-06 14:32:56 [MyInterceptor:44] - ---------- new client connected ----------
+[INFO ] 24-11-06 14:32:56 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Chrome, 130.0, Windows, 10, Other
+[INFO ] 24-11-06 14:32:56 [MyInterceptor:80] - [GET], http://localhost:8080/ajax/upload_multi
+[INFO ] 24-11-06 14:32:56 [MyInterceptor:96] - - Referer : time=1339, url = http://localhost:8080/ajax/upload
+[INFO ] 24-11-06 14:32:56 [MyInterceptor:117] - - duration : 64 ms
+[INFO ] 24-11-06 14:32:59 [MyInterceptor:44] - ---------- new client connected ----------
+[INFO ] 24-11-06 14:32:59 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Chrome, 130.0, Windows, 10, Other
+[INFO ] 24-11-06 14:32:59 [MyInterceptor:80] - [POST], http://localhost:8080/ajax/upload_multi_ok
+[INFO ] 24-11-06 14:32:59 [MyInterceptor:96] - - Referer : time=3816, url = http://localhost:8080/ajax/upload_multi
+[INFO ] 24-11-06 14:33:45 [MyInterceptor:44] - ---------- new client connected ----------
+[INFO ] 24-11-06 14:33:45 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Chrome, 130.0, Windows, 10, Other
+[INFO ] 24-11-06 14:33:45 [MyInterceptor:80] - [POST], http://localhost:8080/ajax/upload_multi_ok
+[INFO ] 24-11-06 14:33:45 [MyInterceptor:96] - - Referer : time=49196, url = http://localhost:8080/ajax/upload_multi
+[INFO ] 24-11-06 14:34:03 [MyInterceptor:44] - ---------- new client connected ----------
+[INFO ] 24-11-06 14:34:03 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Chrome, 130.0, Windows, 10, Other
+[INFO ] 24-11-06 14:34:03 [MyInterceptor:80] - [GET], http://localhost:8080/ajax/upload
+[INFO ] 24-11-06 14:34:03 [MyInterceptor:96] - - Referer : time=67607, url = http://localhost:8080/ajax/upload_multi
+[INFO ] 24-11-06 14:34:03 [MyInterceptor:117] - - duration : 38 ms
+[INFO ] 24-11-06 14:34:06 [MyInterceptor:44] - ---------- new client connected ----------
+[INFO ] 24-11-06 14:34:06 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Chrome, 130.0, Windows, 10, Other
+[INFO ] 24-11-06 14:34:06 [MyInterceptor:80] - [POST], http://localhost:8080/ajax/upload_ok
+[INFO ] 24-11-06 14:34:06 [MyInterceptor:96] - - Referer : time=2814, url = http://localhost:8080/ajax/upload
+[DEBUG] 24-11-06 14:34:06 [FileHelper:290] - [Thumbnail] Path: /2024/11/06/17308712466110.jpg, Size: 640x640, Crop: true
+[DEBUG] 24-11-06 14:34:06 [FileHelper:308] - [Thumbnail] Thumbnail File: C:\Users\user\Desktop\HOME\08_SpringBoot\FileUpload\2024\11\06\17308712466110_640x640.jpg
+[DEBUG] 24-11-06 14:34:07 [FileHelper:273] - UploadItem(fieldName=profile-photo, originName=KakaoTalk_20240511_144815983_13.jpg, contentType=image/jpeg, fileSize=977507, filePath=/2024/11/06/17308712466110.jpg, fileUrl=/files/2024/11/06/17308712466110.jpg, thumbnailPath=/2024/11/06/17308712466110_640x640.jpg, thumbnailUrl=/files/2024/11/06/17308712466110_640x640.jpg)
+[INFO ] 24-11-06 14:34:07 [MyInterceptor:117] - - duration : 553 ms
+[INFO ] 24-11-06 14:34:07 [MyInterceptor:44] - ---------- new client connected ----------
+[INFO ] 24-11-06 14:34:07 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Chrome, 130.0, Windows, 10, Other
+[INFO ] 24-11-06 14:34:07 [MyInterceptor:80] - [GET], http://localhost:8080/files/2024/11/06/17308712466110_640x640.jpg
+[INFO ] 24-11-06 14:34:07 [MyInterceptor:96] - - Referer : time=6, url = http://localhost:8080/ajax/upload
+[INFO ] 24-11-06 14:34:07 [MyInterceptor:117] - - duration : 34 ms
+[INFO ] 24-11-06 14:34:08 [MyInterceptor:44] - ---------- new client connected ----------
+[INFO ] 24-11-06 14:34:08 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Chrome, 130.0, Windows, 10, Other
+[INFO ] 24-11-06 14:34:08 [MyInterceptor:80] - [GET], http://localhost:8080/ajax/upload_multi
+[INFO ] 24-11-06 14:34:08 [MyInterceptor:96] - - Referer : time=1175, url = http://localhost:8080/ajax/upload
+[INFO ] 24-11-06 14:34:08 [MyInterceptor:117] - - duration : 38 ms
+[INFO ] 24-11-06 14:34:12 [MyInterceptor:44] - ---------- new client connected ----------
+[INFO ] 24-11-06 14:34:12 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Chrome, 130.0, Windows, 10, Other
+[INFO ] 24-11-06 14:34:12 [MyInterceptor:80] - [POST], http://localhost:8080/ajax/upload_multi_ok
+[INFO ] 24-11-06 14:34:12 [MyInterceptor:96] - - Referer : time=4394, url = http://localhost:8080/ajax/upload_multi
+[INFO ] 24-11-06 14:35:05 [FileuploadApplication:50] - Starting FileuploadApplication using Java 17.0.2 with PID 18364 (C:\Users\user\Desktop\HOME\08_SpringBoot\11_fileupload\build\classes\java\main started by user in C:\Users\user\Desktop\HOME\08_SpringBoot\11_fileupload)
+[DEBUG] 24-11-06 14:35:05 [FileuploadApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-11-06 14:35:05 [FileuploadApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[WARN ] 24-11-06 14:35:06 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.parkjaehan.fileupload]' package. Please check your configuration.
+[INFO ] 24-11-06 14:35:06 [FileuploadApplication:56] - Started FileuploadApplication in 1.093 seconds (process running for 140.421)
+[INFO ] 24-11-06 14:35:14 [FileuploadApplication:50] - Starting FileuploadApplication using Java 17.0.2 with PID 9308 (C:\Users\user\Desktop\HOME\08_SpringBoot\11_fileupload\build\classes\java\main started by user in C:\Users\user\Desktop\HOME\08_SpringBoot\11_fileupload)
+[DEBUG] 24-11-06 14:35:14 [FileuploadApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-11-06 14:35:14 [FileuploadApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-11-06 14:35:16 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[WARN ] 24-11-06 14:35:16 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.parkjaehan.fileupload]' package. Please check your configuration.
+[INFO ] 24-11-06 14:35:19 [FileuploadApplication:56] - Started FileuploadApplication in 5.628 seconds (process running for 6.455)
+[INFO ] 24-11-06 14:36:30 [FileuploadApplication:50] - Starting FileuploadApplication using Java 17.0.2 with PID 16544 (C:\Users\user\Desktop\HOME\08_SpringBoot\11_fileupload\build\classes\java\main started by user in C:\Users\user\Desktop\HOME\08_SpringBoot\11_fileupload)
+[DEBUG] 24-11-06 14:36:30 [FileuploadApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-11-06 14:36:30 [FileuploadApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-11-06 14:36:31 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[WARN ] 24-11-06 14:36:31 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.parkjaehan.fileupload]' package. Please check your configuration.
+[INFO ] 24-11-06 14:36:32 [FileuploadApplication:56] - Started FileuploadApplication in 3.349 seconds (process running for 3.914)
+[INFO ] 24-11-06 14:36:38 [MyInterceptor:44] - ---------- new client connected ----------
+[INFO ] 24-11-06 14:36:39 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Chrome, 130.0, Windows, 10, Other
+[INFO ] 24-11-06 14:36:39 [MyInterceptor:80] - [GET], http://localhost:8080/ajax/upload
+[INFO ] 24-11-06 14:36:39 [MyInterceptor:117] - - duration : 238 ms
+[INFO ] 24-11-06 14:36:40 [MyInterceptor:44] - ---------- new client connected ----------
+[INFO ] 24-11-06 14:36:40 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Chrome, 130.0, Windows, 10, Other
+[INFO ] 24-11-06 14:36:40 [MyInterceptor:80] - [GET], http://localhost:8080/ajax/upload_multi
+[INFO ] 24-11-06 14:36:40 [MyInterceptor:96] - - Referer : time=1251, url = http://localhost:8080/ajax/upload
+[INFO ] 24-11-06 14:36:40 [MyInterceptor:117] - - duration : 61 ms
+[INFO ] 24-11-06 14:36:48 [MyInterceptor:44] - ---------- new client connected ----------
+[INFO ] 24-11-06 14:36:48 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Chrome, 130.0, Windows, 10, Other
+[INFO ] 24-11-06 14:36:48 [MyInterceptor:80] - [POST], http://localhost:8080/ajax/upload_multi_ok
+[INFO ] 24-11-06 14:36:48 [MyInterceptor:96] - - Referer : time=8155, url = http://localhost:8080/ajax/upload_multi
+[INFO ] 24-11-06 14:37:53 [FileuploadApplication:50] - Starting FileuploadApplication using Java 17.0.2 with PID 32124 (C:\Users\user\Desktop\HOME\08_SpringBoot\11_fileupload\build\classes\java\main started by user in C:\Users\user\Desktop\HOME\08_SpringBoot\11_fileupload)
+[DEBUG] 24-11-06 14:37:53 [FileuploadApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-11-06 14:37:53 [FileuploadApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-11-06 14:37:54 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[WARN ] 24-11-06 14:37:54 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.parkjaehan.fileupload]' package. Please check your configuration.
+[INFO ] 24-11-06 14:37:56 [FileuploadApplication:56] - Started FileuploadApplication in 3.265 seconds (process running for 4.021)
+[INFO ] 24-11-06 14:38:01 [MyInterceptor:44] - ---------- new client connected ----------
+[INFO ] 24-11-06 14:38:02 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Chrome, 130.0, Windows, 10, Other
+[INFO ] 24-11-06 14:38:02 [MyInterceptor:80] - [GET], http://localhost:8080/ajax/upload
+[INFO ] 24-11-06 14:38:02 [MyInterceptor:117] - - duration : 189 ms
+[INFO ] 24-11-06 14:38:03 [MyInterceptor:44] - ---------- new client connected ----------
+[INFO ] 24-11-06 14:38:03 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Chrome, 130.0, Windows, 10, Other
+[INFO ] 24-11-06 14:38:03 [MyInterceptor:80] - [GET], http://localhost:8080/ajax/upload_multi
+[INFO ] 24-11-06 14:38:03 [MyInterceptor:96] - - Referer : time=1724, url = http://localhost:8080/ajax/upload
+[INFO ] 24-11-06 14:38:03 [MyInterceptor:117] - - duration : 50 ms
+[INFO ] 24-11-06 14:38:08 [MyInterceptor:44] - ---------- new client connected ----------
+[INFO ] 24-11-06 14:38:08 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Chrome, 130.0, Windows, 10, Other
+[INFO ] 24-11-06 14:38:08 [MyInterceptor:80] - [POST], http://localhost:8080/ajax/upload_multi_ok
+[INFO ] 24-11-06 14:38:08 [MyInterceptor:96] - - Referer : time=4139, url = http://localhost:8080/ajax/upload_multi
+[INFO ] 24-11-06 14:39:40 [FileuploadApplication:50] - Starting FileuploadApplication using Java 17.0.2 with PID 35528 (C:\Users\user\Desktop\HOME\08_SpringBoot\11_fileupload\build\classes\java\main started by user in C:\Users\user\Desktop\HOME\08_SpringBoot\11_fileupload)
+[DEBUG] 24-11-06 14:39:40 [FileuploadApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-11-06 14:39:40 [FileuploadApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-11-06 14:39:41 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[WARN ] 24-11-06 14:39:41 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.parkjaehan.fileupload]' package. Please check your configuration.
+[INFO ] 24-11-06 14:39:43 [FileuploadApplication:56] - Started FileuploadApplication in 3.266 seconds (process running for 3.832)
+[INFO ] 24-11-06 14:39:46 [MyInterceptor:44] - ---------- new client connected ----------
+[INFO ] 24-11-06 14:39:46 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Chrome, 130.0, Windows, 10, Other
+[INFO ] 24-11-06 14:39:46 [MyInterceptor:80] - [GET], http://localhost:8080/ajax/upload
+[INFO ] 24-11-06 14:39:46 [MyInterceptor:117] - - duration : 287 ms
+[INFO ] 24-11-06 14:39:48 [MyInterceptor:44] - ---------- new client connected ----------
+[INFO ] 24-11-06 14:39:48 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Chrome, 130.0, Windows, 10, Other
+[INFO ] 24-11-06 14:39:48 [MyInterceptor:80] - [GET], http://localhost:8080/ajax/upload_multi
+[INFO ] 24-11-06 14:39:48 [MyInterceptor:96] - - Referer : time=1703, url = http://localhost:8080/ajax/upload
+[INFO ] 24-11-06 14:39:48 [MyInterceptor:117] - - duration : 66 ms
+[INFO ] 24-11-06 14:39:52 [MyInterceptor:44] - ---------- new client connected ----------
+[INFO ] 24-11-06 14:39:52 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Chrome, 130.0, Windows, 10, Other
+[INFO ] 24-11-06 14:39:52 [MyInterceptor:80] - [POST], http://localhost:8080/ajax/upload_multi_ok
+[INFO ] 24-11-06 14:39:52 [MyInterceptor:96] - - Referer : time=3785, url = http://localhost:8080/ajax/upload_multi
+[DEBUG] 24-11-06 14:39:52 [FileHelper:290] - [Thumbnail] Path: /2024/11/06/17308715923580.jpg, Size: 640x640, Crop: true
+[DEBUG] 24-11-06 14:39:52 [FileHelper:308] - [Thumbnail] Thumbnail File: C:\Users\user\Desktop\HOME\08_SpringBoot\FileUpload\2024\11\06\17308715923580_640x640.jpg
+[DEBUG] 24-11-06 14:39:52 [FileHelper:273] - UploadItem(fieldName=profile-photo, originName=KakaoTalk_20240511_144815983_12.jpg, contentType=image/jpeg, fileSize=2949456, filePath=/2024/11/06/17308715923580.jpg, fileUrl=/files/2024/11/06/17308715923580.jpg, thumbnailPath=/2024/11/06/17308715923580_640x640.jpg, thumbnailUrl=/files/2024/11/06/17308715923580_640x640.jpg)
+[DEBUG] 24-11-06 14:39:52 [FileHelper:290] - [Thumbnail] Path: /2024/11/06/17308715929920.jpg, Size: 640x640, Crop: true
+[DEBUG] 24-11-06 14:39:52 [FileHelper:308] - [Thumbnail] Thumbnail File: C:\Users\user\Desktop\HOME\08_SpringBoot\FileUpload\2024\11\06\17308715929920_640x640.jpg
+[DEBUG] 24-11-06 14:39:53 [FileHelper:273] - UploadItem(fieldName=profile-photo, originName=KakaoTalk_20240511_144815983_13.jpg, contentType=image/jpeg, fileSize=977507, filePath=/2024/11/06/17308715929920.jpg, fileUrl=/files/2024/11/06/17308715929920.jpg, thumbnailPath=/2024/11/06/17308715929920_640x640.jpg, thumbnailUrl=/files/2024/11/06/17308715929920_640x640.jpg)
+[DEBUG] 24-11-06 14:39:53 [FileHelper:290] - [Thumbnail] Path: /2024/11/06/17308715934340.jpg, Size: 640x640, Crop: true
+[DEBUG] 24-11-06 14:39:53 [FileHelper:308] - [Thumbnail] Thumbnail File: C:\Users\user\Desktop\HOME\08_SpringBoot\FileUpload\2024\11\06\17308715934340_640x640.jpg
+[DEBUG] 24-11-06 14:39:53 [FileHelper:273] - UploadItem(fieldName=profile-photo, originName=KakaoTalk_20240511_144815983_14.jpg, contentType=image/jpeg, fileSize=3962004, filePath=/2024/11/06/17308715934340.jpg, fileUrl=/files/2024/11/06/17308715934340.jpg, thumbnailPath=/2024/11/06/17308715934340_640x640.jpg, thumbnailUrl=/files/2024/11/06/17308715934340_640x640.jpg)
+[INFO ] 24-11-06 14:39:53 [MyInterceptor:117] - - duration : 1676 ms
+[INFO ] 24-11-06 14:39:53 [MyInterceptor:44] - ---------- new client connected ----------
+[INFO ] 24-11-06 14:39:53 [MyInterceptor:44] - ---------- new client connected ----------
+[INFO ] 24-11-06 14:39:53 [MyInterceptor:44] - ---------- new client connected ----------
+[INFO ] 24-11-06 14:39:54 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Chrome, 130.0, Windows, 10, Other
+[INFO ] 24-11-06 14:39:54 [MyInterceptor:80] - [GET], http://localhost:8080/files/2024/11/06/17308715934340_640x640.jpg
+[INFO ] 24-11-06 14:39:54 [MyInterceptor:96] - - Referer : time=6, url = http://localhost:8080/ajax/upload_multi
+[INFO ] 24-11-06 14:39:54 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Chrome, 130.0, Windows, 10, Other
+[INFO ] 24-11-06 14:39:54 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Chrome, 130.0, Windows, 10, Other
+[INFO ] 24-11-06 14:39:54 [MyInterceptor:117] - - duration : 81 ms
+[INFO ] 24-11-06 14:39:54 [MyInterceptor:80] - [GET], http://localhost:8080/files/2024/11/06/17308715929920_640x640.jpg
+[INFO ] 24-11-06 14:39:54 [MyInterceptor:80] - [GET], http://localhost:8080/files/2024/11/06/17308715923580_640x640.jpg
+[INFO ] 24-11-06 14:39:54 [MyInterceptor:96] - - Referer : time=-81, url = http://localhost:8080/ajax/upload_multi
+[INFO ] 24-11-06 14:39:54 [MyInterceptor:96] - - Referer : time=-81, url = http://localhost:8080/ajax/upload_multi
+[INFO ] 24-11-06 14:39:54 [MyInterceptor:117] - - duration : 92 ms
+[INFO ] 24-11-06 14:39:54 [MyInterceptor:117] - - duration : 92 ms
+[INFO ] 24-11-06 14:40:24 [MyInterceptor:44] - ---------- new client connected ----------
+[INFO ] 24-11-06 14:40:24 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Chrome, 130.0, Windows, 10, Other
+[INFO ] 24-11-06 14:40:24 [MyInterceptor:80] - [GET], http://localhost:8080/ajax/upload
+[INFO ] 24-11-06 14:40:24 [MyInterceptor:96] - - Referer : time=30697, url = http://localhost:8080/ajax/upload_multi
+[INFO ] 24-11-06 14:40:24 [MyInterceptor:117] - - duration : 23 ms
+[INFO ] 24-11-06 14:40:25 [MyInterceptor:44] - ---------- new client connected ----------
+[INFO ] 24-11-06 14:40:25 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Chrome, 130.0, Windows, 10, Other
+[INFO ] 24-11-06 14:40:25 [MyInterceptor:80] - [GET], http://localhost:8080/simple/upload_single
+[INFO ] 24-11-06 14:40:25 [MyInterceptor:96] - - Referer : time=855, url = http://localhost:8080/ajax/upload
+[INFO ] 24-11-06 14:40:25 [MyInterceptor:117] - - duration : 26 ms
+[INFO ] 24-11-06 14:40:26 [MyInterceptor:44] - ---------- new client connected ----------
+[INFO ] 24-11-06 14:40:26 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Chrome, 130.0, Windows, 10, Other
+[INFO ] 24-11-06 14:40:26 [MyInterceptor:80] - [GET], http://localhost:8080/use_helper/upload_single
+[INFO ] 24-11-06 14:40:26 [MyInterceptor:96] - - Referer : time=402, url = http://localhost:8080/simple/upload_single
+[INFO ] 24-11-06 14:40:26 [MyInterceptor:117] - - duration : 24 ms
+[INFO ] 24-11-06 14:40:26 [MyInterceptor:44] - ---------- new client connected ----------
+[INFO ] 24-11-06 14:40:26 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Chrome, 130.0, Windows, 10, Other
+[INFO ] 24-11-06 14:40:26 [MyInterceptor:80] - [GET], http://localhost:8080/multi/upload
+[INFO ] 24-11-06 14:40:26 [MyInterceptor:96] - - Referer : time=351, url = http://localhost:8080/use_helper/upload_single
+[INFO ] 24-11-06 14:40:26 [MyInterceptor:117] - - duration : 26 ms
+[INFO ] 24-11-06 14:40:26 [MyInterceptor:44] - ---------- new client connected ----------
+[INFO ] 24-11-06 14:40:26 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Chrome, 130.0, Windows, 10, Other
+[INFO ] 24-11-06 14:40:26 [MyInterceptor:80] - [GET], http://localhost:8080/ajax/upload
+[INFO ] 24-11-06 14:40:26 [MyInterceptor:96] - - Referer : time=280, url = http://localhost:8080/multi/upload
+[INFO ] 24-11-06 14:40:26 [MyInterceptor:117] - - duration : 16 ms
+[INFO ] 24-11-06 14:40:27 [MyInterceptor:44] - ---------- new client connected ----------
+[INFO ] 24-11-06 14:40:27 [MyInterceptor:62] - [Client] 0:0:0:0:0:0:0:1, Chrome, 130.0, Windows, 10, Other
+[INFO ] 24-11-06 14:40:27 [MyInterceptor:80] - [GET], http://localhost:8080/ajax/upload_multi
+[INFO ] 24-11-06 14:40:27 [MyInterceptor:96] - - Referer : time=276, url = http://localhost:8080/ajax/upload
+[INFO ] 24-11-06 14:40:27 [MyInterceptor:117] - - duration : 17 ms

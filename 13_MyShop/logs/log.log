@@ -1,0 +1,5 @@
+[INFO ] 24-11-06 15:21:40 [MyshopApplication:50] - Starting MyshopApplication using Java 17.0.2 with PID 20732 (C:\Users\user\Desktop\HOME\08_SpringBoot\13_MyShop\build\classes\java\main started by user in C:\Users\user\Desktop\HOME\08_SpringBoot\13_MyShop)
+[DEBUG] 24-11-06 15:21:40 [MyshopApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-11-06 15:21:40 [MyshopApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-11-06 15:21:41 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[INFO ] 24-11-06 15:21:43 [MyshopApplication:56] - Started MyshopApplication in 3.166 seconds (process running for 3.723)

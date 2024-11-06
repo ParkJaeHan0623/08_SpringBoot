@@ -32,7 +32,7 @@
     -->
         <form method="post" th:action="@{/use_helper/upload_single_ok}" enctype="multipart/form-data">
             <div class="file-wrapper">
-                <label for="profile-photo"><img src="@{/assets/img/noimg.jpg}" class="preview"/></label>
+                <label for="profile-photo"><img th:src="@{/assets/img/noimg.jpg}" class="preview"/></label>
                 <input type="file" name="profile-photo"  id="profile-photo" accept="image/*" />
             </div>
             <br>
