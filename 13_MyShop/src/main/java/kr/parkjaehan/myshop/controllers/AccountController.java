@@ -26,6 +26,11 @@ public class AccountController {
         return "account/join";
     }
 
+    @GetMapping("/account/join_result")
+    public String joinResult() {
+        return "account/join_result";
+    }
+    
     @GetMapping("/account/login")
     public String login() {
         return "account/login";

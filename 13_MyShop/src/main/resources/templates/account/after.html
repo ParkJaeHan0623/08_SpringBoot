@@ -1,10 +1,8 @@
 <!DOCTYPE html>
 <html lang="ko" xmlns:th="http://www.thymeleaf.org">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>로그인 후</title>
-    <link rel="stylesheet" th:href="@{/assets/css/account.css}">
+<th>
+    <th:block th:replace="~{/_fragments/_head :: my-head('로그인 후')}"></th:block>
+    <link rel="stylesheet" th:href="@{/assets/css/account.css}" />
 </head>
 <body>
 
@@ -18,5 +16,6 @@
         </div>
     </div>
 
+    <th:block th:replace="~{/_fragments/_scripts :: my-scripts}" />
 </body>
 </html>

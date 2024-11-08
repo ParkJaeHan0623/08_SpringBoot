@@ -24,7 +24,7 @@ public interface MembersMapper {
                         "VALUES (" +
                         "#{user_id}, MD5(#{user_pw}), #{user_name}, #{email}, #{phone}, " +
                         "#{birthday}, #{gender} , #{postcode}, #{addr1}, #{addr2}, " +
-                        "#{photo}, #{is_out}, #{is_admin}, #{login_date}, #{reg_date}, #{edit_date})")
+                        "#{photo}, 'N', 'N', Null, now(), now())")
         @Options(useGeneratedKeys = true, keyProperty = "id", keyColumn = "id")
         public int insert(Members input);
 
@@ -67,5 +67,20 @@ public interface MembersMapper {
         @Select("SELECT id, user_id, user_pw, user_name FROM members ORDER BY id")
         @ResultMap("membersMap")
         public List<Members> selectList(Members input);
+
+
+        @Select("<script>" + //
+                "SELECT COUNT(*) FROM members\n" + //
+                "<where>\n" + //
+                "<if test='user_id != null'>user_id = #{user_id}</if>\n" + //
+                "<if test='email != null'>email = #{email}</if>\n" + //
+                "</where>\n" + //
+                "</script>")
+        public int selectCount(Members input);
+
+        @Select("SELECT user_id FROM members " + //
+                "WHERE user_name = #{user_name} AND email = #{email}")
+        @ResultMap("membersMap")
+        public Members findId(Members input);
 
 }

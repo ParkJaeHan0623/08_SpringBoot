@@ -9,8 +9,15 @@ const axiosHelper = {
         try{
             switch (method.toLowerCase()) {
                 case 'get':
+                    let data = null;
+
+                    try {
+                        data = Object.fromEntries(formData);
+                    } catch (e) {
+                        data = formData;
+                    }
                     response = await axios.get(url,{
-                        params: formData && Object.fromEntries(formData),
+                        params: data,
                         headers: headers
                     });
                     break;
@@ -31,11 +38,13 @@ const axiosHelper = {
                     break;
             }
         } catch (error) {
+            let alertTitle = null;
             let alertMsg = null;
             console.log(error);
 
             if(error.response?.data){
                 const data = error.response.data;
+                alertTitle = `${data.status} Error`;
                 alertMsg = data.message;
 
                 console.error("Error occurred in the backend server.");
@@ -47,7 +56,7 @@ const axiosHelper = {
                 console.error("Error occurred in the Axios.");
                 console.error(`[${error.code}] ${error.message}`);
             }
-            alert(alertMsg);
+            await utilHelper.alertDanger(alertTitle, alertMsg);
         }
         return response?.data;
         

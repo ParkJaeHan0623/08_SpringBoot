@@ -15,7 +15,7 @@ public class Members {
     private String postcode;
     private String addr1;
     private String addr2;
-    private Byte photo;
+    private String photo;
     private char is_out;
     private char is_admin;
     private String login_date;

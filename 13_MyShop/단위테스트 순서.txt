@@ -1,0 +1,5 @@
+단위테스트 순서
+
+1. mapper
+2. service
+3. controller -> thunderclient
