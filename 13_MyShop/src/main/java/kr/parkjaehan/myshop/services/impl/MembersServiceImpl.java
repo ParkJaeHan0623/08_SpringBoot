@@ -107,9 +107,26 @@ public class MembersServiceImpl implements MembersService {
             }
         } catch (Exception e) {
             log.error("아이디 검색에 실패했습니다", e);
+            throw e;
         }
         return output;
 
+    }
+
+    @Override
+    public void resetPw(Members input) throws Exception {
+       
+        int rows = 0;
+        
+        try {
+            rows = membersMapper.resetPw(input);
+            if (rows == 0) {
+                throw new Exception("아이디와 이메일을 확인하세요.");
+            }
+        } catch (Exception e) {
+            log.error("Member 데이터 수정에 실패했습니다.", e);
+            throw e;
+        }
     }
     
 }

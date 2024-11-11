@@ -64,11 +64,12 @@ public interface MembersMapper {
         })
         public Members selectItem(Members input);
 
+        // 아이디 중복검사
         @Select("SELECT id, user_id, user_pw, user_name FROM members ORDER BY id")
         @ResultMap("membersMap")
         public List<Members> selectList(Members input);
 
-
+        // 로그인
         @Select("<script>" + //
                 "SELECT COUNT(*) FROM members\n" + //
                 "<where>\n" + //
@@ -78,9 +79,16 @@ public interface MembersMapper {
                 "</script>")
         public int selectCount(Members input);
 
+        // 아이디 찾기
         @Select("SELECT user_id FROM members " + //
                 "WHERE user_name = #{user_name} AND email = #{email}")
         @ResultMap("membersMap")
         public Members findId(Members input);
+
+        // 비밀번호 찾기
+        @Update("UPDATE members SET " + //
+                "user_pw = MD5(#{user_pw}), edit_date = now() " + //
+                "WHERE user_id = #{user_id} AND email = #{email}")
+        public int resetPw(Members input);
 
 }
