@@ -45,4 +45,9 @@ public class AccountController {
     public String resetPw() {
         return "account/reset_pw";
     }
+
+    @GetMapping("/account")
+    public String index() {
+        return "account/index";
+    }
 }

@@ -91,4 +91,18 @@ public interface MembersMapper {
                 "WHERE user_id = #{user_id} AND email = #{email}")
         public int resetPw(Members input);
 
+
+        // 로그인
+        @Select("SELECT \n" + //
+                "id, user_id, user_pw, user_name, email, phone, birthday, gender, \n" + //
+                "postcode, addr1, addr2, photo, is_out, is_admin, login_date, reg_date, edit_date \n" + //
+                "FROM members \n" + //
+                "WHERE user_id = #{user_id} AND user_pw = MD5(#{user_pw})")
+        @ResultMap("membersMap")
+        public Members login(Members input);
+
+        // 로그인 시 로그인 날짜 업데이트
+        @Update("UPDATE members SET login_date = now() WHERE id = #{id}")
+        public int updateLoginDate(Members input);
+
 }

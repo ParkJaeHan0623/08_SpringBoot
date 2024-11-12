@@ -22,5 +22,7 @@ public interface MembersService {
     public Members findId(Members input) throws Exception;
 
     public void resetPw(Members input) throws Exception;
+
+    public Members login(Members input) throws Exception;
 }
         

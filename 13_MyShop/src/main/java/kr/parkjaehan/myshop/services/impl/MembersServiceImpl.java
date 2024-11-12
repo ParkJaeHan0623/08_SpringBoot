@@ -128,5 +128,33 @@ public class MembersServiceImpl implements MembersService {
             throw e;
         }
     }
+
+    @Override
+    public Members login(Members input) throws Exception {
+        
+        Members output = null;
+        
+        try {
+            output = membersMapper.login(input);
+            if (output == null) {
+                throw new Exception("아이디혹은 이메일을 확인하세요.");
+            }
+        } catch (Exception e) {
+            log.error("Member 데이터 조회에 실패했습니다.", e);
+            throw e;
+        }
+        try {
+            int rows = membersMapper.updateLoginDate(output);
+
+            if (rows == 0) {
+                throw new Exception("존재하지 않는 회원에 대한 요청입니다.");
+            }
+        } catch (Exception e) {
+            log.error("Member 데이터 수정에 실패했습니다.", e);
+            throw e;
+        }
+
+        return output;
+    }
     
 }
