@@ -32,7 +32,8 @@ const axiosHelper = {
                     });
                     break;
                 case 'delete':
-                    response = await axios.delete(url, {
+                    response = await axios.delete(url,{
+                        data: formData,
                         headers: headers
                     });
                     break;
@@ -70,8 +71,8 @@ const axiosHelper = {
     put: async function (url, formData, headers = {}, isMultipart = false) {
         return await this.ajax(url, 'put', formData, headers, isMultipart);
     },
-    delete: async function (url, headers = {}, isMultipart = false) {
-        return await this.ajax(url, 'delete', null, headers, isMultipart);
+    delete: async function (url, formData, headers = {}, isMultipart = false) {
+        return await this.ajax(url, 'delete', formData, headers, isMultipart);
     },
     getMultipart: async function (url, formData, headers = {}) {
         return await this.get(url, formData, headers, true);

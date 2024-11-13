@@ -43,6 +43,8 @@ dependencies {
 	implementation 'org.bgee.log4jdbc-log4j2:log4jdbc-log4j2-jdbc4.1:1.16'
 	// https://mvnrepository.com/artifact/net.coobird/thumbnailator
 	implementation 'net.coobird:thumbnailator:0.4.20'
+
+	implementation 'org.springframework.session:spring-session-jdbc'
 }
 
 tasks.named('test') {

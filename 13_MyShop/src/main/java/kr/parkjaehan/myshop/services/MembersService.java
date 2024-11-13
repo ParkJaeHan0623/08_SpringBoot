@@ -24,5 +24,9 @@ public interface MembersService {
     public void resetPw(Members input) throws Exception;
 
     public Members login(Members input) throws Exception;
+
+    public int out (Members input) throws Exception;
+
+    public List<Members> processOutMembers() throws Exception;
 }
         
