@@ -95,7 +95,7 @@ public class AccountRestController {
             @RequestParam("email") String email,
             @RequestParam("phone") String phone,
             @RequestParam("birthday") String birthday,
-            @RequestParam("gender") char gender,
+            @RequestParam("gender") String gender,
             @RequestParam("postcode") String postcode,
             @RequestParam("addr1") String addr1,
             @RequestParam("addr2") String addr2,

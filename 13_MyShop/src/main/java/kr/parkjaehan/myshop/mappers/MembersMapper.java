@@ -17,6 +17,7 @@ import kr.parkjaehan.myshop.models.Members;
 @Mapper
 public interface MembersMapper {
 
+        // 회원가입
         @Insert("INSERT INTO members (" +
                         "user_id, user_pw, user_name, email, phone, " +
                         "birthday, gender, postcode, addr1, addr2, " +
@@ -28,6 +29,7 @@ public interface MembersMapper {
         @Options(useGeneratedKeys = true, keyProperty = "id", keyColumn = "id")
         public int insert(Members input);
 
+        // 회원정보 수정
         @Update("UPDATE members SET " +
                         "user_id = #{user_id}, user_pw = MD5(#{user_pw}), user_name = #{user_name}, email = #{email}, phone = #{phone}, "
                         +
@@ -41,8 +43,8 @@ public interface MembersMapper {
         @Delete("DELETE FROM members WHERE id = #{id}")
         public int delete(Members input);
 
+        // 회원정보 조회
         @Select("SELECT * FROM members WHERE id = #{id}")
-
         @Results(id = "membersMap", value = {
                         @Result(property = "id", column = "id"),
                         @Result(property = "user_id", column = "user_id"),
